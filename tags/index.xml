@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on State of The R</title>
+    <link>/tags/</link>
+    <description>Recent content in Tags on State of The R</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-fr</language>
+    <copyright>&amp;copy; 2017 State of the R</copyright>
+    <lastBuildDate>Tue, 19 Apr 2016 00:00:00 +0200</lastBuildDate>
+    <atom:link href="/tags/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Academic</title>
+      <link>/tags/academic/</link>
+      <pubDate>Tue, 19 Apr 2016 00:00:00 +0200</pubDate>
+      
+      <guid>/tags/academic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Help</title>
+      <link>/tags/help/</link>
+      <pubDate>Tue, 19 Apr 2016 00:00:00 +0200</pubDate>
+      
+      <guid>/tags/help/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hugo</title>
+      <link>/tags/hugo/</link>
+      <pubDate>Tue, 19 Apr 2016 00:00:00 +0200</pubDate>
+      
+      <guid>/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Markdown</title>
+      <link>/tags/markdown/</link>
+      <pubDate>Sun, 17 Apr 2016 00:00:00 +0200</pubDate>
+      
+      <guid>/tags/markdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Package</title>
+      <link>/tags/package/</link>
+      <pubDate>Mon, 25 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/package/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R</title>
+      <link>/tags/r/</link>
+      <pubDate>Thu, 28 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/r/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Syntax</title>
+      <link>/tags/syntax/</link>
+      <pubDate>Sun, 17 Apr 2016 00:00:00 +0200</pubDate>
+      
+      <guid>/tags/syntax/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Teachings</title>
+      <link>/tags/teachings/</link>
+      <pubDate>Mon, 25 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/teachings/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Workshop</title>
+      <link>/tags/workshop/</link>
+      <pubDate>Thu, 28 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/workshop/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

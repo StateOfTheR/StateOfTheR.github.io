@@ -1,298 +1,1200 @@
 <!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-
+<html lang="fr-fr">
 <head>
 
-<meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="generator" content="pandoc" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme" content="hugo-academic">
+  <meta name="generator" content="Hugo 0.29" />
+  <meta name="author" content="State of the R">
+  <meta name="description" content="Groupe d&#39;utilisateur de R">
 
+  
+  
+  
+    
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/highlight.min.css">
+    
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.1/css/academicons.min.css" integrity="sha512-NThgw3XKQ1absAahW6to7Ey42uycrVvfNfyjqcFNgCmOCQ5AR4AO0SiXrN+8ZtYeappp56lk1WtvjVmEa+VR6A==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather%7CRoboto+Mono">
+  <link rel="stylesheet" href="/css/hugo-academic.css">
+  
 
+  
 
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="State of The R">
+  <link rel="feed" href="/index.xml" type="application/rss+xml" title="State of The R">
 
-<title>Accueil</title>
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
-<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
-<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
-<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
-<script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/highlightjs-1.1/textmate.css" rel="stylesheet" />
-<script src="site_libs/highlightjs-1.1/highlight.js"></script>
-<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
-<div><img src="img/bannerSOTR-transp.jpg"/></div>
+  <link rel="canonical" href="/">
 
-<style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
-<script type="text/javascript">
-if (window.hljs && document.readyState && document.readyState === "complete") {
-   window.setTimeout(function() {
-      hljs.initHighlighting();
-   }, 0);
-}
-</script>
+  
 
-
-
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
-
-<link rel="stylesheet" href="style.css" type="text/css" />
+  <title>State of The R</title>
 
 </head>
+<body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
 
-<body>
-
-<style type = "text/css">
-.main-container {
-  max-width: 940px;
-  margin-left: auto;
-  margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
-}
-img {
-  max-width:100%;
-  height: auto;
-}
-.tabbed-pane {
-  padding-top: 12px;
-}
-button.code-folding-btn:focus {
-  outline: none;
-}
-</style>
-
-
-<style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 60px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 65px;
-  margin-top: -65px;
-}
-
-.section h2 {
-  padding-top: 65px;
-  margin-top: -65px;
-}
-.section h3 {
-  padding-top: 65px;
-  margin-top: -65px;
-}
-.section h4 {
-  padding-top: 65px;
-  margin-top: -65px;
-}
-.section h5 {
-  padding-top: 65px;
-  margin-top: -65px;
-}
-.section h6 {
-  padding-top: 65px;
-  margin-top: -65px;
-}
-</style>
-
-<script>
-// manage active state of menu based on current page
-$(document).ready(function () {
-  // active menu anchor
-  href = window.location.pathname
-  href = href.substr(href.lastIndexOf('/') + 1)
-  if (href === "")
-    href = "index.html";
-  var menuAnchor = $('a[href="' + href + '"]');
-
-  // mark it active
-  menuAnchor.parent().addClass('active');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
-});
-</script>
-
-
-<div class="container-fluid main-container">
-
-<!-- tabsets -->
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-</script>
-
-<!-- code folding -->
-
-
-
-
-
-
-<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
   <div class="container">
+
+    
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target=".navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">State of the R</a>
+      <a class="navbar-brand" href="/">State of The R</a>
     </div>
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-        <li>
-  <a href="index.html">
-    <span class="fa fa-home"></span>
-     
-    Accueil
-  </a>
-</li>
-<li>
-  <a href="meetings.html">
-    <span class="fa fa-calendar"></span>
-     
-    Réunions
-  </a>
-</li>
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    <span class="fa fa-hourglass"></span>
-     
-    Ateliers passés
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
-    <li>
-      <a href="workshop.html">En deux mots</a>
-    </li>
-    <li class="divider"></li>
-    <li>
-      <a href="http://stateofther.github.io/finistR2017/">Finist'R 2017</a>
-    </li>
-  </ul>
-</li>
-      </ul>
+
+    
+    <div class="collapse navbar-collapse">
+
+      
       <ul class="nav navbar-nav navbar-right">
-        <li>
-  <a href="about.html">
-    <span class="fa fa-info"></span>
-     
-    À propos
-  </a>
-</li>
-<li>
-  <a href="http://github.com/StateOfTheR">
-    <span class="fa fa-github"></span>
-     
-    github
-  </a>
-</li>
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#home" data-target="#home">
+            
+            <span>Accueil</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#workshops" data-target="#workshops">
+            
+            <span>Ateliers</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#projets" data-target="#projets">
+            
+            <span>Projets</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#calendar" data-target="#calendar">
+            
+            <span>Calendrier</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#help" data-target="#help">
+            
+            <span>Aide à la rédaction</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#about" data-target="#about">
+            
+            <span>À propos</span>
+          </a>
+        </li>
+
+        
+        
+
+        
       </ul>
-    </div><!--/.nav-collapse -->
-  </div><!--/.container -->
-</div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
-
+    </div>
+  </div>
+</nav>
 
 
-<h1 class="title toc-ignore">Accueil</h1>
 
-</div>
+<span id="homepage" style="display: none"></span>
 
 
-<p><strong>State of the R</strong> est un groupe de chercheurs et d’ingénieurs utilisateurs quotidiens de <code>R</code> se réunissant pour</p>
+
+  
+  
+  <section id="home" class="home-section">
+    <div class="container">
+      
+
+
+
+<div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person" itemref="person-email">
+  <div class="col-xs-12 col-md-4">
+    <div id="profile">
+
+      
+      <div class="portrait" style="background-image: url('/img/phare.png');"></div>
+      <meta itemprop="image" content="/img/phare.png">
+      
+
+      <div class="portrait-title">
+        <h2 itemprop="name">State of the R</h2>
+        <h3 itemprop="jobTitle">Groupe d&#39;utilisateur de R</h3>
+        
+        <h3 itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
+          <a href="http://stateofther.github.io" target="_blank" itemprop="url">
+            <span itemprop="name">AgroParisTech/INRA</span>
+          </a>
+        </h3>
+        
+      </div>
+
+      <link itemprop="url" href="/">
+
+      <ul class="social-icon" aria-hidden="true">
+        
+        
+        <li>
+          <a itemprop="sameAs" href="stateofther@agroparistech.fr" target="_blank">
+            <i class="fa fa-envelope big-icon"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a itemprop="sameAs" href="//github.com/stateofther" target="_blank">
+            <i class="fa fa-github big-icon"></i>
+          </a>
+        </li>
+        
+      </ul>
+
+    </div>
+  </div>
+  <div class="col-xs-12 col-md-8" itemprop="description">
+
+    <p><strong>State of the R</strong> est un groupe de chercheurs et d&rsquo;ingénieurs utilisateurs quotidiens de <code>R</code> se réunissant pour</p>
+
 <ul>
 <li>perfectionner la diffusion de leurs méthodes statistiques via <code>R</code></li>
 <li>partager et approfondir leur savoir-faire</li>
 <li>échanger autour des dernières innovations de <code>R</code> et <code>Rstudio</code></li>
 </ul>
-<p>Le groupe s’est formé à l’occasion d’une semaine d’ateliers du 28 août au 1er septembre 2017 à la station biologique de Roscoff. Ces ateliers ont donné lieu à</p>
-<ul>
-<li>l’écriture d’un <a href="http://stateofther.github.io/finistR2017/">mini poly bookdown</a> résumant les activités de la semaine</li>
-<li>la formation d’un <a href="https://github.com/StateOfTheR">groupe github</a> où sont hébergés nos projets en cours et à venir.</li>
-</ul>
-<p>De l’avis des participants, cette expérience enrichissante et motivante gagnerait à être reconduite sur une base annuelle.</p>
-
-<br/>
-<br/>
-   <div class="footer" >
-      <div class="container">
-        <p class="text-muted"> Last update: August 2017 @StateOftheR<br></p>
-      </div>
-   </div>
-
-  <!-- Bootstrap core JavaScript
-  ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="assets/bootstrap/js/bootstrap.js"></script>
 
 
+    <div class="row">
+
+      
+
+      
+
+    </div>
+  </div>
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  <section id="workshops" class="home-section">
+    <div class="container">
+      
+
+
+
+
+<div class="row">
+  <div class="col-xs-12 col-md-4 section-heading">
+
+    <h1>Ateliers passés</h1>
+    
+    
+
+  </div>
+  <div class="col-xs-12 col-md-8">
+
+    
+
+    
+      
+
+      
+      
+
+        
+
+        
+        
+
+        
+        
+          
+      
+          
+      
+
+      
+      
+        
+        
+
+
+<div class="article-list-item" itemscope itemprop="blogPost">
+  
+  
+  <a href="/post/roscoff2017/">
+    <img src="/img/headers/bannerSOTR-transp.jpg" class="article-banner" itemprop="image">
+  </a>
+  
+  <h3 class="article-title" itemprop="name">
+    <a href="/post/roscoff2017/" itemprop="url">Finist&#39;R 2017</a>
+  </h3>
+  
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    
+    <time datetime="2017-09-28 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+      Sep 28, 2017
+    </time>
+  </span>
+
+  
+  
+  
+  <span class="article-categories">
+    <i class="fa fa-folder"></i>
+    
+    <a href="/categories/workshop">workshop</a
+    >
+    
+  </span>
+  
+  
+
+  
+  
+  
+  <span class="article-tags">
+    <i class="fa fa-tags"></i>
+    
+    <a href="/tags/workshop">workshop</a
+    >, 
+    
+    <a href="/tags/r">R</a
+    >
+    
+  </span>
+  
+  
+
+  
 
 </div>
 
-<script>
+  <div class="article-style" itemprop="articleBody">
+    
+    <p>Le groupe s&rsquo;est formé à l&rsquo;occasion d&rsquo;une semaine d&rsquo;ateliers du 28 août au 1er septembre 2017 à la station biologique de Roscoff, baptisés Finist&rsquo;R 2017. Ces ateliers ont donné lieu à</p>
 
-// add bootstrap table styles to pandoc tables
-function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
-}
-$(document).ready(function () {
-  bootstrapStylePandocTables();
-});
+<p>Ces ateliers ont donné lieu à</p>
+
+<ul>
+<li>l&rsquo;écriture d&rsquo;un <a href="http://stateofther.github.io/finistR2017/" target="_blank">mini poly bookdown</a> résumant les activités de la semaine</li>
+<li>la formation d&rsquo;un <a href="https://github.com/StateOfTheR" target="_blank">groupe github</a> où sont hébergés nos projets en cours et à venir.</li>
+</ul>
+
+    
+  </div>
+  <p class="read-more">
+    <a href="/post/roscoff2017/" class="btn btn-primary btn-outline">
+      CONTINUE READING
+    </a>
+  </p>
+</div>
+
+      
+
+      
+
+        
+
+        
+        
+
+        
+        
+          
+      
+          
+      
+          
+      
+
+      
+      
+        
+        
 
 
-</script>
+<div class="article-list-item" itemscope itemprop="blogPost">
+  
+  
+  <h3 class="article-title" itemprop="name">
+    <a href="/post/learnr/" itemprop="url">Retour d&#39;expérience learnr</a>
+  </h3>
+  
 
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
-  (function () {
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
-    document.getElementsByTagName("head")[0].appendChild(script);
-  })();
-</script>
+<div class="article-metadata">
 
-</body>
+  <span class="article-date">
+    
+    <time datetime="2017-09-25 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+      Sep 25, 2017
+    </time>
+  </span>
+
+  
+  
+  
+  <span class="article-categories">
+    <i class="fa fa-folder"></i>
+    
+    <a href="/categories/r">R</a
+    >
+    
+  </span>
+  
+  
+
+  
+  
+  
+  <span class="article-tags">
+    <i class="fa fa-tags"></i>
+    
+    <a href="/tags/workshop">workshop</a
+    >, 
+    
+    <a href="/tags/package">package</a
+    >, 
+    
+    <a href="/tags/teachings">teachings</a
+    >
+    
+  </span>
+  
+  
+
+  
+
+</div>
+
+  <div class="article-style" itemprop="articleBody">
+    
+    learnr est un package R qui permet de créer des tutoriels (voir le site dédié ou le blog de présentation). Les tutoriels incluent du texte, des champs pour taper et exécuter des commandes R (pouvant être pré-formatés) et des questionnaires à choix multiples. Les champs peuvent inclure des indices à afficher pour l’utilisateur ou des solutions. Pour fonctionner, le document créé au format Rmarkdown doit être envoyé sur un serveur shiny.
+    
+  </div>
+  <p class="read-more">
+    <a href="/post/learnr/" class="btn btn-primary btn-outline">
+      CONTINUE READING
+    </a>
+  </p>
+</div>
+
+      
+
+      
+
+        
+
+        
+        
+
+        
+        
+          
+          
+        
+      
+          
+      
+          
+      
+
+      
+      
+
+      
+
+        
+
+        
+        
+
+        
+        
+          
+          
+        
+      
+          
+      
+          
+      
+
+      
+      
+
+      
+
+        
+
+        
+        
+
+        
+        
+          
+          
+        
+      
+          
+      
+          
+      
+
+      
+      
+
+      
+    
+
+  </div>
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  <section id="calendar" class="home-section">
+    <div class="container">
+      
+
+
+<div class="row">
+  <div class="col-xs-12 col-md-4 section-heading">
+    <h1>Calendrier</h1>
+    <p>Ateliers à venir</p>
+  </div>
+  <div class="col-xs-12 col-md-8">
+    <iframe src="https://calendar.google.com/calendar/embed?src=62uu3fdqq173b5ne6e6gqbtt9s%40group.calendar.google.com&ctz=Europe/Paris" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+
+  </div>
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  <section id="projets" class="home-section">
+    <div class="container">
+      
+
+
+<div class="row">
+  <div class="col-xs-12 col-md-4 section-heading">
+    <h1>Projets</h1>
+    
+  </div>
+  <div class="col-xs-12 col-md-8">
+    
+
+<h2 id="bookdown-finiste-r-2017">Bookdown Finiste&rsquo;R 2017</h2>
+
+<p>Écriture d&rsquo;un <a href="http://stateofther.github.io/finistR2017/" target="_blank">mini poly bookdown</a> résumant les activités de la semaine <a href="post/roscoff2017/" target="_blank">FinistR</a></p>
+
+<h2 id="autres">Autres&hellip;</h2>
+
+  </div>
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  <section id="about" class="home-section">
+    <div class="container">
+      
+
+
+<div class="row">
+  <div class="col-xs-12 col-md-4 section-heading">
+    <h1>À propos</h1>
+    
+  </div>
+  <div class="col-xs-12 col-md-8">
+    
+
+<p>Le groupe s&rsquo;est formé à l&rsquo;occasion d&rsquo;une semaine d&rsquo;ateliers du 28 août au 1er septembre 2017 à la station biologique de Roscoff. De l&rsquo;avis des participants, cette expérience enrichissante et motivante gagnerait à être reconduite sur une base annuelle.</p>
+
+<h2 id="les-membres-au-1er-septembre-2017">Les membres au 1er septembre 2017</h2>
+
+<ul>
+<li>Christophe Ambroise
+<!-- >  --></li>
+<li>Julie Aubert
+<!-- > Allez faire pipi, on part dans un quart d'heure. --></li>
+<li>Pierre Barbillon
+<!-- > Je me suis encore déshabillé pour rien. --></li>
+<li>Séverine Bord
+<!-- >  --></li>
+<li>Mathieu Carmassi
+<!-- > Tu as compris ce qu'il se passe ? --></li>
+<li>Julien Chiquet
+<!-- >  --></li>
+<li>Sophie Donnet
+<!-- > Le plus jeune que je peux faire c'est dormir en auberge de jeunesse --></li>
+<li>Marie-Pierre Étienne
+<!-- >  --></li>
+<li>Marie Perrot-Dockès
+<!-- > J'adore emballer --></li>
+<li>Timothée Tabouy
+<!-- > --></li>
+<li>Jessica Tressou
+<!-- >  -->
+<br /></li>
+</ul>
+
+  </div>
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  <section id="help" class="home-section">
+    <div class="container">
+      
+
+
+
+
+<div class="row">
+  <div class="col-xs-12 col-md-4 section-heading">
+
+    <h1>Aide</h1>
+    <p>Rédaction blogdown/Academic</p>
+    
+
+  </div>
+  <div class="col-xs-12 col-md-8">
+
+    
+
+    
+      
+
+      
+      
+
+        
+
+        
+        
+
+        
+        
+          
+      
+          
+      
+          
+      
+
+      
+      
+        
+        
+
+
+<div class="article-list-item" itemscope itemprop="blogPost">
+  
+  
+  <h3 class="article-title" itemprop="name">
+    <a href="/post/widgets/" itemprop="url">Customizing the homepage with widgets</a>
+  </h3>
+  
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    
+    <time datetime="2016-04-19 00:00:00 &#43;0200 CEST" itemprop="datePublished">
+      Apr 19, 2016
+    </time>
+  </span>
+
+  
+  
+  
+  <span class="article-categories">
+    <i class="fa fa-folder"></i>
+    
+    <a href="/categories/help">help</a
+    >
+    
+  </span>
+  
+  
+
+  
+  
+  
+  <span class="article-tags">
+    <i class="fa fa-tags"></i>
+    
+    <a href="/tags/help">help</a
+    >, 
+    
+    <a href="/tags/academic">academic</a
+    >, 
+    
+    <a href="/tags/hugo">hugo</a
+    >
+    
+  </span>
+  
+  
+
+  
+
+</div>
+
+  <div class="article-style" itemprop="articleBody">
+    
+    <p>Enable/disable and configure widgets to customize your homepage.</p>
+    
+  </div>
+  <p class="read-more">
+    <a href="/post/widgets/" class="btn btn-primary btn-outline">
+      CONTINUE READING
+    </a>
+  </p>
+</div>
+
+      
+
+      
+
+        
+
+        
+        
+
+        
+        
+          
+      
+          
+      
+          
+      
+
+      
+      
+        
+        
+
+
+<div class="article-list-item" itemscope itemprop="blogPost">
+  
+  
+  <h3 class="article-title" itemprop="name">
+    <a href="/post/managing-content/" itemprop="url">Managing content</a>
+  </h3>
+  
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    
+    <time datetime="2016-04-18 00:00:00 &#43;0200 CEST" itemprop="datePublished">
+      Apr 18, 2016
+    </time>
+  </span>
+
+  
+
+  
+  
+  
+  <span class="article-tags">
+    <i class="fa fa-tags"></i>
+    
+    <a href="/tags/help">help</a
+    >, 
+    
+    <a href="/tags/academic">academic</a
+    >, 
+    
+    <a href="/tags/hugo">hugo</a
+    >
+    
+  </span>
+  
+  
+
+  
+
+</div>
+
+  <div class="article-style" itemprop="articleBody">
+    
+    <p>This is a brief guide to managing content with the Academic framework. Content can include publications, projects, talks, and news/blog articles. After you have read this guide about creating and managing content, you may also be interested to learn about <a href="/post/writing-markdown-latex/" target="_blank">writing content with Markdown, LaTeX, and Shortcodes</a>.</p>
+    
+  </div>
+  <p class="read-more">
+    <a href="/post/managing-content/" class="btn btn-primary btn-outline">
+      CONTINUE READING
+    </a>
+  </p>
+</div>
+
+      
+
+      
+
+        
+
+        
+        
+
+        
+        
+          
+      
+          
+      
+          
+      
+
+      
+      
+        
+        
+
+
+<div class="article-list-item" itemscope itemprop="blogPost">
+  
+  
+  <h3 class="article-title" itemprop="name">
+    <a href="/post/writing-markdown-latex/" itemprop="url">Writing content with Markdown, LaTeX, and Shortcodes</a>
+  </h3>
+  
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    
+    <time datetime="2016-04-17 00:00:00 &#43;0200 CEST" itemprop="datePublished">
+      Apr 17, 2016
+    </time>
+  </span>
+
+  
+
+  
+  
+  
+  <span class="article-tags">
+    <i class="fa fa-tags"></i>
+    
+    <a href="/tags/help">help</a
+    >, 
+    
+    <a href="/tags/markdown">markdown</a
+    >, 
+    
+    <a href="/tags/syntax">syntax</a
+    >
+    
+  </span>
+  
+  
+
+  
+
+</div>
+
+  <div class="article-style" itemprop="articleBody">
+    
+    <p>Content can be written using <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet" target="_blank">Markdown</a>, <a href="https://en.wikibooks.org/wiki/LaTeX/Mathematics" target="_blank">LaTeX math</a>, and <a href="http://gohugo.io/extras/shortcodes/" target="_blank">Hugo Shortcodes</a>. Additionally, HTML may be used for advanced formatting. This article gives an overview of the most common formatting options.</p>
+    
+  </div>
+  <p class="read-more">
+    <a href="/post/writing-markdown-latex/" class="btn btn-primary btn-outline">
+      CONTINUE READING
+    </a>
+  </p>
+</div>
+
+      
+
+      
+    
+
+  </div>
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  <section id="talks" class="home-section">
+    <div class="container">
+      
+
+
+
+
+<div class="row">
+  <div class="col-xs-12 col-md-4 section-heading">
+    <h1>Recent &amp; Upcoming Talks</h1>
+    
+    
+  </div>
+  <div class="col-xs-12 col-md-8">
+    
+
+    
+    <ul class="fa-ul">
+      
+    </ul>
+    
+
+  </div>
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  <section id="posts" class="home-section">
+    <div class="container">
+      
+
+
+
+
+<div class="row">
+  <div class="col-xs-12 col-md-4 section-heading">
+
+    <h1></h1>
+    
+    
+
+  </div>
+  <div class="col-xs-12 col-md-8">
+
+    
+
+    
+      
+
+      
+      
+
+        
+
+        
+        
+
+        
+        
+          
+      
+          
+      
+
+      
+      
+        
+        
+
+
+<div class="article-list-item" itemscope itemprop="blogPost">
+  
+  
+  <a href="/post/roscoff2017/">
+    <img src="/img/headers/bannerSOTR-transp.jpg" class="article-banner" itemprop="image">
+  </a>
+  
+  <h3 class="article-title" itemprop="name">
+    <a href="/post/roscoff2017/" itemprop="url">Finist&#39;R 2017</a>
+  </h3>
+  
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    
+    <time datetime="2017-09-28 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+      Sep 28, 2017
+    </time>
+  </span>
+
+  
+  
+  
+  <span class="article-categories">
+    <i class="fa fa-folder"></i>
+    
+    <a href="/categories/workshop">workshop</a
+    >
+    
+  </span>
+  
+  
+
+  
+  
+  
+  <span class="article-tags">
+    <i class="fa fa-tags"></i>
+    
+    <a href="/tags/workshop">workshop</a
+    >, 
+    
+    <a href="/tags/r">R</a
+    >
+    
+  </span>
+  
+  
+
+  
+
+</div>
+
+  <div class="article-style" itemprop="articleBody">
+    
+    <p>Le groupe s&rsquo;est formé à l&rsquo;occasion d&rsquo;une semaine d&rsquo;ateliers du 28 août au 1er septembre 2017 à la station biologique de Roscoff, baptisés Finist&rsquo;R 2017. Ces ateliers ont donné lieu à</p>
+
+<p>Ces ateliers ont donné lieu à</p>
+
+<ul>
+<li>l&rsquo;écriture d&rsquo;un <a href="http://stateofther.github.io/finistR2017/" target="_blank">mini poly bookdown</a> résumant les activités de la semaine</li>
+<li>la formation d&rsquo;un <a href="https://github.com/StateOfTheR" target="_blank">groupe github</a> où sont hébergés nos projets en cours et à venir.</li>
+</ul>
+
+    
+  </div>
+  <p class="read-more">
+    <a href="/post/roscoff2017/" class="btn btn-primary btn-outline">
+      CONTINUE READING
+    </a>
+  </p>
+</div>
+
+      
+
+      
+
+        
+
+        
+        
+
+        
+        
+          
+      
+          
+      
+          
+      
+
+      
+      
+        
+        
+
+
+<div class="article-list-item" itemscope itemprop="blogPost">
+  
+  
+  <h3 class="article-title" itemprop="name">
+    <a href="/post/learnr/" itemprop="url">Retour d&#39;expérience learnr</a>
+  </h3>
+  
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    
+    <time datetime="2017-09-25 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+      Sep 25, 2017
+    </time>
+  </span>
+
+  
+  
+  
+  <span class="article-categories">
+    <i class="fa fa-folder"></i>
+    
+    <a href="/categories/r">R</a
+    >
+    
+  </span>
+  
+  
+
+  
+  
+  
+  <span class="article-tags">
+    <i class="fa fa-tags"></i>
+    
+    <a href="/tags/workshop">workshop</a
+    >, 
+    
+    <a href="/tags/package">package</a
+    >, 
+    
+    <a href="/tags/teachings">teachings</a
+    >
+    
+  </span>
+  
+  
+
+  
+
+</div>
+
+  <div class="article-style" itemprop="articleBody">
+    
+    learnr est un package R qui permet de créer des tutoriels (voir le site dédié ou le blog de présentation). Les tutoriels incluent du texte, des champs pour taper et exécuter des commandes R (pouvant être pré-formatés) et des questionnaires à choix multiples. Les champs peuvent inclure des indices à afficher pour l’utilisateur ou des solutions. Pour fonctionner, le document créé au format Rmarkdown doit être envoyé sur un serveur shiny.
+    
+  </div>
+  <p class="read-more">
+    <a href="/post/learnr/" class="btn btn-primary btn-outline">
+      CONTINUE READING
+    </a>
+  </p>
+</div>
+
+      
+
+      
+    
+
+  </div>
+</div>
+
+    </div>
+  </section>
+
+
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="powered-by">
+
+      &copy; 2017 State of the R &middot; 
+
+      Powered by the <a href="https://github.com/gcushen/hugo-academic" target="_blank">Academic
+      theme</a> for <a href="http://gohugo.io" target="_blank">Hugo</a>.
+
+      <span class="pull-right" aria-hidden="true">
+        <a href="#" id="back_to_top">
+          <span class="button_icon">
+            <i class="fa fa-chevron-up fa-2x"></i>
+          </span>
+        </a>
+      </span>
+
+    </p>
+  </div>
+</footer>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js" integrity="sha512-jGsMH83oKe9asCpkOVkBnUrDDTp8wl+adkB2D+//JtlxO4SrLoJdhbOysIFQJloQFD+C4Fl1rMsQZF76JjV0eQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.2/imagesloaded.pkgd.min.js" integrity="sha512-iHzEu7GbSc705hE2skyH6/AlTpOfBmkx7nUqTLGzPYR+C1tRaItbRlJ7hT/D3YQ9SV0fqLKzp4XY9wKulTBGTw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js" integrity="sha512-Z5heTz36xTemt1TbtbfXtTq5lMfYnOkXM2/eWcTTiLU01+Sw4ku1i7vScDc8fWhrP2abz9GQzgKH5NGBLoYlAw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/plugins/ScrollToPlugin.min.js" integrity="sha512-CDeU7pRtkPX6XJtF/gcFWlEwyaX7mcAp5sO3VIu/ylsdR74wEw4wmBpD5yYTrmMAiAboi9thyBUr1vXRPA7t0Q==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+    
+    <script src="/js/hugo-academic.js"></script>
+    
+
+    
+    
+      
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+
+      
+
+      
+
+      <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML" integrity="sha512-tOav5w1OjvsSJzePRtt2uQPFwBoHt1VZcUq8l8nm5284LEKE9FSJBQryzMBzHxY5P0zRdNqEcpLIRVYFNgu1jw==" crossorigin="anonymous"></script>
+    
+    
+
+  </body>
 </html>
+

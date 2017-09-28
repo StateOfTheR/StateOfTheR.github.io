@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Teachings on State of The R</title>
+    <link>/tags/teachings/</link>
+    <description>Recent content in Teachings on State of The R</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-fr</language>
+    <copyright>&amp;copy; 2017 State of the R</copyright>
+    <lastBuildDate>Mon, 25 Sep 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/teachings/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Retour d&#39;expérience learnr</title>
+      <link>/post/learnr/</link>
+      <pubDate>Mon, 25 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/post/learnr/</guid>
+      <description>&lt;!-- ## courriel --&gt;
+&lt;!-- Pour learnR je dirai que c’est un outil intéressant pour réaliser des TP structurés selon une trame précise et pour lesquels on souhaite modifier les données. --&gt;
+&lt;!-- Par contre, il me faudrait plus de temps pour voir comment exporter/sauvegarder les codes et sorties R dans un fichier (.R par exemple). --&gt;
+&lt;!-- ### Jessica --&gt;
+&lt;!-- avec Marie qui était sansordi, nous avons regardé le tuto de learnR et en particulier les différentes fonctionnalités qui pourraient permettre de récupérer les réponses des étudiants... On a conclu que c&#39;était plus du Shiny que du learnR. --&gt;
+&lt;!-- On a vu les options --&gt;
+&lt;!-- 3- sur la fonction `quiz( )`, on a cherché à ne pas faire apparaître de réponse et on a été surprises de voir qu&#39;en recompilant on voit encore ce qu&#39;on a répondu avant... --&gt;
+&lt;!-- Bref, ça n&#39;a pas été très productif selon moi (même si ma machine a bien voulu faire ce que je demandais !) et ça a donné l&#39;impression qu&#39;on faisait tous un peu la même chose, il faudrait peut être décider en début d&#39;HappyR qui regarde quoi et se mettre en petits groupes pour traiter chacun une question spécifique, disons en 1h et préparer sur place une courte restitution aux autres (ce qui éviterait aussi la compilation de nos différents retours). C&#39;est peut être un peu utopique de se dire que c&#39;est faisable sans que personne n&#39;est déjà regardé plus en détails avant qu&#39;on se retrouve...  --&gt;
+&lt;!-- De mon côté, j&#39;avais regardé rapidement quelles étaient les possibilités de générer des sujets différents et j&#39;ai trouvé un exemple de publipostage &#34;Mail merge&#34; qui peut permettre  de faire cela (au moins si &#39;l&#39;on souhaite juste générer N sujets au format PDF par exemple - ensuite il faut combiner avec du learnR et du Shiny si on veut aller jusqu&#39;à récupérer les réponses pour une notation d&#39;évaluation automatisée), cf pour ceux qui ça intéresse https://www.r-bloggers.com/mail-merge-with-rmarkdown/. --&gt;
+&lt;!-- bonne compil&#39; et merci de t&#39;en charger --&gt;
+&lt;!-- Jessica TRESSOU --&gt;
+&lt;!-- ### Isabelle --&gt;
+&lt;!-- Impressions sur learnR : outil sympathique quand on veut poser des questions via une interface WEB à des personnes. Mais se pose crucialement la question comment récupérer les réponses. --&gt;
+&lt;!-- Merci pour cette initiative de StateoftheR qui va peut-être me permettre de pas trop perdre la main ou plutôt de raccrocher. Par contre, je ne pourrais pas être là le 20/10. Désolée. Réunion experts Anses oblige. --&gt;
+&lt;!-- ### Maud --&gt;
+&lt;!-- - le package produit des supports plus adaptés à des interventions de type tutoriel ou des auto-évaluations --&gt;
+&lt;!-- - inconvénients liés à l&#39;indépendance des chunks; nécessite d&#39;ajouter des lignes de code dans le setup ou de faire des liens entre chunks (mais comment?) --&gt;
+&lt;p&gt;&lt;code&gt;learnr&lt;/code&gt; est un package R qui permet de créer des tutoriels (voir le &lt;a href=&#34;https://rstudio.github.io/learnr/&#34;&gt;site dédié&lt;/a&gt; ou &lt;a href=&#34;https://blog.rstudio.com/2017/07/11/introducing-learnr/&#34;&gt;le blog de présentation&lt;/a&gt;). Les tutoriels incluent du texte, des champs pour taper et exécuter des commandes &lt;code&gt;R&lt;/code&gt; (pouvant être pré-formatés) et des questionnaires à choix multiples. Les champs peuvent inclure des indices à afficher pour l’utilisateur ou des solutions. Pour fonctionner, le document créé au format Rmarkdown doit être envoyé sur un serveur shiny. Il est alors nécessaire de créér un compte sur &lt;a href=&#34;https://www.shinyapps.io/&#34;&gt;shinyapp&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Avec uniquement le package &lt;code&gt;learnr&lt;/code&gt;, il est uniquement possible de vérifier que les réponses données aux questions à choix multiples sont les bonnes. Par contre, il n’est pas possible de vérifier les commandes &lt;code&gt;R&lt;/code&gt; tapées ni leur résultat. Un package &lt;a href=&#34;https://github.com/dtkaplan/checkr&#34;&gt;checkr&lt;/a&gt; disponible sur github doit permettre de faire ces vérifications.&lt;/p&gt;
+&lt;p&gt;Des essais menés, il a été conclu que &lt;code&gt;learnr&lt;/code&gt; est un package intéressant mais qui ne permettra pas forcément de faire un TP complet de statistique sous R. Toutefois, il peut être employé pour :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;présenter certaines fonctions centrales en R en détaillant les différentes options et fournir des exemples à des étudiants en TP,&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;faire une vignette d’un package développé sous R,&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;proposer des auto-évaluations pour les étudiants.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Cependant nous nous sommes heurtés à certaines limites :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;il n’est pas possible de récupérer les commandes tapées dans les champs &lt;code&gt;R&lt;/code&gt; par l’utilisateur ni les résultats correspondants. Ainsi un étudiant n’aura aucune trace de son travail si cet outil est employé pour le faire travailler en TP.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;il n’est pas possible de récupérer les commandes tapées dans les champs &lt;code&gt;R&lt;/code&gt; ni les réponses aux questions à choix multiples afin de les centraliser et de s’en servir à des fins d’évaluations.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;les “chunks” (environnement permettant de créer des champs &lt;code&gt;R&lt;/code&gt;) sont indépendants les uns des autres donc il est difficile de construire une progressivité dans un travail avec &lt;code&gt;learnr&lt;/code&gt;. On peut définir au début dans un chunk &lt;code&gt;setup&lt;/code&gt;, un environnement général qui sera commun à tous les champs &lt;code&gt;R&lt;/code&gt;. On peut également pour chaque chunk ajouter un chunk du même nom auquel on ajoute &lt;code&gt;-setup&lt;/code&gt; pour définir un environnement propre au champ correspondant.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;le document &lt;code&gt;learnr&lt;/code&gt; étant hébergé sur un serveur, l’importation des données ne peut pas être présentée de manière classique en local. Les données doivent être chargées à partir d’une adresse web.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Quelques astuces utiles :&lt;/p&gt;
+&lt;p&gt;1- &lt;code&gt;exercise.timelimit = 10&lt;/code&gt; permet de limiter le temps de réponses, &lt;code&gt;exercise.lines = 5&lt;/code&gt; pour définir le nombre de lignes de console permettant de répondre.&lt;/p&gt;
+&lt;p&gt;2- il n’est pas possible de mettre à la fois &lt;code&gt;solution&lt;/code&gt; et &lt;code&gt;hint&lt;/code&gt;(en créant un nouveau chunk portant le même nom suivi de &lt;code&gt;-hint&lt;/code&gt; ou &lt;code&gt;-solution&lt;/code&gt; selon le cas ). Si on le fait, la solution devient le &lt;code&gt;next hint&lt;/code&gt;. On peut aussi mettre plusieurs &lt;code&gt;hint&lt;/code&gt; en ajoutant &lt;code&gt;-1&lt;/code&gt;, &lt;code&gt;-2&lt;/code&gt; pour les ordonner.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
