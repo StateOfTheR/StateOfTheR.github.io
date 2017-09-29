@@ -8,7 +8,7 @@
   <meta name="theme" content="hugo-academic">
   <meta name="generator" content="Hugo 0.29" />
   <meta name="author" content="State of the R">
-  <meta name="description" content="Groupe d&#39;utilisateur de R">
+  <meta name="description" content="Groupe d&#39;utilisateurs de R">
 
   
   
@@ -43,7 +43,7 @@
 
   
 
-  <title>Retour d&#39;expérience learnr | State of The R</title>
+  <title>Atelier découverte LearnR | State of The R</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
@@ -156,7 +156,7 @@
 
 
   <div class="article-container">
-    <h1 itemprop="name">Retour d&#39;expérience learnr</h1>
+    <h1 itemprop="name">Atelier découverte LearnR</h1>
     
 
 <div class="article-metadata">
@@ -206,7 +206,7 @@
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Retour%20d%27exp%c3%a9rience%20learnr&amp;url=%2fpost%2flearnr%2f"
+         href="https://twitter.com/intent/tweet?text=Atelier%20d%c3%a9couverte%20LearnR&amp;url=%2fpost%2flearnr%2f"
          target="_blank">
         <i class="fa fa-twitter"></i>
       </a>
@@ -220,21 +220,21 @@
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2fpost%2flearnr%2f&amp;title=Retour%20d%27exp%c3%a9rience%20learnr"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2fpost%2flearnr%2f&amp;title=Atelier%20d%c3%a9couverte%20LearnR"
          target="_blank">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=%2fpost%2flearnr%2f&amp;title=Retour%20d%27exp%c3%a9rience%20learnr"
+         href="http://service.weibo.com/share/share.php?url=%2fpost%2flearnr%2f&amp;title=Atelier%20d%c3%a9couverte%20LearnR"
          target="_blank">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=Retour%20d%27exp%c3%a9rience%20learnr&amp;body=%2fpost%2flearnr%2f">
+         href="mailto:?subject=Atelier%20d%c3%a9couverte%20LearnR&amp;body=%2fpost%2flearnr%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -264,24 +264,32 @@
 <!-- ### Maud -->
 <!-- - le package produit des supports plus adaptés à des interventions de type tutoriel ou des auto-évaluations -->
 <!-- - inconvénients liés à l'indépendance des chunks; nécessite d'ajouter des lignes de code dans le setup ou de faire des liens entre chunks (mais comment?) -->
-<p><code>learnr</code> est un package R qui permet de créer des tutoriels (voir le <a href="https://rstudio.github.io/learnr/">site dédié</a> ou <a href="https://blog.rstudio.com/2017/07/11/introducing-learnr/">le blog de présentation</a>). Les tutoriels incluent du texte, des champs pour taper et exécuter des commandes <code>R</code> (pouvant être pré-formatés) et des questionnaires à choix multiples. Les champs peuvent inclure des indices à afficher pour l’utilisateur ou des solutions. Pour fonctionner, le document créé au format Rmarkdown doit être envoyé sur un serveur shiny. Il est alors nécessaire de créér un compte sur <a href="https://www.shinyapps.io/">shinyapp</a>.</p>
+<div id="vue-densemble" class="section level3">
+<h3>Vue d’ensemble</h3>
+<p>Le package <code>learnr</code> permet de créer des tutoriels (voir le <a href="https://rstudio.github.io/learnr/">site dédié</a> ou <a href="https://blog.rstudio.com/2017/07/11/introducing-learnr/">le blog de présentation</a>). Les tutoriels incluent du texte, des champs pour taper et exécuter des commandes <code>R</code> (pouvant être pré-formatés) et des questionnaires à choix multiples. Les champs peuvent inclure des indices à afficher pour l’utilisateur ou des solutions. Pour fonctionner, le document créé au format Rmarkdown doit être envoyé sur un serveur shiny. Il est alors nécessaire de créér un compte sur <a href="https://www.shinyapps.io/">shinyapp</a>.</p>
 <p>Avec uniquement le package <code>learnr</code>, il est uniquement possible de vérifier que les réponses données aux questions à choix multiples sont les bonnes. Par contre, il n’est pas possible de vérifier les commandes <code>R</code> tapées ni leur résultat. Un package <a href="https://github.com/dtkaplan/checkr">checkr</a> disponible sur github doit permettre de faire ces vérifications.</p>
+</div>
+<div id="limitations" class="section level3">
+<h3>Limitations</h3>
 <p>Des essais menés, il a été conclu que <code>learnr</code> est un package intéressant mais qui ne permettra pas forcément de faire un TP complet de statistique sous R. Toutefois, il peut être employé pour :</p>
 <ul>
 <li><p>présenter certaines fonctions centrales en R en détaillant les différentes options et fournir des exemples à des étudiants en TP,</p></li>
 <li><p>faire une vignette d’un package développé sous R,</p></li>
 <li><p>proposer des auto-évaluations pour les étudiants.</p></li>
 </ul>
-<p>Cependant nous nous sommes heurtés à certaines limites :</p>
+<p>Nous nous sommes heurtés à certaines limites :</p>
 <ul>
 <li><p>il n’est pas possible de récupérer les commandes tapées dans les champs <code>R</code> par l’utilisateur ni les résultats correspondants. Ainsi un étudiant n’aura aucune trace de son travail si cet outil est employé pour le faire travailler en TP.</p></li>
 <li><p>il n’est pas possible de récupérer les commandes tapées dans les champs <code>R</code> ni les réponses aux questions à choix multiples afin de les centraliser et de s’en servir à des fins d’évaluations.</p></li>
 <li><p>les “chunks” (environnement permettant de créer des champs <code>R</code>) sont indépendants les uns des autres donc il est difficile de construire une progressivité dans un travail avec <code>learnr</code>. On peut définir au début dans un chunk <code>setup</code>, un environnement général qui sera commun à tous les champs <code>R</code>. On peut également pour chaque chunk ajouter un chunk du même nom auquel on ajoute <code>-setup</code> pour définir un environnement propre au champ correspondant.</p></li>
 <li><p>le document <code>learnr</code> étant hébergé sur un serveur, l’importation des données ne peut pas être présentée de manière classique en local. Les données doivent être chargées à partir d’une adresse web.</p></li>
 </ul>
-<p>Quelques astuces utiles :</p>
+</div>
+<div id="quelques-astuces-utiles" class="section level3">
+<h3>Quelques astuces utiles :</h3>
 <p>1- <code>exercise.timelimit = 10</code> permet de limiter le temps de réponses, <code>exercise.lines = 5</code> pour définir le nombre de lignes de console permettant de répondre.</p>
 <p>2- il n’est pas possible de mettre à la fois <code>solution</code> et <code>hint</code>(en créant un nouveau chunk portant le même nom suivi de <code>-hint</code> ou <code>-solution</code> selon le cas ). Si on le fait, la solution devient le <code>next hint</code>. On peut aussi mettre plusieurs <code>hint</code> en ajoutant <code>-1</code>, <code>-2</code> pour les ordonner.</p>
+</div>
 
     </div>
   </div>
@@ -290,18 +298,24 @@
 
 
 
+<div class="article-container">
+  <h3>Related</h3>
+  <ul>
+    
+    <li><a href="/post/roscoff2017/">Finist&#39;R 2017</a></li>
+    
+  </ul>
+</div>
+
 
 <div class="container">
   <nav>
   <ul class="pager">
     
-    <li class="previous"><a href="/post/widgets/"><span
-      aria-hidden="true">&larr;</span> Customizing the homepage with widgets</a></li>
+    <li class="previous"><a href="/post/roscoff2017/"><span
+      aria-hidden="true">&larr;</span> Finist&#39;R 2017</a></li>
     
 
-    
-    <li class="next"><a href="/post/roscoff2017/">Finist&#39;R 2017 <span
-      aria-hidden="true">&rarr;</span></a></li>
     
   </ul>
 </nav>
