@@ -297,12 +297,12 @@ DT1&lt;/code&gt;&lt;/pre&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;TB1 %&amp;gt;% 
   group_by(id) %&amp;gt;% 
   filter(id &amp;gt;=2, code %in% c(&amp;quot;a&amp;quot;, &amp;quot;c&amp;quot;)) %&amp;gt;% 
-  select(-code) %&amp;gt;% 
+  select(-code, -valC) %&amp;gt;% 
   summarise_all(sum)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## # A tibble: 1 x 4
-##      id  valA  valB  valC
-##   &amp;lt;int&amp;gt; &amp;lt;int&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt;
-## 1     2    19    46   585&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 1 x 3
+##      id  valA  valB
+##   &amp;lt;int&amp;gt; &amp;lt;int&amp;gt; &amp;lt;dbl&amp;gt;
+## 1     2    19    46&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div id=&#34;data.table-6&#34; class=&#34;section level4&#34;&gt;
 &lt;h4&gt;data.table&lt;/h4&gt;
@@ -316,17 +316,17 @@ DT1&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;em&gt;Replace valA with max(valA)-min(valA) grouped by code&lt;/em&gt;&lt;/p&gt;
 &lt;div id=&#34;base-3&#34; class=&#34;section level4&#34;&gt;
 &lt;h4&gt;base&lt;/h4&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;DF1 &amp;lt;- transform(DF1, valA = rep(tapply(valA, code, function(x) diff(range(x))), table(code)))
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;DF1 &amp;lt;- transform(DF1, valA = rep(tapply(valA, code, function(x) diff(range(x)))[code]))
 DF1&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;##   id code valA valB valC
-## 1  1    c    3   11  120
-## 2  1    b    3   11  117
-## 3  1    c    3   13  160
-## 4  1    c    5   14  180
-## 5  2    a    5   14  171
-## 6  2    a    8   15  189
-## 7  1    b    8   16  207
-## 8  2    a    8   17  225
+## 1  1    c    8   11  120
+## 2  1    b    5   11  117
+## 3  1    c    8   13  160
+## 4  1    c    8   14  180
+## 5  2    a    3   14  171
+## 6  2    a    3   15  189
+## 7  1    b    5   16  207
+## 8  2    a    3   17  225
 ## 9  1    c    8   19  280&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div id=&#34;dplyr-7&#34; class=&#34;section level4&#34;&gt;
@@ -368,76 +368,223 @@ DT1&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;em&gt;Create a new col named valD with max(valB)-min(valA) grouped by code&lt;/em&gt;&lt;/p&gt;
 &lt;div id=&#34;base-4&#34; class=&#34;section level4&#34;&gt;
 &lt;h4&gt;base&lt;/h4&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;DF1 &amp;lt;- transform(DF1, valD = rep(
-  by(DF1[, c(&amp;quot;valA&amp;quot;, &amp;quot;valB&amp;quot;)], code, function(x) diff(range(x))), table(code))
-)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;DF1 &amp;lt;- transform(DF1, valD = by(DF1, code, function(x) max(x$valB) - min(x$valA))[code])
+DF1&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##   id code valA valB valC valD
+## 1  1    c    8   11  120   11
+## 2  1    b    5   11  117   11
+## 3  1    c    8   13  160   11
+## 4  1    c    8   14  180   11
+## 5  2    a    3   14  171   14
+## 6  2    a    3   15  189   14
+## 7  1    b    5   16  207   11
+## 8  2    a    3   17  225   14
+## 9  1    c    8   19  280   11&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;dplyr-8&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;dplyr&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;TB1 &amp;lt;- TB1 %&amp;gt;% group_by(code) %&amp;gt;% mutate(valD= max(valB)-min(valA))
+TB1&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 9 x 6
+## # Groups:   code [3]
+##      id  code  valA  valB  valC  valD
+##   &amp;lt;int&amp;gt; &amp;lt;chr&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt;
+## 1     1     c     8    11   120    11
+## 2     1     b     5    11   117    11
+## 3     1     c     8    13   160    11
+## 4     1     c     8    14   180    11
+## 5     2     a     3    14   171    14
+## 6     2     a     3    15   189    14
+## 7     1     b     5    16   207    11
+## 8     2     a     3    17   225    14
+## 9     1     c     8    19   280    11&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;data.table-8&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;data.table&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;DT1[, &amp;quot;valD&amp;quot; := max(valB)-min(valA), by=code] 
+DT1&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##    id code valA valB valC valD
+## 1:  1    c    8   11  120   11
+## 2:  1    b    5   11  117   11
+## 3:  1    c    8   13  160   11
+## 4:  1    c    8   14  180   11
+## 5:  2    a    3   14  171   14
+## 6:  2    a    3   15  189   14
+## 7:  1    b    5   16  207   11
+## 8:  2    a    3   17  225   14
+## 9:  1    c    8   19  280   11&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div id=&#34;question-10&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Question 10&lt;/h3&gt;
-&lt;p&gt;&lt;em&gt;Subset DF1 by DF2 on id,code column. That is, for each row of DF2&lt;span class=&#34;math inline&#34;&gt;\(id, DF2\)&lt;/span&gt;code, get valA and valB cols from DF1. Include rows that have no matches as well.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Subset DF1 by DF2 on id,code column. That is, for each row of DF2$id, DF2$code, get valA and valB cols from DF1. Include rows that have no matches as well.&lt;/em&gt;&lt;/p&gt;
 &lt;div id=&#34;base-5&#34; class=&#34;section level4&#34;&gt;
 &lt;h4&gt;base&lt;/h4&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;merge(DF1, DF2[, c(&amp;quot;id&amp;quot;, &amp;quot;code&amp;quot;)], by = c(&amp;quot;id&amp;quot;, &amp;quot;code&amp;quot;), all.y=TRUE)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;##   id code valA valB valC valD
 ## 1  1    a   NA   NA   NA   NA
-## 2  1    c    3   11  120   12
-## 3  1    c    3   13  160   12
-## 4  1    c    5   14  180   13
-## 5  1    c    8   19  280   16
+## 2  1    c    8   11  120   11
+## 3  1    c    8   13  160   11
+## 4  1    c    8   14  180   11
+## 5  1    c    8   19  280   11
 ## 6  2    c   NA   NA   NA   NA
 ## 7  3    b   NA   NA   NA   NA
 ## 8  3    d   NA   NA   NA   NA&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
+&lt;div id=&#34;dplyr-9&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;dplyr&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;right_join(TB1, TB2 %&amp;gt;% select(id, code), by = c(&amp;quot;id&amp;quot;, &amp;quot;code&amp;quot;)) &lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 8 x 6
+## # Groups:   code [?]
+##      id  code  valA  valB  valC  valD
+##   &amp;lt;int&amp;gt; &amp;lt;chr&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt;
+## 1     3     b    NA    NA    NA    NA
+## 2     1     a    NA    NA    NA    NA
+## 3     1     c     8    11   120    11
+## 4     1     c     8    13   160    11
+## 5     1     c     8    14   180    11
+## 6     1     c     8    19   280    11
+## 7     2     c    NA    NA    NA    NA
+## 8     3     d    NA    NA    NA    NA&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;## inner_join to keep only rows present in tibbles, left_join to keep all rows from TB1
+## anti_join to keep only rows from TB1 with no matching rows in TB2&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;data.table-9&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;data.table&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;merge(DT1, DT2[ , .(id, code)], all.y = TRUE)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##    id code valA valB valC valD
+## 1:  1    a   NA   NA   NA   NA
+## 2:  1    c    8   11  120   11
+## 3:  1    c    8   13  160   11
+## 4:  1    c    8   14  180   11
+## 5:  1    c    8   19  280   11
+## 6:  2    c   NA   NA   NA   NA
+## 7:  3    b   NA   NA   NA   NA
+## 8:  3    d   NA   NA   NA   NA&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;div id=&#34;question-11&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Question 11&lt;/h3&gt;
-&lt;p&gt;&lt;em&gt;Same as (10), but fetch just the first matching row of DF1 for each row of DF2&lt;span class=&#34;math inline&#34;&gt;\(id, DF2\)&lt;/span&gt;code. Exclude non-matching rows.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Same as (10), but fetch just the first matching row of DF1 for each row of DF2$id, DF2$code. Exclude non-matching rows.&lt;/em&gt;&lt;/p&gt;
 &lt;div id=&#34;base-6&#34; class=&#34;section level4&#34;&gt;
 &lt;h4&gt;base&lt;/h4&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;merge(DF1[!duplicated(DF1[, c(&amp;quot;id&amp;quot;, &amp;quot;code&amp;quot;)]), ],
-      DF2[, c(&amp;quot;id&amp;quot;, &amp;quot;code&amp;quot;)], by = c(&amp;quot;id&amp;quot;, &amp;quot;code&amp;quot;), all.y=TRUE)&lt;/code&gt;&lt;/pre&gt;
+      DF2[, c(&amp;quot;id&amp;quot;, &amp;quot;code&amp;quot;)], by = c(&amp;quot;id&amp;quot;, &amp;quot;code&amp;quot;))&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;##   id code valA valB valC valD
-## 1  1    a   NA   NA   NA   NA
-## 2  1    c    3   11  120   12
-## 3  2    c   NA   NA   NA   NA
-## 4  3    b   NA   NA   NA   NA
-## 5  3    d   NA   NA   NA   NA&lt;/code&gt;&lt;/pre&gt;
+## 1  1    c    8   11  120   11&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;dplyr-10&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;dplyr&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;TB1 %&amp;gt;% group_by(id, code) %&amp;gt;% slice(1) %&amp;gt;% ## first entry in each (id, code) group
+  inner_join(select(TB2, id, code), by = c(&amp;quot;id&amp;quot;, &amp;quot;code&amp;quot;))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 1 x 6
+## # Groups:   id, code [?]
+##      id  code  valA  valB  valC  valD
+##   &amp;lt;int&amp;gt; &amp;lt;chr&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt;
+## 1     1     c     8    11   120    11&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;data.table-10&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;data.table&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;merge(DT1[, .SD[1], by = list(id, code)], ## first entry in each (id, code) group
+      DT2[ , .(id, code)])&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##    id code valA valB valC valD
+## 1:  1    c    8   11  120   11&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div id=&#34;question-12&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Question 12&lt;/h3&gt;
-&lt;p&gt;_For every row of DF2&lt;span class=&#34;math inline&#34;&gt;\(id, DF2\)&lt;/span&gt;code that matches with DF1’s, update valA with valA*mul._&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;For every row of DF2$id, DF2$code that matches with DF1’s, update valA with valA*mul.&lt;/em&gt;&lt;/p&gt;
 &lt;div id=&#34;base-7&#34; class=&#34;section level4&#34;&gt;
 &lt;h4&gt;base&lt;/h4&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;transform(merge(DF1, DF2, by = c(&amp;quot;id&amp;quot;, &amp;quot;code&amp;quot;), all.y=TRUE), valA = valA * mul)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;##   id code valA valB valC valD mul
 ## 1  1    a   NA   NA   NA   NA   4
-## 2  1    c    9   11  120   12   3
-## 3  1    c    9   13  160   12   3
-## 4  1    c   15   14  180   13   3
-## 5  1    c   24   19  280   16   3
+## 2  1    c   24   11  120   11   3
+## 3  1    c   24   13  160   11   3
+## 4  1    c   24   14  180   11   3
+## 5  1    c   24   19  280   11   3
 ## 6  2    c   NA   NA   NA   NA   2
 ## 7  3    b   NA   NA   NA   NA   5
 ## 8  3    d   NA   NA   NA   NA   1&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
+&lt;div id=&#34;dplyr-11&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;dplyr&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;right_join(TB1, TB2, by = c(&amp;quot;id&amp;quot;, &amp;quot;code&amp;quot;)) %&amp;gt;% mutate(valA = valA * mul)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 8 x 7
+## # Groups:   code [4]
+##      id  code  valA  valB  valC  valD   mul
+##   &amp;lt;int&amp;gt; &amp;lt;chr&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;int&amp;gt;
+## 1     3     b    NA    NA    NA    NA     5
+## 2     1     a    NA    NA    NA    NA     4
+## 3     1     c    24    11   120    11     3
+## 4     1     c    24    13   160    11     3
+## 5     1     c    24    14   180    11     3
+## 6     1     c    24    19   280    11     3
+## 7     2     c    NA    NA    NA    NA     2
+## 8     3     d    NA    NA    NA    NA     1&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;data.table-11&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;data.table&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;DT3 &amp;lt;- merge(DT1, DT2, all.y = TRUE)[ , &amp;quot;valA&amp;quot; := valA * mul]
+show(DT3) ## je ne comprends pas pourquoi il faut utiliser show pour l&amp;#39;affichage&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##    id code valA valB valC valD mul
+## 1:  1    a   NA   NA   NA   NA   4
+## 2:  1    c   24   11  120   11   3
+## 3:  1    c   24   13  160   11   3
+## 4:  1    c   24   14  180   11   3
+## 5:  1    c   24   19  280   11   3
+## 6:  2    c   NA   NA   NA   NA   2
+## 7:  3    b   NA   NA   NA   NA   5
+## 8:  3    d   NA   NA   NA   NA   1&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 &lt;div id=&#34;question-13&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Question 13&lt;/h3&gt;
-&lt;p&gt;&lt;em&gt;Add a new column val to DF1 with values from DF2&lt;span class=&#34;math inline&#34;&gt;\(mul where DF2\)&lt;/span&gt;id, DF2$code matches with DF1’s. Rows that don’t match should have NA.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Add a new column val to DF1 with values from DF2$mul where DF2$id, DF2$code matches with DF1’s. Rows that don’t match should have NA.&lt;/em&gt;&lt;/p&gt;
 &lt;div id=&#34;base-8&#34; class=&#34;section level4&#34;&gt;
 &lt;h4&gt;base&lt;/h4&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;transform(merge(DF1, DF2, by = c(&amp;quot;id&amp;quot;, &amp;quot;code&amp;quot;), all.x = TRUE, sort = FALSE), mul = mul)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;##   id code valA valB valC valD mul
-## 1  1    c    3   11  120   12   3
-## 2  1    c    3   13  160   12   3
-## 3  1    c    5   14  180   13   3
-## 4  1    c    8   19  280   16   3
-## 5  2    a    5   14  171   13  NA
-## 6  1    b    3   11  117   12  NA
-## 7  1    b    8   16  207   16  NA
-## 8  2    a    8   17  225   16  NA
-## 9  2    a    8   15  189   16  NA&lt;/code&gt;&lt;/pre&gt;
+## 1  1    c    8   11  120   11   3
+## 2  1    c    8   13  160   11   3
+## 3  1    c    8   14  180   11   3
+## 4  1    c    8   19  280   11   3
+## 5  2    a    3   14  171   14  NA
+## 6  1    b    5   11  117   11  NA
+## 7  1    b    5   16  207   11  NA
+## 8  2    a    3   17  225   14  NA
+## 9  2    a    3   15  189   14  NA&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;dplyr-12&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;dplyr&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;left_join(TB1, TB2, by = c(&amp;quot;id&amp;quot;, &amp;quot;code&amp;quot;))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 9 x 7
+## # Groups:   code [?]
+##      id  code  valA  valB  valC  valD   mul
+##   &amp;lt;int&amp;gt; &amp;lt;chr&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;int&amp;gt;
+## 1     1     c     8    11   120    11     3
+## 2     1     b     5    11   117    11    NA
+## 3     1     c     8    13   160    11     3
+## 4     1     c     8    14   180    11     3
+## 5     2     a     3    14   171    14    NA
+## 6     2     a     3    15   189    14    NA
+## 7     1     b     5    16   207    11    NA
+## 8     2     a     3    17   225    14    NA
+## 9     1     c     8    19   280    11     3&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;data.table-12&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;data.table&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;merge(DT1, DT2, all.x = TRUE)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##    id code valA valB valC valD mul
+## 1:  1    b    5   11  117   11  NA
+## 2:  1    b    5   16  207   11  NA
+## 3:  1    c    8   11  120   11   3
+## 4:  1    c    8   13  160   11   3
+## 5:  1    c    8   14  180   11   3
+## 6:  1    c    8   19  280   11   3
+## 7:  2    a    3   14  171   14  NA
+## 8:  2    a    3   15  189   14  NA
+## 9:  2    a    3   17  225   14  NA&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 </description>
