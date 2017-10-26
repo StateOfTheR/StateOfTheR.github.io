@@ -6,6 +6,15 @@
     <url>
     
       <loc>/post/learnr/</loc>
+      <lastmod>2017-10-23T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/post/learnr/</loc>
       <lastmod>2017-09-25T00:00:00+00:00</lastmod>
     </url>
     
@@ -78,6 +87,26 @@
     
     <url>
     
+      <loc>/tags/data.table/</loc>
+      <lastmod>2017-10-23T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/tags/dplyr/</loc>
+      <lastmod>2017-10-23T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/tags/help/</loc>
       <lastmod>2016-04-19T00:00:00+02:00</lastmod>
       <priority>0</priority>
@@ -119,7 +148,7 @@
     <url>
     
       <loc>/tags/package/</loc>
-      <lastmod>2017-09-25T00:00:00+00:00</lastmod>
+      <lastmod>2017-10-23T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -139,7 +168,7 @@
     <url>
     
       <loc>/categories/r/</loc>
-      <lastmod>2017-09-25T00:00:00+00:00</lastmod>
+      <lastmod>2017-10-23T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -188,8 +217,18 @@
     
     <url>
     
+      <loc>/tags/tidy/</loc>
+      <lastmod>2017-10-23T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/tags/workshop/</loc>
-      <lastmod>2017-09-25T00:00:00+00:00</lastmod>
+      <lastmod>2017-10-23T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     

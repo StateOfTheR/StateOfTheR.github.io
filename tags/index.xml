@@ -20,6 +20,24 @@
     </item>
     
     <item>
+      <title>Data.table</title>
+      <link>/tags/data.table/</link>
+      <pubDate>Mon, 23 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/data.table/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dplyr</title>
+      <link>/tags/dplyr/</link>
+      <pubDate>Mon, 23 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/dplyr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Help</title>
       <link>/tags/help/</link>
       <pubDate>Tue, 19 Apr 2016 00:00:00 +0200</pubDate>
@@ -49,7 +67,7 @@
     <item>
       <title>Package</title>
       <link>/tags/package/</link>
-      <pubDate>Mon, 25 Sep 2017 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 23 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>/tags/package/</guid>
       <description></description>
@@ -83,9 +101,18 @@
     </item>
     
     <item>
+      <title>Tidy</title>
+      <link>/tags/tidy/</link>
+      <pubDate>Mon, 23 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/tidy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Workshop</title>
       <link>/tags/workshop/</link>
-      <pubDate>Mon, 25 Sep 2017 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 23 Oct 2017 00:00:00 +0000</pubDate>
       
       <guid>/tags/workshop/</guid>
       <description></description>
