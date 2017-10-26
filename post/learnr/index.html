@@ -43,7 +43,7 @@
 
   
 
-  <title>Exercices autour de data.table | State of The R</title>
+  <title>Atelier découverte LearnR | State of The R</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
@@ -156,15 +156,15 @@
 
 
   <div class="article-container">
-    <h1 itemprop="name">Exercices autour de data.table</h1>
+    <h1 itemprop="name">Atelier découverte LearnR</h1>
     
 
 <div class="article-metadata">
 
   <span class="article-date">
     
-    <time datetime="2017-10-23 00:00:00 &#43;0000 UTC" itemprop="datePublished">
-      Oct 23, 2017
+    <time datetime="2017-09-25 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+      Sep 25, 2017
     </time>
   </span>
 
@@ -193,13 +193,7 @@
     <a href="/tags/package">package</a
     >, 
     
-    <a href="/tags/tidy">tidy</a
-    >, 
-    
-    <a href="/tags/data.table">data.table</a
-    >, 
-    
-    <a href="/tags/dplyr">dplyr</a
+    <a href="/tags/teachings">teachings</a
     >
     
   </span>
@@ -212,7 +206,7 @@
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Exercices%20autour%20de%20data.table&amp;url=%2fpost%2flearnr%2f"
+         href="https://twitter.com/intent/tweet?text=Atelier%20d%c3%a9couverte%20LearnR&amp;url=%2fpost%2flearnr%2f"
          target="_blank">
         <i class="fa fa-twitter"></i>
       </a>
@@ -226,21 +220,21 @@
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2fpost%2flearnr%2f&amp;title=Exercices%20autour%20de%20data.table"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2fpost%2flearnr%2f&amp;title=Atelier%20d%c3%a9couverte%20LearnR"
          target="_blank">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=%2fpost%2flearnr%2f&amp;title=Exercices%20autour%20de%20data.table"
+         href="http://service.weibo.com/share/share.php?url=%2fpost%2flearnr%2f&amp;title=Atelier%20d%c3%a9couverte%20LearnR"
          target="_blank">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=Exercices%20autour%20de%20data.table&amp;body=%2fpost%2flearnr%2f">
+         href="mailto:?subject=Atelier%20d%c3%a9couverte%20LearnR&amp;body=%2fpost%2flearnr%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -253,429 +247,48 @@
 </div>
 
     <div class="article-style" itemprop="articleBody">
-      <p>L’atelier du jour avait pour objectif la découvert du package <a href="https://cran.r-project.org/web/packages/data.table/index.html">data.table</a> au travers d’<a href="https://user2017.sched.com/event/Aw0L/datatable-for-beginners">exercises proposés lors de la dernière édition de UseR</a>. Les slides avec les énoncés sont <a href="https://www.google.fr/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;cad=rja&amp;uact=8&amp;ved=0ahUKEwiZv7DE6I3XAhWCuBoKHcN5CREQFggrMAA&amp;url=https%3A%2F%2Fchannel9.msdn.com%2FEvents%2FuseR-international-R-User-conferences%2FuseR-International-R-User-2017-Conference%2Fdatatable-for-beginners&amp;usg=AOvVaw3N-q_5oW0-yMm8uz9hVisu">disponibles ici</a>.</p>
-<p>L’apport de notre atelier est d’avoir systématiquement essayé de traiter les questions avec - les fonctionalités <code>R</code> de <em>base</em> - les fonctionalités offertes par le <em>tidyverse</em> (principalement <em>dplyr</em>) - les fonctionnalités du package <em>data.table</em></p>
-<p>Pour les animateurs : vous êtes libre de compléter le post de blog. Nous ajouteroins des comparatifs en terme de temps de calcul plus tard (peut-être).</p>
-<div id="preliminaires" class="section level3">
-<h3>Préliminaires</h3>
-<p>C’est parti, on charge oles packages requis</p>
-<pre class="r"><code>library(data.table)
-library(tidyverse)</code></pre>
-<p>Les exercices seront traités à l’aide de deux tables jouets, dont on propose des contreparties en - object <code>data.frame</code> - object <code>tibble</code> - object <code>data.table</code></p>
-<pre class="r"><code>set.seed(20170703L)
-DF1 = data.frame(id = sample(1:2, 9L, TRUE), 
-                 code = sample(letters[1:3], 9, TRUE), 
-                 valA = 1:9, valB = 10:18, 
-                 stringsAsFactors = FALSE)
-DF2 = data.frame(id = c(3L, 1L, 1L, 2L, 3L), 
-                 code = c(&quot;b&quot;, &quot;a&quot;, &quot;c&quot;, &quot;c&quot;, &quot;d&quot;), 
-                 mul = 5:1, stringsAsFactors = FALSE)
-## corresponding data tibble
-TB1 &lt;- as.tibble(DF1)
-TB2 &lt;- as.tibble(DF2)
-## corresponding data tables
-DT1 &lt;- as.data.table(DF1)
-DT2 &lt;- as.data.table(DF2)</code></pre>
+      <!-- ## courriel -->
+<!-- Pour learnR je dirai que c’est un outil intéressant pour réaliser des TP structurés selon une trame précise et pour lesquels on souhaite modifier les données. -->
+<!-- Par contre, il me faudrait plus de temps pour voir comment exporter/sauvegarder les codes et sorties R dans un fichier (.R par exemple). -->
+<!-- ### Jessica -->
+<!-- avec Marie qui était sansordi, nous avons regardé le tuto de learnR et en particulier les différentes fonctionnalités qui pourraient permettre de récupérer les réponses des étudiants... On a conclu que c'était plus du Shiny que du learnR. -->
+<!-- On a vu les options -->
+<!-- 3- sur la fonction `quiz( )`, on a cherché à ne pas faire apparaître de réponse et on a été surprises de voir qu'en recompilant on voit encore ce qu'on a répondu avant... -->
+<!-- Bref, ça n'a pas été très productif selon moi (même si ma machine a bien voulu faire ce que je demandais !) et ça a donné l'impression qu'on faisait tous un peu la même chose, il faudrait peut être décider en début d'HappyR qui regarde quoi et se mettre en petits groupes pour traiter chacun une question spécifique, disons en 1h et préparer sur place une courte restitution aux autres (ce qui éviterait aussi la compilation de nos différents retours). C'est peut être un peu utopique de se dire que c'est faisable sans que personne n'est déjà regardé plus en détails avant qu'on se retrouve...  -->
+<!-- De mon côté, j'avais regardé rapidement quelles étaient les possibilités de générer des sujets différents et j'ai trouvé un exemple de publipostage "Mail merge" qui peut permettre  de faire cela (au moins si 'l'on souhaite juste générer N sujets au format PDF par exemple - ensuite il faut combiner avec du learnR et du Shiny si on veut aller jusqu'à récupérer les réponses pour une notation d'évaluation automatisée), cf pour ceux qui ça intéresse https://www.r-bloggers.com/mail-merge-with-rmarkdown/. -->
+<!-- bonne compil' et merci de t'en charger -->
+<!-- Jessica TRESSOU -->
+<!-- ### Isabelle -->
+<!-- Impressions sur learnR : outil sympathique quand on veut poser des questions via une interface WEB à des personnes. Mais se pose crucialement la question comment récupérer les réponses. -->
+<!-- Merci pour cette initiative de StateoftheR qui va peut-être me permettre de pas trop perdre la main ou plutôt de raccrocher. Par contre, je ne pourrais pas être là le 20/10. Désolée. Réunion experts Anses oblige. -->
+<!-- ### Maud -->
+<!-- - le package produit des supports plus adaptés à des interventions de type tutoriel ou des auto-évaluations -->
+<!-- - inconvénients liés à l'indépendance des chunks; nécessite d'ajouter des lignes de code dans le setup ou de faire des liens entre chunks (mais comment?) -->
+<div id="vue-densemble" class="section level3">
+<h3>Vue d’ensemble</h3>
+<p>Le package <code>learnr</code> permet de créer des tutoriels (voir le <a href="https://rstudio.github.io/learnr/">site dédié</a> ou <a href="https://blog.rstudio.com/2017/07/11/introducing-learnr/">le blog de présentation</a>). Les tutoriels incluent du texte, des champs pour taper et exécuter des commandes <code>R</code> (pouvant être pré-formatés) et des questionnaires à choix multiples. Les champs peuvent inclure des indices à afficher pour l’utilisateur ou des solutions. Pour fonctionner, le document créé au format Rmarkdown doit être envoyé sur un serveur shiny. Il est alors nécessaire de créér un compte sur <a href="https://www.shinyapps.io/">shinyapp</a>.</p>
+<p>Avec uniquement le package <code>learnr</code>, il est uniquement possible de vérifier que les réponses données aux questions à choix multiples sont les bonnes. Par contre, il n’est pas possible de vérifier les commandes <code>R</code> tapées ni leur résultat. Un package <a href="https://github.com/dtkaplan/checkr">checkr</a> disponible sur github doit permettre de faire ces vérifications.</p>
 </div>
-<div id="question-1" class="section level3">
-<h3>Question 1</h3>
-<p><em>Subset all rows where id column equals 1 &amp; code column is not equal to “c”</em></p>
-<div id="base" class="section level4">
-<h4>base</h4>
-<pre class="r"><code>base::subset(DF1, id == 1 &amp; code != &quot;c&quot;)</code></pre>
-<pre><code>##   id code valA valB
-## 2  1    b    2   11
-## 7  1    b    7   16</code></pre>
-<pre class="r"><code>with(DF1, DF1[id == 1 &amp; code != &quot;c&quot;,])</code></pre>
-<pre><code>##   id code valA valB
-## 2  1    b    2   11
-## 7  1    b    7   16</code></pre>
+<div id="limitations" class="section level3">
+<h3>Limitations</h3>
+<p>Des essais menés, il a été conclu que <code>learnr</code> est un package intéressant mais qui ne permettra pas forcément de faire un TP complet de statistique sous R. Toutefois, il peut être employé pour :</p>
+<ul>
+<li><p>présenter certaines fonctions centrales en R en détaillant les différentes options et fournir des exemples à des étudiants en TP,</p></li>
+<li><p>faire une vignette d’un package développé sous R,</p></li>
+<li><p>proposer des auto-évaluations pour les étudiants.</p></li>
+</ul>
+<p>Nous nous sommes heurtés à certaines limites :</p>
+<ul>
+<li><p>il n’est pas possible de récupérer les commandes tapées dans les champs <code>R</code> par l’utilisateur ni les résultats correspondants. Ainsi un étudiant n’aura aucune trace de son travail si cet outil est employé pour le faire travailler en TP.</p></li>
+<li><p>il n’est pas possible de récupérer les commandes tapées dans les champs <code>R</code> ni les réponses aux questions à choix multiples afin de les centraliser et de s’en servir à des fins d’évaluations.</p></li>
+<li><p>les “chunks” (environnement permettant de créer des champs <code>R</code>) sont indépendants les uns des autres donc il est difficile de construire une progressivité dans un travail avec <code>learnr</code>. On peut définir au début dans un chunk <code>setup</code>, un environnement général qui sera commun à tous les champs <code>R</code>. On peut également pour chaque chunk ajouter un chunk du même nom auquel on ajoute <code>-setup</code> pour définir un environnement propre au champ correspondant.</p></li>
+<li><p>le document <code>learnr</code> étant hébergé sur un serveur, l’importation des données ne peut pas être présentée de manière classique en local. Les données doivent être chargées à partir d’une adresse web.</p></li>
+</ul>
 </div>
-<div id="dplyr" class="section level4">
-<h4>dplyr</h4>
-<pre class="r"><code>filter(TB1, id == 1 &amp; code != &quot;c&quot;)</code></pre>
-<pre><code>## # A tibble: 2 x 4
-##      id  code  valA  valB
-##   &lt;int&gt; &lt;chr&gt; &lt;int&gt; &lt;int&gt;
-## 1     1     b     2    11
-## 2     1     b     7    16</code></pre>
-</div>
-<div id="data.table" class="section level4">
-<h4>data.table</h4>
-<pre class="r"><code>DT1[id == 1 &amp; code != &quot;c&quot;] </code></pre>
-<pre><code>##    id code valA valB
-## 1:  1    b    2   11
-## 2:  1    b    7   16</code></pre>
-</div>
-</div>
-<div id="question-2" class="section level3">
-<h3>Question 2</h3>
-<p><em>Select valA and valB columns from DF1</em></p>
-<div id="base-r" class="section level4">
-<h4>base R</h4>
-<pre class="r"><code>DF1[, c(&quot;valA&quot;, &quot;valB&quot;)]</code></pre>
-<pre><code>##   valA valB
-## 1    1   10
-## 2    2   11
-## 3    3   12
-## 4    4   13
-## 5    5   14
-## 6    6   15
-## 7    7   16
-## 8    8   17
-## 9    9   18</code></pre>
-</div>
-<div id="dplyr-1" class="section level4">
-<h4>dplyr</h4>
-<pre class="r"><code>select(TB1, valA, valB)</code></pre>
-<pre><code>## # A tibble: 9 x 2
-##    valA  valB
-##   &lt;int&gt; &lt;int&gt;
-## 1     1    10
-## 2     2    11
-## 3     3    12
-## 4     4    13
-## 5     5    14
-## 6     6    15
-## 7     7    16
-## 8     8    17
-## 9     9    18</code></pre>
-</div>
-<div id="data.table-1" class="section level4">
-<h4>data.table</h4>
-<pre class="r"><code>DT1[ , .(valA,valB)]</code></pre>
-<pre><code>##    valA valB
-## 1:    1   10
-## 2:    2   11
-## 3:    3   12
-## 4:    4   13
-## 5:    5   14
-## 6:    6   15
-## 7:    7   16
-## 8:    8   17
-## 9:    9   18</code></pre>
-</div>
-</div>
-<div id="question-3" class="section level3">
-<h3>Question 3</h3>
-<p><em>Get sum(valA) and sum(valB) for id &gt; 1 as a 1-row, 2-col data.frame</em></p>
-<div id="base-r-1" class="section level4">
-<h4>base R</h4>
-<pre class="r"><code>colSums(DF1[ DF1$id &gt; 1, c(&quot;valA&quot;, &quot;valB&quot;)])</code></pre>
-<pre><code>## valA valB 
-##   19   46</code></pre>
-</div>
-<div id="dplyr-2" class="section level4">
-<h4>dplyr</h4>
-<pre class="r"><code>TB1 %&gt;% filter(id &gt; 1) %&gt;% select(valA, valB) %&gt;% summarise_all(sum)</code></pre>
-<pre><code>## # A tibble: 1 x 2
-##    valA  valB
-##   &lt;int&gt; &lt;int&gt;
-## 1    19    46</code></pre>
-</div>
-<div id="data.table-2" class="section level4">
-<h4>data.table</h4>
-<pre class="r"><code>DT1[id &gt; 1, .(sum(valA), sum(valB))]</code></pre>
-<pre><code>##    V1 V2
-## 1: 19 46</code></pre>
-</div>
-</div>
-<div id="question-4" class="section level3">
-<h3>Question 4</h3>
-<p><em>Replace valB with valB+1 for all rows where code == “c”</em></p>
-<div id="base-r-2" class="section level4">
-<h4>base R</h4>
-<pre class="r"><code>DF1$valB[DF1$code==&quot;c&quot;] = DF1$valB[DF1$code==&quot;c&quot;] + 1
-DF1</code></pre>
-<pre><code>##   id code valA valB
-## 1  1    c    1   11
-## 2  1    b    2   11
-## 3  1    c    3   13
-## 4  1    c    4   14
-## 5  2    a    5   14
-## 6  2    a    6   15
-## 7  1    b    7   16
-## 8  2    a    8   17
-## 9  1    c    9   19</code></pre>
-</div>
-<div id="dplyr-3" class="section level4">
-<h4>dplyr</h4>
-<pre class="r"><code>TB1 &lt;- TB1 %&gt;% mutate(valB = ifelse(code == &quot;c&quot;, valB + 1,valB))
-## TB1[TB1$code==&quot;c&quot;, ] &lt;- filter(TB1, code==&quot;c&quot;) %&gt;% mutate(valB= valB+1) # alternative solution
-TB1</code></pre>
-<pre><code>## # A tibble: 9 x 4
-##      id  code  valA  valB
-##   &lt;int&gt; &lt;chr&gt; &lt;int&gt; &lt;dbl&gt;
-## 1     1     c     1    11
-## 2     1     b     2    11
-## 3     1     c     3    13
-## 4     1     c     4    14
-## 5     2     a     5    14
-## 6     2     a     6    15
-## 7     1     b     7    16
-## 8     2     a     8    17
-## 9     1     c     9    19</code></pre>
-</div>
-<div id="data.table-3" class="section level4">
-<h4>data.table</h4>
-<pre class="r"><code>DT1[code == &quot;c&quot;, valB := valB + 1L]
-DT1</code></pre>
-<pre><code>##    id code valA valB
-## 1:  1    c    1   11
-## 2:  1    b    2   11
-## 3:  1    c    3   13
-## 4:  1    c    4   14
-## 5:  2    a    5   14
-## 6:  2    a    6   15
-## 7:  1    b    7   16
-## 8:  2    a    8   17
-## 9:  1    c    9   19</code></pre>
-</div>
-</div>
-<div id="question-5" class="section level3">
-<h3>Question 5</h3>
-<p><em>Add a new column valC column with values equal to valB^2 - valA^2</em></p>
-<div id="base-r-3" class="section level4">
-<h4>base R</h4>
-<pre class="r"><code>DF1 &lt;- transform(DF1, valC = valB^2 - valA^2)
-## DF1$valC &lt;- DF1$valB^2 - DF1$valA^2 # alternate solution
-DF1</code></pre>
-<pre><code>##   id code valA valB valC
-## 1  1    c    1   11  120
-## 2  1    b    2   11  117
-## 3  1    c    3   13  160
-## 4  1    c    4   14  180
-## 5  2    a    5   14  171
-## 6  2    a    6   15  189
-## 7  1    b    7   16  207
-## 8  2    a    8   17  225
-## 9  1    c    9   19  280</code></pre>
-</div>
-<div id="dplyr-4" class="section level4">
-<h4>dplyr</h4>
-<pre class="r"><code>TB1 &lt;- mutate(TB1, valC = valB^2 - valA^2)
-TB1</code></pre>
-<pre><code>## # A tibble: 9 x 5
-##      id  code  valA  valB  valC
-##   &lt;int&gt; &lt;chr&gt; &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt;
-## 1     1     c     1    11   120
-## 2     1     b     2    11   117
-## 3     1     c     3    13   160
-## 4     1     c     4    14   180
-## 5     2     a     5    14   171
-## 6     2     a     6    15   189
-## 7     1     b     7    16   207
-## 8     2     a     8    17   225
-## 9     1     c     9    19   280</code></pre>
-</div>
-<div id="data.table-4" class="section level4">
-<h4>data.table</h4>
-<pre class="r"><code>DT1[, valC := valB^2 - valA^2]
-DT1</code></pre>
-<pre><code>##    id code valA valB valC
-## 1:  1    c    1   11  120
-## 2:  1    b    2   11  117
-## 3:  1    c    3   13  160
-## 4:  1    c    4   14  180
-## 5:  2    a    5   14  171
-## 6:  2    a    6   15  189
-## 7:  1    b    7   16  207
-## 8:  2    a    8   17  225
-## 9:  1    c    9   19  280</code></pre>
-</div>
-</div>
-<div id="question-6" class="section level3">
-<h3>Question 6</h3>
-<p><em>Get sum(valA) and sum(valB) grouped by id and code (i.e., for each unique combination of id,code)</em></p>
-<div id="base-1" class="section level4">
-<h4>base</h4>
-<pre class="r"><code>aggregate(.~ id + code, DF1, sum)</code></pre>
-<pre><code>##   id code valA valB valC
-## 1  2    a   19   46  585
-## 2  1    b    9   27  324
-## 3  1    c   17   57  740</code></pre>
-<pre class="r"><code>aggregate(DF1[, c(&quot;valA&quot;, &quot;valB&quot;)], list(DF1$id, DF1$code), sum)</code></pre>
-<pre><code>##   Group.1 Group.2 valA valB
-## 1       2       a   19   46
-## 2       1       b    9   27
-## 3       1       c   17   57</code></pre>
-</div>
-<div id="dplyr-5" class="section level4">
-<h4>dplyr</h4>
-<pre class="r"><code>TB1 %&gt;% group_by(id, code) %&gt;% summarise_all(sum)</code></pre>
-<pre><code>## # A tibble: 3 x 5
-## # Groups:   id [?]
-##      id  code  valA  valB  valC
-##   &lt;int&gt; &lt;chr&gt; &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt;
-## 1     1     b     9    27   324
-## 2     1     c    17    57   740
-## 3     2     a    19    46   585</code></pre>
-</div>
-<div id="data.table-5" class="section level4">
-<h4>data.table</h4>
-<pre class="r"><code>DT1[, .(SumA=sum(valA), SumB = sum(valB)), by=list(id,code) ] </code></pre>
-<pre><code>##    id code SumA SumB
-## 1:  1    c   17   57
-## 2:  1    b    9   27
-## 3:  2    a   19   46</code></pre>
-</div>
-</div>
-<div id="question-7" class="section level3">
-<h3>Question 7</h3>
-<p><em>Get sum(valA) and sum(valB) grouped by id for id &gt;= 2 &amp; code %in% c(“a”, “c”)</em></p>
-<div id="base-2" class="section level4">
-<h4>base</h4>
-<pre class="r"><code>aggregate(.~ id , subset(DF1, id &gt;=2 &amp; code %in% c(&quot;a&quot;,&quot;c&quot;), -code), sum)</code></pre>
-<pre><code>##   id valA valB valC
-## 1  2   19   46  585</code></pre>
-</div>
-<div id="dplyr-6" class="section level4">
-<h4>dplyr</h4>
-<pre class="r"><code>TB1 %&gt;% 
-  group_by(id) %&gt;% 
-  filter(id &gt;=2, code %in% c(&quot;a&quot;, &quot;c&quot;)) %&gt;% 
-  select(-code) %&gt;% 
-  summarise_all(sum)</code></pre>
-<pre><code>## # A tibble: 1 x 4
-##      id  valA  valB  valC
-##   &lt;int&gt; &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt;
-## 1     2    19    46   585</code></pre>
-</div>
-<div id="data.table-6" class="section level4">
-<h4>data.table</h4>
-<pre class="r"><code>DT1[ (id&gt;=2) &amp; code %in% c(&quot;a&quot;, &quot;c&quot;) , .(SumA=sum(valA), SumB = sum(valB)), by=id ] </code></pre>
-<pre><code>##    id SumA SumB
-## 1:  2   19   46</code></pre>
-</div>
-</div>
-<div id="question-8" class="section level3">
-<h3>Question 8</h3>
-<p><em>Replace valA with max(valA)-min(valA) grouped by code</em></p>
-<div id="base-3" class="section level4">
-<h4>base</h4>
-<pre class="r"><code>DF1 &lt;- transform(DF1, valA = rep(tapply(valA, code, function(x) diff(range(x))), table(code)))
-DF1</code></pre>
-<pre><code>##   id code valA valB valC
-## 1  1    c    3   11  120
-## 2  1    b    3   11  117
-## 3  1    c    3   13  160
-## 4  1    c    5   14  180
-## 5  2    a    5   14  171
-## 6  2    a    8   15  189
-## 7  1    b    8   16  207
-## 8  2    a    8   17  225
-## 9  1    c    8   19  280</code></pre>
-</div>
-<div id="dplyr-7" class="section level4">
-<h4>dplyr</h4>
-<pre class="r"><code>TB1 &lt;- TB1 %&gt;% group_by(code) %&gt;% mutate(valA= max(valA)-min(valA))
-TB1</code></pre>
-<pre><code>## # A tibble: 9 x 5
-## # Groups:   code [3]
-##      id  code  valA  valB  valC
-##   &lt;int&gt; &lt;chr&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
-## 1     1     c     8    11   120
-## 2     1     b     5    11   117
-## 3     1     c     8    13   160
-## 4     1     c     8    14   180
-## 5     2     a     3    14   171
-## 6     2     a     3    15   189
-## 7     1     b     5    16   207
-## 8     2     a     3    17   225
-## 9     1     c     8    19   280</code></pre>
-</div>
-<div id="data.table-7" class="section level4">
-<h4>data.table</h4>
-<pre class="r"><code>DT1[, &quot;valA&quot; := max(valA)-min(valA), by=code] 
-DT1</code></pre>
-<pre><code>##    id code valA valB valC
-## 1:  1    c    8   11  120
-## 2:  1    b    5   11  117
-## 3:  1    c    8   13  160
-## 4:  1    c    8   14  180
-## 5:  2    a    3   14  171
-## 6:  2    a    3   15  189
-## 7:  1    b    5   16  207
-## 8:  2    a    3   17  225
-## 9:  1    c    8   19  280</code></pre>
-</div>
-</div>
-<div id="question-9" class="section level3">
-<h3>Question 9</h3>
-<p><em>Create a new col named valD with max(valB)-min(valA) grouped by code</em></p>
-<div id="base-4" class="section level4">
-<h4>base</h4>
-<pre class="r"><code>DF1 &lt;- transform(DF1, valD = rep(
-  by(DF1[, c(&quot;valA&quot;, &quot;valB&quot;)], code, function(x) diff(range(x))), table(code))
-)</code></pre>
-</div>
-</div>
-<div id="question-10" class="section level3">
-<h3>Question 10</h3>
-<p><em>Subset DF1 by DF2 on id,code column. That is, for each row of DF2<span class="math inline">\(id, DF2\)</span>code, get valA and valB cols from DF1. Include rows that have no matches as well.</em></p>
-<div id="base-5" class="section level4">
-<h4>base</h4>
-<pre class="r"><code>merge(DF1, DF2[, c(&quot;id&quot;, &quot;code&quot;)], by = c(&quot;id&quot;, &quot;code&quot;), all.y=TRUE)</code></pre>
-<pre><code>##   id code valA valB valC valD
-## 1  1    a   NA   NA   NA   NA
-## 2  1    c    3   11  120   12
-## 3  1    c    3   13  160   12
-## 4  1    c    5   14  180   13
-## 5  1    c    8   19  280   16
-## 6  2    c   NA   NA   NA   NA
-## 7  3    b   NA   NA   NA   NA
-## 8  3    d   NA   NA   NA   NA</code></pre>
-</div>
-</div>
-<div id="question-11" class="section level3">
-<h3>Question 11</h3>
-<p><em>Same as (10), but fetch just the first matching row of DF1 for each row of DF2<span class="math inline">\(id, DF2\)</span>code. Exclude non-matching rows.</em></p>
-<div id="base-6" class="section level4">
-<h4>base</h4>
-<pre class="r"><code>merge(DF1[!duplicated(DF1[, c(&quot;id&quot;, &quot;code&quot;)]), ],
-      DF2[, c(&quot;id&quot;, &quot;code&quot;)], by = c(&quot;id&quot;, &quot;code&quot;), all.y=TRUE)</code></pre>
-<pre><code>##   id code valA valB valC valD
-## 1  1    a   NA   NA   NA   NA
-## 2  1    c    3   11  120   12
-## 3  2    c   NA   NA   NA   NA
-## 4  3    b   NA   NA   NA   NA
-## 5  3    d   NA   NA   NA   NA</code></pre>
-</div>
-</div>
-<div id="question-12" class="section level3">
-<h3>Question 12</h3>
-<p>_For every row of DF2<span class="math inline">\(id, DF2\)</span>code that matches with DF1’s, update valA with valA*mul._</p>
-<div id="base-7" class="section level4">
-<h4>base</h4>
-<pre class="r"><code>transform(merge(DF1, DF2, by = c(&quot;id&quot;, &quot;code&quot;), all.y=TRUE), valA = valA * mul)</code></pre>
-<pre><code>##   id code valA valB valC valD mul
-## 1  1    a   NA   NA   NA   NA   4
-## 2  1    c    9   11  120   12   3
-## 3  1    c    9   13  160   12   3
-## 4  1    c   15   14  180   13   3
-## 5  1    c   24   19  280   16   3
-## 6  2    c   NA   NA   NA   NA   2
-## 7  3    b   NA   NA   NA   NA   5
-## 8  3    d   NA   NA   NA   NA   1</code></pre>
-</div>
-</div>
-<div id="question-13" class="section level3">
-<h3>Question 13</h3>
-<p><em>Add a new column val to DF1 with values from DF2<span class="math inline">\(mul where DF2\)</span>id, DF2$code matches with DF1’s. Rows that don’t match should have NA.</em></p>
-<div id="base-8" class="section level4">
-<h4>base</h4>
-<pre class="r"><code>transform(merge(DF1, DF2, by = c(&quot;id&quot;, &quot;code&quot;), all.x = TRUE, sort = FALSE), mul = mul)</code></pre>
-<pre><code>##   id code valA valB valC valD mul
-## 1  1    c    3   11  120   12   3
-## 2  1    c    3   13  160   12   3
-## 3  1    c    5   14  180   13   3
-## 4  1    c    8   19  280   16   3
-## 5  2    a    5   14  171   13  NA
-## 6  1    b    3   11  117   12  NA
-## 7  1    b    8   16  207   16  NA
-## 8  2    a    8   17  225   16  NA
-## 9  2    a    8   15  189   16  NA</code></pre>
-</div>
+<div id="quelques-astuces-utiles" class="section level3">
+<h3>Quelques astuces utiles :</h3>
+<p>1- <code>exercise.timelimit = 10</code> permet de limiter le temps de réponses, <code>exercise.lines = 5</code> pour définir le nombre de lignes de console permettant de répondre.</p>
+<p>2- il n’est pas possible de mettre à la fois <code>solution</code> et <code>hint</code>(en créant un nouveau chunk portant le même nom suivi de <code>-hint</code> ou <code>-solution</code> selon le cas ). Si on le fait, la solution devient le <code>next hint</code>. On peut aussi mettre plusieurs <code>hint</code> en ajoutant <code>-1</code>, <code>-2</code> pour les ordonner.</p>
 </div>
 
     </div>
@@ -689,8 +302,6 @@ DT1</code></pre>
   <h3>Related</h3>
   <ul>
     
-    <li><a href="/post/learnr/">Atelier découverte LearnR</a></li>
-    
     <li><a href="/post/roscoff2017/">Finist&#39;R 2017</a></li>
     
   </ul>
@@ -701,10 +312,13 @@ DT1</code></pre>
   <nav>
   <ul class="pager">
     
-    <li class="previous"><a href="/post/learnr/"><span
-      aria-hidden="true">&larr;</span> Atelier découverte LearnR</a></li>
+    <li class="previous"><a href="/post/roscoff2017/"><span
+      aria-hidden="true">&larr;</span> Finist&#39;R 2017</a></li>
     
 
+    
+    <li class="next"><a href="/post/data.table/">Exercices autour de data.table <span
+      aria-hidden="true">&rarr;</span></a></li>
     
   </ul>
 </nav>

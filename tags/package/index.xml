@@ -12,10 +12,10 @@
     
     <item>
       <title>Exercices autour de data.table</title>
-      <link>/post/learnr/</link>
+      <link>/post/data.table/</link>
       <pubDate>Mon, 23 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>/post/learnr/</guid>
+      <guid>/post/data.table/</guid>
       <description>&lt;p&gt;L’atelier du jour avait pour objectif la découvert du package &lt;a href=&#34;https://cran.r-project.org/web/packages/data.table/index.html&#34;&gt;data.table&lt;/a&gt; au travers d’&lt;a href=&#34;https://user2017.sched.com/event/Aw0L/datatable-for-beginners&#34;&gt;exercises proposés lors de la dernière édition de UseR&lt;/a&gt;. Les slides avec les énoncés sont &lt;a href=&#34;https://www.google.fr/url?sa=t&amp;amp;rct=j&amp;amp;q=&amp;amp;esrc=s&amp;amp;source=web&amp;amp;cd=1&amp;amp;cad=rja&amp;amp;uact=8&amp;amp;ved=0ahUKEwiZv7DE6I3XAhWCuBoKHcN5CREQFggrMAA&amp;amp;url=https%3A%2F%2Fchannel9.msdn.com%2FEvents%2FuseR-international-R-User-conferences%2FuseR-International-R-User-2017-Conference%2Fdatatable-for-beginners&amp;amp;usg=AOvVaw3N-q_5oW0-yMm8uz9hVisu&#34;&gt;disponibles ici&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;L’apport de notre atelier est d’avoir systématiquement essayé de traiter les questions avec - les fonctionalités &lt;code&gt;R&lt;/code&gt; de &lt;em&gt;base&lt;/em&gt; - les fonctionalités offertes par le &lt;em&gt;tidyverse&lt;/em&gt; (principalement &lt;em&gt;dplyr&lt;/em&gt;) - les fonctionnalités du package &lt;em&gt;data.table&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Pour les animateurs : vous êtes libre de compléter le post de blog. Nous ajouteroins des comparatifs en terme de temps de calcul plus tard (peut-être).&lt;/p&gt;
