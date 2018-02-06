@@ -5,6 +5,24 @@
     
     <url>
     
+      <loc>/project/github_grp/</loc>
+      <lastmod>2018-02-06T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/talk/2018-04-27-programmation-efficace-en-r-gestion-de-la-m%C3%A9moire/</loc>
+      <lastmod>2018-02-06T00:00:00+01:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/post/data.table/</loc>
       <lastmod>2017-10-23T00:00:00+00:00</lastmod>
     </url>
@@ -32,6 +50,33 @@
     
     <url>
     
+      <loc>/tags/academic/</loc>
+      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/publication/</loc>
+      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/talk/</loc>
+      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/post/</loc>
       <lastmod>2017-01-01T00:00:00+01:00</lastmod>
     </url>
@@ -41,8 +86,8 @@
     
     <url>
     
-      <loc>/post/widgets/</loc>
-      <lastmod>2016-04-19T00:00:00+02:00</lastmod>
+      <loc>/post/getting-started/</loc>
+      <lastmod>2018-01-13T00:00:00+01:00</lastmod>
     </url>
     
   
@@ -50,8 +95,8 @@
     
     <url>
     
-      <loc>/post/managing-content/</loc>
-      <lastmod>2016-04-18T00:00:00+02:00</lastmod>
+      <loc>/publication/person-re-identification/</loc>
+      <lastmod>2015-09-01T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -59,8 +104,8 @@
     
     <url>
     
-      <loc>/post/writing-markdown-latex/</loc>
-      <lastmod>2016-04-17T00:00:00+02:00</lastmod>
+      <loc>/post/2015-07-23-r-rmarkdown/</loc>
+      <lastmod>2015-07-23T21:13:14-05:00</lastmod>
     </url>
     
   
@@ -68,9 +113,8 @@
     
     <url>
     
-      <loc>/tags/academic/</loc>
-      <lastmod>2016-04-19T00:00:00+02:00</lastmod>
-      <priority>0</priority>
+      <loc>/publication/clothing-search/</loc>
+      <lastmod>2013-07-01T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -107,38 +151,8 @@
     
     <url>
     
-      <loc>/tags/help/</loc>
-      <lastmod>2016-04-19T00:00:00+02:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/categories/help/</loc>
-      <lastmod>2016-04-19T00:00:00+02:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/tags/hugo/</loc>
-      <lastmod>2016-04-19T00:00:00+02:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/tags/markdown/</loc>
-      <lastmod>2016-04-17T00:00:00+02:00</lastmod>
+      <loc>/tags/git/</loc>
+      <lastmod>2018-02-06T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -149,6 +163,26 @@
     
       <loc>/tags/package/</loc>
       <lastmod>2017-10-23T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/tags/plot/</loc>
+      <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/project/</loc>
+      <lastmod>2018-02-06T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -177,8 +211,8 @@
     
     <url>
     
-      <loc>/</loc>
-      <lastmod>2017-09-28T00:00:00+00:00</lastmod>
+      <loc>/tags/r-markdown/</loc>
+      <lastmod>2015-07-23T21:13:14-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -187,8 +221,18 @@
     
     <url>
     
-      <loc>/tags/syntax/</loc>
-      <lastmod>2016-04-17T00:00:00+02:00</lastmod>
+      <loc>/tags/regression/</loc>
+      <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/</loc>
+      <lastmod>2017-10-15T00:00:00+02:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -198,7 +242,7 @@
     <url>
     
       <loc>/tags/</loc>
-      <lastmod>2016-04-19T00:00:00+02:00</lastmod>
+      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     

@@ -6,53 +6,101 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="theme" content="hugo-academic">
-  <meta name="generator" content="Hugo 0.29" />
+  <meta name="generator" content="Hugo 0.34" />
   <meta name="author" content="State of the R">
-  <meta name="description" content="Groupe d&#39;utilisateur de R">
 
   
   
   
+  
+    
+      
+    
+  
+  <meta name="description" content="Academic is a framework to help you create a beautiful website quickly. Perfect for personal sites, blogs, or business/project sites. Check out the latest demo of what you&rsquo;ll get in less than 10 minutes. Then head on over to the Quick Start guide or take a look at the Release Notes.
+
+Key features:
+ Easily manage various content including homepage, blog posts, publications, talks, and projects Extensible via color themes and widgets/plugins Write in Markdown for easy formatting and code highlighting, with LaTeX for mathematical expressions Social/academic network linking, Google Analytics, and Disqus comments Responsive and mobile friendly Simple and refreshing one page design Multilingual and easy to customize  Color Themes Academic is available in different color themes and font themes.">
+
+  
+  <link rel="alternate" hreflang="fr-fr" href="/post/getting-started/">
+
+  
+
+
+  
+
+  
+  
+  <meta name="theme-color" content="#3f51b5">
+  
+  
+  
+  
     
   
   
     
     
-    <link rel="stylesheet" href="/css/highlight.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
     
   
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.1/css/academicons.min.css" integrity="sha512-NThgw3XKQ1absAahW6to7Ey42uycrVvfNfyjqcFNgCmOCQ5AR4AO0SiXrN+8ZtYeappp56lk1WtvjVmEa+VR6A==" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
   
   
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather%7CRoboto+Mono">
-  <link rel="stylesheet" href="/css/hugo-academic.css">
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700%7cRoboto:400,400italic,700%7cRoboto&#43;Mono">
+  
+  <link rel="stylesheet" href="/styles.css">
   
 
   
 
+  
   <link rel="alternate" href="/index.xml" type="application/rss+xml" title="State of The R">
   <link rel="feed" href="/index.xml" type="application/rss+xml" title="State of The R">
+  
 
+  <link rel="manifest" href="/site.webmanifest">
   <link rel="icon" type="image/png" href="/img/icon.png">
-  <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
   <link rel="canonical" href="/post/getting-started/">
 
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="og:site_name" content="State of The R">
+  <meta property="og:url" content="/post/getting-started/">
+  <meta property="og:title" content="Academic: the website designer for Hugo | State of The R">
+  <meta property="og:description" content="Academic is a framework to help you create a beautiful website quickly. Perfect for personal sites, blogs, or business/project sites. Check out the latest demo of what you&rsquo;ll get in less than 10 minutes. Then head on over to the Quick Start guide or take a look at the Release Notes.
+
+Key features:
+ Easily manage various content including homepage, blog posts, publications, talks, and projects Extensible via color themes and widgets/plugins Write in Markdown for easy formatting and code highlighting, with LaTeX for mathematical expressions Social/academic network linking, Google Analytics, and Disqus comments Responsive and mobile friendly Simple and refreshing one page design Multilingual and easy to customize  Color Themes Academic is available in different color themes and font themes."><meta property="og:image" content="/img/headers/getting-started.png">
+  <meta property="og:locale" content="fr-fr">
+  
+  <meta property="article:published_time" content="2016-04-20T00:00:00&#43;02:00">
+  
+  <meta property="article:modified_time" content="2018-01-13T00:00:00&#43;01:00">
   
 
-  <title>Getting started with the Academic framework for Hugo | State of The R</title>
+  
+
+  <title>Academic: the website designer for Hugo | State of The R</title>
 
 </head>
-<body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
+<body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
 
 <nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
   <div class="container">
 
     
     <div class="navbar-header">
+      
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
               data-target=".navbar-collapse" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
@@ -60,65 +108,115 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/">State of The R</a>
+      
+      <a class="navbar-brand" href="/"><img src="/img/phare.png" alt="State of The R"></a>
     </div>
 
     
     <div class="collapse navbar-collapse">
 
       
+      
       <ul class="nav navbar-nav navbar-right">
         
 
         
+        
+        
+        
+        
+          
+        
 
         <li class="nav-item">
-          <a href="/#home">
+          <a href="/#hero">
             
             <span>Accueil</span>
+            
           </a>
         </li>
 
         
         
 
+        
+        
+        
+        
+        
+          
         
 
         <li class="nav-item">
-          <a href="/#meetings">
+          <a href="/#upcoming_workshops">
             
-            <span>Calendrier</span>
+            <span>Atelier à venir</span>
+            
           </a>
         </li>
 
         
         
 
+        
+        
+        
+        
+        
+          
         
 
         <li class="nav-item">
-          <a href="/#workshop">
+          <a href="/#past_workshops">
             
-            <span>Ateliers</span>
+            <span>Ateliers passés</span>
+            
           </a>
         </li>
 
         
         
 
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#projets">
+            
+            <span>Projets</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
         
 
         <li class="nav-item">
           <a href="/#about">
             
             <span>À propos</span>
+            
           </a>
         </li>
 
         
         
+      
 
-        
+      
       </ul>
 
     </div>
@@ -137,7 +235,8 @@
 
 
   <div class="article-container">
-    <h1 itemprop="name">Getting started with the Academic framework for Hugo</h1>
+    <h1 itemprop="name">Academic: the website designer for Hugo</h1>
+
     
 
 <div class="article-metadata">
@@ -146,27 +245,24 @@
     
         Last updated on
     
-    <time datetime="2016-04-20 00:00:00 &#43;0200 CEST" itemprop="datePublished">
-      Sep 3, 2017
+    <time datetime="2016-04-20 00:00:00 &#43;0200 CEST" itemprop="datePublished dateModified">
+      Jan 13, 2018
     </time>
   </span>
+  <span itemscope itemprop="author publisher" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="State of the R">
+  </span>
 
   
-
-  
-  
-  
-  <span class="article-tags">
-    <i class="fa fa-tags"></i>
-    
-    <a href="/tags/academic">academic</a
-    >, 
-    
-    <a href="/tags/hugo">hugo</a
-    >
-    
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    3 min read
   </span>
   
+
+  
+  
+
   
 
   
@@ -175,35 +271,35 @@
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Getting%20started%20with%20the%20Academic%20framework%20for%20Hugo&amp;url=%2fpost%2fgetting-started%2f"
-         target="_blank">
+         href="https://twitter.com/intent/tweet?text=Academic%3a%20the%20website%20designer%20for%20Hugo&amp;url=%2fpost%2fgetting-started%2f"
+         target="_blank" rel="noopener">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="facebook"
          href="https://www.facebook.com/sharer.php?u=%2fpost%2fgetting-started%2f"
-         target="_blank">
+         target="_blank" rel="noopener">
         <i class="fa fa-facebook"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2fpost%2fgetting-started%2f&amp;title=Getting%20started%20with%20the%20Academic%20framework%20for%20Hugo"
-         target="_blank">
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2fpost%2fgetting-started%2f&amp;title=Academic%3a%20the%20website%20designer%20for%20Hugo"
+         target="_blank" rel="noopener">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=%2fpost%2fgetting-started%2f&amp;title=Getting%20started%20with%20the%20Academic%20framework%20for%20Hugo"
-         target="_blank">
+         href="http://service.weibo.com/share/share.php?url=%2fpost%2fgetting-started%2f&amp;title=Academic%3a%20the%20website%20designer%20for%20Hugo"
+         target="_blank" rel="noopener">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=Getting%20started%20with%20the%20Academic%20framework%20for%20Hugo&amp;body=%2fpost%2fgetting-started%2f">
+         href="mailto:?subject=Academic%3a%20the%20website%20designer%20for%20Hugo&amp;body=%2fpost%2fgetting-started%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -215,271 +311,222 @@
 
 </div>
 
+
     <div class="article-style" itemprop="articleBody">
       
 
-<p>The Academic framework enables you to easily create a beautifully simple personal or academic website using the <a href="https://gohugo.io" target="_blank">Hugo</a> static site generator.</p>
+<p><strong>Academic</strong> is a framework to help you create a beautiful website quickly. Perfect for personal sites, blogs, or business/project sites. <a href="https://themes.gohugo.io/theme/academic/" target="_blank">Check out the latest demo</a> of what you&rsquo;ll get in less than 10 minutes. Then head on over to the <a href="https://sourcethemes.com/academic/docs/" target="_blank">Quick Start guide</a> or take a look at the <a href="https://sourcethemes.com/academic/updates/" target="_blank">Release Notes</a>.</p>
+
+<p><a href="https://github.com/gcushen/hugo-academic/" target="_blank"><img src="https://raw.githubusercontent.com/gcushen/hugo-academic/master/academic.png" alt="Screenshot" /></a></p>
 
 <p>Key features:</p>
 
 <ul>
-<li>Easily manage your homepage, blog posts, publications, talks, and projects</li>
-<li>Configurable widgets available for Biography, Publications, Projects, News/Blog, Talks, and Contact</li>
-<li>Need a different section? Just use the Custom widget!</li>
-<li>Write in <a href="/post/writing-markdown-latex/" target="_blank">Markdown</a> for easy formatting and code highlighting, with <a href="https://en.wikibooks.org/wiki/LaTeX/Mathematics" target="_blank">LaTeX</a> for mathematical expressions</li>
+<li>Easily manage various content including homepage, blog posts, publications, talks, and projects</li>
+<li>Extensible via <strong>color themes</strong> and <strong>widgets/plugins</strong></li>
+<li>Write in <a href="https://sourcethemes.com/academic/docs/writing-markdown-latex/" target="_blank">Markdown</a> for easy formatting and code highlighting, with <a href="https://en.wikibooks.org/wiki/LaTeX/Mathematics" target="_blank">LaTeX</a> for mathematical expressions</li>
 <li>Social/academic network linking, <a href="https://analytics.google.com" target="_blank">Google Analytics</a>, and <a href="https://disqus.com" target="_blank">Disqus</a> comments</li>
 <li>Responsive and mobile friendly</li>
 <li>Simple and refreshing one page design</li>
 <li>Multilingual and easy to customize</li>
 </ul>
 
-<h2>Table of Contents</h2>
-<nav id="TableOfContents">
+<h2 id="color-themes">Color Themes</h2>
+
+<p>Academic is available in different color themes and font themes.</p>
+
+
+
+<div class="gallery">
+  
+  
+  
+  
+    
+  
+  <a data-fancybox="gallery-1" data-caption="Default" href="https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-default.png">
+    <img alt="" src="https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-default.png">
+  </a>
+  
+  
+  
+  
+    
+  
+  <a data-fancybox="gallery-1" data-caption="Ocean" href="https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-ocean.png">
+    <img alt="" src="https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-ocean.png">
+  </a>
+  
+  
+  
+  
+    
+  
+  <a data-fancybox="gallery-1" data-caption="Dark" href="https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-dark.png">
+    <img alt="" src="https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-dark.png">
+  </a>
+  
+  
+  
+  
+    
+  
+  <a data-fancybox="gallery-1" data-caption="Default" href="https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-forest.png">
+    <img alt="" src="https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-forest.png">
+  </a>
+  
+  
+  
+  
+    
+  
+  <a data-fancybox="gallery-1" data-caption="Coffee theme with Playfair font" href="https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-coffee-playfair.png">
+    <img alt="" src="https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-coffee-playfair.png">
+  </a>
+  
+  
+  
+  
+    
+  
+  <a data-fancybox="gallery-1" data-caption="1950s" href="https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-1950s.png">
+    <img alt="" src="https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-1950s.png">
+  </a>
+  
+</div>
+
+<h2 id="install">Install</h2>
+
+<p>You can choose from one of the following four methods to install:</p>
+
 <ul>
-<li>
-<ul>
-<li><a href="#installation">Installation</a></li>
-<li><a href="#getting-started">Getting Started</a>
-<ul>
-<li><a href="#core-parameters">Core parameters</a></li>
-<li><a href="#introduce-yourself">Introduce yourself</a></li>
-<li><a href="#customize-the-homepage">Customize the homepage</a></li>
-<li><a href="#add-your-content">Add your content</a></li>
-<li><a href="#remove-unused-widgets-and-pages">Remove unused widgets and pages</a></li>
-<li><a href="#customization-updating">Customization &amp; updating</a></li>
-</ul></li>
-<li><a href="#advanced-customization">Advanced customization</a>
-<ul>
-<li><a href="#navigation-menu">Navigation menu</a></li>
-<li><a href="#website-icon">Website icon</a></li>
-<li><a href="#theme-color-css">Theme color (CSS)</a></li>
-<li><a href="#analytics">Analytics</a></li>
-<li><a href="#third-party-and-local-scripts-js">Third party and local scripts (JS)</a></li>
-<li><a href="#language-and-translation">Language and translation</a></li>
-<li><a href="#permalinks">Permalinks</a></li>
-</ul></li>
-<li><a href="#updating">Updating</a></li>
-<li><a href="#feedback-contributing">Feedback &amp; Contributing</a></li>
-<li><a href="#license">License</a></li>
-</ul></li>
+<li>one-click install using your web browser (recommended)</li>
+<li>install on your computer using Git with the Command Prompt/Terminal app</li>
+<li>install on your computer by downloading the ZIP files</li>
+<li>install on your computer with RStudio</li>
 </ul>
-</nav>
 
-
-<h2 id="installation">Installation</h2>
+<h3 id="quick-install-using-your-web-browser">Quick install using your web browser</h3>
 
 <ol>
-<li><p><a href="https://georgecushen.com/create-your-website-with-hugo/#installing-hugo" target="_blank">Install Hugo</a> and create a new website by typing the following commands in your <em>Terminal</em> or <em>Command Prompt</em> app:</p>
-
-<pre><code>hugo new site my_website
-cd my_website
-</code></pre></li>
-
-<li><p>Install Academic with <a href="https://help.github.com/articles/set-up-git/" target="_blank">git</a>:</p>
-
-<pre><code>git clone https://github.com/gcushen/hugo-academic.git themes/academic
-</code></pre>
-
-<p>Or alternatively, <a href="https://github.com/gcushen/hugo-academic/archive/master.zip" target="_blank">download Academic</a> and extract it into a <code>themes/academic</code> folder within your Hugo website.</p></li>
-
-<li><p>If you are creating a new website, copy the contents of the <code>exampleSite</code> folder to your website root folder, overwriting existing files if necessary. The <code>exampleSite</code> folder contains an example config file and content to help you get started.</p>
-
-<pre><code>cp -av themes/academic/exampleSite/* .
-</code></pre></li>
-
-<li><p>Start the Hugo server from your website root folder:</p>
-
-<pre><code>hugo server --watch
-</code></pre>
-
-<p>Now you can go to <a href="http://localhost:1313" target="_blank">localhost:1313</a> and your new Academic powered website should appear.</p></li>
-
-<li><p>Customize your website - refer to the <em>Getting Started</em> section below</p></li>
-
-<li><p>Build your site by running the <code>hugo</code> command. Then <a href="https://georgecushen.com/create-your-website-with-hugo/" target="_blank">host it for free using Github Pages</a>. Or alternatively, copy the generated <code>public/</code> directory (by FTP, Rsync, etc.) to your production web server (such as your university&rsquo;s hosting service).</p></li>
-</ol>
-
-<h2 id="getting-started">Getting Started</h2>
-
-<p>Assuming you created a new website with the example content following the installation steps above, this section explores just a few more steps in order to customize it.</p>
-
-<h3 id="core-parameters">Core parameters</h3>
-
-<p>The core parameters for the website can be edited in the <code>config.toml</code> configuration file:</p>
+<li><a href="https://app.netlify.com/start/deploy?repository=https://github.com/sourcethemes/academic-kickstart" target="_blank">Install Academic with Netlify</a>
 
 <ul>
-<li>Set <code>baseurl</code> to your website URL (we recommend <a href="https://georgecushen.com/create-your-website-with-hugo/" target="_blank">GitHub Pages</a> for free hosting)</li>
-<li>Set <code>title</code> to your desired website title such as your name</li>
-<li>The example Disqus commenting variable should be cleared (e.g. <code>disqusShortname = &quot;&quot;</code>) or set to your own <a href="https://disqus.com/" target="_blank">Disqus</a> shortname to enable commenting</li>
-<li>Edit your details under <code>[params]</code>; these will be displayed mainly in the homepage <em>about</em> and <em>contact</em> widgets (if used). To disable a contact field, simply clear the value to <code>&quot;&quot;</code>.</li>
-<li>Place a square cropped portrait photo named <code>portrait.jpg</code> into the <code>static/img/</code> folder, overwriting any defaults. Alternatively, you can edit the <code>avatar</code> filepath to point to a different image name or clear the value to disable the avatar feature.</li>
-<li>To enable LaTeX math for your site, set <code>math = true</code></li>
-<li>Social/academic networking links are defined as multiples of <code>[[params.social]]</code>. They can be created or deleted as necessary.</li>
+<li>Netlify will provide you with a customizable URL to access your new site</li>
+</ul></li>
+<li>On GitHub, go to your newly created <code>academic-kickstart</code> repository and edit <code>config.toml</code> to personalize your site. Shortly after saving the file, your site will automatically update</li>
+<li>Read the <a href="https://sourcethemes.com/academic/docs/" target="_blank">Quick Start Guide</a> to learn how to add Markdown content. For inspiration, refer to the <a href="https://github.com/gcushen/hugo-academic/tree/master/exampleSite" target="_blank">Markdown content</a> which powers the <a href="https://themes.gohugo.io/theme/academic/" target="_blank">Demo</a></li>
+</ol>
+
+<h3 id="install-with-git">Install with Git</h3>
+
+<p>Prerequisites:</p>
+
+<ul>
+<li><a href="https://git-scm.com/downloads" target="_blank">Download and install Git</a></li>
+<li><a href="https://gohugo.io/getting-started/installing/#quick-install" target="_blank">Download and install Hugo</a></li>
 </ul>
 
-<h3 id="introduce-yourself">Introduce yourself</h3>
+<ol>
+<li><p><a href="https://github.com/sourcethemes/academic-kickstart#fork-destination-box" target="_blank">Fork</a> the <em>Academic Kickstart</em> repository and clone your fork with Git:</p>
 
-<p>Edit your biography in the <em>about</em> widget <code>content/home/about.md</code> that you copied across from the <code>themes/academic/exampleSite/</code> folder. The research interests and qualifications are stored as <code>interests</code> and <code>education</code> variables. The academic qualifications are defined as multiples of <code>[[education.courses]]</code> and can be created or deleted as necessary. It&rsquo;s possible to completely hide the interests and education lists by deleting their respective variables.</p>
-
-<h3 id="customize-the-homepage">Customize the homepage</h3>
-
-<p>Refer to our guide on using <a href="/post/widgets/" target="_blank">widgets</a> to customize your homepage.</p>
-
-<h3 id="add-your-content">Add your content</h3>
-
-<p>Refer to our guide on <a href="/post/managing-content/" target="_blank">managing content</a> to create your own publications, blog posts, talks, and projects.</p>
-
-<h3 id="remove-unused-widgets-and-pages">Remove unused widgets and pages</h3>
-
-<p><a href="/post/managing-content/#removing-content" target="_blank">How to remove unused widgets and content pages</a>.</p>
-
-<h3 id="customization-updating">Customization &amp; updating</h3>
-
-<p>Continue reading below for advanced customization tips and instructions for keeping the framework up-to-date with any improvements that become available.</p>
-
-<h2 id="advanced-customization">Advanced customization</h2>
-
-<p>It is possible to carry out many customizations without touching any files in <code>themes/academic</code>, making it easier to update the framework in the future.</p>
-
-<h3 id="navigation-menu">Navigation menu</h3>
-
-<p>The <code>[[menu.main]]</code> entries towards the bottom of <code>config.toml</code> define the navigation links at the top of the website. They can be added or removed as desired.</p>
-
-<p>To create a dropdown sub-menu, add <code>identifier = &quot;something&quot;</code> to the parent item and <code>parent = &quot;something&quot;</code> to the child item.</p>
-
-<h3 id="website-icon">Website icon</h3>
-
-<p>Save your main icon and mobile icon as square PNG images named <code>icon.png</code> and <code>apple-touch-icon.png</code>, respectively. Place them in your root <code>static/img/</code> folder.</p>
-
-<h3 id="theme-color-css">Theme color (CSS)</h3>
-
-<p>You can link custom CSS assets (relative to your root <code>static/css</code>) from your <code>config.toml</code> using <code>custom_css = [&quot;custom.css&quot;]</code>.</p>
-
-<p>For example, lets make a green theme. First, define <code>custom_css = [&quot;green.css&quot;]</code> in <code>config.toml</code>. Then we can download the example <a href="https://gist.github.com/gcushen/d5525a4506b9ccf83f2bce592a895495" target="_blank">green theme</a> and save it as <code>static/css/green.css</code>, relative to your website root (i.e. <strong>not</strong> in the <code>themes</code> directory).</p>
-
-<h3 id="analytics">Analytics</h3>
-
-<p>To enable <a href="http://www.google.com/analytics" target="_blank">Google Analytics</a>, add your tracking code in <code>config.toml</code> similarly to <code>googleAnalytics = &quot;UA-12345678-9&quot;</code>.</p>
-
-<h3 id="third-party-and-local-scripts-js">Third party and local scripts (JS)</h3>
-
-<p>To add a third party script, create a file named <code>head_custom.html</code> in a <code>layouts/partials/</code> folder at the root of your website (not in the <code>themes</code> folder). Any HTML code added to this file will be included within your website&rsquo;s <code>&lt;head&gt;</code>. Therefore, it&rsquo;s suitable for adding custom metadata or third party scripts specified with the <em>async</em> attribute.</p>
-
-<p>Whereas for your own local scripts, you can link your local JS assets (relative to your root <code>static/js</code>) from your <code>config.toml</code> using <code>custom_js  = [&quot;custom.js&quot;]</code>.</p>
-
-<h3 id="language-and-translation">Language and translation</h3>
-
-<p>The interface text (e.g. buttons) is stored in language files which are collected from Academic&rsquo;s <code>themes/academic/i18n/</code> folder, as well as an <code>i18n/</code> folder at the root of your project.</p>
-
-<p>To edit the interface text, copy <code>themes/academic/i18n/en.yaml</code> to <code>i18n/en.yaml</code> (relative to the root of your website). Open the new file and make any desired changes to the text appearing after <code>translation:</code>. Note that the language files are formatted in YAML syntax.</p>
-
-<p>To translate the interface text to another language, follow the above instructions, but name the new file in the form <code>i18n/X.yaml</code> where <code>X</code> is the appropriate <a href="http://www.w3schools.com/tags/ref_language_codes.asp" target="_blank">ISO/RFC5646 language identifier</a> for the translation. Then follow the brief instructions in the <em>Language</em> section at the bottom of your <code>config.toml</code>. To change the default language used by Academic, set <code>defaultContentLanguage</code> to the desired language identifier in your configuration file.</p>
-
-<p>To translate the navigation bar, you can edit the default <code>[[menu.main]]</code> instances in <code>config.toml</code>. However, for a multilingual site, you will need to duplicate all of the <code>[[menu.main]]</code> instances and rename the new instances from <code>[[menu.main]]</code> to <code>[[Languages.X.menu.main]]</code>, where <code>X</code> is the language identifier (e.g. <code>[[Languages.zh.menu.main]]</code> for Simplified Chinese). Thus, the navigation bar can be displayed in multiple languages.</p>
-
-<p>To translate a content file in your <code>content/</code> folder into another language, copy the file to <code>filename.X.md</code> where <code>filename</code> is your existing filename and <code>X</code> is the appropriate <a href="http://www.w3schools.com/tags/ref_language_codes.asp" target="_blank">ISO/RFC5646 language identifier</a> for the translation. Then translate the content in the new file to the specified language.</p>
-
-<p>For further details on Hugo&rsquo;s internationalization and multilingual features, refer to the <a href="https://gohugo.io/content/multilingual/" target="_blank">associated Hugo documentation</a>.</p>
-
-<h3 id="permalinks">Permalinks</h3>
-
-<p><em>Permalinks</em>, or <em>permanent links</em>, are URLs to individual pages and posts on your website. They are permanent web addresses which can be used to link to your content. Using Hugo&rsquo;s <em>permalinks</em> option these can be easily customized. For example, the blog post URL can be changed to the form <em>yourURL/2016/05/01/my-post-slug</em> by adding the following near the top of your <code>config.toml</code> (before <code>[params]</code> settings):</p>
-
-<pre><code>[permalinks]
-    post = &quot;/:year/:month/:day/:slug&quot;
+<pre><code>git clone https://github.com/sourcethemes/academic-kickstart.git My_Website
 </code></pre>
 
-<p>Where <code>:slug</code> defaults to the filename of the post, excluding the file extension. However, slug may be overridden on a per post basis if desired, simply by setting <code>slug = &quot;my-short-post-title&quot;</code> in your post preamble.</p>
+<p><em>Note that if you forked Academic Kickstart, the above command should be edited to clone your fork, i.e. replace <code>sourcethemes</code> with your GitHub username.</em></p></li>
+
+<li><p>Initialize the theme:</p>
+
+<pre><code>cd My_Website
+git submodule update --init --recursive
+</code></pre></li>
+</ol>
+
+<h3 id="install-with-zip">Install with ZIP</h3>
+
+<ol>
+<li><a href="https://github.com/sourcethemes/academic-kickstart/archive/master.zip" target="_blank">Download</a> and extract <em>Academic Kickstart</em></li>
+<li><a href="https://github.com/gcushen/hugo-academic/archive/master.zip" target="_blank">Download</a> and extract the <em>Academic theme</em> to the <code>themes/academic/</code> folder from the above step</li>
+</ol>
+
+<h3 id="install-with-rstudio">Install with RStudio</h3>
+
+<p><a href="https://sourcethemes.com/academic/docs/install/#install-with-rstudio" target="_blank">View the guide to installing Academic with RStudio</a></p>
+
+<h2 id="quick-start">Quick start</h2>
+
+<ol>
+<li><p>If you installed on your computer, view your new website by running the following command:</p>
+
+<pre><code>hugo server
+</code></pre>
+
+<p>Now visit <a href="http://localhost:1313" target="_blank">localhost:1313</a> and your new Academic powered website will appear. Otherwise, if using Netlify, they will provide you with your URL.</p></li>
+
+<li><p>Read the <a href="https://sourcethemes.com/academic/docs/" target="_blank">Quick Start Guide</a> to learn how to add Markdown content, customize your site, and deploy it. For inspiration, refer to the <a href="https://github.com/gcushen/hugo-academic/tree/master/exampleSite" target="_blank">Markdown content</a> which powers the <a href="https://themes.gohugo.io/theme/academic/" target="_blank">Demo</a></p></li>
+
+<li><p>Build your site by running the <code>hugo</code> command. Then <a href="https://georgecushen.com/create-your-website-with-hugo/" target="_blank">host it for free using Github Pages</a> or Netlify (refer to the first installation method). Alternatively, copy the generated <code>public/</code> directory (by FTP, Rsync, etc.) to your production web server (such as a university&rsquo;s hosting service).</p></li>
+</ol>
 
 <h2 id="updating">Updating</h2>
 
-<p>Feel free to <em>star</em> the project on <a href="https://github.com/gcushen/hugo-academic/" target="_blank">Github</a> to help keep track of updates and check out the <a href="https://sourcethemes.com/academic/tags/updates" target="_blank">release notes</a> prior to updating your site.</p>
+<p>Feel free to <em>star</em> the project on <a href="https://github.com/gcushen/hugo-academic/" target="_blank">Github</a> to help keep track of updates and check out the <a href="https://sourcethemes.com/academic/updates" target="_blank">release notes</a> prior to updating your site.</p>
 
-<p>Before updating the framework, it is recommended to make a backup of your entire website directory, or at least your <code>themes/academic</code> directory.</p>
+<p>Before updating the framework, it is recommended to make a backup of your entire website directory (or at least your <code>themes/academic</code> directory) and record your current version number.</p>
 
-<p>Before updating for the first time, the remote <em>origin</em> repository should be renamed to <em>upstream</em>:</p>
+<p>By default, Academic is installed as a Git submodule which can be updated by running the following command:</p>
 
-<pre><code>$ cd themes/academic
-$ git remote rename origin upstream
+<pre><code class="language-bash">git submodule update --remote --merge
 </code></pre>
 
-<p>To list available updates:</p>
-
-<pre><code>$ cd themes/academic
-$ git fetch upstream
-$ git log --pretty=oneline --abbrev-commit --decorate HEAD..upstream/master
-</code></pre>
-
-<p>Then, update by running:</p>
-
-<pre><code>$ git pull upstream
-</code></pre>
-
-<p>If you have modified files in <code>themes/academic</code>, git will attempt to auto-merge changes. If conflicts are reported, you will need to manually edit the files with conflicts and add them back (<code>git add &lt;filename&gt;</code>).</p>
-
-<p>If there are any issues after updating, you may wish to compare your site with the latest <a href="https://github.com/gcushen/hugo-academic/tree/master/exampleSite" target="_blank">example site</a> to check if any settings changed in <code>config.toml</code> or the <code>+++</code> frontmatter of content files.</p>
+<p><a href="https://sourcethemes.com/academic/docs/update/" target="_blank">Check out the update guide</a> for full instructions and alternative methods.</p>
 
 <h2 id="feedback-contributing">Feedback &amp; Contributing</h2>
 
 <p>Please use the <a href="https://github.com/gcushen/hugo-academic/issues" target="_blank">issue tracker</a> to let me know about any bugs or feature requests, or alternatively make a pull request.</p>
 
-<p>For general questions about Hugo, there is a <a href="http://discuss.gohugo.io" target="_blank">Hugo discussion forum</a>.</p>
+<p>For support, head over to the <a href="http://discuss.gohugo.io" target="_blank">Hugo discussion forum</a>.</p>
 
 <h2 id="license">License</h2>
 
-<p>Copyright 2016 <a href="https://georgecushen.com" target="_blank">George Cushen</a>.</p>
+<p>Copyright 2016-present <a href="https://georgecushen.com" target="_blank">George Cushen</a>.</p>
 
 <p>Released under the <a href="https://github.com/gcushen/hugo-academic/blob/master/LICENSE.md" target="_blank">MIT</a> license.</p>
 
     </div>
-  </div>
-
-</article>
-
-
-
-<div class="article-container">
-  <h3>Related</h3>
-  <ul>
-    
-    <li><a href="/post/widgets/">Customizing the homepage with widgets</a></li>
-    
-    <li><a href="/post/managing-content/">Managing content</a></li>
-    
-  </ul>
-</div>
-
-
-<div class="container">
-  <nav>
-  <ul class="pager">
-    
-    <li class="previous"><a href="/post/widgets/"><span
-      aria-hidden="true">&larr;</span> Customizing the homepage with widgets</a></li>
-    
 
     
-    <li class="next"><a href="/post/roscoff2017/">Finist&#39;R 2017 <span
-      aria-hidden="true">&rarr;</span></a></li>
-    
-  </ul>
-</nav>
 
-</div>
 
-<div class="article-container">
+<div class="article-tags">
   
-
+  <a class="btn btn-primary btn-outline" href="/tags/academic">academic</a>
+  
 </div>
+
+
+
+
+    
+    
+
+    
+
+    
+
+
+  </div>
+</article>
 
 <footer class="site-footer">
   <div class="container">
     <p class="powered-by">
 
-      &copy; 2017 State of the R &middot; 
+      &copy; 2018 State of the R &middot; 
 
-      Powered by the <a href="https://github.com/gcushen/hugo-academic" target="_blank">Academic
-      theme</a> for <a href="http://gohugo.io" target="_blank">Hugo</a>.
+      Powered by the
+      <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+      <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
 
       <span class="pull-right" aria-hidden="true">
         <a href="#" id="back_to_top">
@@ -493,13 +540,44 @@ $ git log --pretty=oneline --abbrev-commit --decorate HEAD..upstream/master
   </div>
 </footer>
 
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close btn-large" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Cite</h4>
+      </div>
+      <div>
+        <pre><code class="modal-body tex"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-primary btn-outline js-copy-cite" href="#" target="_blank">
+          <i class="fa fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-primary btn-outline js-download-cite" href="#" target="_blank">
+          <i class="fa fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js" integrity="sha512-jGsMH83oKe9asCpkOVkBnUrDDTp8wl+adkB2D+//JtlxO4SrLoJdhbOysIFQJloQFD+C4Fl1rMsQZF76JjV0eQ==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.2/imagesloaded.pkgd.min.js" integrity="sha512-iHzEu7GbSc705hE2skyH6/AlTpOfBmkx7nUqTLGzPYR+C1tRaItbRlJ7hT/D3YQ9SV0fqLKzp4XY9wKulTBGTw==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js" integrity="sha512-Z5heTz36xTemt1TbtbfXtTq5lMfYnOkXM2/eWcTTiLU01+Sw4ku1i7vScDc8fWhrP2abz9GQzgKH5NGBLoYlAw==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/plugins/ScrollToPlugin.min.js" integrity="sha512-CDeU7pRtkPX6XJtF/gcFWlEwyaX7mcAp5sO3VIu/ylsdR74wEw4wmBpD5yYTrmMAiAboi9thyBUr1vXRPA7t0Q==" crossorigin="anonymous"></script>
+
+    
+    
+
+    
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+    
     
     <script src="/js/hugo-academic.js"></script>
     
@@ -507,7 +585,9 @@ $ git log --pretty=oneline --abbrev-commit --decorate HEAD..upstream/master
     
     
       
-      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+      
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+      
 
       
 

@@ -6,9 +6,59 @@
     <description>Recent content in Homes on State of The R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
-    <copyright>&amp;copy; 2017 State of the R</copyright>
-    <lastBuildDate>Thu, 28 Sep 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/home/" rel="self" type="application/rss+xml" />
+    <copyright>&amp;copy; 2018 State of the R</copyright>
+    <lastBuildDate>Sun, 15 Oct 2017 00:00:00 +0200</lastBuildDate>
+    
+	<atom:link href="/home/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>State of The R</title>
+      <link>/home/hero/</link>
+      <pubDate>Sun, 15 Oct 2017 00:00:00 +0200</pubDate>
+      
+      <guid>/home/hero/</guid>
+      <description>Groupe de chercheurs et d&amp;rsquo;ingénieurs se réunissant pour approfondir leur savoir-faire, perfectionner la diffusion de leurs méthodes statistiques et échanger autour des dernières innovations de R et Rstudio</description>
+    </item>
+    
+    <item>
+      <title>Ateliers à venir</title>
+      <link>/home/upcoming_workshops/</link>
+      <pubDate>Tue, 06 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/home/upcoming_workshops/</guid>
+      <description>La plupart des ateliers ont lieu dans la salle ACTIA à AgroParisTech.
+  </description>
+    </item>
+    
+    <item>
+      <title>Ateliers passés</title>
+      <link>/home/past_workshops/</link>
+      <pubDate>Tue, 06 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/home/past_workshops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Projets</title>
+      <link>/home/projets/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/home/projets/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>À propos</title>
+      <link>/home/about/</link>
+      <pubDate>Thu, 28 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/home/about/</guid>
+      <description>Bref historique Le groupe s&amp;rsquo;est formé à l&amp;rsquo;occasion d&amp;rsquo;une semaine d&amp;rsquo;ateliers du 28 août au 1er septembre 2017 à la station biologique de Roscoff organisé par des membres de l&amp;rsquo;UMR MIA Paris AgroParisTech/Inra. Nous avons reçu à cette occasion le soutien d&amp;rsquo;AgroParisTech
+Depuis, le groupe s&amp;rsquo;est consolidé autour d&amp;rsquo;un réseau méthodologique du département MIA de l&amp;rsquo;Inra, animé par Julie Aubert, Julien Chiquet et Marie-Pierre Étienne
+Les membres fondateurs  Christophe Ambroise -- Julie Aubert Allez faire pipi, on part dans un quart d&#39;heure.</description>
+    </item>
     
   </channel>
 </rss>

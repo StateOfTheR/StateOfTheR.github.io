@@ -6,18 +6,19 @@
     <description>Recent content in Recent &amp; Upcoming Talks on State of The R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
-    <copyright>&amp;copy; 2017 State of the R</copyright>
+    <copyright>&amp;copy; 2018 State of the R</copyright>
     <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/talk/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="/talk/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
-      <title>Example Talk</title>
-      <link>/talk/example-talk/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <title>Programmation efficace en R: gestion de la mémoire</title>
+      <link>/talk/2018-04-27-programmation-efficace-en-r-gestion-de-la-m%C3%A9moire/</link>
+      <pubDate>Tue, 06 Feb 2018 00:00:00 +0100</pubDate>
       
-      <guid>/talk/example-talk/</guid>
-      <description>&lt;p&gt;Embed your slides or video here using &lt;a href=&#34;https://gcushen.github.io/hugo-academic-demo/post/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;shortcodes&lt;/a&gt;. Further details can easily be added using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
-</description>
+      <guid>/talk/2018-04-27-programmation-efficace-en-r-gestion-de-la-m%C3%A9moire/</guid>
+      <description></description>
     </item>
     
   </channel>
