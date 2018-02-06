@@ -14,7 +14,43 @@
     
     <url>
     
+      <loc>/project/finistr17/</loc>
+      <lastmod>2018-02-06T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/talk/2018-02-23-communicationr/</loc>
+      <lastmod>2018-02-06T00:00:00+01:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/talk/2018-05-25-deep-learning-sous-r/</loc>
+      <lastmod>2018-02-06T00:00:00+01:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/talk/2018-04-27-programmation-efficace-en-r-gestion-de-la-m%C3%A9moire/</loc>
+      <lastmod>2018-02-06T00:00:00+01:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/talk/2018-03-23-statistiques-spatiales-sous-r/</loc>
       <lastmod>2018-02-06T00:00:00+01:00</lastmod>
     </url>
     
@@ -115,6 +151,16 @@
     
       <loc>/publication/clothing-search/</loc>
       <lastmod>2013-07-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/tags/bookdown/</loc>
+      <lastmod>2018-02-06T00:00:00+00:00</lastmod>
+      <priority>0</priority>
     </url>
     
   

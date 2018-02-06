@@ -13,11 +13,38 @@
     
     
     <item>
+      <title>Communication Scientifique en R</title>
+      <link>/talk/2018-02-23-communicationr/</link>
+      <pubDate>Tue, 06 Feb 2018 00:00:00 +0100</pubDate>
+      
+      <guid>/talk/2018-02-23-communicationr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Deep Learning sous R</title>
+      <link>/talk/2018-05-25-deep-learning-sous-r/</link>
+      <pubDate>Tue, 06 Feb 2018 00:00:00 +0100</pubDate>
+      
+      <guid>/talk/2018-05-25-deep-learning-sous-r/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Programmation efficace en R: gestion de la mémoire</title>
       <link>/talk/2018-04-27-programmation-efficace-en-r-gestion-de-la-m%C3%A9moire/</link>
       <pubDate>Tue, 06 Feb 2018 00:00:00 +0100</pubDate>
       
       <guid>/talk/2018-04-27-programmation-efficace-en-r-gestion-de-la-m%C3%A9moire/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Statistiques Spatiales sous R</title>
+      <link>/talk/2018-03-23-statistiques-spatiales-sous-r/</link>
+      <pubDate>Tue, 06 Feb 2018 00:00:00 +0100</pubDate>
+      
+      <guid>/talk/2018-03-23-statistiques-spatiales-sous-r/</guid>
       <description></description>
     </item>
     
