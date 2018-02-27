@@ -14,11 +14,12 @@
     
     <item>
       <title>Rmarkdown: tableaux interactifs et retour d&#39;expérience</title>
-      <link>/post/rmarkdown-tableaux-interactifs-et-retour-d-exp%C3%A9rience/</link>
+      <link>/post/rmarkdown-tableaux-interactifs-et-retour-d-experience/</link>
       <pubDate>Fri, 23 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/rmarkdown-tableaux-interactifs-et-retour-d-exp%C3%A9rience/</guid>
-      <description>Motivation About R Markdown  Markdown: a simple formatting syntax for authoring HTML, PDF, and MS Word documents. R Markdown: a simple way to embed R chuncks in your markdown (see http://rmarkdown.rstudio.com and Antoine’s presentation for more details). Knitting (Ctrl+Shift+K): generates a document with both content and output of embedded R code chunks.</description>
+      <guid>/post/rmarkdown-tableaux-interactifs-et-retour-d-experience/</guid>
+      <description>Original slides by Mahendra
+Motivation About R Markdown  Markdown: a simple formatting syntax for authoring HTML, PDF, and MS Word documents. R Markdown: a simple way to embed R chuncks in your markdown (see http://rmarkdown.rstudio.com and Antoine’s presentation for more details). Knitting (Ctrl+Shift+K): generates a document with both content and output of embedded R code chunks.</description>
     </item>
     
     <item>
