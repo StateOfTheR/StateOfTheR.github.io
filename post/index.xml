@@ -13,6 +13,30 @@
     
     
     <item>
+      <title>Rmarkdown: tableaux interactifs et retour d&#39;expérience</title>
+      <link>/post/rmarkdown-tableaux-interactifs-et-retour-d-exp%C3%A9rience/</link>
+      <pubDate>Fri, 23 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/rmarkdown-tableaux-interactifs-et-retour-d-exp%C3%A9rience/</guid>
+      <description>Motivation About R Markdown  Markdown: a simple formatting syntax for authoring HTML, PDF, and MS Word documents. R Markdown: a simple way to embed R chuncks in your markdown (see http://rmarkdown.rstudio.com and Antoine’s presentation for more details). Knitting (Ctrl+Shift+K): generates a document with both content and output of embedded R code chunks.</description>
+    </item>
+    
+    <item>
+      <title>Science Communication with R: Style, R Markdown &amp; Xaringan</title>
+      <link>/post/science-communication-with-r-style-r-markdown-xaringan/</link>
+      <pubDate>Fri, 23 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/science-communication-with-r-style-r-markdown-xaringan/</guid>
+      <description>Original Xaringan slides by Antoine are available here
+Code presentation Syntax  Use &amp;lt;- for assignation and = for arguments
+ Leave a space
+ before ( (except when it’s part of a function call)
+ after ) or ,
+ around =, &amp;lt;-, +, *, ==, etc
+  x &amp;lt;- rnorm(n = 100000)^2 + rnorm(n = 100000)^2 hist(x[x &amp;lt; 10], col = &amp;quot;grey&amp;quot;, xlab = &amp;quot;&amp;quot;, ylab = &amp;quot;Count&amp;quot;, main = &amp;quot;Chi-squared empirical distribution&amp;quot;)  Functions names  When possible, use verbs for function names: add_row() or instead of row_adder() A function should do one thing well (it should be called either because it has side-effects or because it returns a value; not both) Don’t hesitate to split your long function in smaller ones Only use return() for early returns Comment your functions (use the Ctrl + Maj + C shortcut)   Pipes  For long pipes, use one verb per line Don’t ommit the parenthesis  # Good summary_SL &amp;lt;- iris %&amp;gt;% drop_na() %&amp;gt;% group_by(Species) %&amp;gt;% summarise(Mean_SL = mean(Sepal.</description>
+    </item>
+    
+    <item>
       <title>Exercices autour de data.table</title>
       <link>/post/data.table/</link>
       <pubDate>Mon, 23 Oct 2017 00:00:00 +0000</pubDate>
