@@ -11,6 +11,7 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+<<<<<<< HEAD
       <title>Investigations Spatiales et Cartographiques</title>
       <link>/post/spatial/</link>
       <pubDate>Fri, 23 Mar 2018 00:00:00 +0000</pubDate>
@@ -337,6 +338,8 @@ france &amp;lt;- cs[cs$COWCODE==cowcodefrance,]&lt;/code&gt;&lt;/pre&gt;
     </item>
     
     <item>
+=======
+>>>>>>> 29afbeae363d15cef4ba190f5387d6eff763cd21
       <title>Rmarkdown: tableaux interactifs et retour d&#39;expérience</title>
       <link>/post/rmarkdown-tableaux-interactifs-et-retour-d-experience/</link>
       <pubDate>Fri, 23 Feb 2018 00:00:00 +0000</pubDate>
@@ -1318,6 +1321,7 @@ leaflet() %&amp;gt;% addTiles() %&amp;gt;% setView(2.34822, 48.83976, zoom = 17)
     </item>
     
     <item>
+<<<<<<< HEAD
       <title>A bit of tidyverse and dplyr</title>
       <link>/talk/2018-05-02-tidy-dplyr/</link>
       <pubDate>Tue, 06 Feb 2018 00:00:00 +0100</pubDate>
@@ -1327,6 +1331,8 @@ leaflet() %&amp;gt;% addTiles() %&amp;gt;% setView(2.34822, 48.83976, zoom = 17)
     </item>
     
     <item>
+=======
+>>>>>>> 29afbeae363d15cef4ba190f5387d6eff763cd21
       <title>Deep Learning sous R</title>
       <link>/talk/2018-05-25-deep-learning-sous-r/</link>
       <pubDate>Tue, 06 Feb 2018 00:00:00 +0100</pubDate>
@@ -2246,5 +2252,36 @@ Figure 1: A fancy pie chart.
 </description>
     </item>
     
+<<<<<<< HEAD
+=======
+    <item>
+      <title>Mobile visual clothing search</title>
+      <link>/publication/clothing-search/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/clothing-search/</guid>
+      <description>&lt;p&gt;More detail can easily be written here using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/layouts/partials/head_custom/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/layouts/partials/head_custom/</guid>
+      <description>&lt;link href=&#34;{{ &#34;lib/datatables-css-0.0.0/datatables-crosstalk.css&#34; | relURL }}&#34; rel=&#34;stylesheet&#34;&gt;
+&lt;link href=&#34;{{ &#34;lib/dt-core-1.10.16/css/jquery.dataTables.min.css&#34; | relURL }}&#34; rel=&#34;stylesheet&#34;&gt;
+&lt;link href=&#34;{{ &#34;lib/dt-core-1.10.16/css/jquery.dataTables.extra.css&#34; | relURL }}&#34; rel=&#34;stylesheet&#34;&gt;
+&lt;link href=&#34;{{ &#34;lib/crosstalk-1.0.0/css/crosstalk.css&#34; | relURL }}&#34; rel=&#34;stylesheet&#34;&gt;
+
+&lt;script src=&#34;{{ &#34;lib/htmlwidgets-1.0/htmlwidgets.js&#34; | relURL }}&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;{{ &#34;lib/jquery-1.12.4/jquery.min.js&#34; | relURL }}&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;{{ &#34;lib/datatables-binding-0.4.3/datatables.js&#34; | relURL }}&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;{{ &#34;lib/dt-core-1.10.16/js/jquery.dataTables.min.js&#34; | relURL }}&#34;&gt;&lt;/script&gt; 
+&lt;script src=&#34;{{ &#34;lib/crosstalk-1.0.0/js/crosstalk.min.js&#34; | relURL }}&#34;&gt;&lt;/script&gt; </description>
+    </item>
+    
+>>>>>>> 29afbeae363d15cef4ba190f5387d6eff763cd21
   </channel>
 </rss>
