@@ -11,335 +11,6 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
-<<<<<<< HEAD
-      <title>Investigations Spatiales et Cartographiques</title>
-      <link>/post/spatial/</link>
-      <pubDate>Fri, 23 Mar 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/post/spatial/</guid>
-      <description>&lt;div id=&#34;introduction&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;Introduction&lt;/h1&gt;
-&lt;div id=&#34;les-donnees-spatiales-et-r&#34; class=&#34;section level2 smaller&#34;&gt;
-&lt;h2&gt;Les données spatiales et R&lt;/h2&gt;
-&lt;p&gt;Les données spatiales se présentes sous la forme de:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;vecteurs&lt;/code&gt; (points, vecteurs, lignes, etc)&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;raster&lt;/code&gt; (pixels).&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;R permet de lire, d’écrire et de manipuler des données géoréférencées, puis d’en faire l’analyse statistique. Nous avons repérés deux packages de base :&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;sp&lt;/code&gt; - classe de base pour gérér des données spatiales, en particulier vectorisées, mais aussi grilles.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;raster&lt;/code&gt; - classes et outils pour manipuler des données sous forme raster.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(+\)&lt;/span&gt; des outils, divers et variés, en particulier:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;rgdal&lt;/code&gt;: Interface R pour la library C/C++ de stat spatiales &lt;code&gt;gdal&lt;/code&gt; (Geospatial Data Abstraction Library) pour lire et écrire des données spatialisées&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;rgeos&lt;/code&gt;: Interface R de la library &lt;code&gt;geos&lt;/code&gt; (Geometry Engine Open Source) avec opérations de type ensemblistes&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Bien d’autres packages spatiaux sur le CRAN!, voir - &lt;a href=&#34;http://cran.r-project.org/web/views/Spatial.html&#34;&gt;Spatial task view&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;que-fait-on-aujourdhui&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Que fait-on aujourd’hui ?&lt;/h2&gt;
-&lt;p&gt;On étudie les packages &lt;strong&gt;sp&lt;/strong&gt; puis &lt;strong&gt;gstat&lt;/strong&gt;…puis &lt;strong&gt;spacetime&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Il est possible de bricoler avec l’emploi des commandes uniquement de base de R, telles que data.frame, image, etc….&lt;strong&gt;MAIS&lt;/strong&gt; pourquoi utiliser un package?&lt;/p&gt;
-&lt;p&gt;Accepter de perdre un peu de liberté indisciplinée ?&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;pour travailler et partager avec d’autres collègues,&lt;/li&gt;
-&lt;li&gt;pour récupérer le travail d’autres collègues.&lt;/li&gt;
-&lt;li&gt;bénéficier des fondations et des extensions de &lt;strong&gt;sp&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Présentation inspirée des exemples de &lt;a href=&#34;http://asdar-book.org&#34;&gt;ce bouquin&lt;/a&gt; et du travail réalisé avec le réseau &lt;a href=&#34;http://informatique-mia.inra.fr/resste/atelier&#34;&gt;RESSTE&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;r-nest-pas-simplement-la-calculette-du-statisticien&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;R n’est pas simplement la calculette du statisticien&lt;/h2&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;cars$qspeed &amp;lt;- cut(cars$speed, breaks=quantile(cars$speed), 
-                   include.lowest=TRUE)
-par(mfrow=c(1,2))
-plot(dist ~ speed, data=cars)
-plot(dist ~ qspeed, data=cars)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;2018-03-23-spatial_files/figure-html/calculette-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;par(mfrow=c(1,1))&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div id=&#34;le-package-sp-definit-des-classes-dobjet-explicitement-spatialises&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Le package sp définit des classes d’objet explicitement spatialisés&lt;/h2&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(sp)
-getClass(&amp;quot;Spatial&amp;quot;)
-## Class &amp;quot;Spatial&amp;quot; [package &amp;quot;sp&amp;quot;]
-## 
-## Slots:
-##                               
-## Name:         bbox proj4string
-## Class:      matrix         CRS
-## 
-## Known Subclasses: 
-## Class &amp;quot;SpatialPoints&amp;quot;, directly
-## Class &amp;quot;SpatialMultiPoints&amp;quot;, directly
-## Class &amp;quot;SpatialGrid&amp;quot;, directly
-## Class &amp;quot;SpatialLines&amp;quot;, directly
-## Class &amp;quot;SpatialPolygons&amp;quot;, directly
-## Class &amp;quot;SpatialPointsDataFrame&amp;quot;, by class &amp;quot;SpatialPoints&amp;quot;, distance 2
-## Class &amp;quot;SpatialPixels&amp;quot;, by class &amp;quot;SpatialPoints&amp;quot;, distance 2
-## Class &amp;quot;SpatialMultiPointsDataFrame&amp;quot;, by class &amp;quot;SpatialMultiPoints&amp;quot;, distance 2
-## Class &amp;quot;SpatialGridDataFrame&amp;quot;, by class &amp;quot;SpatialGrid&amp;quot;, distance 2
-## Class &amp;quot;SpatialLinesDataFrame&amp;quot;, by class &amp;quot;SpatialLines&amp;quot;, distance 2
-## Class &amp;quot;SpatialPixelsDataFrame&amp;quot;, by class &amp;quot;SpatialPoints&amp;quot;, distance 3
-## Class &amp;quot;SpatialPolygonsDataFrame&amp;quot;, by class &amp;quot;SpatialPolygons&amp;quot;, distance 2&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div id=&#34;le-package-sp-definit-des-classes-dobjet-explicitement-spatialises-1&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Le package sp définit des classes d’objet explicitement spatialisés&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Points avec ou sans data : &lt;em&gt;SpatialPoints&lt;/em&gt; et &lt;em&gt;SpatialPointsDataFrame&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;Pixels avec ou sans data : &lt;em&gt;SpatialPixels&lt;/em&gt; et &lt;em&gt;SpatialPixelsDataFrame&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;Grilles avec ou sans data : &lt;em&gt;SpatialGrid&lt;/em&gt; et &lt;em&gt;SpatialGridDataFrame&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;Lignes avec ou sans data : &lt;em&gt;SpatialGrid&lt;/em&gt; et &lt;em&gt;SpatialGridDataFrame&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;Polygones : &lt;em&gt;SpatialPolygons&lt;/em&gt; et &lt;em&gt;SpatialPolygonsDataFrame&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;spatial-et-spatialpoints&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;Spatial et SpatialPoints&lt;/h1&gt;
-&lt;div id=&#34;la-classe-de-base-spatial&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;La classe de base: Spatial&lt;/h2&gt;
-&lt;p&gt;Elle ne possède que 2 &lt;em&gt;slots&lt;/em&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;un &lt;em&gt;bounding box&lt;/em&gt; en longitude/latitude&lt;/li&gt;
-&lt;li&gt;un objet de la classe &lt;em&gt;CRS&lt;/em&gt; (coordinate reference system), par défaut mise à CRS(as.character(NA)) . Voir plus tard ce qu’est un CRS.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(sp)
-m &amp;lt;- matrix(c(-2,15,10,40), ncol=2, dimnames=list(NULL, c(&amp;quot;min&amp;quot;, &amp;quot;max&amp;quot;)))
-crs &amp;lt;- CRS(projargs=as.character(NA))
-crs
-## CRS arguments: NA
-S &amp;lt;- Spatial(bbox=m, proj4string=crs)
-S
-## An object of class &amp;quot;Spatial&amp;quot;
-## Slot &amp;quot;bbox&amp;quot;:
-##      min max
-## [1,]  -2  10
-## [2,]  15  40
-## 
-## Slot &amp;quot;proj4string&amp;quot;:
-## CRS arguments: NA&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div id=&#34;pour-la-suite-de-lexpose-on-sappuie-sur-le-jeux-de-donnees-meuse&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Pour la suite de l’exposé, on s’appuie sur le jeux de données MEUSE&lt;/h2&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# check for example data
-data(meuse) # mesures de métaux lourds dans la meuse
-str(meuse) # 155 observations et 14 variables
-## &amp;#39;data.frame&amp;#39;:    155 obs. of  14 variables:
-##  $ x      : num  181072 181025 181165 181298 181307 ...
-##  $ y      : num  333611 333558 333537 333484 333330 ...
-##  $ cadmium: num  11.7 8.6 6.5 2.6 2.8 3 3.2 2.8 2.4 1.6 ...
-##  $ copper : num  85 81 68 81 48 61 31 29 37 24 ...
-##  $ lead   : num  299 277 199 116 117 137 132 150 133 80 ...
-##  $ zinc   : num  1022 1141 640 257 269 ...
-##  $ elev   : num  7.91 6.98 7.8 7.66 7.48 ...
-##  $ dist   : num  0.00136 0.01222 0.10303 0.19009 0.27709 ...
-##  $ om     : num  13.6 14 13 8 8.7 7.8 9.2 9.5 10.6 6.3 ...
-##  $ ffreq  : Factor w/ 3 levels &amp;quot;1&amp;quot;,&amp;quot;2&amp;quot;,&amp;quot;3&amp;quot;: 1 1 1 1 1 1 1 1 1 1 ...
-##  $ soil   : Factor w/ 3 levels &amp;quot;1&amp;quot;,&amp;quot;2&amp;quot;,&amp;quot;3&amp;quot;: 1 1 1 2 2 2 2 1 1 2 ...
-##  $ lime   : Factor w/ 2 levels &amp;quot;0&amp;quot;,&amp;quot;1&amp;quot;: 2 2 2 1 1 1 1 1 1 1 ...
-##  $ landuse: Factor w/ 15 levels &amp;quot;Aa&amp;quot;,&amp;quot;Ab&amp;quot;,&amp;quot;Ag&amp;quot;,..: 4 4 4 11 4 11 4 2 2 15 ...
-##  $ dist.m : num  50 30 150 270 380 470 240 120 240 420 ...&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div id=&#34;spatial-points&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Spatial points&lt;/h2&gt;
-&lt;p&gt;On utilise les 2 colonnes du data.frame meuse renseignant les coordonnées géographiques pour en faire un objet &lt;em&gt;SpatialPoints&lt;/em&gt;&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# check for example data
-coords &amp;lt;- SpatialPoints(meuse[, c(&amp;quot;x&amp;quot;, &amp;quot;y&amp;quot;)]) 
-summary(coords)
-## Object of class SpatialPoints
-## Coordinates:
-##      min    max
-## x 178605 181390
-## y 329714 333611
-## Is projected: NA 
-## proj4string : [NA]
-## Number of points: 155&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div id=&#34;exercice-a-vous-de-jouer&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Exercice à vous de jouer&lt;/h2&gt;
-&lt;div id=&#34;merci-a-maxime-beauchamp-et-laure-malherbe-de-lineris&#34; class=&#34;section level3&#34;&gt;
-&lt;h3&gt;Merci à Maxime Beauchamp et Laure Malherbe de l’Ineris&lt;/h3&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;exercice-a-vous-de-jouer-1&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Exercice à vous de jouer&lt;/h2&gt;
-
-&lt;/div&gt;
-&lt;div id=&#34;exercice-a-vous-de-jouer-2&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Exercice à vous de jouer&lt;/h2&gt;
-
-&lt;/div&gt;
-&lt;div id=&#34;exercice-1&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Exercice 1&lt;/h2&gt;
-&lt;p&gt;Lire les stations de suivi de la pollution atmosphérique en PM10, PM25 , NO2 et O3 dans le fichier &lt;strong&gt;AirBase_v7_stations.csv&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;Extraire leur coordonnées, jeter les doublons et sélectionner les stations de France métropolitaine. En faire un objet &lt;em&gt;SpatialPoints&lt;/em&gt; et les représenter.&lt;/p&gt;
-&lt;p&gt;On pourra extraire un fond de carte de la France par les commandes R suivantes:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(cshapes)
-## Loading required package: maptools
-## Checking rgeos availability: TRUE
-## Loading required package: plyr
-cs &amp;lt;- cshp()
-row.names(cs)=paste(as.character(cs$CNTRY_NAME),1:244)
-numfrance=grep(&amp;#39;France&amp;#39;,row.names(cs)) #=106
-cowcodefrance=cs$COWCODE[106]
-france &amp;lt;- cs[cs$COWCODE==cowcodefrance,]&lt;/code&gt;&lt;/pre&gt;
-&lt;!-- ## Spatial points data frame --&gt;
-&lt;!-- Retour à Meuse. On ajoute aux coordonnées géographiques les données pour en faire un objet  *SpatialPointsDataFrame*. Ca se comporte comme un dataframe! --&gt;
-&lt;!-- ```{r faireSpatialPointsDataFrame1, echo = TRUE, warning = FALSE, message = TRUE} --&gt;
-&lt;!-- meuse_sp &lt;- SpatialPointsDataFrame(coords, meuse) --&gt;
-&lt;!-- names(meuse_sp) --&gt;
-&lt;!-- is(meuse_sp) --&gt;
-&lt;!-- is(meuse) --&gt;
-&lt;!-- #str(meuse_sp) --&gt;
-&lt;!-- ``` --&gt;
-&lt;!-- On aurait pu faire plus direct: --&gt;
-&lt;!-- ```{r faireSpatialPointsDataFrame2, echo = TRUE, warning = FALSE, message = TRUE} --&gt;
-&lt;!-- meuse_sp2 &lt;- meuse --&gt;
-&lt;!-- coordinates(meuse_sp2) &lt;- ~x+y  --&gt;
-&lt;!-- # str(meuse_sp2) --&gt;
-&lt;!-- is(meuse_sp2) --&gt;
-&lt;!-- ``` --&gt;
-&lt;!-- ## Exercice 2 ## --&gt;
-&lt;!-- Lire les données de pollution atmosphérique du 15 juin 2014 en PM10, PM25 , NO2 et O3 pour les stations actives de France métropolitaine dans les fichiers **PM10_20140615.csv**, **PM25_20140615.csv**, **NO2_20140615.csv** et **03_20140615.csv** . Les données manquantes sont codées -999. --&gt;
-&lt;!-- On pourra utiliser les packages *tidyR* et *data.table* pour avoir recours à la méthode *merge*. Créer un objet *SpatialPointsDataFrame* contenant les enregistrements géolocalisés de PM10, PM25 , NO2 et O3 pour les stations actives au 15 juin 2014 dont on conservera le type et l&#39;aire.  --&gt;
-&lt;!-- ## Recap: ASDAR page 35 --&gt;
-&lt;!-- \begin{center} --&gt;
-&lt;!--   \includegraphics[width=1\textwidth]{figSpatialPoints.png} --&gt;
-&lt;!-- \end{center} --&gt;
-&lt;!-- # SpatialGrids &amp; SpatialPixels --&gt;
-&lt;!-- ## Spatial grids &amp; pixels --&gt;
-&lt;!--   2 representations pour les data sur une grille régulière rectangualire, orientée N-S et E-W: *SpatialPixels* et  *SpatialGrid* --&gt;
-&lt;!--   - SpatialPixels comme SpatialPoints, mais avec coordonnées equi-espacées --&gt;
-&lt;!--   - SpatialPixelsDataFrame = SpatialPixels+data --&gt;
-&lt;!--   - SpatialGridDataFrame = grille entiere et NA où manquantes --&gt;
-&lt;!-- ```{r faireSpatialPixelsDataFrame1, echo = TRUE, warning = FALSE, message = TRUE} --&gt;
-&lt;!--  data(meuse.grid) --&gt;
-&lt;!--  coords &lt;- SpatialPixels(SpatialPoints(meuse.grid[, c(&#34;x&#34;,&#34;y&#34;)])) --&gt;
-&lt;!-- meuse_spx &lt;- SpatialPixelsDataFrame(coords, meuse.grid) --&gt;
-&lt;!-- names(meuse_spx) --&gt;
-&lt;!-- slot(meuse_spx, &#34;grid&#34;) --&gt;
-&lt;!-- object.size(meuse_spx)  --&gt;
-&lt;!-- dim(slot(meuse_spx, &#34;data&#34;)) --&gt;
-&lt;!-- ``` --&gt;
-&lt;!-- ## Spatial grids --&gt;
-&lt;!--    On peut convertir un *SpatialPixels* en un *SpatialGrid*, ce qui économise de la place de stockage: --&gt;
-&lt;!-- ```{r faireSpatialPixelsDataFrame2, echo = TRUE, warning = FALSE, message = TRUE} --&gt;
-&lt;!-- meuse_sg &lt;- meuse_spx --&gt;
-&lt;!-- fullgrid(meuse_sg) &lt;- TRUE  --&gt;
-&lt;!-- slot(meuse_sg, &#34;grid&#34;) --&gt;
-&lt;!-- class(slot(meuse_sg, &#34;grid&#34;)) --&gt;
-&lt;!-- object.size(meuse_sg) --&gt;
-&lt;!-- dim(slot(meuse_sg, &#34;data&#34;)) --&gt;
-&lt;!-- par(mfrow=c(1,1)) --&gt;
-&lt;!-- ``` --&gt;
-&lt;!-- ## Spatial grids --&gt;
-&lt;!--  Interpolons par &#34;inverse distance weighting&#34; un objet *SpatialPointsDataFrame*  --&gt;
-&lt;!-- ```{r faireSpatialPixelsDataFrame3, echo=TRUE, fig.height=2.5, message=TRUE, warning=FALSE} --&gt;
-&lt;!-- library(gstat) --&gt;
-&lt;!-- meuse_sg$zincIDW &lt;- idw(zinc~1,meuse_sp, meuse_sg)$var1.pred  --&gt;
-&lt;!-- #interpolation par un poids inverse à la distance --&gt;
-&lt;!--     bubble(meuse_sp, &#34;zinc&#34;,col = c(&#34;white&#34;, &#34;orange&#34;)) --&gt;
-&lt;!-- ``` --&gt;
-&lt;!-- ## Spatial grids --&gt;
-&lt;!-- L&#39;interpolation par &#34;inverse distance weighting&#34; d&#39;un objet *SpatialPointsDataFrame* crée un objet *SpatialGridDataFrame*: --&gt;
-&lt;!-- ```{r faireSpatialPixelsDataFrame4, echo = TRUE, warning = FALSE, message = TRUE} --&gt;
-&lt;!--     image(meuse_sg,&#34;zincIDW&#34;, col= terrain.colors(7)) --&gt;
-&lt;!-- ``` --&gt;
-&lt;!-- ## Exercice 3 ## --&gt;
-&lt;!-- * Lire le champ de pollution atmosphérique du 15 juin 2014 en PM10, PM25 , NO2 et O3 prévues par le code numérique CHIMERE  sur une grille régulière recouvrant la France métropolitaine dans le fichier **chim.20140615.csv**. --&gt;
-&lt;!-- Vérifier que l&#39;écartement entre les points est régulier et le corriger si nécessaire. Faire une représentation graphique du champ de prévisions de PM25 du 15 juin 2014 sur laquelle on pourra tracer le fond de carte des contours de la France métropolitaine. --&gt;
-&lt;!-- Créer un objet *SpatialPixelDataFrame* . Quelle est sa taille? --&gt;
-&lt;!-- Le transformer en un objet *SpatialGridDataFrame*. A-t-on économisé de l&#39;espace de stockage? --&gt;
-&lt;!-- * Interpoler par &#34;inverse distance weighting&#34; (en supposant qu&#39;un écart d&#39;un degré de latitude correspond à celui d&#39;un degré de longiture) les observations de PM25 (un objet *SpatialPointsDataFrame* ) sur la grille des previsions Chimère (un objet *SpatialGridDataFrame*). Représenter les erreurs de previsions. --&gt;
-&lt;!-- ## Recap ASDAR page 52 --&gt;
-&lt;!-- \begin{center} --&gt;
-&lt;!--   \includegraphics[width=1\textwidth]{figSpatialGrids.png} --&gt;
-&lt;!-- \end{center} --&gt;
-&lt;!-- # SpatialLines &amp; SpatialPolygones --&gt;
-&lt;!-- ## Polygons --&gt;
-&lt;!-- * Un objet *Line* = ensemble de coordonnées 2D sans ordre. Un *Polygon* = *Line* fermée. *Lines*= liste de *Line*. --&gt;
-&lt;!-- * Un objet *SpatialLines* = ensemble de listes de coordonnées 2D avec ordre. Idem pour *SpatialPolygons* --&gt;
-&lt;!-- * *SpatialLinesDataFrame* et  *SpatialPolygonsDataFrame* =+ data.frame dont les lignes associées aux coordonnées. --&gt;
-&lt;!-- ## Polygons et leur famille --&gt;
-&lt;!-- Les données meuse du package **sp** contiennent les coordonnées des bords de la rivière. On les transforme en un objet *SpatialPolygons* : --&gt;
-&lt;!-- ```{r faireSpatialPolygonsDataFrame1, echo = TRUE, warning = FALSE, message = TRUE} --&gt;
-&lt;!-- data(meuse.riv) --&gt;
-&lt;!-- str(meuse.riv) --&gt;
-&lt;!-- meuse.riv_poly &lt;- SpatialPolygons(list(Polygons(list(Polygon(meuse.riv)), ID = &#34;meuse&#34;))) --&gt;
-&lt;!-- summary(meuse.riv_poly ) --&gt;
-&lt;!-- ``` --&gt;
-&lt;!-- ## *SpatialPolygons* + *SpatialPoints* + *SpatialPixels* --&gt;
-&lt;!-- Le tout ensemble: --&gt;
-&lt;!-- ```{r faireSpatialPolygonsDataFrame2, echo=TRUE, message=TRUE, warning=FALSE} --&gt;
-&lt;!-- layout(matrix(1:4, 1, 4, byrow = TRUE)) --&gt;
-&lt;!-- par(mar = c(0,0,1,0)) --&gt;
-&lt;!-- #plot(meuse_sp, cex = 0.6) --&gt;
-&lt;!-- is(meuse_sp) --&gt;
-&lt;!-- cc = coordinates(meuse_sp) --&gt;
-&lt;!-- meuse.sl = SpatialLines(list(Lines(list(Line(cc)), &#34;mess&#34;))) --&gt;
-&lt;!-- #plot(meuse.sl) --&gt;
-&lt;!-- is(meuse.sl) --&gt;
-&lt;!-- #plot(meuse.riv_poly, col = &#34;grey&#34;) --&gt;
-&lt;!-- is(meuse.riv_poly) --&gt;
-&lt;!-- #image(meuse_spx, col = &#34;grey&#34;) --&gt;
-&lt;!-- is(meuse_spx) --&gt;
-&lt;!-- ``` --&gt;
-&lt;!-- ##  *SpatialPoints* + *SpatialPolygons* + *SpatialPixels* --&gt;
-&lt;!-- Le tout ensemble: --&gt;
-&lt;!-- ```{r faireSpatialPolygonsDataFrame3, echo=FALSE, fig.width=3, message=TRUE, warning=FALSE} --&gt;
-&lt;!-- plot(meuse_sp, cex = 0.6) --&gt;
-&lt;!-- title(&#34;points&#34;) --&gt;
-&lt;!-- plot(meuse.sl) --&gt;
-&lt;!-- title(&#34;lines&#34;) --&gt;
-&lt;!-- plot(meuse.riv_poly, col = &#34;grey&#34;) --&gt;
-&lt;!-- title(&#34;polygons&#34;) --&gt;
-&lt;!-- image(meuse_spx, col = &#34;grey&#34;) --&gt;
-&lt;!-- title(&#34;grid&#34;) --&gt;
-&lt;!-- par(mfrow=c(1,1)) --&gt;
-&lt;!-- ``` --&gt;
-&lt;!-- ##  *SpatialPoints* + *SpatialPolygons* + *SpatialPixels* --&gt;
-&lt;!-- Le tout ensemble: --&gt;
-&lt;!-- ```{r faireSpatialPolygonsDataFrame4, echo=FALSE, fig.width=6,fig.height=5, message=TRUE, warning=FALSE} --&gt;
-&lt;!-- par(mfrow=c(1,1)) --&gt;
-&lt;!-- image(meuse_spx, col = &#34;grey&#34;) --&gt;
-&lt;!-- plot(meuse.riv_poly, col = &#34;blue&#34;,add=T) --&gt;
-&lt;!-- plot(meuse_sp, cex = 1.6,add=T) --&gt;
-&lt;!-- box() --&gt;
-&lt;!-- ``` --&gt;
-&lt;!-- ## Spatial Lines et *ContourLines2SLDF* --&gt;
-&lt;!-- ```{r faireContourLines2SLDF1, echo=TRUE, fig.width=3, message=TRUE, warning=FALSE} --&gt;
-&lt;!-- data(volcano) --&gt;
-&lt;!-- #?ContourLines2SLDF --&gt;
-&lt;!-- volcano_sl &lt;- ContourLines2SLDF(contourLines(volcano,nlevels=10))  --&gt;
-&lt;!-- sapply(slot(volcano_sl, &#34;lines&#34;), function(x) length(slot(x, &#34;Lines&#34;))) --&gt;
-&lt;!-- volcano_sl$level --&gt;
-&lt;!-- col &lt;- terrain.colors(nlevels(volcano_sl$level))  --&gt;
-&lt;!-- # plot(volcano_sl, bg = &#34;grey70&#34;, --&gt;
-&lt;!-- # col = col[as.numeric(volcano_sl$level)], lwd = 3) --&gt;
-&lt;!-- ``` --&gt;
-&lt;!-- ## Spatial Lines et *ContourLines2SLDF* --&gt;
-&lt;!-- ```{r faireContourLines2SLDF2, echo=FALSE, fig.width=6,fig.height=5, message=TRUE, warning=FALSE} --&gt;
-&lt;!-- plot(volcano_sl, bg = &#34;grey70&#34;,col = col[as.numeric(volcano_sl$level)], lwd = 3) --&gt;
-&lt;!-- ``` --&gt;
-&lt;!-- ## Exercice 4 ## --&gt;
-&lt;!-- * Quelle est la nature de l&#39;objet *france* obtenu à partir du package *Cshapes* dans l&#39;exercice 1 ? --&gt;
-&lt;!-- * Créer des lignes de niveaux pour les previsions Chimère de PM25. Les transformer en un objet de la famille *SpatialPolygonsDataFrame*. Représenter ces lignes de niveaux sur celles obtenues pour l&#39;interpolation (&#34;IDW&#34; ou &#34;krigeage&#34;) obtenue à partir des observations de PM25. --&gt;
-&lt;!-- ## Recap ASDAR page 40 --&gt;
-&lt;!-- \begin{center} --&gt;
-&lt;!--   \includegraphics[width=1\textwidth]{figSpatialPolygons.png} --&gt;
-&lt;!-- \end{center} --&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-=======
->>>>>>> 29afbeae363d15cef4ba190f5387d6eff763cd21
       <title>Rmarkdown: tableaux interactifs et retour d&#39;expérience</title>
       <link>/post/rmarkdown-tableaux-interactifs-et-retour-d-experience/</link>
       <pubDate>Fri, 23 Feb 2018 00:00:00 +0000</pubDate>
@@ -1321,7 +992,6 @@ leaflet() %&amp;gt;% addTiles() %&amp;gt;% setView(2.34822, 48.83976, zoom = 17)
     </item>
     
     <item>
-<<<<<<< HEAD
       <title>A bit of tidyverse and dplyr</title>
       <link>/talk/2018-05-02-tidy-dplyr/</link>
       <pubDate>Tue, 06 Feb 2018 00:00:00 +0100</pubDate>
@@ -1331,8 +1001,6 @@ leaflet() %&amp;gt;% addTiles() %&amp;gt;% setView(2.34822, 48.83976, zoom = 17)
     </item>
     
     <item>
-=======
->>>>>>> 29afbeae363d15cef4ba190f5387d6eff763cd21
       <title>Deep Learning sous R</title>
       <link>/talk/2018-05-25-deep-learning-sous-r/</link>
       <pubDate>Tue, 06 Feb 2018 00:00:00 +0100</pubDate>
@@ -1347,15 +1015,6 @@ leaflet() %&amp;gt;% addTiles() %&amp;gt;% setView(2.34822, 48.83976, zoom = 17)
       <pubDate>Tue, 06 Feb 2018 00:00:00 +0100</pubDate>
       
       <guid>/talk/2018-06-22-programmation-efficace-en-r-gestion-de-la-m%C3%A9moire/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Statistiques Spatiales sous R</title>
-      <link>/talk/2018-03-23-statistiques-spatiales-sous-r/</link>
-      <pubDate>Tue, 06 Feb 2018 00:00:00 +0100</pubDate>
-      
-      <guid>/talk/2018-03-23-statistiques-spatiales-sous-r/</guid>
       <description></description>
     </item>
     
@@ -2252,8 +1911,6 @@ Figure 1: A fancy pie chart.
 </description>
     </item>
     
-<<<<<<< HEAD
-=======
     <item>
       <title>Mobile visual clothing search</title>
       <link>/publication/clothing-search/</link>
@@ -2282,6 +1939,5 @@ Figure 1: A fancy pie chart.
 &lt;script src=&#34;{{ &#34;lib/crosstalk-1.0.0/js/crosstalk.min.js&#34; | relURL }}&#34;&gt;&lt;/script&gt; </description>
     </item>
     
->>>>>>> 29afbeae363d15cef4ba190f5387d6eff763cd21
   </channel>
 </rss>

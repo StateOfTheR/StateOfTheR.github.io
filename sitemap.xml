@@ -5,16 +5,6 @@
     
     <url>
     
-<<<<<<< HEAD
-      <loc>/post/spatial/</loc>
-      <lastmod>2018-03-23T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
       <loc>/post/rmarkdown-tableaux-interactifs-et-retour-d-experience/</loc>
       <lastmod>2018-02-23T00:00:00+00:00</lastmod>
     </url>
@@ -35,10 +25,6 @@
     
       <loc>/project/github_grp/</loc>
       <lastmod>2018-02-06T00:00:00+00:00</lastmod>
-=======
-      <loc>/post/rmarkdown-tableaux-interactifs-et-retour-d-experience/</loc>
-      <lastmod>2018-02-23T00:00:00+00:00</lastmod>
->>>>>>> 29afbeae363d15cef4ba190f5387d6eff763cd21
     </url>
     
   
@@ -46,31 +32,17 @@
     
     <url>
     
-      <loc>/post/science-communication-with-r-style-r-markdown-xaringan/</loc>
-      <lastmod>2018-02-23T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/project/github_grp/</loc>
-      <lastmod>2018-02-06T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-<<<<<<< HEAD
-      <loc>/talk/2018-05-02-tidy-dplyr/</loc>
-      <lastmod>2018-02-06T00:00:00+01:00</lastmod>
-=======
       <loc>/project/finistr17/</loc>
       <lastmod>2018-02-06T00:00:00+00:00</lastmod>
->>>>>>> 29afbeae363d15cef4ba190f5387d6eff763cd21
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/talk/2018-05-02-tidy-dplyr/</loc>
+      <lastmod>2018-02-06T00:00:00+01:00</lastmod>
     </url>
     
   
@@ -88,15 +60,6 @@
     <url>
     
       <loc>/talk/2018-06-22-programmation-efficace-en-r-gestion-de-la-m%C3%A9moire/</loc>
-      <lastmod>2018-02-06T00:00:00+01:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/talk/2018-03-23-statistiques-spatiales-sous-r/</loc>
       <lastmod>2018-02-06T00:00:00+01:00</lastmod>
     </url>
     
@@ -291,25 +254,6 @@
     
     <url>
     
-<<<<<<< HEAD
-      <loc>/post/2018-03-23-spatial/happyr-230318-plus/</loc>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/post/2018-03-23-spatial/happyr-230318/</loc>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-=======
->>>>>>> 29afbeae363d15cef4ba190f5387d6eff763cd21
       <loc>/tags/kable/</loc>
       <lastmod>2018-02-23T00:00:00+00:00</lastmod>
       <priority>0</priority>
@@ -331,19 +275,6 @@
     
       <loc>/tags/learnr/</loc>
       <lastmod>2017-09-25T00:00:00+00:00</lastmod>
-<<<<<<< HEAD
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/tags/package/</loc>
-      <lastmod>2018-03-23T00:00:00+00:00</lastmod>
-=======
->>>>>>> 29afbeae363d15cef4ba190f5387d6eff763cd21
       <priority>0</priority>
     </url>
     
@@ -383,11 +314,7 @@
     <url>
     
       <loc>/categories/r/</loc>
-<<<<<<< HEAD
-      <lastmod>2018-03-23T00:00:00+00:00</lastmod>
-=======
       <lastmod>2015-07-23T21:13:14-05:00</lastmod>
->>>>>>> 29afbeae363d15cef4ba190f5387d6eff763cd21
       <priority>0</priority>
     </url>
     
@@ -408,16 +335,6 @@
     
       <loc>/tags/regression/</loc>
       <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/tags/sp/</loc>
-      <lastmod>2018-03-23T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -467,11 +384,7 @@
     <url>
     
       <loc>/tags/workshop/</loc>
-<<<<<<< HEAD
-      <lastmod>2018-03-23T00:00:00+00:00</lastmod>
-=======
       <lastmod>2017-09-03T00:00:00+00:00</lastmod>
->>>>>>> 29afbeae363d15cef4ba190f5387d6eff763cd21
       <priority>0</priority>
     </url>
     

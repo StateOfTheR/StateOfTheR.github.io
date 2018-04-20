@@ -13,7 +13,6 @@
     
     
     <item>
-<<<<<<< HEAD
       <title>A bit of tidyverse and dplyr</title>
       <link>/talk/2018-05-02-tidy-dplyr/</link>
       <pubDate>Tue, 06 Feb 2018 00:00:00 +0100</pubDate>
@@ -23,8 +22,6 @@
     </item>
     
     <item>
-=======
->>>>>>> 29afbeae363d15cef4ba190f5387d6eff763cd21
       <title>Deep Learning sous R</title>
       <link>/talk/2018-05-25-deep-learning-sous-r/</link>
       <pubDate>Tue, 06 Feb 2018 00:00:00 +0100</pubDate>
@@ -39,15 +36,6 @@
       <pubDate>Tue, 06 Feb 2018 00:00:00 +0100</pubDate>
       
       <guid>/talk/2018-06-22-programmation-efficace-en-r-gestion-de-la-m%C3%A9moire/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Statistiques Spatiales sous R</title>
-      <link>/talk/2018-03-23-statistiques-spatiales-sous-r/</link>
-      <pubDate>Tue, 06 Feb 2018 00:00:00 +0100</pubDate>
-      
-      <guid>/talk/2018-03-23-statistiques-spatiales-sous-r/</guid>
       <description></description>
     </item>
     

@@ -13,23 +13,6 @@
     
     
     <item>
-<<<<<<< HEAD
-      <title>Investigations Spatiales et Cartographiques</title>
-      <link>/post/spatial/</link>
-      <pubDate>Fri, 23 Mar 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/post/spatial/</guid>
-      <description>Introduction Les données spatiales et R Les données spatiales se présentes sous la forme de:
- vecteurs (points, vecteurs, lignes, etc)
- raster (pixels).
-  R permet de lire, d’écrire et de manipuler des données géoréférencées, puis d’en faire l’analyse statistique. Nous avons repérés deux packages de base :
- sp - classe de base pour gérér des données spatiales, en particulier vectorisées, mais aussi grilles.
- raster - classes et outils pour manipuler des données sous forme raster.</description>
-    </item>
-    
-    <item>
-=======
->>>>>>> 29afbeae363d15cef4ba190f5387d6eff763cd21
       <title>Rmarkdown: tableaux interactifs et retour d&#39;expérience</title>
       <link>/post/rmarkdown-tableaux-interactifs-et-retour-d-experience/</link>
       <pubDate>Fri, 23 Feb 2018 00:00:00 +0000</pubDate>
@@ -105,31 +88,6 @@ Key features:
       <description>R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
 You can embed an R code chunk like this:
 summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
-    </item>
-    
-    <item>
-      <title>Happy R - Investigations Spatiales et Cartographiques </title>
-      <link>/post/2018-03-23-spatial/happyr-230318-plus/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/post/2018-03-23-spatial/happyr-230318-plus/</guid>
-      <description>CRS (Merci à Nicolas SABY, Unité InfoSol, Orléans, cf. sa présentation atelier RESSTE) Un mille à l’équateur vaut une minute  De multiples systèmes de projection  La France  En R , deux façons théoriques de définir le système de projection  par le nom du code EPSG, par exemple WGS84 = 4326 (google) ou 2154 (Lambert-93)
- par l’écriture directe du code à considérer dans le slot proj4string</description>
-    </item>
-    
-    <item>
-      <title>Happy R - Investigations Spatiales et Cartographiques </title>
-      <link>/post/2018-03-23-spatial/happyr-230318/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/post/2018-03-23-spatial/happyr-230318/</guid>
-      <description>Introduction Les données spatiales et R Les données spatiales se présentes sous la forme de:
- vecteurs (points, vecteurs, lignes, etc)
- raster (pixels).
-  
-R permet de lire, d’écrire et de manipuler des données géoréférencées, puis d’en faire l’analyse statistique. Nous avons repérés deux packages de base :
- sp - classe de base pour gérér des données spatiales, en particulier vectorisées, mais aussi grilles.
- raster - classes et outils pour manipuler des données sous forme raster.</description>
     </item>
     
   </channel>
