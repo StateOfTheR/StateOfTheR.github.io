@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="fr-fr">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme" content="hugo-academic">
+  <meta name="generator" content="Hugo 0.34" />
+  <meta name="author" content="State of the R">
+
+  
+  
+  
+  
+    
+      
+    
+  
+  <meta name="description" content="Introduction Les données spatiales et R Les données spatiales se présentes sous la forme de:
+ vecteurs (points, vecteurs, lignes, etc)
+ raster (pixels).
+  
+R permet de lire, d’écrire et de manipuler des données géoréférencées, puis d’en faire l’analyse statistique. Nous avons repérés deux packages de base :
+ sp - classe de base pour gérér des données spatiales, en particulier vectorisées, mais aussi grilles.
+ raster - classes et outils pour manipuler des données sous forme raster.">
+
+  
+  <link rel="alternate" hreflang="fr-fr" href="/post/2018-03-23-spatial/happyr-230318/">
+
+  
+
+
+  
+
+  
+  
+  <meta name="theme-color" content="#3f51b5">
+  
+  
+  
+  
+    
+  
+  
+    
+    
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+    
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.1/css/academicons.min.css" integrity="sha512-NThgw3XKQ1absAahW6to7Ey42uycrVvfNfyjqcFNgCmOCQ5AR4AO0SiXrN+8ZtYeappp56lk1WtvjVmEa+VR6A==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+  
+  
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700%7cRoboto:400,400italic,700%7cRoboto&#43;Mono">
+  
+  <link rel="stylesheet" href="/styles.css">
+  
+
+  
+
+  
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="State of The R">
+  <link rel="feed" href="/index.xml" type="application/rss+xml" title="State of The R">
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="/post/2018-03-23-spatial/happyr-230318/">
+
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="og:site_name" content="State of The R">
+  <meta property="og:url" content="/post/2018-03-23-spatial/happyr-230318/">
+  <meta property="og:title" content="Happy R - Investigations Spatiales et Cartographiques  | State of The R">
+  <meta property="og:description" content="Introduction Les données spatiales et R Les données spatiales se présentes sous la forme de:
+ vecteurs (points, vecteurs, lignes, etc)
+ raster (pixels).
+  
+R permet de lire, d’écrire et de manipuler des données géoréférencées, puis d’en faire l’analyse statistique. Nous avons repérés deux packages de base :
+ sp - classe de base pour gérér des données spatiales, en particulier vectorisées, mais aussi grilles.
+ raster - classes et outils pour manipuler des données sous forme raster.">
+  <meta property="og:locale" content="fr-fr">
+  
+  
+  
+  
+
+  <link href="/lib/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet">
+<link href="/lib/dt-core-1.10.16/css/jquery.dataTables.min.css" rel="stylesheet">
+<link href="/lib/dt-core-1.10.16/css/jquery.dataTables.extra.css" rel="stylesheet">
+<link href="/lib/crosstalk-1.0.0/css/crosstalk.css" rel="stylesheet">
+
+<script src="/lib/htmlwidgets-1.0/htmlwidgets.js"></script>
+<script src="/lib/jquery-1.12.4/jquery.min.js"></script>
+<script src="/lib/datatables-binding-0.4.3/datatables.js"></script>
+<script src="/lib/dt-core-1.10.16/js/jquery.dataTables.min.js"></script> 
+<script src="/lib/crosstalk-1.0.0/js/crosstalk.min.js"></script> 
+
+  <title>Happy R - Investigations Spatiales et Cartographiques  | State of The R</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="navbar-header">
+      
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target=".navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+      <a class="navbar-brand" href="/"><img src="/img/phare.png" alt="State of The R"></a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse">
+
+      
+      
+      <ul class="nav navbar-nav navbar-right">
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#hero">
+            
+            <span>Accueil</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#upcoming_workshops">
+            
+            <span>Ateliers à venir</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#past_workshops">
+            
+            <span>Ateliers passés</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#projets">
+            
+            <span>Projets</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#about">
+            
+            <span>À propos</span>
+            
+          </a>
+        </li>
+
+        
+        
+      
+
+      
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+  <div class="article-container">
+    <h1 itemprop="name">Happy R - Investigations Spatiales et Cartographiques </h1>
+
+    
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    
+    <time datetime="0001-01-01 00:00:00 &#43;0000 UTC" itemprop="datePublished dateModified">
+      Jan 1, 0001
+    </time>
+  </span>
+  <span itemscope itemprop="author publisher" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="State of the R">
+  </span>
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    9 min read
+  </span>
+  
+
+  
+  
+
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Happy%20R%20-%20Investigations%20Spatiales%20et%20Cartographiques%20&amp;url=%2fpost%2f2018-03-23-spatial%2fhappyr-230318%2f"
+         target="_blank" rel="noopener">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=%2fpost%2f2018-03-23-spatial%2fhappyr-230318%2f"
+         target="_blank" rel="noopener">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2fpost%2f2018-03-23-spatial%2fhappyr-230318%2f&amp;title=Happy%20R%20-%20Investigations%20Spatiales%20et%20Cartographiques%20"
+         target="_blank" rel="noopener">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=%2fpost%2f2018-03-23-spatial%2fhappyr-230318%2f&amp;title=Happy%20R%20-%20Investigations%20Spatiales%20et%20Cartographiques%20"
+         target="_blank" rel="noopener">
+        <i class="fa fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=Happy%20R%20-%20Investigations%20Spatiales%20et%20Cartographiques%20&amp;body=%2fpost%2f2018-03-23-spatial%2fhappyr-230318%2f">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+
+    <div class="article-style" itemprop="articleBody">
+      <div id="introduction" class="section level1">
+<h1>Introduction</h1>
+<div id="les-donnees-spatiales-et-r" class="section level2 smaller">
+<h2>Les données spatiales et R</h2>
+<p>Les données spatiales se présentes sous la forme de:</p>
+<ul>
+<li><p><code>vecteurs</code> (points, vecteurs, lignes, etc)</p></li>
+<li><p><code>raster</code> (pixels).</p></li>
+</ul>
+<p><br/></p>
+<p>R permet de lire, d’écrire et de manipuler des données géoréférencées, puis d’en faire l’analyse statistique. Nous avons repérés deux packages de base :</p>
+<ul>
+<li><p><code>sp</code> - classe de base pour gérér des données spatiales, en particulier vectorisées, mais aussi grilles.</p></li>
+<li><p><code>raster</code> - classes et outils pour manipuler des données sous forme raster.</p></li>
+</ul>
+<p><span class="math inline">\(+\)</span> des outils, divers et variés, en particulier:</p>
+<ul>
+<li><p><code>rgdal</code>: Interface R pour la library C/C++ de stat spatiales <code>gdal</code> (Geospatial Data Abstraction Library) pour lire et écrire des données spatialisées</p></li>
+<li><p><code>rgeos</code>: Interface R de la library <code>geos</code> (Geometry Engine Open Source) avec opérations de type ensemblistes</p></li>
+</ul>
+<p><br/></p>
+<p>Bien d’autres packages spatiaux sur le CRAN!, voir - <a href="http://cran.r-project.org/web/views/Spatial.html">Spatial task view</a></p>
+</div>
+<div id="que-fait-on-aujourdhui" class="section level2">
+<h2>Que fait-on aujourd’hui ?</h2>
+<p>On étudie les packages <strong>sp</strong> puis <strong>gstat</strong>…puis <strong>spacetime</strong></p>
+<p>Il est possible de bricoler avec l’emploi des commandes uniquement de base de R, telles que data.frame, image, etc….<strong>MAIS</strong> pourquoi utiliser un package?</p>
+<p>Accepter de perdre un peu de liberté indisciplinée ?</p>
+<ul>
+<li>pour travailler et partager avec d’autres collègues,</li>
+<li>pour récupérer le travail d’autres collègues.</li>
+<li>bénéficier des fondations et des extensions de <strong>sp</strong></li>
+</ul>
+
+<p>Présentation inspirée des exemples de <a href="http://asdar-book.org">ce bouquin</a> et du travail réalisé avec le réseau <a href="http://informatique-mia.inra.fr/resste/atelier">RESSTE</a></p>
+</div>
+<div id="r-nest-pas-simplement-la-calculette-du-statisticien" class="section level2">
+<h2>R n’est pas simplement la calculette du statisticien</h2>
+<pre class="r"><code>cars$qspeed &lt;- cut(cars$speed, breaks=quantile(cars$speed), 
+                   include.lowest=TRUE)
+par(mfrow=c(1,2))
+plot(dist ~ speed, data=cars)
+plot(dist ~ qspeed, data=cars)</code></pre>
+<p><img src="/post/2018-03-23-spatial/happyR-230318_files/figure-html/calculette-1.png" width="672" /></p>
+<pre class="r"><code>par(mfrow=c(1,1))</code></pre>
+</div>
+<div id="le-package-sp-definit-des-classes-dobjet-explicitement-spatialises" class="section level2">
+<h2>Le package sp définit des classes d’objet explicitement spatialisés</h2>
+<pre class="r"><code>library(sp)
+getClass(&quot;Spatial&quot;)
+## Class &quot;Spatial&quot; [package &quot;sp&quot;]
+## 
+## Slots:
+##                               
+## Name:         bbox proj4string
+## Class:      matrix         CRS
+## 
+## Known Subclasses: 
+## Class &quot;SpatialPoints&quot;, directly
+## Class &quot;SpatialMultiPoints&quot;, directly
+## Class &quot;SpatialGrid&quot;, directly
+## Class &quot;SpatialLines&quot;, directly
+## Class &quot;SpatialPolygons&quot;, directly
+## Class &quot;SpatialPointsDataFrame&quot;, by class &quot;SpatialPoints&quot;, distance 2
+## Class &quot;SpatialPixels&quot;, by class &quot;SpatialPoints&quot;, distance 2
+## Class &quot;SpatialMultiPointsDataFrame&quot;, by class &quot;SpatialMultiPoints&quot;, distance 2
+## Class &quot;SpatialGridDataFrame&quot;, by class &quot;SpatialGrid&quot;, distance 2
+## Class &quot;SpatialLinesDataFrame&quot;, by class &quot;SpatialLines&quot;, distance 2
+## Class &quot;SpatialPixelsDataFrame&quot;, by class &quot;SpatialPoints&quot;, distance 3
+## Class &quot;SpatialPolygonsDataFrame&quot;, by class &quot;SpatialPolygons&quot;, distance 2</code></pre>
+</div>
+<div id="le-package-sp-definit-des-classes-dobjet-explicitement-spatialises-1" class="section level2">
+<h2>Le package sp définit des classes d’objet explicitement spatialisés</h2>
+<ul>
+<li>Points avec ou sans data : <em>SpatialPoints</em> et <em>SpatialPointsDataFrame</em></li>
+<li>Pixels avec ou sans data : <em>SpatialPixels</em> et <em>SpatialPixelsDataFrame</em></li>
+<li>Grilles avec ou sans data : <em>SpatialGrid</em> et <em>SpatialGridDataFrame</em></li>
+<li>Lignes avec ou sans data : <em>SpatialGrid</em> et <em>SpatialGridDataFrame</em></li>
+<li>Polygones : <em>SpatialPolygons</em> et <em>SpatialPolygonsDataFrame</em></li>
+</ul>
+</div>
+</div>
+<div id="spatial-et-spatialpoints" class="section level1">
+<h1>Spatial et SpatialPoints</h1>
+<div id="la-classe-de-base-spatial" class="section level2">
+<h2>La classe de base: Spatial</h2>
+<p>Elle ne possède que 2 <em>slots</em></p>
+<ul>
+<li>un <em>bounding box</em> en longitude/latitude</li>
+<li>un objet de la classe <em>CRS</em> (coordinate reference system), par défaut mise à CRS(as.character(NA)) . Voir plus tard ce qu’est un CRS.</li>
+</ul>
+<pre class="r"><code>library(sp)
+m &lt;- matrix(c(-2,15,10,40), ncol=2, dimnames=list(NULL, c(&quot;min&quot;, &quot;max&quot;)))
+crs &lt;- CRS(projargs=as.character(NA))
+crs
+## CRS arguments: NA
+S &lt;- Spatial(bbox=m, proj4string=crs)
+S
+## An object of class &quot;Spatial&quot;
+## Slot &quot;bbox&quot;:
+##      min max
+## [1,]  -2  10
+## [2,]  15  40
+## 
+## Slot &quot;proj4string&quot;:
+## CRS arguments: NA</code></pre>
+</div>
+<div id="pour-la-suite-de-lexpose-on-sappuie-sur-le-jeux-de-donnees-meuse" class="section level2">
+<h2>Pour la suite de l’exposé, on s’appuie sur le jeux de données MEUSE</h2>
+<pre class="r"><code># check for example data
+data(meuse) # mesures de métaux lourds dans la meuse
+str(meuse) # 155 observations et 14 variables
+## &#39;data.frame&#39;:    155 obs. of  14 variables:
+##  $ x      : num  181072 181025 181165 181298 181307 ...
+##  $ y      : num  333611 333558 333537 333484 333330 ...
+##  $ cadmium: num  11.7 8.6 6.5 2.6 2.8 3 3.2 2.8 2.4 1.6 ...
+##  $ copper : num  85 81 68 81 48 61 31 29 37 24 ...
+##  $ lead   : num  299 277 199 116 117 137 132 150 133 80 ...
+##  $ zinc   : num  1022 1141 640 257 269 ...
+##  $ elev   : num  7.91 6.98 7.8 7.66 7.48 ...
+##  $ dist   : num  0.00136 0.01222 0.10303 0.19009 0.27709 ...
+##  $ om     : num  13.6 14 13 8 8.7 7.8 9.2 9.5 10.6 6.3 ...
+##  $ ffreq  : Factor w/ 3 levels &quot;1&quot;,&quot;2&quot;,&quot;3&quot;: 1 1 1 1 1 1 1 1 1 1 ...
+##  $ soil   : Factor w/ 3 levels &quot;1&quot;,&quot;2&quot;,&quot;3&quot;: 1 1 1 2 2 2 2 1 1 2 ...
+##  $ lime   : Factor w/ 2 levels &quot;0&quot;,&quot;1&quot;: 2 2 2 1 1 1 1 1 1 1 ...
+##  $ landuse: Factor w/ 15 levels &quot;Aa&quot;,&quot;Ab&quot;,&quot;Ag&quot;,..: 4 4 4 11 4 11 4 2 2 15 ...
+##  $ dist.m : num  50 30 150 270 380 470 240 120 240 420 ...</code></pre>
+</div>
+<div id="spatial-points" class="section level2">
+<h2>Spatial points</h2>
+<p>On utilise les 2 colonnes du data.frame meuse renseignant les coordonnées géographiques pour en faire un objet <em>SpatialPoints</em></p>
+<pre class="r"><code># check for example data
+coords &lt;- SpatialPoints(meuse[, c(&quot;x&quot;, &quot;y&quot;)]) 
+summary(coords)
+## Object of class SpatialPoints
+## Coordinates:
+##      min    max
+## x 178605 181390
+## y 329714 333611
+## Is projected: NA 
+## proj4string : [NA]
+## Number of points: 155</code></pre>
+</div>
+<div id="exercice-a-vous-de-jouer" class="section level2">
+<h2>Exercice à vous de jouer</h2>
+<div id="merci-a-maxime-beauchamp-et-laure-malherbe-de-lineris" class="section level3">
+<h3>Merci à Maxime Beauchamp et Laure Malherbe de l’Ineris</h3>
+
+</div>
+</div>
+<div id="exercice-a-vous-de-jouer-1" class="section level2">
+<h2>Exercice à vous de jouer</h2>
+
+</div>
+<div id="exercice-a-vous-de-jouer-2" class="section level2">
+<h2>Exercice à vous de jouer</h2>
+
+</div>
+<div id="exercice-1" class="section level2">
+<h2>Exercice 1</h2>
+<p>Lire les stations de suivi de la pollution atmosphérique en PM10, PM25 , NO2 et O3 dans le fichier <strong>AirBase_v7_stations.csv</strong>.</p>
+<p>Extraire leur coordonnées, jeter les doublons et sélectionner les stations de France métropolitaine. En faire un objet <em>SpatialPoints</em> et les représenter. On pourra extraire un fond de carte de la France par les commandes R suivantes:</p>
+<pre class="r"><code>library(cshapes)
+## Loading required package: maptools
+## Checking rgeos availability: TRUE
+## Loading required package: plyr
+cs&lt;-cshp()
+row.names(cs)=paste(as.character(cs$CNTRY_NAME),1:244)
+numfrance=grep(&#39;France&#39;,row.names(cs)) #=106
+cowcodefrance=cs$COWCODE[106]
+france &lt;- cs[cs$COWCODE==cowcodefrance,]</code></pre>
+</div>
+<div id="spatial-points-data-frame" class="section level2">
+<h2>Spatial points data frame</h2>
+<p>Retour à Meuse. On ajoute aux coordonnées géographiques les données pour en faire un objet <em>SpatialPointsDataFrame</em>. Ca se comporte comme un dataframe!</p>
+<pre class="r"><code>meuse_sp &lt;- SpatialPointsDataFrame(coords, meuse)
+names(meuse_sp)
+##  [1] &quot;x&quot;       &quot;y&quot;       &quot;cadmium&quot; &quot;copper&quot;  &quot;lead&quot;    &quot;zinc&quot;   
+##  [7] &quot;elev&quot;    &quot;dist&quot;    &quot;om&quot;      &quot;ffreq&quot;   &quot;soil&quot;    &quot;lime&quot;   
+## [13] &quot;landuse&quot; &quot;dist.m&quot;
+is(meuse_sp)
+## [1] &quot;SpatialPointsDataFrame&quot; &quot;SpatialPoints&quot;         
+## [3] &quot;Spatial&quot;
+is(meuse)
+## [1] &quot;data.frame&quot; &quot;list&quot;       &quot;oldClass&quot;   &quot;vector&quot;
+#str(meuse_sp)</code></pre>
+<p>On aurait pu faire plus direct:</p>
+<pre class="r"><code>meuse_sp2 &lt;- meuse
+coordinates(meuse_sp2) &lt;- ~x+y 
+# str(meuse_sp2)
+is(meuse_sp2)
+## [1] &quot;SpatialPointsDataFrame&quot; &quot;SpatialPoints&quot;         
+## [3] &quot;Spatial&quot;</code></pre>
+</div>
+<div id="exercice-2" class="section level2">
+<h2>Exercice 2</h2>
+<p>Lire les données de pollution atmosphérique du 15 juin 2014 en PM10, PM25 , NO2 et O3 pour les stations actives de France métropolitaine dans les fichiers <strong>PM10_20140615.csv</strong>, <strong>PM25_20140615.csv</strong>, <strong>NO2_20140615.csv</strong> et <strong>03_20140615.csv</strong> . Les données manquantes sont codées -999.</p>
+<p>On pourra utiliser les packages <em>tidyR</em> et <em>data.table</em> pour avoir recours à la méthode <em>merge</em>. Créer un objet <em>SpatialPointsDataFrame</em> contenant les enregistrements géolocalisés de PM10, PM25 , NO2 et O3 pour les stations actives au 15 juin 2014 dont on conservera le type et l’aire.</p>
+</div>
+<div id="recap-asdar-page-35" class="section level2">
+<h2>Recap: ASDAR page 35</h2>
+
+</div>
+</div>
+<div id="spatialgrids-spatialpixels" class="section level1">
+<h1>SpatialGrids &amp; SpatialPixels</h1>
+<div id="spatial-grids-pixels" class="section level2">
+<h2>Spatial grids &amp; pixels</h2>
+<p>2 representations pour les data sur une grille régulière rectangualire, orientée N-S et E-W: <em>SpatialPixels</em> et <em>SpatialGrid</em></p>
+<ul>
+<li><p>SpatialPixels comme SpatialPoints, mais avec coordonnées equi-espacées</p></li>
+<li><p>SpatialPixelsDataFrame = SpatialPixels+data</p></li>
+<li><p>SpatialGridDataFrame = grille entiere et NA où manquantes</p></li>
+</ul>
+<pre class="r"><code> data(meuse.grid)
+ coords &lt;- SpatialPixels(SpatialPoints(meuse.grid[, c(&quot;x&quot;,&quot;y&quot;)]))
+meuse_spx &lt;- SpatialPixelsDataFrame(coords, meuse.grid)
+names(meuse_spx)
+## [1] &quot;x&quot;      &quot;y&quot;      &quot;part.a&quot; &quot;part.b&quot; &quot;dist&quot;   &quot;soil&quot;   &quot;ffreq&quot;
+slot(meuse_spx, &quot;grid&quot;)
+##                        x      y
+## cellcentre.offset 178460 329620
+## cellsize              40     40
+## cells.dim             78    104
+object.size(meuse_spx) 
+## 565952 bytes
+dim(slot(meuse_spx, &quot;data&quot;))
+## [1] 3103    7</code></pre>
+</div>
+<div id="spatial-grids" class="section level2">
+<h2>Spatial grids</h2>
+<p>On peut convertir un <em>SpatialPixels</em> en un <em>SpatialGrid</em>, ce qui économise de la place de stockage:</p>
+<pre class="r"><code>meuse_sg &lt;- meuse_spx
+fullgrid(meuse_sg) &lt;- TRUE 
+slot(meuse_sg, &quot;grid&quot;)
+##                        x      y
+## cellcentre.offset 178460 329620
+## cellsize              40     40
+## cells.dim             78    104
+class(slot(meuse_sg, &quot;grid&quot;))
+## [1] &quot;GridTopology&quot;
+## attr(,&quot;package&quot;)
+## [1] &quot;sp&quot;
+object.size(meuse_sg)
+## 395808 bytes
+dim(slot(meuse_sg, &quot;data&quot;))
+## [1] 8112    7
+par(mfrow=c(1,1))</code></pre>
+</div>
+<div id="spatial-grids-1" class="section level2">
+<h2>Spatial grids</h2>
+<p>Interpolons par “inverse distance weighting” un objet <em>SpatialPointsDataFrame</em></p>
+<pre class="r"><code>library(gstat)
+meuse_sg$zincIDW &lt;- idw(zinc~1,meuse_sp, meuse_sg)$var1.pred 
+## [inverse distance weighted interpolation]
+#interpolation par un poids inverse à la distance
+    bubble(meuse_sp, &quot;zinc&quot;,col = c(&quot;white&quot;, &quot;orange&quot;))</code></pre>
+<p><img src="/post/2018-03-23-spatial/happyR-230318_files/figure-html/faireSpatialPixelsDataFrame3-1.png" width="672" /></p>
+</div>
+<div id="spatial-grids-2" class="section level2">
+<h2>Spatial grids</h2>
+<p>L’interpolation par “inverse distance weighting” d’un objet <em>SpatialPointsDataFrame</em> crée un objet <em>SpatialGridDataFrame</em>:</p>
+<pre class="r"><code>    image(meuse_sg,&quot;zincIDW&quot;, col= terrain.colors(7))</code></pre>
+<p><img src="/post/2018-03-23-spatial/happyR-230318_files/figure-html/faireSpatialPixelsDataFrame4-1.png" width="672" /></p>
+</div>
+<div id="exercice-3" class="section level2">
+<h2>Exercice 3</h2>
+<ul>
+<li><p>Lire le champ de pollution atmosphérique du 15 juin 2014 en PM10, PM25 , NO2 et O3 prévues par le code numérique CHIMERE sur une grille régulière recouvrant la France métropolitaine dans le fichier <strong>chim.20140615.csv</strong>. Vérifier que l’écartement entre les points est régulier et le corriger si nécessaire. Faire une représentation graphique du champ de prévisions de PM25 du 15 juin 2014 sur laquelle on pourra tracer le fond de carte des contours de la France métropolitaine. Créer un objet <em>SpatialPixelDataFrame</em> . Quelle est sa taille? Le transformer en un objet <em>SpatialGridDataFrame</em>. A-t-on économisé de l’espace de stockage?</p></li>
+<li><p>Interpoler par “inverse distance weighting” (en supposant qu’un écart d’un degré de latitude correspond à celui d’un degré de longiture) les observations de PM25 (un objet <em>SpatialPointsDataFrame</em> ) sur la grille des previsions Chimère (un objet <em>SpatialGridDataFrame</em>). Représenter les erreurs de previsions.</p></li>
+</ul>
+</div>
+<div id="recap-asdar-page-52" class="section level2">
+<h2>Recap ASDAR page 52</h2>
+
+</div>
+</div>
+<div id="spatiallines-spatialpolygones" class="section level1">
+<h1>SpatialLines &amp; SpatialPolygones</h1>
+<div id="polygons" class="section level2">
+<h2>Polygons</h2>
+<ul>
+<li>Un objet <em>Line</em> = ensemble de coordonnées 2D sans ordre. Un <em>Polygon</em> = <em>Line</em> fermée. <em>Lines</em>= liste de <em>Line</em>.</li>
+<li>Un objet <em>SpatialLines</em> = ensemble de listes de coordonnées 2D avec ordre. Idem pour <em>SpatialPolygons</em></li>
+<li><em>SpatialLinesDataFrame</em> et <em>SpatialPolygonsDataFrame</em> =+ data.frame dont les lignes associées aux coordonnées.</li>
+</ul>
+</div>
+<div id="polygons-et-leur-famille" class="section level2">
+<h2>Polygons et leur famille</h2>
+<p>Les données meuse du package <strong>sp</strong> contiennent les coordonnées des bords de la rivière. On les transforme en un objet <em>SpatialPolygons</em> :</p>
+<pre class="r"><code>data(meuse.riv)
+str(meuse.riv)
+##  num [1:176, 1:2] 182004 182137 182252 182314 182332 ...
+meuse.riv_poly &lt;- SpatialPolygons(list(Polygons(list(Polygon(meuse.riv)), ID = &quot;meuse&quot;)))
+summary(meuse.riv_poly )
+## Object of class SpatialPolygons
+## Coordinates:
+##        min      max
+## x 178304.0 182331.5
+## y 325698.5 337684.8
+## Is projected: NA 
+## proj4string : [NA]</code></pre>
+</div>
+<div id="spatialpolygons-spatialpoints-spatialpixels" class="section level2">
+<h2><em>SpatialPolygons</em> + <em>SpatialPoints</em> + <em>SpatialPixels</em></h2>
+<p>Le tout ensemble:</p>
+<pre class="r"><code>
+layout(matrix(1:4, 1, 4, byrow = TRUE))
+par(mar = c(0,0,1,0))
+#plot(meuse_sp, cex = 0.6)
+is(meuse_sp)
+## [1] &quot;SpatialPointsDataFrame&quot; &quot;SpatialPoints&quot;         
+## [3] &quot;Spatial&quot;
+
+cc = coordinates(meuse_sp)
+meuse.sl = SpatialLines(list(Lines(list(Line(cc)), &quot;mess&quot;)))
+#plot(meuse.sl)
+is(meuse.sl)
+## [1] &quot;SpatialLines&quot; &quot;Spatial&quot;
+
+#plot(meuse.riv_poly, col = &quot;grey&quot;)
+is(meuse.riv_poly)
+## [1] &quot;SpatialPolygons&quot; &quot;Spatial&quot;
+
+#image(meuse_spx, col = &quot;grey&quot;)
+is(meuse_spx)
+## [1] &quot;SpatialPixelsDataFrame&quot; &quot;SpatialPixels&quot;         
+## [3] &quot;SpatialPointsDataFrame&quot; &quot;SpatialPoints&quot;         
+## [5] &quot;Spatial&quot;</code></pre>
+</div>
+<div id="spatialpoints-spatialpolygons-spatialpixels" class="section level2">
+<h2><em>SpatialPoints</em> + <em>SpatialPolygons</em> + <em>SpatialPixels</em></h2>
+<p>Le tout ensemble:</p>
+<p><img src="/post/2018-03-23-spatial/happyR-230318_files/figure-html/faireSpatialPolygonsDataFrame3-1.png" width="288" /><img src="/post/2018-03-23-spatial/happyR-230318_files/figure-html/faireSpatialPolygonsDataFrame3-2.png" width="288" /><img src="/post/2018-03-23-spatial/happyR-230318_files/figure-html/faireSpatialPolygonsDataFrame3-3.png" width="288" /><img src="/post/2018-03-23-spatial/happyR-230318_files/figure-html/faireSpatialPolygonsDataFrame3-4.png" width="288" /></p>
+</div>
+<div id="spatialpoints-spatialpolygons-spatialpixels-1" class="section level2">
+<h2><em>SpatialPoints</em> + <em>SpatialPolygons</em> + <em>SpatialPixels</em></h2>
+<p>Le tout ensemble:</p>
+<p><img src="/post/2018-03-23-spatial/happyR-230318_files/figure-html/faireSpatialPolygonsDataFrame4-1.png" width="576" /></p>
+</div>
+<div id="spatial-lines-et-contourlines2sldf" class="section level2">
+<h2>Spatial Lines et <em>ContourLines2SLDF</em></h2>
+<pre class="r"><code>data(volcano)
+#?ContourLines2SLDF
+volcano_sl &lt;- ContourLines2SLDF(contourLines(volcano,nlevels=10)) 
+sapply(slot(volcano_sl, &quot;lines&quot;), function(x) length(slot(x, &quot;Lines&quot;)))
+##  [1] 3 4 1 1 1 2 2 3 2 1
+volcano_sl$level
+##  [1] 100 110 120 130 140 150 160 170 180 190
+## Levels: 100 110 120 130 140 150 160 170 180 190
+
+
+col &lt;- terrain.colors(nlevels(volcano_sl$level)) 
+# plot(volcano_sl, bg = &quot;grey70&quot;,
+# col = col[as.numeric(volcano_sl$level)], lwd = 3)</code></pre>
+</div>
+<div id="spatial-lines-et-contourlines2sldf-1" class="section level2">
+<h2>Spatial Lines et <em>ContourLines2SLDF</em></h2>
+<p><img src="/post/2018-03-23-spatial/happyR-230318_files/figure-html/faireContourLines2SLDF2-1.png" width="576" /></p>
+</div>
+<div id="exercice-4" class="section level2">
+<h2>Exercice 4</h2>
+<ul>
+<li><p>Quelle est la nature de l’objet <em>france</em> obtenu à partir du package <em>Cshapes</em> dans l’exercice 1 ?</p></li>
+<li><p>Créer des lignes de niveaux pour les previsions Chimère de PM25. Les transformer en un objet de la famille <em>SpatialPolygonsDataFrame</em>. Représenter ces lignes de niveaux sur celles obtenues pour l’interpolation (“IDW” ou “krigeage”) obtenue à partir des observations de PM25.</p></li>
+</ul>
+</div>
+<div id="recap-asdar-page-40" class="section level2">
+<h2>Recap ASDAR page 40</h2>
+
+</div>
+</div>
+
+    </div>
+
+    
+
+
+    
+    
+
+    
+
+    
+
+
+  </div>
+</article>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="powered-by">
+
+      &copy; 2018 State of the R &middot; 
+
+      Powered by the
+      <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+      <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+      <span class="pull-right" aria-hidden="true">
+        <a href="#" id="back_to_top">
+          <span class="button_icon">
+            <i class="fa fa-chevron-up fa-2x"></i>
+          </span>
+        </a>
+      </span>
+
+    </p>
+  </div>
+</footer>
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close btn-large" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Cite</h4>
+      </div>
+      <div>
+        <pre><code class="modal-body tex"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-primary btn-outline js-copy-cite" href="#" target="_blank">
+          <i class="fa fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-primary btn-outline js-download-cite" href="#" target="_blank">
+          <i class="fa fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+    
+
+    
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+    
+    
+    <script src="/js/hugo-academic.js"></script>
+    
+
+    
+    
+      
+      
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+      
+
+      
+
+      
+
+      <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML" integrity="sha512-tOav5w1OjvsSJzePRtt2uQPFwBoHt1VZcUq8l8nm5284LEKE9FSJBQryzMBzHxY5P0zRdNqEcpLIRVYFNgu1jw==" crossorigin="anonymous"></script>
+    
+    
+
+  </body>
+</html>
+
