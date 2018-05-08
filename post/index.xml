@@ -13,6 +13,22 @@
     
     
     <item>
+      <title>Une introduction au tidyverse</title>
+      <link>/post/une-introduction-au-tidyverse/</link>
+      <pubDate>Wed, 02 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/une-introduction-au-tidyverse/</guid>
+      <description>Original Xaringan slides by Antoine are available here
+{magrittr} Make Tom eat an apple  Everyday language   Tom eats an apple
+ Subject - Verb - Complement
+ Programming language   eat(Tom, apple)
+ Verb - Subject - Complement
+ Pipe %&amp;gt;% library(magrittr)  x %&amp;gt;% f() is equivalent to f(x)
+ x %&amp;gt;% f(y) is equivalent to f(x, y)
+  2^mean(log(seq_len(10), base = 2), na.</description>
+    </item>
+    
+    <item>
       <title>Rmarkdown: tableaux interactifs et retour d&#39;expérience</title>
       <link>/post/rmarkdown-tableaux-interactifs-et-retour-d-experience/</link>
       <pubDate>Fri, 23 Feb 2018 00:00:00 +0000</pubDate>

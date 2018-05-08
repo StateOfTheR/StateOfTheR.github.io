@@ -5,6 +5,15 @@
     
     <url>
     
+      <loc>/post/une-introduction-au-tidyverse/</loc>
+      <lastmod>2018-05-02T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/post/rmarkdown-tableaux-interactifs-et-retour-d-experience/</loc>
       <lastmod>2018-02-23T00:00:00+00:00</lastmod>
     </url>
@@ -34,15 +43,6 @@
     
       <loc>/project/finistr17/</loc>
       <lastmod>2018-02-06T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/talk/2018-05-02-tidy-dplyr/</loc>
-      <lastmod>2018-02-06T00:00:00+01:00</lastmod>
     </url>
     
   
@@ -235,7 +235,7 @@
     <url>
     
       <loc>/tags/dplyr/</loc>
-      <lastmod>2017-10-23T00:00:00+00:00</lastmod>
+      <lastmod>2018-05-02T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -283,6 +283,16 @@
     
     <url>
     
+      <loc>/tags/magrittr/</loc>
+      <lastmod>2018-05-02T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/tags/plot/</loc>
       <lastmod>2015-07-23T21:13:14-05:00</lastmod>
       <priority>0</priority>
@@ -303,8 +313,8 @@
     
     <url>
     
-      <loc>/tags/r/</loc>
-      <lastmod>2017-09-03T00:00:00+00:00</lastmod>
+      <loc>/categories/r/</loc>
+      <lastmod>2015-07-23T21:13:14-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -313,8 +323,8 @@
     
     <url>
     
-      <loc>/categories/r/</loc>
-      <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+      <loc>/tags/r/</loc>
+      <lastmod>2017-09-03T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -374,7 +384,17 @@
     <url>
     
       <loc>/tags/tidy/</loc>
-      <lastmod>2017-10-23T00:00:00+00:00</lastmod>
+      <lastmod>2018-05-02T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/categories/workshop/</loc>
+      <lastmod>2018-05-02T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -385,16 +405,6 @@
     
       <loc>/tags/workshop/</loc>
       <lastmod>2017-09-03T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/categories/workshop/</loc>
-      <lastmod>2018-02-23T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
