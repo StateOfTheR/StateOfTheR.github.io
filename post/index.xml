@@ -13,19 +13,33 @@
     
     
     <item>
+      <title>Introduction au Deep Learning sous R</title>
+      <link>/post/introduction-au-deep-learning-sous-r/</link>
+      <pubDate>Fri, 25 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/introduction-au-deep-learning-sous-r/</guid>
+      <description>Sophie et Christophe nous proposent une séance complète sur le deep-learning et l&amp;rsquo;interfaçage existant sous R:
+ Une brève histoire du Deep-Learning Une introduction au Deep-Learning sous R travaux pratiques  </description>
+    </item>
+    
+    <item>
       <title>Une introduction au tidyverse</title>
       <link>/post/une-introduction-au-tidyverse/</link>
       <pubDate>Wed, 02 May 2018 00:00:00 +0000</pubDate>
       
       <guid>/post/une-introduction-au-tidyverse/</guid>
-      <description>Original Xaringan slides by Antoine are available here
-{magrittr} Make Tom eat an apple  Everyday language   Tom eats an apple
- Subject - Verb - Complement
- Programming language   eat(Tom, apple)
- Verb - Subject - Complement
- Pipe %&amp;gt;% library(magrittr)  x %&amp;gt;% f() is equivalent to f(x)
- x %&amp;gt;% f(y) is equivalent to f(x, y)
-  2^mean(log(seq_len(10), base = 2), na.</description>
+      <description>Antoine nous propose une introduction dense et déjà avancée en passant en revue l’ensemble du tidyverse
+ Les slides Xaringan de Antoine  </description>
+    </item>
+    
+    <item>
+      <title>Introduction au Spatial sous R</title>
+      <link>/post/spatial/</link>
+      <pubDate>Fri, 23 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/spatial/</guid>
+      <description>Éric nous présente les suites de l&amp;rsquo;introdution de Jessica aux très nombreux outils disponibles pour les statistiques spatiales sous R, notamment autour des packages sf et sp.
+ slides et exercices, partie 1 slides et exercices, partie 2  </description>
     </item>
     
     <item>
@@ -34,8 +48,8 @@
       <pubDate>Fri, 23 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>/post/rmarkdown-tableaux-interactifs-et-retour-d-experience/</guid>
-      <description>Original slides by Mahendra
-Motivation About R Markdown  Markdown: a simple formatting syntax for authoring HTML, PDF, and MS Word documents. R Markdown: a simple way to embed R chuncks in your markdown (see http://rmarkdown.rstudio.com and Antoine’s presentation for more details). Knitting (Ctrl+Shift+K): generates a document with both content and output of embedded R code chunks.</description>
+      <description>Mahendra nous propose un retour d’expérience et quelques exercices sur le package DT pour la manipulation interactive de table.
+ Les slides de Mahendra  </description>
     </item>
     
     <item>
@@ -44,13 +58,8 @@ Motivation About R Markdown  Markdown: a simple formatting syntax for authoring 
       <pubDate>Fri, 23 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>/post/science-communication-with-r-style-r-markdown-xaringan/</guid>
-      <description>Original Xaringan slides by Antoine are available here
-Code presentation Syntax  Use &amp;lt;- for assignation and = for arguments
- Leave a space
- before ( (except when it’s part of a function call)
- after ) or ,
- around =, &amp;lt;-, +, *, ==, etc
-  x &amp;lt;- rnorm(n = 100000)^2 + rnorm(n = 100000)^2 hist(x[x &amp;lt; 10], col = &amp;quot;grey&amp;quot;, xlab = &amp;quot;&amp;quot;, ylab = &amp;quot;Count&amp;quot;, main = &amp;quot;Chi-squared empirical distribution&amp;quot;)  Functions names  When possible, use verbs for function names: add_row() or instead of row_adder() A function should do one thing well (it should be called either because it has side-effects or because it returns a value; not both) Don’t hesitate to split your long function in smaller ones Only use return() for early returns Comment your functions (use the Ctrl + Maj + C shortcut)   Pipes  For long pipes, use one verb per line Don’t ommit the parenthesis  # Good summary_SL &amp;lt;- iris %&amp;gt;% drop_na() %&amp;gt;% group_by(Species) %&amp;gt;% summarise(Mean_SL = mean(Sepal.</description>
+      <description>Antoine nous propose une série de slides sur R markdown et Xaringan
+ Les slides Xaringan de Antoine  </description>
     </item>
     
     <item>

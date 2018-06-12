@@ -22,6 +22,16 @@
     </item>
     
     <item>
+      <title>À propos</title>
+      <link>/home/about/</link>
+      <pubDate>Thu, 28 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/home/about/</guid>
+      <description> Bref historique Le groupe s&amp;rsquo;est formé à l&amp;rsquo;occasion d&amp;rsquo;une semaine d&amp;rsquo;ateliers du 28 août au 1er septembre 2017 à la station biologique de Roscoff organisé par des membres de l&amp;rsquo;UMR MIA Paris AgroParisTech/Inra. Nous avons reçu à cette occasion le soutien d&amp;rsquo;AgroParisTech
+Depuis, le groupe s&amp;rsquo;est consolidé autour d&amp;rsquo;un réseau méthodologique du département MIA de l&amp;rsquo;Inra, animé par Julie Aubert, Julien Chiquet et Marie-Pierre Étienne. Une 30aine de personnes sont inscrites à la lsite de diffusion (AgroParisTech et AgroCampus Ouest, MIA Paris/Jouy LaMME, Institut Curie) </description>
+    </item>
+    
+    <item>
       <title>Ateliers à venir</title>
       <link>/home/upcoming_workshops/</link>
       <pubDate>Tue, 06 Feb 2018 00:00:00 +0000</pubDate>
@@ -47,17 +57,6 @@
       
       <guid>/home/projets/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>À propos</title>
-      <link>/home/about/</link>
-      <pubDate>Thu, 28 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/home/about/</guid>
-      <description>Bref historique Le groupe s&amp;rsquo;est formé à l&amp;rsquo;occasion d&amp;rsquo;une semaine d&amp;rsquo;ateliers du 28 août au 1er septembre 2017 à la station biologique de Roscoff organisé par des membres de l&amp;rsquo;UMR MIA Paris AgroParisTech/Inra. Nous avons reçu à cette occasion le soutien d&amp;rsquo;AgroParisTech
-Depuis, le groupe s&amp;rsquo;est consolidé autour d&amp;rsquo;un réseau méthodologique du département MIA de l&amp;rsquo;Inra, animé par Julie Aubert, Julien Chiquet et Marie-Pierre Étienne
-Les membres fondateurs  Christophe Ambroise -- Julie Aubert Allez faire pipi, on part dans un quart d&#39;heure.</description>
     </item>
     
   </channel>

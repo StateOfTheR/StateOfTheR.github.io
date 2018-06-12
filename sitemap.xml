@@ -5,8 +5,35 @@
     
     <url>
     
+      <loc>/talk/2018-07-20-bases_rcpp/</loc>
+      <lastmod>2018-07-20T00:00:00+02:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/post/introduction-au-deep-learning-sous-r/</loc>
+      <lastmod>2018-05-25T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/post/une-introduction-au-tidyverse/</loc>
       <lastmod>2018-05-02T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/post/spatial/</loc>
+      <lastmod>2018-03-23T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -43,15 +70,6 @@
     
       <loc>/project/finistr17/</loc>
       <lastmod>2018-02-06T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/talk/2018-05-25-deep-learning-sous-r/</loc>
-      <lastmod>2018-02-06T00:00:00+01:00</lastmod>
     </url>
     
   
@@ -234,6 +252,16 @@
     
     <url>
     
+      <loc>/tags/deep-learning/</loc>
+      <lastmod>2018-05-25T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/tags/dplyr/</loc>
       <lastmod>2018-05-02T00:00:00+00:00</lastmod>
       <priority>0</priority>
@@ -313,8 +341,8 @@
     
     <url>
     
-      <loc>/categories/r/</loc>
-      <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+      <loc>/tags/r/</loc>
+      <lastmod>2017-09-03T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -323,8 +351,8 @@
     
     <url>
     
-      <loc>/tags/r/</loc>
-      <lastmod>2017-09-03T00:00:00+00:00</lastmod>
+      <loc>/categories/r/</loc>
+      <lastmod>2015-07-23T21:13:14-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -345,6 +373,16 @@
     
       <loc>/tags/regression/</loc>
       <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/tags/spatial/</loc>
+      <lastmod>2018-03-23T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -393,8 +431,8 @@
     
     <url>
     
-      <loc>/categories/workshop/</loc>
-      <lastmod>2018-05-02T00:00:00+00:00</lastmod>
+      <loc>/tags/workshop/</loc>
+      <lastmod>2017-09-03T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -403,8 +441,8 @@
     
     <url>
     
-      <loc>/tags/workshop/</loc>
-      <lastmod>2017-09-03T00:00:00+00:00</lastmod>
+      <loc>/categories/workshop/</loc>
+      <lastmod>2018-05-25T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
