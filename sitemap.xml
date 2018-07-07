@@ -14,6 +14,15 @@
     
     <url>
     
+      <loc>/post/manipulating-half-big-data-in-r/</loc>
+      <lastmod>2018-06-22T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/post/introduction-au-deep-learning-sous-r/</loc>
       <lastmod>2018-05-25T00:00:00+00:00</lastmod>
     </url>
@@ -70,15 +79,6 @@
     
       <loc>/project/finistr17/</loc>
       <lastmod>2018-02-06T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/talk/2018-06-22-programmation-efficace-en-r-gestion-de-la-m%C3%A9moire/</loc>
-      <lastmod>2018-02-06T00:00:00+01:00</lastmod>
     </url>
     
   
@@ -193,6 +193,16 @@
     
     <url>
     
+      <loc>/tags/bigdata/</loc>
+      <lastmod>2018-06-22T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/tags/bookdown/</loc>
       <lastmod>2018-02-06T00:00:00+00:00</lastmod>
       <priority>0</priority>
@@ -233,7 +243,7 @@
     <url>
     
       <loc>/tags/data.table/</loc>
-      <lastmod>2017-10-23T00:00:00+00:00</lastmod>
+      <lastmod>2018-06-22T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -381,6 +391,16 @@
     
     <url>
     
+      <loc>/tags/sparlyr/</loc>
+      <lastmod>2018-06-22T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/tags/spatial/</loc>
       <lastmod>2018-03-23T00:00:00+00:00</lastmod>
       <priority>0</priority>
@@ -442,7 +462,7 @@
     <url>
     
       <loc>/categories/workshop/</loc>
-      <lastmod>2018-05-25T00:00:00+00:00</lastmod>
+      <lastmod>2018-06-22T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     

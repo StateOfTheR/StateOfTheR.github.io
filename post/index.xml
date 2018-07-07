@@ -13,6 +13,17 @@
     
     
     <item>
+      <title>Manipulation de (quasi) big data en R</title>
+      <link>/post/manipulating-half-big-data-in-r/</link>
+      <pubDate>Fri, 22 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/manipulating-half-big-data-in-r/</guid>
+      <description>Séverine et Tristan nous proposent une introduction à quelques outils permettant de manipuler (en particulier charger) de “grosses” tables de données sous R.
+ bigmemory for loading large matrices bigalgebra provides BLAS and LAPACK linear algebra sparklyr for interfacing R with Spark Apache  Les documents de la séances
+ Présentation des enjeux, slides travaux pratiques (PDF), source Markdown code source: R base vs bigxx code source: R base vs sparklyr  </description>
+    </item>
+    
+    <item>
       <title>Introduction au Deep Learning sous R</title>
       <link>/post/introduction-au-deep-learning-sous-r/</link>
       <pubDate>Fri, 25 May 2018 00:00:00 +0000</pubDate>

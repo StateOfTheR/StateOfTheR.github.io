@@ -1,0 +1,174 @@
+---
+title: "Big Data avec R"
+author: "S.Bord, T.Mary-Huard"
+date: "22 juin 2018"
+
+output:
+  pdf_document:
+    toc: true
+    number_sections: true
+    
+
+---
+
+
+# Load packages
+```{r, eval=FALSE, echo=TRUE}
+install.packages("nycflights13",  repos='https://cran.univ-paris1.fr/')
+install.packages("sparklyr",  repos='https://cran.univ-paris1.fr/')
+library(sparklyr)
+spark_install(version = "2.2.0")
+library(sparklyr)
+library(dplyr)
+library(pryr) 
+```
+
+```{r, eval=TRUE, echo=FALSE, message=FALSE, warning=FALSE}
+install.packages("nycflights13",  repos='https://cran.univ-paris1.fr/')
+install.packages("sparklyr",  repos='https://cran.univ-paris1.fr/')
+library(sparklyr)
+spark_install(version = "2.2.0")
+library(sparklyr)
+library(dplyr)
+library(pryr) 
+```
+
+# Parameters
+```{r, eval=TRUE, echo=TRUE}
+RepName <- 'C:/Users/sbord/Dropbox/Big_Data/TP'
+setwd(RepName)
+``` 
+
+
+# Local space connection
+```{r, eval=TRUE, echo=TRUE}
+sc <- spark_connect("local", version = "2.2.0")
+```
+
+
+## Add a table in "sc" : copy_to
+```{r, eval=TRUE, echo=TRUE}
+flights_tbl <- dplyr::copy_to(sc, nycflights13::flights, "flights", overwrite=T) 
+dplyr::src_tbls(sc)
+ls()
+class(flights_tbl)
+```
+ 
+
+## Data manipulation : fligths example
+
+### Selection of fligths 
+```{r, eval=TRUE, echo=TRUE}
+flight.sel <- flights_tbl %>%  filter(carrier %in% c("B6", "DL", "EV"))
+class(flight.sel)
+```
+
+### Save the selection in "sc" space
+```{r, eval=TRUE, echo=TRUE}
+sdf_register(flight.sel, "flightsel")
+src_tbls(sc)
+```
+
+### Save the selection in "R" environment
+```{r, eval=TRUE, echo=TRUE}
+flightsel.inR <- flight.sel %>% collect()
+```
+
+### Graph: boxplot of delay by carrier
+```{r, eval=TRUE, echo=TRUE}
+library(ggplot2)
+ggplot(flightsel.inR, aes(x=carrier, y=arr_delay)) +  geom_boxplot()
+```
+
+### ANOVA of delay by carrier
+```{r, eval=TRUE, echo=TRUE, tidy = TRUE, tidy.opts=list(width.cutoff=65)}
+resanova <-flight.sel %>% na.omit() %>% ml_linear_regression(x=., response = "arr_delay" , features = "carrier")
+
+summary(resanova)
+```
+
+
+
+### Principal component analysis (PCA)
+
+#### Selection of variables for PCA
+```{r, eval=TRUE, echo=TRUE}
+test_tbl <- flights_tbl %>%
+  select(one_of(c('dep_time','sched_dep_time','dep_delay',
+                  'arr_time','sched_arr_time','arr_delay','carrier')))
+
+
+DataForPca <- test_tbl %>%  na.omit() %>% filter(carrier=='UA') %>%  select(1:6) 
+```
+
+#### Correlation Matrix between PCA variables
+```{r, eval=TRUE, echo=TRUE}
+CorrMat <- ml_corr(DataForPca, method = "pearson")
+class(CorrMat)
+CorrMat
+```
+
+#### PCA
+```{r, eval=TRUE, echo=TRUE, tidy = TRUE, tidy.opts=list(width.cutoff=65)}
+PcaResults <- ml_pca(DataForPca)
+
+Coordinates <- sdf_project(PcaResults,DataForPca,features=rownames(PcaResults$pc)) %>%
+  select(starts_with('PC')) 
+
+Coordinates %>%
+  select(1:2) %>%
+  collect() %>%
+  ggplot(aes(PC1, PC2)) +
+  geom_point(aes(PC1, PC2))  +
+  labs(x = "First principal component",
+       y = "Second principal component",
+       title = "My first (and ugly) PCA with spark"  )
+PcaResults
+```
+
+#### Kmeans
+```{r, eval=TRUE, echo=TRUE, tidy = TRUE, tidy.opts=list(width.cutoff=65)}
+KmeansResults <- ml_kmeans(DataForPca, centers=3, iter.max = 100, features=rownames(PcaResults$pc))
+arrange(KmeansResults$centers, arr_delay)
+
+Labels <- ml_predict(KmeansResults, DataForPca) %>%
+  select(prediction) %>%
+  collect()
+table(Labels$prediction)
+
+
+CoordinatesWithLabels <- Coordinates %>% collect() %>% mutate(Labels = Labels$prediction)
+
+CoordinatesWithLabels %>%
+  ggplot(aes(PC1, PC2)) +
+  geom_point(aes(PC1, PC2, color=Labels))  +
+  labs(x = "First principal component",
+       y = "Second principal component",
+       title = "My second (and ugly) PCA with labels points"  )
+```
+
+## Export "sc" data in a file
+```{r, eval=TRUE, echo=TRUE, tidy = TRUE, tidy.opts=list(width.cutoff=65)}
+filename_to_save <- paste0(RepName, "/export_exemple.csv")
+spark_write_csv(DataForPca, path=filename_to_save, header = FALSE, delimiter = ";")
+```
+
+# Memory allocation
+
+```{r, eval=TRUE, echo=TRUE, tidy = TRUE, tidy.opts=list(width.cutoff=65)}
+sc %>% spark_context %>% invoke("getRDDStorageInfo")
+url <- sc %>% spark_context %>% invoke("uiWebUrl") %>% invoke("get")
+browseURL(paste(url, "storage", sep="/"))
+app_id <-  sc %>% spark_context %>% invoke("applicationId")
+httr::GET(paste(url, "api", "v1", "applications", app_id, "storage", "rdd",  sep="/"))
+```
+
+# Local space disconnection
+```{r, eval=TRUE, echo=TRUE}
+spark_disconnect(sc)
+```
+
+
+
+
+

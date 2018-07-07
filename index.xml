@@ -20,12 +20,37 @@
     </item>
     
     <item>
+      <title>Manipulation de (quasi) big data en R</title>
+      <link>/post/manipulating-half-big-data-in-r/</link>
+      <pubDate>Fri, 22 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/manipulating-half-big-data-in-r/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;img/headers/spark-logo-trademark.png&#34; align=&#34;right&#34; width=&#34;200&#34;/&gt;&lt;/p&gt;
+&lt;p&gt;Séverine et Tristan nous proposent une introduction à quelques outils permettant de manipuler (en particulier charger) de “grosses” tables de données sous &lt;code&gt;R&lt;/code&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;bigmemory&lt;/code&gt; for loading large matrices&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;bigalgebra&lt;/code&gt; provides BLAS and LAPACK linear algebra&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sparklyr&lt;/code&gt; for interfacing R with &lt;a href=&#34;http://spark.apache.org/&#34;&gt;Spark Apache&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Les documents de la séances&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;post/bigdata/Half_Big_Data_handling_with_R.pdf&#34;&gt;Présentation des enjeux, slides&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;post/bigdata/tutorial_sparklyr.pdf&#34;&gt;travaux pratiques (PDF)&lt;/a&gt;, &lt;a href=&#34;post/bigdata/tutorial_sparklyr.Rmd&#34;&gt;source Markdown&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;post/bigdata/1_CompareClassicalAndBigdata.R&#34;&gt;code source: R base vs bigxx&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;post/bigdata/2_CompareClassicalAndSpark.R&#34;&gt;code source: R base vs sparklyr&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Introduction au Deep Learning sous R</title>
       <link>/post/introduction-au-deep-learning-sous-r/</link>
       <pubDate>Fri, 25 May 2018 00:00:00 +0000</pubDate>
       
       <guid>/post/introduction-au-deep-learning-sous-r/</guid>
-      <description>&lt;p&gt;Sophie et Christophe nous proposent une séance complète sur le deep-learning et l&amp;rsquo;interfaçage existant sous R:&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img src=&#34;img/headers/TensorFlowLogo.png&#34; align=&#34;right&#34; width=&#34;200&#34;/&gt;&lt;/p&gt;
+
+&lt;p&gt;Sophie et Christophe nous proposent une séance complète sur le deep-learning et l&amp;rsquo;interfaçage existant sous R:&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;post/deep_learning/deep-learning-history.html&#34; target=&#34;_blank&#34;&gt;Une brève histoire du Deep-Learning&lt;/a&gt;&lt;/li&gt;
@@ -104,15 +129,6 @@
       <pubDate>Tue, 06 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>/project/finistr17/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Programmation efficace en R: gestion de la mémoire</title>
-      <link>/talk/2018-06-22-programmation-efficace-en-r-gestion-de-la-m%C3%A9moire/</link>
-      <pubDate>Tue, 06 Feb 2018 00:00:00 +0100</pubDate>
-      
-      <guid>/talk/2018-06-22-programmation-efficace-en-r-gestion-de-la-m%C3%A9moire/</guid>
       <description></description>
     </item>
     
