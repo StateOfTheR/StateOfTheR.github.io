@@ -5,16 +5,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="theme" content="hugo-academic">
-  <meta name="generator" content="Hugo 0.34" />
+  <meta name="generator" content="Source Themes Academic 2.4.0">
+  <meta name="generator" content="Hugo 0.48" />
   <meta name="author" content="State of the R">
 
   
   
   
   
-    
-      
     
   
   <meta name="description" content="L’atelier du jour avait pour objectif la découvert du package data.table au travers d’exercises proposés lors de la dernière édition de UseR. Les slides avec les énoncés sont disponibles ici.
@@ -31,33 +29,48 @@ Pour les animateurs : vous êtes libre de compléter le post de blog.">
 
   
   
+  
   <meta name="theme-color" content="#a6bddb">
   
+
+  
   
   
   
     
-  
-  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
     
     
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
     
+      
+    
+    
+      
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" crossorigin="anonymous">
+      
+    
+
+    
+
+    
+
   
-  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
-  
-  
+
   
   
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700%7cRoboto:400,400italic,700%7cRoboto&#43;Mono">
   
+
   <link rel="stylesheet" href="/styles.css">
   
 
+  
+  
   
 
   
@@ -87,6 +100,7 @@ Pour les animateurs : vous êtes libre de compléter le post de blog.">
   
 
   
+
   
 
   <title>Exercices autour de data.table | State of The R</title>
@@ -206,7 +220,7 @@ Pour les animateurs : vous êtes libre de compléter le post de blog.">
         <li class="nav-item">
           <a href="/#about">
             
-            <span>À propos</span>
+            <span>A propos</span>
             
           </a>
         </li>
@@ -235,21 +249,24 @@ Pour les animateurs : vous êtes libre de compléter le post de blog.">
 
 <div class="article-metadata">
 
+  
+  
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="State of the R">
+  </span>
+  
+
   <span class="article-date">
     
-    <time datetime="2017-10-23 00:00:00 &#43;0000 UTC" itemprop="datePublished dateModified">
+    <meta content="2017-10-23 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+    <time datetime="2017-10-23 00:00:00 &#43;0000 UTC" itemprop="dateModified">
       Oct 23, 2017
     </time>
   </span>
-  <span itemscope itemprop="author publisher" itemtype="http://schema.org/Person">
+  <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
     <meta itemprop="name" content="State of the R">
   </span>
 
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    15 min read
-  </span>
   
 
   
@@ -262,8 +279,7 @@ Pour les animateurs : vous êtes libre de compléter le post de blog.">
   <span class="article-categories">
     <i class="fa fa-folder"></i>
     
-    <a href="/categories/workshop/">workshop</a
-    >
+    <a href="/categories/workshop/">workshop</a>
     
   </span>
   
@@ -470,15 +486,15 @@ TB1</code></pre>
 <pre><code>## # A tibble: 9 x 4
 ##      id code   valA  valB
 ##   &lt;int&gt; &lt;chr&gt; &lt;int&gt; &lt;dbl&gt;
-## 1     1 c         1   11.
-## 2     1 b         2   11.
-## 3     1 c         3   13.
-## 4     1 c         4   14.
-## 5     2 a         5   14.
-## 6     2 a         6   15.
-## 7     1 b         7   16.
-## 8     2 a         8   17.
-## 9     1 c         9   19.</code></pre>
+## 1     1 c         1    11
+## 2     1 b         2    11
+## 3     1 c         3    13
+## 4     1 c         4    14
+## 5     2 a         5    14
+## 6     2 a         6    15
+## 7     1 b         7    16
+## 8     2 a         8    17
+## 9     1 c         9    19</code></pre>
 </div>
 <div id="data.table-3" class="section level4">
 <h4>data.table</h4>
@@ -522,15 +538,15 @@ TB1</code></pre>
 <pre><code>## # A tibble: 9 x 5
 ##      id code   valA  valB  valC
 ##   &lt;int&gt; &lt;chr&gt; &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt;
-## 1     1 c         1   11.  120.
-## 2     1 b         2   11.  117.
-## 3     1 c         3   13.  160.
-## 4     1 c         4   14.  180.
-## 5     2 a         5   14.  171.
-## 6     2 a         6   15.  189.
-## 7     1 b         7   16.  207.
-## 8     2 a         8   17.  225.
-## 9     1 c         9   19.  280.</code></pre>
+## 1     1 c         1    11   120
+## 2     1 b         2    11   117
+## 3     1 c         3    13   160
+## 4     1 c         4    14   180
+## 5     2 a         5    14   171
+## 6     2 a         6    15   189
+## 7     1 b         7    16   207
+## 8     2 a         8    17   225
+## 9     1 c         9    19   280</code></pre>
 </div>
 <div id="data.table-4" class="section level4">
 <h4>data.table</h4>
@@ -571,9 +587,9 @@ DT1</code></pre>
 ## # Groups:   id [?]
 ##      id code   valA  valB  valC
 ##   &lt;int&gt; &lt;chr&gt; &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt;
-## 1     1 b         9   27.  324.
-## 2     1 c        17   57.  740.
-## 3     2 a        19   46.  585.</code></pre>
+## 1     1 b         9    27   324
+## 2     1 c        17    57   740
+## 3     2 a        19    46   585</code></pre>
 </div>
 <div id="data.table-5" class="section level4">
 <h4>data.table</h4>
@@ -603,7 +619,7 @@ DT1</code></pre>
 <pre><code>## # A tibble: 1 x 3
 ##      id  valA  valB
 ##   &lt;int&gt; &lt;int&gt; &lt;dbl&gt;
-## 1     2    19   46.</code></pre>
+## 1     2    19    46</code></pre>
 </div>
 <div id="data.table-6" class="section level4">
 <h4>data.table</h4>
@@ -638,15 +654,15 @@ TB1</code></pre>
 ## # Groups:   code [3]
 ##      id code   valA  valB  valC
 ##   &lt;int&gt; &lt;chr&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
-## 1     1 c        8.   11.  120.
-## 2     1 b        5.   11.  117.
-## 3     1 c        8.   13.  160.
-## 4     1 c        8.   14.  180.
-## 5     2 a        3.   14.  171.
-## 6     2 a        3.   15.  189.
-## 7     1 b        5.   16.  207.
-## 8     2 a        3.   17.  225.
-## 9     1 c        8.   19.  280.</code></pre>
+## 1     1 c         8    11   120
+## 2     1 b         5    11   117
+## 3     1 c         8    13   160
+## 4     1 c         8    14   180
+## 5     2 a         3    14   171
+## 6     2 a         3    15   189
+## 7     1 b         5    16   207
+## 8     2 a         3    17   225
+## 9     1 c         8    19   280</code></pre>
 </div>
 <div id="data.table-7" class="section level4">
 <h4>data.table</h4>
@@ -690,15 +706,15 @@ TB1</code></pre>
 ## # Groups:   code [3]
 ##      id code   valA  valB  valC  valD
 ##   &lt;int&gt; &lt;chr&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
-## 1     1 c        8.   11.  120.   11.
-## 2     1 b        5.   11.  117.   11.
-## 3     1 c        8.   13.  160.   11.
-## 4     1 c        8.   14.  180.   11.
-## 5     2 a        3.   14.  171.   14.
-## 6     2 a        3.   15.  189.   14.
-## 7     1 b        5.   16.  207.   11.
-## 8     2 a        3.   17.  225.   14.
-## 9     1 c        8.   19.  280.   11.</code></pre>
+## 1     1 c         8    11   120    11
+## 2     1 b         5    11   117    11
+## 3     1 c         8    13   160    11
+## 4     1 c         8    14   180    11
+## 5     2 a         3    14   171    14
+## 6     2 a         3    15   189    14
+## 7     1 b         5    16   207    11
+## 8     2 a         3    17   225    14
+## 9     1 c         8    19   280    11</code></pre>
 </div>
 <div id="data.table-8" class="section level4">
 <h4>data.table</h4>
@@ -739,14 +755,14 @@ DT1</code></pre>
 ## # Groups:   code [?]
 ##      id code   valA  valB  valC  valD
 ##   &lt;int&gt; &lt;chr&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
-## 1     3 b       NA    NA    NA    NA 
-## 2     1 a       NA    NA    NA    NA 
-## 3     1 c        8.   11.  120.   11.
-## 4     1 c        8.   13.  160.   11.
-## 5     1 c        8.   14.  180.   11.
-## 6     1 c        8.   19.  280.   11.
-## 7     2 c       NA    NA    NA    NA 
-## 8     3 d       NA    NA    NA    NA</code></pre>
+## 1     3 b        NA    NA    NA    NA
+## 2     1 a        NA    NA    NA    NA
+## 3     1 c         8    11   120    11
+## 4     1 c         8    13   160    11
+## 5     1 c         8    14   180    11
+## 6     1 c         8    19   280    11
+## 7     2 c        NA    NA    NA    NA
+## 8     3 d        NA    NA    NA    NA</code></pre>
 <pre class="r"><code>## inner_join to keep only rows present in tibbles, left_join to keep all rows from TB1
 ## anti_join to keep only rows from TB1 with no matching rows in TB2</code></pre>
 </div>
@@ -782,7 +798,7 @@ DT1</code></pre>
 ## # Groups:   id, code [?]
 ##      id code   valA  valB  valC  valD
 ##   &lt;int&gt; &lt;chr&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
-## 1     1 c        8.   11.  120.   11.</code></pre>
+## 1     1 c         8    11   120    11</code></pre>
 </div>
 <div id="data.table-10" class="section level4">
 <h4>data.table</h4>
@@ -815,14 +831,14 @@ DT1</code></pre>
 ## # Groups:   code [4]
 ##      id code   valA  valB  valC  valD   mul
 ##   &lt;int&gt; &lt;chr&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;int&gt;
-## 1     3 b       NA    NA    NA    NA      5
-## 2     1 a       NA    NA    NA    NA      4
-## 3     1 c       24.   11.  120.   11.     3
-## 4     1 c       24.   13.  160.   11.     3
-## 5     1 c       24.   14.  180.   11.     3
-## 6     1 c       24.   19.  280.   11.     3
-## 7     2 c       NA    NA    NA    NA      2
-## 8     3 d       NA    NA    NA    NA      1</code></pre>
+## 1     3 b        NA    NA    NA    NA     5
+## 2     1 a        NA    NA    NA    NA     4
+## 3     1 c        24    11   120    11     3
+## 4     1 c        24    13   160    11     3
+## 5     1 c        24    14   180    11     3
+## 6     1 c        24    19   280    11     3
+## 7     2 c        NA    NA    NA    NA     2
+## 8     3 d        NA    NA    NA    NA     1</code></pre>
 </div>
 <div id="data.table-11" class="section level4">
 <h4>data.table</h4>
@@ -863,15 +879,15 @@ show(DT3) ## je ne comprends pas pourquoi il faut utiliser show pour l&#39;affic
 ## # Groups:   code [?]
 ##      id code   valA  valB  valC  valD   mul
 ##   &lt;int&gt; &lt;chr&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;int&gt;
-## 1     1 c        8.   11.  120.   11.     3
-## 2     1 b        5.   11.  117.   11.    NA
-## 3     1 c        8.   13.  160.   11.     3
-## 4     1 c        8.   14.  180.   11.     3
-## 5     2 a        3.   14.  171.   14.    NA
-## 6     2 a        3.   15.  189.   14.    NA
-## 7     1 b        5.   16.  207.   11.    NA
-## 8     2 a        3.   17.  225.   14.    NA
-## 9     1 c        8.   19.  280.   11.     3</code></pre>
+## 1     1 c         8    11   120    11     3
+## 2     1 b         5    11   117    11    NA
+## 3     1 c         8    13   160    11     3
+## 4     1 c         8    14   180    11     3
+## 5     2 a         3    14   171    14    NA
+## 6     2 a         3    15   189    14    NA
+## 7     1 b         5    16   207    11    NA
+## 8     2 a         3    17   225    14    NA
+## 9     1 c         8    19   280    11     3</code></pre>
 </div>
 <div id="data.table-12" class="section level4">
 <h4>data.table</h4>
@@ -896,11 +912,11 @@ show(DT3) ## je ne comprends pas pourquoi il faut utiliser show pour l&#39;affic
 
 <div class="article-tags">
   
-  <a class="btn btn-primary btn-outline" href="/tags/tidy/">tidy</a>
+  <a class="label label-default" href="/tags/tidy/">tidy</a>
   
-  <a class="btn btn-primary btn-outline" href="/tags/data.table/">data.table</a>
+  <a class="label label-default" href="/tags/data.table/">data.table</a>
   
-  <a class="btn btn-primary btn-outline" href="/tags/dplyr/">dplyr</a>
+  <a class="label label-default" href="/tags/dplyr/">dplyr</a>
   
 </div>
 
@@ -920,6 +936,13 @@ show(DT3) ## je ne comprends pas pourquoi il faut utiliser show pour l&#39;affic
 
 <footer class="site-footer">
   <div class="container">
+
+    
+    <p class="powered-by">
+      <a href="/privacy/">Privacy Policy</a>
+    </p>
+    
+
     <p class="powered-by">
 
       &copy; 2018 State of the R &middot; 
@@ -968,41 +991,57 @@ show(DT3) ## je ne comprends pas pourquoi il faut utiliser show pour l&#39;affic
 
     
     
-
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        CommonHTML: { linebreaks: { automatic: true } },
+        tex2jax: { inlineMath: [ ['$', '$'], ['\\(','\\)'] ], displayMath: [ ['$$','$$'], ['\\[', '\\]'] ], processEscapes: false },
+        TeX: { noUndefined: { attributes: { mathcolor: 'red', mathbackground: '#FFEEEE', mathsize: '90%' } } },
+        messageStyle: 'none'
+      });
+    </script>
     
 
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
     
     
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+        
+      
+
+      
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
+      
+    
+
     <script src="/js/hugo-academic.js"></script>
     
 
     
     
-      
-      
-      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
-      
 
-      
-
-      
-
-      <script>hljs.initHighlightingOnLoad();</script>
+    
+    
     
 
     
     
-    <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
-    </script>
+    <script>hljs.initHighlightingOnLoad();</script>
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML" integrity="sha512-tOav5w1OjvsSJzePRtt2uQPFwBoHt1VZcUq8l8nm5284LEKE9FSJBQryzMBzHxY5P0zRdNqEcpLIRVYFNgu1jw==" crossorigin="anonymous"></script>
+
+    
+
+    
+    
+
     
     
 

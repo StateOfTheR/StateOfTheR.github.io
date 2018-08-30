@@ -2,15 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
     
-    
     <url>
     
-      <loc>/talk/2018-07-20-bases_rcpp/</loc>
-      <lastmod>2018-07-20T00:00:00+02:00</lastmod>
+      <loc>/talk/2018-10-fancy_plots/</loc>
+      <lastmod>2018-10-19T00:00:00+02:00</lastmod>
     </url>
     
   
     
+    <url>
+    
+      <loc>/talk/2018-09-10-bilan_finister18/</loc>
+      <lastmod>2018-09-10T00:00:00+02:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/post/bases-rcpp/</loc>
+      <lastmod>2018-07-20T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/privacy/</loc>
+      <lastmod>2018-06-28T00:00:00+02:00</lastmod>
+    </url>
+    
+  
     
     <url>
     
@@ -20,16 +42,6 @@
     
   
     
-    
-    <url>
-    
-      <loc>/post/introduction-au-deep-learning-sous-r/</loc>
-      <lastmod>2018-05-25T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
     <url>
     
       <loc>/post/une-introduction-au-tidyverse/</loc>
@@ -37,7 +49,6 @@
     </url>
     
   
-    
     
     <url>
     
@@ -47,7 +58,6 @@
     
   
     
-    
     <url>
     
       <loc>/post/rmarkdown-tableaux-interactifs-et-retour-d-experience/</loc>
@@ -55,7 +65,6 @@
     </url>
     
   
-    
     
     <url>
     
@@ -65,7 +74,6 @@
     
   
     
-    
     <url>
     
       <loc>/project/github_grp/</loc>
@@ -73,7 +81,6 @@
     </url>
     
   
-    
     
     <url>
     
@@ -83,7 +90,6 @@
     
   
     
-    
     <url>
     
       <loc>/post/data.table/</loc>
@@ -91,7 +97,6 @@
     </url>
     
   
-    
     
     <url>
     
@@ -101,43 +106,6 @@
     
   
     
-    
-    <url>
-    
-      <loc>/post/roscoff2017/</loc>
-      <lastmod>2017-09-03T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/tags/academic/</loc>
-      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/publication/</loc>
-      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/talk/</loc>
-      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
     <url>
     
       <loc>/post/</loc>
@@ -146,6 +114,13 @@
     
   
     
+    <url>
+    
+      <loc>/talk/</loc>
+      <lastmod>2017-01-01T00:00:00+01:00</lastmod>
+    </url>
+    
+  
     
     <url>
     
@@ -155,41 +130,14 @@
     
   
     
-    
     <url>
     
-      <loc>/publication/person-re-identification/</loc>
-      <lastmod>2015-09-01T00:00:00+00:00</lastmod>
+      <loc>/tags/academic/</loc>
+      <lastmod>2018-01-13T00:00:00+01:00</lastmod>
+      <priority>0</priority>
     </url>
     
   
-    
-    
-    <url>
-    
-      <loc>/post/2015-07-23-r-rmarkdown/</loc>
-      <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/publication/clothing-search/</loc>
-      <lastmod>2013-07-01T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/layouts/partials/head_custom/</loc>
-    </url>
-    
-  
-    
     
     <url>
     
@@ -200,7 +148,6 @@
     
   
     
-    
     <url>
     
       <loc>/tags/bookdown/</loc>
@@ -210,7 +157,6 @@
     
   
     
-    
     <url>
     
       <loc>/categories/</loc>
@@ -218,7 +164,6 @@
     </url>
     
   
-    
     
     <url>
     
@@ -229,7 +174,6 @@
     
   
     
-    
     <url>
     
       <loc>/tags/dt/</loc>
@@ -238,7 +182,6 @@
     </url>
     
   
-    
     
     <url>
     
@@ -249,7 +192,6 @@
     
   
     
-    
     <url>
     
       <loc>/tags/datatable/</loc>
@@ -258,17 +200,6 @@
     </url>
     
   
-    
-    
-    <url>
-    
-      <loc>/tags/deep-learning/</loc>
-      <lastmod>2018-05-25T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
     
     <url>
     
@@ -279,7 +210,6 @@
     
   
     
-    
     <url>
     
       <loc>/tags/git/</loc>
@@ -288,7 +218,6 @@
     </url>
     
   
-    
     
     <url>
     
@@ -299,16 +228,6 @@
     
   
     
-    
-    <url>
-    
-      <loc>/layouts/</loc>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
     <url>
     
       <loc>/tags/learnr/</loc>
@@ -317,7 +236,6 @@
     </url>
     
   
-    
     
     <url>
     
@@ -328,17 +246,6 @@
     
   
     
-    
-    <url>
-    
-      <loc>/tags/plot/</loc>
-      <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
     <url>
     
       <loc>/project/</loc>
@@ -347,27 +254,6 @@
     </url>
     
   
-    
-    
-    <url>
-    
-      <loc>/tags/r/</loc>
-      <lastmod>2017-09-03T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/categories/r/</loc>
-      <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
     
     <url>
     
@@ -378,16 +264,14 @@
     
   
     
-    
     <url>
     
-      <loc>/tags/regression/</loc>
-      <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+      <loc>/tags/rcpp/</loc>
+      <lastmod>2018-07-20T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
   
-    
     
     <url>
     
@@ -398,7 +282,6 @@
     
   
     
-    
     <url>
     
       <loc>/tags/spatial/</loc>
@@ -407,7 +290,6 @@
     </url>
     
   
-    
     
     <url>
     
@@ -418,16 +300,14 @@
     
   
     
-    
     <url>
     
       <loc>/tags/</loc>
-      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+      <lastmod>2018-01-13T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
   
-    
     
     <url>
     
@@ -438,7 +318,6 @@
     
   
     
-    
     <url>
     
       <loc>/tags/tidy/</loc>
@@ -448,21 +327,10 @@
     
   
     
-    
-    <url>
-    
-      <loc>/tags/workshop/</loc>
-      <lastmod>2017-09-03T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
     <url>
     
       <loc>/categories/workshop/</loc>
-      <lastmod>2018-06-22T00:00:00+00:00</lastmod>
+      <lastmod>2018-07-20T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     

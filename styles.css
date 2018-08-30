@@ -247,6 +247,58 @@ small,
 }
 
 /*************************************************
+ *  Search.
+ **************************************************/
+
+#search-box {
+  position: relative; /* Required for search icon positioning. */
+  margin-bottom: 0.5rem;
+}
+
+#search-box::before {
+  content: "\f002";
+  font-family: FontAwesome;
+  font-size: 1rem;
+  opacity: 0.25;
+  line-height: 1rem;
+  position: absolute;
+  left: 0.7rem;
+  top: 0.6rem;
+  overflow-x: hidden;
+}
+
+#search-query {
+  border: 1px solid #dedede;
+  border-radius: 1rem;
+  padding: 1rem 1rem 1rem 2rem; /* Wider left padding for search icon to fit in. */
+  width: 250px;
+  line-height: 1rem;
+  height: 1rem;
+  font-size: 0.8rem;
+}
+
+.search-hit em {
+  font-style: normal;
+  background-color: #FFE0B2;
+  color: #E65100;
+  border-bottom: 1px solid #E65100;
+}
+
+.search-hit-type {
+  margin-bottom: 0 !important; /* Override .article-metadata margin. */
+  text-transform: capitalize;
+}
+
+.search-hit-description {
+  font-size: 0.7rem;
+}
+
+/* Load more results button - hide when there are no more results. */
+#search-hits button[disabled] {
+  display: none;
+}
+
+/*************************************************
  *  Modals.
  **************************************************/
 
@@ -996,6 +1048,35 @@ footer a#back_to_top i {
 }
 
 /*************************************************
+ *  Tags/Labels
+ **************************************************/
+
+.label-default {
+  border: none;
+  color: rgba(0,0,0,.68);
+  background: rgba(0,0,0,.05);
+  font-weight: normal;
+  border-radius: 3px;
+  padding: 5px 10px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+.article-tags > .label-default:last-child {
+  margin-right: 0;
+}
+
+.label-default[href]:focus,
+.label-default[href]:hover {
+  background: rgba(0,0,0,.1);
+}
+
+a.label:focus,
+a.label:hover {
+  color: rgba(0,0,0,.68);
+}
+
+/*************************************************
  *  Button Primary: Color Override
  **************************************************/
 
@@ -1469,7 +1550,6 @@ body.dark {
 .dark code {
   color: rgb(139, 233, 253);
   background-color: rgb(68, 71, 90);
-
 }
 
 .dark pre {
@@ -1560,4 +1640,28 @@ body.dark {
 .dark select {
   background: rgb(40, 42, 54);
   color: rgb(248, 248, 242);
+}
+
+/* Algolia search input */
+.dark .ais-search-box--input {
+  background-color: rgb(68, 71, 90);
+}
+
+.dark #search-query {
+  background-color: rgb(68, 71, 90);
+}
+
+.dark .label-default {
+  color: rgba(255, 255, 255, .68);
+  background: rgba(255, 255, 255, .2);
+}
+
+.dark .label-default[href]:focus,
+.dark .label-default[href]:hover {
+  background: rgba(255, 255, 255, .3);
+}
+
+.dark a.label:focus,
+.dark a.label:hover {
+  color: rgba(255, 255, 255, .68);
 }

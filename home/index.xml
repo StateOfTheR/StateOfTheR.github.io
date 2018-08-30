@@ -24,7 +24,7 @@
     <item>
       <title>À propos</title>
       <link>/home/about/</link>
-      <pubDate>Thu, 28 Sep 2017 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0200</pubDate>
       
       <guid>/home/about/</guid>
       <description> Bref historique Le groupe s&amp;rsquo;est formé à l&amp;rsquo;occasion d&amp;rsquo;une semaine d&amp;rsquo;ateliers du 28 août au 1er septembre 2017 à la station biologique de Roscoff organisé par des membres de l&amp;rsquo;UMR MIA Paris AgroParisTech/Inra. Nous avons reçu à cette occasion le soutien d&amp;rsquo;AgroParisTech
@@ -56,6 +56,15 @@ Depuis, le groupe s&amp;rsquo;est consolidé autour d&amp;rsquo;un réseau méth
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>/home/projets/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>/home/contact/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0200</pubDate>
+      
+      <guid>/home/contact/</guid>
       <description></description>
     </item>
     

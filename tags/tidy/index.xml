@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tidy on State of The R</title>
+    <link>/tags/tidy/</link>
+    <description>Recent content in Tidy on State of The R</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-fr</language>
+    <copyright>&amp;copy; 2018 State of the R</copyright>
+    <lastBuildDate>Wed, 02 May 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/tidy/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Une introduction au tidyverse</title>
+      <link>/post/une-introduction-au-tidyverse/</link>
+      <pubDate>Wed, 02 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/une-introduction-au-tidyverse/</guid>
+      <description>Antoine nous propose une introduction dense et déjà avancée en passant en revue l’ensemble du tidyverse
+ Les slides Xaringan de Antoine  </description>
+    </item>
+    
+    <item>
+      <title>Exercices autour de data.table</title>
+      <link>/post/data.table/</link>
+      <pubDate>Mon, 23 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/post/data.table/</guid>
+      <description>L’atelier du jour avait pour objectif la découvert du package data.table au travers d’exercises proposés lors de la dernière édition de UseR. Les slides avec les énoncés sont disponibles ici.
+L’apport de notre atelier est d’avoir systématiquement essayé de traiter les questions avec - les fonctionalités R de base - les fonctionalités offertes par le tidyverse (principalement dplyr) - les fonctionnalités du package data.table
+Pour les animateurs : vous êtes libre de compléter le post de blog.</description>
+    </item>
+    
+  </channel>
+</rss>

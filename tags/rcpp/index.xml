@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rcpp on State of The R</title>
+    <link>/tags/rcpp/</link>
+    <description>Recent content in Rcpp on State of The R</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-fr</language>
+    <copyright>&amp;copy; 2018 State of the R</copyright>
+    <lastBuildDate>Fri, 20 Jul 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/rcpp/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Bases en Rcpp</title>
+      <link>/post/bases-rcpp/</link>
+      <pubDate>Fri, 20 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/bases-rcpp/</guid>
+      <description>Les trois mousquetaires Timothée, Mathieu et Félix (a.k.a riri fifi loulou) proposent une séances complète d&amp;rsquo;introduction à Rcpp accompagné de travaux pratiques.
+Les documents de la séances, bien complet:
+ Introduction Rappel d&amp;rsquo;architecture machine Rappel en C++ RcppArmadillo Fonctions Astuces  </description>
+    </item>
+    
+  </channel>
+</rss>

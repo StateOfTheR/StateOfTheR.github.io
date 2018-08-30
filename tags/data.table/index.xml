@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data.table on State of The R</title>
+    <link>/tags/data.table/</link>
+    <description>Recent content in Data.table on State of The R</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-fr</language>
+    <copyright>&amp;copy; 2018 State of the R</copyright>
+    <lastBuildDate>Fri, 22 Jun 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/data.table/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Manipulation de (quasi) big data en R</title>
+      <link>/post/manipulating-half-big-data-in-r/</link>
+      <pubDate>Fri, 22 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/manipulating-half-big-data-in-r/</guid>
+      <description>Séverine et Tristan nous proposent une introduction à quelques outils permettant de manipuler (en particulier charger) de “grosses” tables de données sous R.
+ bigmemory for loading large matrices bigalgebra provides BLAS and LAPACK linear algebra sparklyr for interfacing R with Spark Apache  Les documents de la séances
+ Présentation des enjeux, slides travaux pratiques (PDF), source Markdown code source: R base vs bigxx code source: R base vs sparklyr  </description>
+    </item>
+    
+    <item>
+      <title>Exercices autour de data.table</title>
+      <link>/post/data.table/</link>
+      <pubDate>Mon, 23 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/post/data.table/</guid>
+      <description>L’atelier du jour avait pour objectif la découvert du package data.table au travers d’exercises proposés lors de la dernière édition de UseR. Les slides avec les énoncés sont disponibles ici.
+L’apport de notre atelier est d’avoir systématiquement essayé de traiter les questions avec - les fonctionalités R de base - les fonctionalités offertes par le tidyverse (principalement dplyr) - les fonctionnalités du package data.table
+Pour les animateurs : vous êtes libre de compléter le post de blog.</description>
+    </item>
+    
+  </channel>
+</rss>

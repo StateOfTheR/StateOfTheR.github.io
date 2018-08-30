@@ -7,17 +7,26 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
     <copyright>&amp;copy; 2018 State of the R</copyright>
-    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0100</lastBuildDate>
     
 	<atom:link href="/talk/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Les bases de Rcpp</title>
-      <link>/talk/2018-07-20-bases_rcpp/</link>
-      <pubDate>Fri, 20 Jul 2018 00:00:00 +0200</pubDate>
+      <title>Fancy plotting in R</title>
+      <link>/talk/2018-10-fancy_plots/</link>
+      <pubDate>Fri, 19 Oct 2018 00:00:00 +0200</pubDate>
       
-      <guid>/talk/2018-07-20-bases_rcpp/</guid>
+      <guid>/talk/2018-10-fancy_plots/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bilan de la semaine FinistR&#39;18</title>
+      <link>/talk/2018-09-10-bilan_finister18/</link>
+      <pubDate>Mon, 10 Sep 2018 00:00:00 +0200</pubDate>
+      
+      <guid>/talk/2018-09-10-bilan_finister18/</guid>
       <description></description>
     </item>
     

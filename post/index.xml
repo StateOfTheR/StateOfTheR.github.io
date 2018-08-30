@@ -13,6 +13,17 @@
     
     
     <item>
+      <title>Bases en Rcpp</title>
+      <link>/post/bases-rcpp/</link>
+      <pubDate>Fri, 20 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/bases-rcpp/</guid>
+      <description>Les trois mousquetaires Timothée, Mathieu et Félix (a.k.a riri fifi loulou) proposent une séances complète d&amp;rsquo;introduction à Rcpp accompagné de travaux pratiques.
+Les documents de la séances, bien complet:
+ Introduction Rappel d&amp;rsquo;architecture machine Rappel en C++ RcppArmadillo Fonctions Astuces  </description>
+    </item>
+    
+    <item>
       <title>Manipulation de (quasi) big data en R</title>
       <link>/post/manipulating-half-big-data-in-r/</link>
       <pubDate>Fri, 22 Jun 2018 00:00:00 +0000</pubDate>
@@ -21,16 +32,6 @@
       <description>Séverine et Tristan nous proposent une introduction à quelques outils permettant de manipuler (en particulier charger) de “grosses” tables de données sous R.
  bigmemory for loading large matrices bigalgebra provides BLAS and LAPACK linear algebra sparklyr for interfacing R with Spark Apache  Les documents de la séances
  Présentation des enjeux, slides travaux pratiques (PDF), source Markdown code source: R base vs bigxx code source: R base vs sparklyr  </description>
-    </item>
-    
-    <item>
-      <title>Introduction au Deep Learning sous R</title>
-      <link>/post/introduction-au-deep-learning-sous-r/</link>
-      <pubDate>Fri, 25 May 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/post/introduction-au-deep-learning-sous-r/</guid>
-      <description>Sophie et Christophe nous proposent une séance complète sur le deep-learning et l&amp;rsquo;interfaçage existant sous R:
- Une brève histoire du Deep-Learning Une introduction au Deep-Learning sous R travaux pratiques  </description>
     </item>
     
     <item>
@@ -94,16 +95,6 @@ Pour les animateurs : vous êtes libre de compléter le post de blog.</descripti
     </item>
     
     <item>
-      <title>Finist&#39;R 2017</title>
-      <link>/post/roscoff2017/</link>
-      <pubDate>Sun, 03 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/post/roscoff2017/</guid>
-      <description>À l&amp;rsquo;occasion d&amp;rsquo;une semaine d&amp;rsquo;ateliers du 28 août au 1er septembre 2017 à la station biologique de Roscoff, nous avons lancé
- l&amp;rsquo;écriture d&amp;rsquo;un mini poly bookdown résumant les activités de la semaine la formation d&amp;rsquo;un groupe github où sont hébergés nos projets en cours et à venir.  </description>
-    </item>
-    
-    <item>
       <title>Academic: the website designer for Hugo</title>
       <link>/post/getting-started/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0200</pubDate>
@@ -113,17 +104,6 @@ Pour les animateurs : vous êtes libre de compléter le post de blog.</descripti
 
 Key features:
  Easily manage various content including homepage, blog posts, publications, talks, and projects Extensible via color themes and widgets/plugins Write in Markdown for easy formatting and code highlighting, with LaTeX for mathematical expressions Social/academic network linking, Google Analytics, and Disqus comments Responsive and mobile friendly Simple and refreshing one page design Multilingual and easy to customize  Color Themes Academic is available in different color themes and font themes.</description>
-    </item>
-    
-    <item>
-      <title>Hello R Markdown</title>
-      <link>/post/2015-07-23-r-rmarkdown/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
-      
-      <guid>/post/2015-07-23-r-rmarkdown/</guid>
-      <description>R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
-You can embed an R code chunk like this:
-summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
     </item>
     
   </channel>
