@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Deep Learning on State of The R</title>
+    <title>Deep learning on State of The R</title>
     <link>/tags/deep-learning/</link>
-    <description>Recent content in Deep Learning on State of The R</description>
+    <description>Recent content in Deep learning on State of The R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
     <copyright>&amp;copy; 2018 State of the R</copyright>
-    <lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 25 May 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/deep-learning/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Deep Learning</title>
-      <link>/project/deep-learning/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0200</pubDate>
+      <title>Introduction au Deep Learning sous R</title>
+      <link>/post/introduction-au-deep-learning-sous-r/</link>
+      <pubDate>Fri, 25 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>/project/deep-learning/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus.</description>
+      <guid>/post/introduction-au-deep-learning-sous-r/</guid>
+      <description>Sophie et Christophe nous proposent une séance complète sur le deep-learning et l&amp;rsquo;interfaçage existant sous R:
+ Une brève histoire du Deep-Learning Une introduction au Deep-Learning sous R travaux pratiques  </description>
     </item>
     
   </channel>

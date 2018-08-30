@@ -44,6 +44,14 @@
     
     <url>
     
+      <loc>/post/introduction-au-deep-learning-sous-r/</loc>
+      <lastmod>2018-05-25T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/post/une-introduction-au-tidyverse/</loc>
       <lastmod>2018-05-02T00:00:00+00:00</lastmod>
     </url>
@@ -196,6 +204,15 @@
     
       <loc>/tags/datatable/</loc>
       <lastmod>2018-02-23T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/deep-learning/</loc>
+      <lastmod>2018-05-25T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     

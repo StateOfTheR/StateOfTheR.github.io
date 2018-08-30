@@ -35,6 +35,16 @@ Les documents de la séances, bien complet:
     </item>
     
     <item>
+      <title>Introduction au Deep Learning sous R</title>
+      <link>/post/introduction-au-deep-learning-sous-r/</link>
+      <pubDate>Fri, 25 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/introduction-au-deep-learning-sous-r/</guid>
+      <description>Sophie et Christophe nous proposent une séance complète sur le deep-learning et l&amp;rsquo;interfaçage existant sous R:
+ Une brève histoire du Deep-Learning Une introduction au Deep-Learning sous R travaux pratiques  </description>
+    </item>
+    
+    <item>
       <title>Une introduction au tidyverse</title>
       <link>/post/une-introduction-au-tidyverse/</link>
       <pubDate>Wed, 02 May 2018 00:00:00 +0000</pubDate>

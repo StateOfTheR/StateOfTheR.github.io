@@ -85,6 +85,24 @@
     </item>
     
     <item>
+      <title>Introduction au Deep Learning sous R</title>
+      <link>/post/introduction-au-deep-learning-sous-r/</link>
+      <pubDate>Fri, 25 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/introduction-au-deep-learning-sous-r/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;img/headers/TensorFlowLogo.png&#34; align=&#34;right&#34; width=&#34;200&#34;/&gt;&lt;/p&gt;
+
+&lt;p&gt;Sophie et Christophe nous proposent une séance complète sur le deep-learning et l&amp;rsquo;interfaçage existant sous R:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;post/deep_learning/deep-learning-history.html&#34; target=&#34;_blank&#34;&gt;Une brève histoire du Deep-Learning&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;post/deep_learning/Deep-with-R.pdf&#34; target=&#34;_blank&#34;&gt;Une introduction au Deep-Learning sous R&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;post/deep_learning/cours_deeplearning_for_dummies.pdf&#34; target=&#34;_blank&#34;&gt;travaux pratiques&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Une introduction au tidyverse</title>
       <link>/post/une-introduction-au-tidyverse/</link>
       <pubDate>Wed, 02 May 2018 00:00:00 +0000</pubDate>
