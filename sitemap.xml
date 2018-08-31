@@ -20,6 +20,14 @@
     
     <url>
     
+      <loc>/bootcamp/finistr18/</loc>
+      <lastmod>2018-08-31T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/post/bases-rcpp/</loc>
       <lastmod>2018-07-20T00:00:00+00:00</lastmod>
     </url>
@@ -84,15 +92,7 @@
     
     <url>
     
-      <loc>/project/github_grp/</loc>
-      <lastmod>2018-02-06T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/project/finistr17/</loc>
+      <loc>/bootcamp/finistr17/</loc>
       <lastmod>2018-02-06T00:00:00+00:00</lastmod>
     </url>
     
@@ -159,7 +159,16 @@
     <url>
     
       <loc>/tags/bookdown/</loc>
-      <lastmod>2018-02-06T00:00:00+00:00</lastmod>
+      <lastmod>2018-08-31T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/bootcamp/</loc>
+      <lastmod>2018-08-31T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -229,15 +238,6 @@
     
     <url>
     
-      <loc>/tags/git/</loc>
-      <lastmod>2018-02-06T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
       <loc>/tags/kable/</loc>
       <lastmod>2018-02-23T00:00:00+00:00</lastmod>
       <priority>0</priority>
@@ -258,15 +258,6 @@
     
       <loc>/tags/magrittr/</loc>
       <lastmod>2018-05-02T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/project/</loc>
-      <lastmod>2018-02-06T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     

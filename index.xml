@@ -29,6 +29,15 @@
     </item>
     
     <item>
+      <title>FinistR&#39;18</title>
+      <link>/bootcamp/finistr18/</link>
+      <pubDate>Fri, 31 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/bootcamp/finistr18/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Bases en Rcpp</title>
       <link>/post/bases-rcpp/</link>
       <pubDate>Fri, 20 Jul 2018 00:00:00 +0000</pubDate>
@@ -157,20 +166,11 @@
     </item>
     
     <item>
-      <title>Groupe github</title>
-      <link>/project/github_grp/</link>
+      <title>FinistR&#39;17</title>
+      <link>/bootcamp/finistr17/</link>
       <pubDate>Tue, 06 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>/project/github_grp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Mini poly bookdown</title>
-      <link>/project/finistr17/</link>
-      <pubDate>Tue, 06 Feb 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/project/finistr17/</guid>
+      <guid>/bootcamp/finistr17/</guid>
       <description></description>
     </item>
     

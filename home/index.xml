@@ -18,17 +18,8 @@
       <pubDate>Sun, 15 Oct 2017 00:00:00 +0200</pubDate>
       
       <guid>/home/hero/</guid>
-      <description>Groupe de chercheurs et d&amp;rsquo;ingénieurs se réunissant pour approfondir leur savoir-faire, perfectionner la diffusion de leurs méthodes statistiques et échanger autour des dernières innovations de R et Rstudio</description>
-    </item>
-    
-    <item>
-      <title>À propos</title>
-      <link>/home/about/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0200</pubDate>
-      
-      <guid>/home/about/</guid>
-      <description> Bref historique Le groupe s&amp;rsquo;est formé à l&amp;rsquo;occasion d&amp;rsquo;une semaine d&amp;rsquo;ateliers du 28 août au 1er septembre 2017 à la station biologique de Roscoff organisé par des membres de l&amp;rsquo;UMR MIA Paris AgroParisTech/Inra. Nous avons reçu à cette occasion le soutien d&amp;rsquo;AgroParisTech
-Depuis, le groupe s&amp;rsquo;est consolidé autour d&amp;rsquo;un réseau méthodologique du département MIA de l&amp;rsquo;Inra, animé par Julie Aubert, Julien Chiquet et Marie-Pierre Étienne. Une 30aine de personnes sont inscrites à la liste de diffusion (AgroParisTech et AgroCampus Ouest, MIA Paris/Jouy LaMME, Institut Curie) </description>
+      <description>Groupe de chercheurs et d&amp;rsquo;ingénieurs se réunissant pour approfondir leur savoir-faire, perfectionner la diffusion de leurs méthodes statistiques et échanger autour des dernières innovations de R et Rstudio. 
+groupe github  liste de diffusion  participer ?</description>
     </item>
     
     <item>
@@ -51,21 +42,22 @@ Depuis, le groupe s&amp;rsquo;est consolidé autour d&amp;rsquo;un réseau méth
     </item>
     
     <item>
-      <title>Projets</title>
-      <link>/home/projets/</link>
+      <title>Bootcamp</title>
+      <link>/home/bootcamp/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>/home/projets/</guid>
-      <description></description>
+      <guid>/home/bootcamp/</guid>
+      <description>Les ateliers Finist&amp;rsquo;R sont des bootcamp d&amp;rsquo;une semaine que nous avons organisés en 2017 et 2018 à Roscoff et à Beg-Meil.</description>
     </item>
     
     <item>
-      <title>Contact</title>
-      <link>/home/contact/</link>
+      <title>À propos</title>
+      <link>/home/about/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0200</pubDate>
       
-      <guid>/home/contact/</guid>
-      <description></description>
+      <guid>/home/about/</guid>
+      <description>À propos Les participants à State of the R sont issus de la recherche académique en statistique et dans des disciplines connexes (machine learning, optimisation, analyse numérique). Nous concourons à développer de nouvelles méthodes à l&amp;rsquo;aide d&amp;rsquo;outils de la communauté informatique et de la data science.
+Les innovations et l&amp;rsquo;évolution permanente de R, Python et de leurs alternatives nécessitent une veille constante. De plus, l&amp;rsquo;avènement des environnement de développement intégré (RStudio, Jupiter notebook/lab) ont considérablement élargi leur spectre d&amp;rsquo;utilisation.</description>
     </item>
     
   </channel>

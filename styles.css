@@ -1202,7 +1202,7 @@ a.label:hover {
 }
 
 .navbar-default {
-  background: #2b8cbe;
+  background: #fff;
   box-shadow: 0 0.125rem 0.25rem 0 rgba(0,0,0,.11)
 }
 
@@ -1225,12 +1225,12 @@ nav#navbar-main li {
   white-space: nowrap;
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
-  color: #fff;
+  color: #2b8cbe;
   font-weight: 600;
 }
 
 .navbar-default .navbar-nav>li>a:focus {
-  color: #fff;
+  color: #2b8cbe;
   background-color: transparent;
 }
 
@@ -1260,11 +1260,11 @@ nav#navbar-main li {
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: #fff !important;
+  background-color: #2b8cbe !important;
 }
 
 .dropdown-menu {
-  background-color: #2b8cbe !important;
+  background-color: #fff !important;
 }
 
 .dropdown-menu > li > a {
@@ -1273,7 +1273,7 @@ nav#navbar-main li {
   clear: both;
   font-weight: 400;
   line-height: 1.42857143;
-  color: #fff;
+  color: #2b8cbe;
   white-space: nowrap;
 }
 
@@ -1281,13 +1281,13 @@ nav#navbar-main li {
 .dropdown-menu>li>a:hover {
   color: #a6bddb;
   text-decoration: none;
-  background-color: #2b8cbe;
+  background-color: #fff;
 }
 
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:focus,
 .dropdown-menu > .active > a:hover {
-  color: #2b8cbe;
+  color: #fff;
   text-decoration: none;
   background-color: #a6bddb;
   outline: 0;
@@ -1297,20 +1297,20 @@ nav#navbar-main li {
 .navbar-default .navbar-nav>.open>a:focus,
 .navbar-default .navbar-nav>.open>a:hover,
 .navbar-default .navbar-nav>.open>a:visited {
-  color: #fff !important;
-  background-color: #2b8cbe !important;
+  color: #2b8cbe !important;
+  background-color: #fff !important;
 }
 
 .navbar-default .navbar-brand {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1.2em;
-  color: #fff;
+  color: #ece7f2;
 }
 
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:hover {
-  color: #fff;
+  color: #ece7f2;
   background-color: transparent;
 }
 
@@ -1375,7 +1375,7 @@ nav#navbar-main li {
     clear: both;
     font-weight: 400;
     line-height: 1.42857143;
-    color: #fff;
+    color: #2b8cbe;
     white-space: nowrap;
   }
 
@@ -1392,7 +1392,7 @@ nav#navbar-main li {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     padding: 5px 15px 5px 25px;
     line-height: 20px;
-    color: #fff;
+    color: #2b8cbe;
   }
 
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,
