@@ -18,8 +18,19 @@
       <pubDate>Sun, 15 Oct 2017 00:00:00 +0200</pubDate>
       
       <guid>/home/hero/</guid>
-      <description>Groupe de chercheurs et d&amp;rsquo;ingénieurs se réunissant pour approfondir leur savoir-faire, perfectionner la diffusion de leurs méthodes statistiques et échanger autour des dernières innovations de R et Rstudio. 
-groupe github  liste de diffusion  participer ?</description>
+      <description>Groupe de chercheurs et d&amp;rsquo;ingénieurs se réunissant pour approfondir leur savoir-faire, perfectionner la diffusion de leurs méthodes statistiques et échanger autour des dernières innovations de R et Rstudio. en savoir plus
+groupe github
+ liste de diffusion-- </description>
+    </item>
+    
+    <item>
+      <title>Organisation</title>
+      <link>/home/organisation/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0200</pubDate>
+      
+      <guid>/home/organisation/</guid>
+      <description>Fonctionnement des ateliers participatifs Le groupe se réunit à AgroParisTech au cours d&amp;rsquo;ateliers mensuels de 3 heures autour d&amp;rsquo;un thème prédéfini. Chaque atelier est animé par quelques membres (généralement deux ou trois) qui se chargent de présenter les enjeux du thème, fournir le bagage méthodologique nécessaire, et proposer des travaux pratiques.
+Nous pensons qu&amp;rsquo;il est important que l&amp;rsquo;ensemble des participants s&amp;rsquo;investissent dans l&amp;rsquo;animation pour préserver l&amp;rsquo;esprit des ateliers. Les places sont donc limités à une trentaine par séance.</description>
     </item>
     
     <item>
@@ -28,8 +39,8 @@ groupe github  liste de diffusion  participer ?</description>
       <pubDate>Tue, 06 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>/home/upcoming_workshops/</guid>
-      <description>La plupart des ateliers ont lieu dans la salle ACTIA à AgroParisTech.
-  </description>
+      <description> La plupart des ateliers ont lieu dans la salle ACTIA à AgroParisTech.
+ </description>
     </item>
     
     <item>
@@ -47,7 +58,7 @@ groupe github  liste de diffusion  participer ?</description>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>/home/bootcamp/</guid>
-      <description>Les ateliers Finist&amp;rsquo;R sont des bootcamp d&amp;rsquo;une semaine que nous avons organisés en 2017 et 2018 à Roscoff et à Beg-Meil.</description>
+      <description>Dans le même esprit que les ateliers mensuels, les bootcamp Finist&amp;rsquo;R &amp;copy; sont des ateliers d&amp;rsquo;une semaine que nous avons organisés en 2017 et 2018 à Roscoff et à Beg-Meil.</description>
     </item>
     
     <item>
