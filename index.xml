@@ -47,7 +47,7 @@
 
 &lt;p&gt;Les trois mousquetaires Timothée, Mathieu et Félix (a.k.a riri fifi loulou) proposent une séances complète d&amp;rsquo;introduction à &lt;code&gt;Rcpp&lt;/code&gt; accompagné de travaux pratiques.&lt;/p&gt;
 
-&lt;p&gt;Les documents de la séances, bien complet:&lt;/p&gt;
+&lt;p&gt;Les documents de la séances:&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;post/bases_rcpp/Introduction.html&#34; target=&#34;_blank&#34;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
@@ -57,6 +57,8 @@
 &lt;li&gt;&lt;a href=&#34;post/bases_rcpp/4-Rfonctions.html&#34; target=&#34;_blank&#34;&gt;Fonctions&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;post/bases_rcpp/5-Astuces.html&#34; target=&#34;_blank&#34;&gt;Astuces&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;Pour compléter, voir &lt;a href=&#34;https://stateofther.github.io/finistR2018/atelier2_rcpp_modules.html&#34; target=&#34;_blank&#34;&gt;la page du bootcamp finistR2018 dédiée aux modules Rcpp&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
