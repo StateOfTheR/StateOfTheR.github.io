@@ -19,8 +19,8 @@
       
       <guid>/post/bases-rcpp/</guid>
       <description>Les trois mousquetaires Timothée, Mathieu et Félix (a.k.a riri fifi loulou) proposent une séances complète d&amp;rsquo;introduction à Rcpp accompagné de travaux pratiques.
-Les documents de la séances, bien complet:
- Introduction Rappel d&amp;rsquo;architecture machine Rappel en C++ RcppArmadillo Fonctions Astuces  </description>
+Les documents de la séances:
+ Introduction Rappel d&amp;rsquo;architecture machine Rappel en C++ RcppArmadillo Fonctions Astuces  Pour compléter, voir la page du bootcamp finistR2018 dédiée aux modules Rcpp.</description>
     </item>
     
     <item>
