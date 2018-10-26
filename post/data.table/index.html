@@ -336,14 +336,20 @@ Pour les animateurs : vous êtes libre de compléter le post de blog.">
 
     <div class="article-style" itemprop="articleBody">
       <p>L’atelier du jour avait pour objectif la découvert du package <a href="https://cran.r-project.org/web/packages/data.table/index.html">data.table</a> au travers d’<a href="https://user2017.sched.com/event/Aw0L/datatable-for-beginners">exercises proposés lors de la dernière édition de UseR</a>. Les slides avec les énoncés sont <a href="https://www.google.fr/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;cad=rja&amp;uact=8&amp;ved=0ahUKEwiZv7DE6I3XAhWCuBoKHcN5CREQFggrMAA&amp;url=https%3A%2F%2Fchannel9.msdn.com%2FEvents%2FuseR-international-R-User-conferences%2FuseR-International-R-User-2017-Conference%2Fdatatable-for-beginners&amp;usg=AOvVaw3N-q_5oW0-yMm8uz9hVisu">disponibles ici</a>.</p>
-<p>L’apport de notre atelier est d’avoir systématiquement essayé de traiter les questions avec - les fonctionalités <code>R</code> de <em>base</em> - les fonctionalités offertes par le <em>tidyverse</em> (principalement <em>dplyr</em>) - les fonctionnalités du package <em>data.table</em></p>
+<p>L’apport de notre atelier est d’avoir systématiquement essayé de traiter les questions avec
+- les fonctionalités <code>R</code> de <em>base</em>
+- les fonctionalités offertes par le <em>tidyverse</em> (principalement <em>dplyr</em>)
+- les fonctionnalités du package <em>data.table</em></p>
 <p>Pour les animateurs : vous êtes libre de compléter le post de blog. Nous ajouteroins des comparatifs en terme de temps de calcul plus tard (peut-être).</p>
 <div id="preliminaires" class="section level3">
 <h3>Préliminaires</h3>
 <p>C’est parti, on charge les packages requis</p>
 <pre class="r"><code>library(data.table)
 library(tidyverse)</code></pre>
-<p>Les exercices seront traités à l’aide de deux tables jouets, dont on propose des contreparties en - object <code>data.frame</code> - object <code>tibble</code> - object <code>data.table</code></p>
+<p>Les exercices seront traités à l’aide de deux tables jouets, dont on propose des contreparties en
+- object <code>data.frame</code>
+- object <code>tibble</code>
+- object <code>data.table</code></p>
 <pre class="r"><code>set.seed(20170703L)
 DF1 = data.frame(id = sample(1:2, 9L, TRUE), 
                  code = sample(letters[1:3], 9, TRUE), 
