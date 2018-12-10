@@ -13,6 +13,16 @@
     
     
     <item>
+      <title>Modeling in the Tidyverse and applications to metagenomics data</title>
+      <link>/post/tidymodels/</link>
+      <pubDate>Fri, 23 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/tidymodels/</guid>
+      <description>Antoine, notre fanatique du tidyverse, nous propose de jeter un coup d’oeil à broom et rsample, des packages de tidymodels, pour travailler proprement (aka en format tibble) avec les sorties S3 des méthodes statistiques comme lm ou kmeans et faciliter l’utilisation des méthodes de rééchantillonage.
+ L&amp;rsquo;intégrale des slides  </description>
+    </item>
+    
+    <item>
       <title>Fancy plotting with ggraph, gganimate</title>
       <link>/post/fancy-plotting/</link>
       <pubDate>Fri, 19 Oct 2018 00:00:00 +0000</pubDate>

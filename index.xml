@@ -30,11 +30,18 @@
     
     <item>
       <title>Modeling in the Tidyverse and applications to metagenomics data</title>
-      <link>/talk/2018-11-tidy-modelling/</link>
-      <pubDate>Fri, 23 Nov 2018 00:00:00 +0100</pubDate>
+      <link>/post/tidymodels/</link>
+      <pubDate>Fri, 23 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>/talk/2018-11-tidy-modelling/</guid>
-      <description></description>
+      <guid>/post/tidymodels/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/tidymodels/tidymodels/master/tidymodels_hex.png&#34; align=&#34;right&#34; width=&#34;200&#34;/&gt;&lt;/p&gt;
+
+&lt;p&gt;Antoine, notre fanatique du &lt;code&gt;tidyverse&lt;/code&gt;, nous propose de jeter un coup d’oeil à &lt;code&gt;broom&lt;/code&gt; et &lt;code&gt;rsample&lt;/code&gt;, des packages de &lt;code&gt;tidymodels&lt;/code&gt;, pour travailler proprement (aka en format &lt;code&gt;tibble&lt;/code&gt;) avec les sorties S3 des méthodes statistiques comme &lt;code&gt;lm&lt;/code&gt; ou &lt;code&gt;kmeans&lt;/code&gt; et faciliter l’utilisation des méthodes de rééchantillonage.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://abichat.github.io/Slides/Modeling/Modeling.html&#34; target=&#34;_blank&#34;&gt;L&amp;rsquo;intégrale des slides&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
     <item>

@@ -40,6 +40,15 @@
     </item>
     
     <item>
+      <title>Broom</title>
+      <link>/tags/broom/</link>
+      <pubDate>Fri, 23 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/broom/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Communication</title>
       <link>/tags/communication/</link>
       <pubDate>Fri, 23 Feb 2018 00:00:00 +0000</pubDate>
@@ -94,11 +103,29 @@
     </item>
     
     <item>
+      <title>Gganimate</title>
+      <link>/tags/gganimate/</link>
+      <pubDate>Fri, 19 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/gganimate/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Ggplot</title>
       <link>/tags/ggplot/</link>
       <pubDate>Fri, 19 Oct 2018 00:00:00 +0000</pubDate>
       
       <guid>/tags/ggplot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ggraph</title>
+      <link>/tags/ggraph/</link>
+      <pubDate>Fri, 19 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/ggraph/</guid>
       <description></description>
     </item>
     
@@ -148,6 +175,15 @@
     </item>
     
     <item>
+      <title>Rsample</title>
+      <link>/tags/rsample/</link>
+      <pubDate>Fri, 23 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/rsample/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Sparlyr</title>
       <link>/tags/sparlyr/</link>
       <pubDate>Fri, 22 Jun 2018 00:00:00 +0000</pubDate>
@@ -180,6 +216,24 @@
       <pubDate>Wed, 02 May 2018 00:00:00 +0000</pubDate>
       
       <guid>/tags/tidy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tidymodels</title>
+      <link>/tags/tidymodels/</link>
+      <pubDate>Fri, 23 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/tidymodels/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tidyverse</title>
+      <link>/tags/tidyverse/</link>
+      <pubDate>Fri, 23 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/tidyverse/</guid>
       <description></description>
     </item>
     
