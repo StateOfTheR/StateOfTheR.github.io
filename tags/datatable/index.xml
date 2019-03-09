@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Datatable on State of The R</title>
+    <title>datatable on State of The R</title>
     <link>/tags/datatable/</link>
-    <description>Recent content in Datatable on State of The R</description>
+    <description>Recent content in datatable on State of The R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
     <copyright>&amp;copy; 2018 State of the R</copyright>
@@ -18,7 +18,7 @@
       <pubDate>Fri, 23 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>/post/rmarkdown-tableaux-interactifs-et-retour-d-experience/</guid>
-      <description>Mahendra nous propose un retour d’expérience et quelques exercices sur le package DT pour la manipulation interactive de table.
+      <description> Mahendra nous propose un retour d’expérience et quelques exercices sur le package DT pour la manipulation interactive de table.
  Les slides de Mahendra  </description>
     </item>
     
@@ -28,7 +28,7 @@
       <pubDate>Fri, 23 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>/post/science-communication-with-r-style-r-markdown-xaringan/</guid>
-      <description>Antoine nous propose une série de slides sur R markdown et Xaringan
+      <description> Antoine nous propose une série de slides sur R markdown et Xaringan
  Les slides Xaringan de Antoine  </description>
     </item>
     

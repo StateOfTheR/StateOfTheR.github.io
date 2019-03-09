@@ -13,6 +13,25 @@
     
     
     <item>
+      <title>Organisation des premières satRday française à Paris du 23 février</title>
+      <link>/post/bigstatsr/</link>
+      <pubDate>Fri, 22 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/bigstatsr/</guid>
+      <description>Séance dédiée à la préparation des satRday du lendemain:
+ https://paris2019.satrdays.org  Avec tous les bénévoles du groupe !</description>
+    </item>
+    
+    <item>
+      <title>Efficient analysis of large-scale matrices with two R packages: bigstatsr and bigsnpr</title>
+      <link>/post/bigstatsr/</link>
+      <pubDate>Fri, 25 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/bigstatsr/</guid>
+      <description>R package {bigstatsr} provides a special class of matrix whose data is stored on the disk instead of the RAM, but you can still access the data almost as if it were in memory. It is particularly useful is you have a large matrix to analyze but not enough RAM on your computer. It can still be useful for matrices that fit in your RAM because package {bigstatsr} provides very efficient and parallelized algorithms (have you ever found cor or svd too slow?</description>
+    </item>
+    
+    <item>
       <title>Pimp my exam</title>
       <link>/post/pimp-exam/</link>
       <pubDate>Thu, 20 Dec 2018 00:00:00 +0000</pubDate>
@@ -59,7 +78,7 @@ Les documents de la séances:
       <pubDate>Fri, 22 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>/post/manipulating-half-big-data-in-r/</guid>
-      <description>Séverine et Tristan nous proposent une introduction à quelques outils permettant de manipuler (en particulier charger) de “grosses” tables de données sous R.
+      <description> Séverine et Tristan nous proposent une introduction à quelques outils permettant de manipuler (en particulier charger) de “grosses” tables de données sous R.
  bigmemory for loading large matrices bigalgebra provides BLAS and LAPACK linear algebra sparklyr for interfacing R with Spark Apache  Les documents de la séances
  Présentation des enjeux, slides travaux pratiques (PDF), source Markdown code source: R base vs bigxx code source: R base vs sparklyr  </description>
     </item>
@@ -80,7 +99,7 @@ Les documents de la séances:
       <pubDate>Wed, 02 May 2018 00:00:00 +0000</pubDate>
       
       <guid>/post/une-introduction-au-tidyverse/</guid>
-      <description>Antoine nous propose une introduction dense et déjà avancée en passant en revue l’ensemble du tidyverse
+      <description> Antoine nous propose une introduction dense et déjà avancée en passant en revue l’ensemble du tidyverse
  Les slides Xaringan de Antoine  </description>
     </item>
     
@@ -100,7 +119,7 @@ Les documents de la séances:
       <pubDate>Fri, 23 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>/post/rmarkdown-tableaux-interactifs-et-retour-d-experience/</guid>
-      <description>Mahendra nous propose un retour d’expérience et quelques exercices sur le package DT pour la manipulation interactive de table.
+      <description> Mahendra nous propose un retour d’expérience et quelques exercices sur le package DT pour la manipulation interactive de table.
  Les slides de Mahendra  </description>
     </item>
     
@@ -110,7 +129,7 @@ Les documents de la séances:
       <pubDate>Fri, 23 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>/post/science-communication-with-r-style-r-markdown-xaringan/</guid>
-      <description>Antoine nous propose une série de slides sur R markdown et Xaringan
+      <description> Antoine nous propose une série de slides sur R markdown et Xaringan
  Les slides Xaringan de Antoine  </description>
     </item>
     
@@ -131,7 +150,7 @@ Pour les animateurs : vous êtes libre de compléter le post de blog.</descripti
       <pubDate>Mon, 25 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>/post/learnr/</guid>
-      <description>Vue d’ensemble Le package learnr permet de créer des tutoriels (voir le site dédié ou le blog de présentation). Les tutoriels incluent du texte, des champs pour taper et exécuter des commandes R (pouvant être pré-formatés) et des questionnaires à choix multiples. Les champs peuvent inclure des indices à afficher pour l’utilisateur ou des solutions. Pour fonctionner, le document créé au format Rmarkdown doit être envoyé sur un serveur shiny. Il est alors nécessaire de créér un compte sur shinyapp.</description>
+      <description>Vue d’ensemble Le package learnr permet de créer des tutoriels (voir le site dédié ou le blog de présentation). Les tutoriels incluent du texte, des champs pour taper et exécuter des commandes R (pouvant être pré-formatés) et des questionnaires à choix multiples. Les champs peuvent inclure des indices à afficher pour l’utilisateur ou des solutions. Pour fonctionner, le document créé au format Rmarkdown doit être envoyé sur un serveur shiny.</description>
     </item>
     
     <item>

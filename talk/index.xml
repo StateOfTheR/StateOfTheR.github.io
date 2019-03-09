@@ -13,11 +13,29 @@
     
     
     <item>
-      <title>Efficient analysis of large-scale matrices with two R packages: bigstatsr and bigsnpr</title>
-      <link>/talk/2018-01-25-bigstatsr/</link>
-      <pubDate>Fri, 25 Jan 2019 00:00:00 +0100</pubDate>
+      <title>Séance autour de Shiny</title>
+      <link>/talk/2019-05-24-shiny/</link>
+      <pubDate>Fri, 24 May 2019 00:00:00 +0200</pubDate>
       
-      <guid>/talk/2018-01-25-bigstatsr/</guid>
+      <guid>/talk/2019-05-24-shiny/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rSTAN, un outil d&#39;inférence bayésienne.</title>
+      <link>/talk/2019-04-19-rstan/</link>
+      <pubDate>Fri, 19 Apr 2019 00:00:00 +0200</pubDate>
+      
+      <guid>/talk/2019-04-19-rstan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Développement de package</title>
+      <link>/talk/2019-03-22-packages/</link>
+      <pubDate>Fri, 22 Mar 2019 00:00:00 +0100</pubDate>
+      
+      <guid>/talk/2019-03-22-packages/</guid>
       <description></description>
     </item>
     

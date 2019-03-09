@@ -4,8 +4,40 @@
     
     <url>
     
-      <loc>/talk/2018-01-25-bigstatsr/</loc>
-      <lastmod>2019-01-25T00:00:00+01:00</lastmod>
+      <loc>/talk/2019-05-24-shiny/</loc>
+      <lastmod>2019-05-24T00:00:00+02:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/talk/2019-04-19-rstan/</loc>
+      <lastmod>2019-04-19T00:00:00+02:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/talk/2019-03-22-packages/</loc>
+      <lastmod>2019-03-22T00:00:00+01:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/post/bigstatsr/</loc>
+      <lastmod>2019-02-22T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/post/bigstatsr/</loc>
+      <lastmod>2019-01-25T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -165,6 +197,59 @@
     
     <url>
     
+      <loc>/bootcamp/</loc>
+      <lastmod>2018-08-31T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/categories/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/dt/</loc>
+      <lastmod>2018-02-23T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/r-markdown/</loc>
+      <lastmod>2018-02-23T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/</loc>
+      <lastmod>2017-10-15T00:00:00+02:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/</loc>
+      <lastmod>2018-01-13T00:00:00+01:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/tags/bigdata/</loc>
       <lastmod>2018-06-22T00:00:00+00:00</lastmod>
       <priority>0</priority>
@@ -174,8 +259,8 @@
     
     <url>
     
-      <loc>/tags/bookdown/</loc>
-      <lastmod>2018-08-31T00:00:00+00:00</lastmod>
+      <loc>/tags/bigsnpr/</loc>
+      <lastmod>2019-01-25T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -183,7 +268,16 @@
     
     <url>
     
-      <loc>/bootcamp/</loc>
+      <loc>/tags/bigstatsr/</loc>
+      <lastmod>2019-01-25T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/bookdown/</loc>
       <lastmod>2018-08-31T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -201,24 +295,7 @@
     
     <url>
     
-      <loc>/categories/</loc>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
       <loc>/tags/communication/</loc>
-      <lastmod>2018-02-23T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/dt/</loc>
       <lastmod>2018-02-23T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -335,15 +412,6 @@
     
     <url>
     
-      <loc>/tags/r-markdown/</loc>
-      <lastmod>2018-02-23T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
       <loc>/tags/rcpp/</loc>
       <lastmod>2018-07-20T00:00:00+00:00</lastmod>
       <priority>0</priority>
@@ -362,6 +430,15 @@
     
     <url>
     
+      <loc>/tags/satrday/</loc>
+      <lastmod>2019-02-22T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/tags/sparlyr/</loc>
       <lastmod>2018-06-22T00:00:00+00:00</lastmod>
       <priority>0</priority>
@@ -373,24 +450,6 @@
     
       <loc>/tags/spatial/</loc>
       <lastmod>2018-03-23T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/</loc>
-      <lastmod>2017-10-15T00:00:00+02:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/</loc>
-      <lastmod>2018-01-13T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -435,7 +494,7 @@
     <url>
     
       <loc>/categories/workshop/</loc>
-      <lastmod>2018-12-20T00:00:00+00:00</lastmod>
+      <lastmod>2019-02-22T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     

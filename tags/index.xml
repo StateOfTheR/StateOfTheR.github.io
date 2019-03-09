@@ -22,155 +22,11 @@
     </item>
     
     <item>
-      <title>Bigdata</title>
-      <link>/tags/bigdata/</link>
-      <pubDate>Fri, 22 Jun 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/bigdata/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Bookdown</title>
-      <link>/tags/bookdown/</link>
-      <pubDate>Fri, 31 Aug 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/bookdown/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Broom</title>
-      <link>/tags/broom/</link>
-      <pubDate>Fri, 23 Nov 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/broom/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Communication</title>
-      <link>/tags/communication/</link>
-      <pubDate>Fri, 23 Feb 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/communication/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>DT</title>
       <link>/tags/dt/</link>
       <pubDate>Fri, 23 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>/tags/dt/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Data.table</title>
-      <link>/tags/data.table/</link>
-      <pubDate>Fri, 22 Jun 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/data.table/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Datatable</title>
-      <link>/tags/datatable/</link>
-      <pubDate>Fri, 23 Feb 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/datatable/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Deep learning</title>
-      <link>/tags/deep-learning/</link>
-      <pubDate>Fri, 25 May 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/deep-learning/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Dplyr</title>
-      <link>/tags/dplyr/</link>
-      <pubDate>Wed, 02 May 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/dplyr/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Exams</title>
-      <link>/tags/exams/</link>
-      <pubDate>Thu, 20 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/exams/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Gganimate</title>
-      <link>/tags/gganimate/</link>
-      <pubDate>Fri, 19 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/gganimate/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Ggplot</title>
-      <link>/tags/ggplot/</link>
-      <pubDate>Fri, 19 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/ggplot/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Ggraph</title>
-      <link>/tags/ggraph/</link>
-      <pubDate>Fri, 19 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/ggraph/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Kable</title>
-      <link>/tags/kable/</link>
-      <pubDate>Fri, 23 Feb 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/kable/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Learnr</title>
-      <link>/tags/learnr/</link>
-      <pubDate>Mon, 25 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/learnr/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Magrittr</title>
-      <link>/tags/magrittr/</link>
-      <pubDate>Wed, 02 May 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/magrittr/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Moddle</title>
-      <link>/tags/moddle/</link>
-      <pubDate>Thu, 20 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/moddle/</guid>
       <description></description>
     </item>
     
@@ -184,7 +40,169 @@
     </item>
     
     <item>
-      <title>Rcpp</title>
+      <title>bigdata</title>
+      <link>/tags/bigdata/</link>
+      <pubDate>Fri, 22 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/bigdata/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bigsnpr</title>
+      <link>/tags/bigsnpr/</link>
+      <pubDate>Fri, 25 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/bigsnpr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bigstatsr</title>
+      <link>/tags/bigstatsr/</link>
+      <pubDate>Fri, 25 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/bigstatsr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bookdown</title>
+      <link>/tags/bookdown/</link>
+      <pubDate>Fri, 31 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/bookdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>broom</title>
+      <link>/tags/broom/</link>
+      <pubDate>Fri, 23 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/broom/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>communication</title>
+      <link>/tags/communication/</link>
+      <pubDate>Fri, 23 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/communication/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>data.table</title>
+      <link>/tags/data.table/</link>
+      <pubDate>Fri, 22 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/data.table/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>datatable</title>
+      <link>/tags/datatable/</link>
+      <pubDate>Fri, 23 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/datatable/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>deep learning</title>
+      <link>/tags/deep-learning/</link>
+      <pubDate>Fri, 25 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/deep-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dplyr</title>
+      <link>/tags/dplyr/</link>
+      <pubDate>Wed, 02 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/dplyr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>exams</title>
+      <link>/tags/exams/</link>
+      <pubDate>Thu, 20 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/exams/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gganimate</title>
+      <link>/tags/gganimate/</link>
+      <pubDate>Fri, 19 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/gganimate/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ggplot</title>
+      <link>/tags/ggplot/</link>
+      <pubDate>Fri, 19 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/ggplot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ggraph</title>
+      <link>/tags/ggraph/</link>
+      <pubDate>Fri, 19 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/ggraph/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kable</title>
+      <link>/tags/kable/</link>
+      <pubDate>Fri, 23 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/kable/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>learnr</title>
+      <link>/tags/learnr/</link>
+      <pubDate>Mon, 25 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/learnr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>magrittr</title>
+      <link>/tags/magrittr/</link>
+      <pubDate>Wed, 02 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/magrittr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>moddle</title>
+      <link>/tags/moddle/</link>
+      <pubDate>Thu, 20 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/moddle/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rcpp</title>
       <link>/tags/rcpp/</link>
       <pubDate>Fri, 20 Jul 2018 00:00:00 +0000</pubDate>
       
@@ -193,7 +211,7 @@
     </item>
     
     <item>
-      <title>Rsample</title>
+      <title>rsample</title>
       <link>/tags/rsample/</link>
       <pubDate>Fri, 23 Nov 2018 00:00:00 +0000</pubDate>
       
@@ -202,7 +220,16 @@
     </item>
     
     <item>
-      <title>Sparlyr</title>
+      <title>satrday</title>
+      <link>/tags/satrday/</link>
+      <pubDate>Fri, 22 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/satrday/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sparlyr</title>
       <link>/tags/sparlyr/</link>
       <pubDate>Fri, 22 Jun 2018 00:00:00 +0000</pubDate>
       
@@ -211,7 +238,7 @@
     </item>
     
     <item>
-      <title>Spatial</title>
+      <title>spatial</title>
       <link>/tags/spatial/</link>
       <pubDate>Fri, 23 Mar 2018 00:00:00 +0000</pubDate>
       
@@ -220,7 +247,7 @@
     </item>
     
     <item>
-      <title>Teachings</title>
+      <title>teachings</title>
       <link>/tags/teachings/</link>
       <pubDate>Mon, 25 Sep 2017 00:00:00 +0000</pubDate>
       
@@ -229,7 +256,7 @@
     </item>
     
     <item>
-      <title>Tidy</title>
+      <title>tidy</title>
       <link>/tags/tidy/</link>
       <pubDate>Wed, 02 May 2018 00:00:00 +0000</pubDate>
       
@@ -238,7 +265,7 @@
     </item>
     
     <item>
-      <title>Tidymodels</title>
+      <title>tidymodels</title>
       <link>/tags/tidymodels/</link>
       <pubDate>Fri, 23 Nov 2018 00:00:00 +0000</pubDate>
       
@@ -247,7 +274,7 @@
     </item>
     
     <item>
-      <title>Tidyverse</title>
+      <title>tidyverse</title>
       <link>/tags/tidyverse/</link>
       <pubDate>Fri, 23 Nov 2018 00:00:00 +0000</pubDate>
       
