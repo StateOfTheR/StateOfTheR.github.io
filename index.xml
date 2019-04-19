@@ -20,21 +20,35 @@
     </item>
     
     <item>
-      <title>rSTAN, un outil d&#39;inférence bayésienne.</title>
-      <link>/talk/2019-04-19-rstan/</link>
-      <pubDate>Fri, 19 Apr 2019 00:00:00 +0200</pubDate>
+      <title>rSTAN, un outil d&#39;inférence bayésienne</title>
+      <link>/post/rstan/</link>
+      <pubDate>Fri, 19 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/talk/2019-04-19-rstan/</guid>
-      <description></description>
+      <guid>/post/rstan/</guid>
+      <description>&lt;p&gt;Matthieu et Éric nous propose une séance sur {rSTAN}, l&amp;rsquo;interface R à la bibliothèque
+C++ Stan. Il s&amp;rsquo;agit d&amp;rsquo;algorithme inférence b  yésienne utilisant une variante du Monte-Carlo Hamiltonien.
+On peut aussi faire de l&amp;rsquo;inférence fréquentiste par optimisation.&lt;/p&gt;
+
+&lt;p&gt;Gros travail de Éric et Matthieu, et une base de document introductif très fouillé, merci!&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;../../post/rstan/WorkingWithStan_part1.html&#34;&gt;A bit of theory to understand Hamilton Monte Carlo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../../post/rstan/WorkingWithStan_part2.html&#34;&gt;Modèle Hiérarchique avec Stan&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../../post/rstan/WorkingWithStan_part3.html&#34;&gt;Modèlisation Spatiale&lt;/a&gt;
+
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
     <item>
       <title>Développement de package</title>
-      <link>/talk/2019-03-22-packages/</link>
-      <pubDate>Fri, 22 Mar 2019 00:00:00 +0100</pubDate>
+      <link>/post/packages/</link>
+      <pubDate>Fri, 22 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>/talk/2019-03-22-packages/</guid>
-      <description></description>
+      <guid>/post/packages/</guid>
+      <description>&lt;p&gt;Dans la continuité de ce qui a été fait à Beg-meil](&lt;a href=&#34;https://stateofther.github.io/finistR2018/atelier3_package_creation.html&#34; target=&#34;_blank&#34;&gt;https://stateofther.github.io/finistR2018/atelier3_package_creation.html&lt;/a&gt;), je vous propose un tour d&amp;rsquo;horizon des bonnes pratiques et de l&amp;rsquo;ensemble des outils disponibles pour réaliser le développement d&amp;rsquo;un package R. On parlera github, travis, {pkgdown], roxygen2, déploiement, {testthat], appveor, configure, Makevars, {usethis}, {devtools}, yaml, etc. Venez avec en tête de mettre les main dans le cambouis pour votre propre package.&lt;/p&gt;
+</description>
     </item>
     
     <item>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>travis on State of The R</title>
+    <link>/tags/travis/</link>
+    <description>Recent content in travis on State of The R</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-fr</language>
+    <copyright>&amp;copy; 2018 State of the R</copyright>
+    <lastBuildDate>Fri, 22 Mar 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/travis/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Développement de package</title>
+      <link>/post/packages/</link>
+      <pubDate>Fri, 22 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/packages/</guid>
+      <description>Dans la continuité de ce qui a été fait à Beg-meil](https://stateofther.github.io/finistR2018/atelier3_package_creation.html), je vous propose un tour d&amp;rsquo;horizon des bonnes pratiques et de l&amp;rsquo;ensemble des outils disponibles pour réaliser le développement d&amp;rsquo;un package R. On parlera github, travis, {pkgdown], roxygen2, déploiement, {testthat], appveor, configure, Makevars, {usethis}, {devtools}, yaml, etc. Venez avec en tête de mettre les main dans le cambouis pour votre propre package.</description>
+    </item>
+    
+  </channel>
+</rss>

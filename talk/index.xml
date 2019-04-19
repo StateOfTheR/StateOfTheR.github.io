@@ -21,23 +21,5 @@
       <description></description>
     </item>
     
-    <item>
-      <title>rSTAN, un outil d&#39;inférence bayésienne.</title>
-      <link>/talk/2019-04-19-rstan/</link>
-      <pubDate>Fri, 19 Apr 2019 00:00:00 +0200</pubDate>
-      
-      <guid>/talk/2019-04-19-rstan/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Développement de package</title>
-      <link>/talk/2019-03-22-packages/</link>
-      <pubDate>Fri, 22 Mar 2019 00:00:00 +0100</pubDate>
-      
-      <guid>/talk/2019-03-22-packages/</guid>
-      <description></description>
-    </item>
-    
   </channel>
 </rss>

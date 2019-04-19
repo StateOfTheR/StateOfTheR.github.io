@@ -202,6 +202,15 @@
     </item>
     
     <item>
+      <title>packages</title>
+      <link>/tags/packages/</link>
+      <pubDate>Fri, 22 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/packages/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>rcpp</title>
       <link>/tags/rcpp/</link>
       <pubDate>Fri, 20 Jul 2018 00:00:00 +0000</pubDate>
@@ -216,6 +225,15 @@
       <pubDate>Fri, 23 Nov 2018 00:00:00 +0000</pubDate>
       
       <guid>/tags/rsample/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rstan</title>
+      <link>/tags/rstan/</link>
+      <pubDate>Fri, 19 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/rstan/</guid>
       <description></description>
     </item>
     
@@ -243,6 +261,15 @@
       <pubDate>Fri, 23 Mar 2018 00:00:00 +0000</pubDate>
       
       <guid>/tags/spatial/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>stan</title>
+      <link>/tags/stan/</link>
+      <pubDate>Fri, 19 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/stan/</guid>
       <description></description>
     </item>
     
@@ -279,6 +306,15 @@
       <pubDate>Fri, 23 Nov 2018 00:00:00 +0000</pubDate>
       
       <guid>/tags/tidyverse/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>travis</title>
+      <link>/tags/travis/</link>
+      <pubDate>Fri, 22 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/travis/</guid>
       <description></description>
     </item>
     
