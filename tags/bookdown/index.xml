@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bookdown on State of The R</title>
-    <link>/tags/bookdown/</link>
+    <link>http://stateofther.github.io/tags/bookdown/</link>
     <description>Recent content in Bookdown on State of The R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
     <copyright>&amp;copy; 2018 State of the R</copyright>
     <lastBuildDate>Fri, 31 Aug 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/bookdown/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://stateofther.github.io/tags/bookdown/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>FinistR&#39;18</title>
-      <link>/bootcamp/finistr18/</link>
+      <link>http://stateofther.github.io/bootcamp/finistr18/</link>
       <pubDate>Fri, 31 Aug 2018 00:00:00 +0000</pubDate>
       
-      <guid>/bootcamp/finistr18/</guid>
+      <guid>http://stateofther.github.io/bootcamp/finistr18/</guid>
       <description></description>
     </item>
     
     <item>
       <title>FinistR&#39;17</title>
-      <link>/bootcamp/finistr17/</link>
+      <link>http://stateofther.github.io/bootcamp/finistr17/</link>
       <pubDate>Tue, 06 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>/bootcamp/finistr17/</guid>
+      <guid>http://stateofther.github.io/bootcamp/finistr17/</guid>
       <description></description>
     </item>
     

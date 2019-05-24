@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Workshop on State of The R</title>
-    <link>/categories/workshop/</link>
+    <link>http://stateofther.github.io/categories/workshop/</link>
     <description>Recent content in Workshop on State of The R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
     <copyright>&amp;copy; 2018 State of the R</copyright>
     <lastBuildDate>Wed, 22 May 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/categories/workshop/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://stateofther.github.io/categories/workshop/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Introduction à plotly</title>
-      <link>/post/rstan/</link>
+      <link>http://stateofther.github.io/post/rstan/</link>
       <pubDate>Wed, 22 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/rstan/</guid>
+      <guid>http://stateofther.github.io/post/rstan/</guid>
       <description>Au cours d&amp;rsquo;une séance découverte un peu spécial, donnée lors de l&amp;rsquo;assemblée générale du département de mathématique et informatique de l&amp;rsquo;INRA, Mahendra nous a fait découvrir les potentialités de {plotly,ggplotly,crosscall}
- La présentation en full HTML  </description>
+ La présentation en full HTML  Le chargement peut prendre du temps (googlefonts&amp;hellip;)</description>
     </item>
     
     <item>
       <title>rSTAN, un outil d&#39;inférence bayésienne</title>
-      <link>/post/rstan/</link>
+      <link>http://stateofther.github.io/post/rstan/</link>
       <pubDate>Fri, 19 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/rstan/</guid>
+      <guid>http://stateofther.github.io/post/rstan/</guid>
       <description>Matthieu et Éric nous propose une séance sur {rSTAN}, l&amp;rsquo;interface R à la bibliothèque C++ Stan. Il s&amp;rsquo;agit d&amp;rsquo;algorithme inférence b yésienne utilisant une variante du Monte-Carlo Hamiltonien. On peut aussi faire de l&amp;rsquo;inférence fréquentiste par optimisation.
 Gros travail de Éric et Matthieu, et une base de document introductif très fouillé, merci!
  A bit of theory to understand Hamilton Monte Carlo Modèle Hiérarchique avec Stan Modèlisation Spatiale   </description>
@@ -35,68 +35,68 @@ Gros travail de Éric et Matthieu, et une base de document introductif très fou
     
     <item>
       <title>Développement de package</title>
-      <link>/post/packages/</link>
+      <link>http://stateofther.github.io/post/packages/</link>
       <pubDate>Fri, 22 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/packages/</guid>
+      <guid>http://stateofther.github.io/post/packages/</guid>
       <description>Dans la continuité de ce qui a été fait à Beg-meil](https://stateofther.github.io/finistR2018/atelier3_package_creation.html), je vous propose un tour d&amp;rsquo;horizon des bonnes pratiques et de l&amp;rsquo;ensemble des outils disponibles pour réaliser le développement d&amp;rsquo;un package R. On parlera github, travis, {pkgdown], roxygen2, déploiement, {testthat], appveor, configure, Makevars, {usethis}, {devtools}, yaml, etc. Venez avec en tête de mettre les main dans le cambouis pour votre propre package.</description>
     </item>
     
     <item>
       <title>Organisation des premières satRday française à Paris du 23 février</title>
-      <link>/post/bigstatsr/</link>
+      <link>http://stateofther.github.io/post/bigstatsr/</link>
       <pubDate>Fri, 22 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/bigstatsr/</guid>
+      <guid>http://stateofther.github.io/post/bigstatsr/</guid>
       <description>Séance dédiée à la préparation des satRday du lendemain:
  https://paris2019.satrdays.org  Avec tous les bénévoles du groupe !</description>
     </item>
     
     <item>
       <title>Efficient analysis of large-scale matrices with two R packages: bigstatsr and bigsnpr</title>
-      <link>/post/bigstatsr/</link>
+      <link>http://stateofther.github.io/post/bigstatsr/</link>
       <pubDate>Fri, 25 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/bigstatsr/</guid>
+      <guid>http://stateofther.github.io/post/bigstatsr/</guid>
       <description>R package {bigstatsr} provides a special class of matrix whose data is stored on the disk instead of the RAM, but you can still access the data almost as if it were in memory. It is particularly useful is you have a large matrix to analyze but not enough RAM on your computer. It can still be useful for matrices that fit in your RAM because package {bigstatsr} provides very efficient and parallelized algorithms (have you ever found cor or svd too slow?</description>
     </item>
     
     <item>
       <title>Pimp my exam</title>
-      <link>/post/pimp-exam/</link>
+      <link>http://stateofther.github.io/post/pimp-exam/</link>
       <pubDate>Thu, 20 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/pimp-exam/</guid>
+      <guid>http://stateofther.github.io/post/pimp-exam/</guid>
       <description>Marco et Vincent vous proposent de prendre un peu de temps pour apprendre à se servir du package exams (disponible sur le CRAN) pour générer automatiquement des examens (QCM ou autres), corriger automatiquement ces examens, gérer un ensemble d&amp;rsquo;exercices collectivement, mettre en place une plateforme de e-learning. Gros programme mais un joli cadeau de Noël, puisque tout se fait en quelques lignes de code R !
  L&amp;rsquo;intégrale des slides  </description>
     </item>
     
     <item>
       <title>Modeling in the Tidyverse and applications to metagenomics data</title>
-      <link>/post/tidymodels/</link>
+      <link>http://stateofther.github.io/post/tidymodels/</link>
       <pubDate>Fri, 23 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/tidymodels/</guid>
+      <guid>http://stateofther.github.io/post/tidymodels/</guid>
       <description>Antoine, notre fanatique du tidyverse, nous propose de jeter un coup d’oeil à broom et rsample, des packages de tidymodels, pour travailler proprement (aka en format tibble) avec les sorties S3 des méthodes statistiques comme lm ou kmeans et faciliter l’utilisation des méthodes de rééchantillonage.
  L&amp;rsquo;intégrale des slides  </description>
     </item>
     
     <item>
       <title>Fancy plotting with ggraph, gganimate</title>
-      <link>/post/fancy-plotting/</link>
+      <link>http://stateofther.github.io/post/fancy-plotting/</link>
       <pubDate>Fri, 19 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/fancy-plotting/</guid>
+      <guid>http://stateofther.github.io/post/fancy-plotting/</guid>
       <description>Un duo de choc, Raphaëlle et Marie, pour une séance dense sur laquelle était posée l&amp;rsquo;ombre du data imaginist &amp;ndash; et vive Harry Potter.
  L&amp;rsquo;intégrale des slides  </description>
     </item>
     
     <item>
       <title>Bases en Rcpp</title>
-      <link>/post/bases-rcpp/</link>
+      <link>http://stateofther.github.io/post/bases-rcpp/</link>
       <pubDate>Fri, 20 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/bases-rcpp/</guid>
+      <guid>http://stateofther.github.io/post/bases-rcpp/</guid>
       <description>Les trois mousquetaires Timothée, Mathieu et Félix (a.k.a riri fifi loulou) proposent une séances complète d&amp;rsquo;introduction à Rcpp accompagné de travaux pratiques.
 Les documents de la séances:
  Introduction Rappel d&amp;rsquo;architecture machine Rappel en C++ RcppArmadillo Fonctions Astuces  Pour compléter, voir la page du bootcamp finistR2018 dédiée aux modules Rcpp.</description>
@@ -104,10 +104,10 @@ Les documents de la séances:
     
     <item>
       <title>Manipulation de (quasi) big data en R</title>
-      <link>/post/manipulating-half-big-data-in-r/</link>
+      <link>http://stateofther.github.io/post/manipulating-half-big-data-in-r/</link>
       <pubDate>Fri, 22 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/manipulating-half-big-data-in-r/</guid>
+      <guid>http://stateofther.github.io/post/manipulating-half-big-data-in-r/</guid>
       <description>Séverine et Tristan nous proposent une introduction à quelques outils permettant de manipuler (en particulier charger) de “grosses” tables de données sous R.
  bigmemory for loading large matrices bigalgebra provides BLAS and LAPACK linear algebra sparklyr for interfacing R with Spark Apache  Les documents de la séances
  Présentation des enjeux, slides travaux pratiques (PDF), source Markdown code source: R base vs bigxx code source: R base vs sparklyr  </description>
@@ -115,60 +115,60 @@ Les documents de la séances:
     
     <item>
       <title>Introduction au Deep Learning sous R</title>
-      <link>/post/introduction-au-deep-learning-sous-r/</link>
+      <link>http://stateofther.github.io/post/introduction-au-deep-learning-sous-r/</link>
       <pubDate>Fri, 25 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/introduction-au-deep-learning-sous-r/</guid>
+      <guid>http://stateofther.github.io/post/introduction-au-deep-learning-sous-r/</guid>
       <description>Sophie et Christophe nous proposent une séance complète sur le deep-learning et l&amp;rsquo;interfaçage existant sous R:
  Une brève histoire du Deep-Learning Une introduction au Deep-Learning sous R travaux pratiques  </description>
     </item>
     
     <item>
       <title>Une introduction au tidyverse</title>
-      <link>/post/une-introduction-au-tidyverse/</link>
+      <link>http://stateofther.github.io/post/une-introduction-au-tidyverse/</link>
       <pubDate>Wed, 02 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/une-introduction-au-tidyverse/</guid>
+      <guid>http://stateofther.github.io/post/une-introduction-au-tidyverse/</guid>
       <description>Antoine nous propose une introduction dense et déjà avancée en passant en revue l’ensemble du tidyverse
  Les slides Xaringan de Antoine  </description>
     </item>
     
     <item>
       <title>Introduction au Spatial sous R</title>
-      <link>/post/spatial/</link>
+      <link>http://stateofther.github.io/post/spatial/</link>
       <pubDate>Fri, 23 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/spatial/</guid>
+      <guid>http://stateofther.github.io/post/spatial/</guid>
       <description>Éric nous présente les suites de l&amp;rsquo;introdution de Jessica aux très nombreux outils disponibles pour les statistiques spatiales sous R, notamment autour des packages sf et sp.
  slides et exercices, partie 1 slides et exercices, partie 2  </description>
     </item>
     
     <item>
       <title>Rmarkdown: tableaux interactifs et retour d&#39;expérience</title>
-      <link>/post/rmarkdown-tableaux-interactifs-et-retour-d-experience/</link>
+      <link>http://stateofther.github.io/post/rmarkdown-tableaux-interactifs-et-retour-d-experience/</link>
       <pubDate>Fri, 23 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/rmarkdown-tableaux-interactifs-et-retour-d-experience/</guid>
+      <guid>http://stateofther.github.io/post/rmarkdown-tableaux-interactifs-et-retour-d-experience/</guid>
       <description>Mahendra nous propose un retour d’expérience et quelques exercices sur le package DT pour la manipulation interactive de table.
  Les slides de Mahendra  </description>
     </item>
     
     <item>
       <title>Science Communication with R: Style, R Markdown &amp; Xaringan</title>
-      <link>/post/science-communication-with-r-style-r-markdown-xaringan/</link>
+      <link>http://stateofther.github.io/post/science-communication-with-r-style-r-markdown-xaringan/</link>
       <pubDate>Fri, 23 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/science-communication-with-r-style-r-markdown-xaringan/</guid>
+      <guid>http://stateofther.github.io/post/science-communication-with-r-style-r-markdown-xaringan/</guid>
       <description>Antoine nous propose une série de slides sur R markdown et Xaringan
  Les slides Xaringan de Antoine  </description>
     </item>
     
     <item>
       <title>Exercices autour de data.table</title>
-      <link>/post/data.table/</link>
+      <link>http://stateofther.github.io/post/data.table/</link>
       <pubDate>Mon, 23 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>/post/data.table/</guid>
+      <guid>http://stateofther.github.io/post/data.table/</guid>
       <description>L’atelier du jour avait pour objectif la découvert du package data.table au travers d’exercises proposés lors de la dernière édition de UseR. Les slides avec les énoncés sont disponibles ici.
 L’apport de notre atelier est d’avoir systématiquement essayé de traiter les questions avec - les fonctionalités R de base - les fonctionalités offertes par le tidyverse (principalement dplyr) - les fonctionnalités du package data.table
 Pour les animateurs : vous êtes libre de compléter le post de blog.</description>
@@ -176,10 +176,10 @@ Pour les animateurs : vous êtes libre de compléter le post de blog.</descripti
     
     <item>
       <title>Atelier découverte LearnR</title>
-      <link>/post/learnr/</link>
+      <link>http://stateofther.github.io/post/learnr/</link>
       <pubDate>Mon, 25 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>/post/learnr/</guid>
+      <guid>http://stateofther.github.io/post/learnr/</guid>
       <description>Vue d’ensemble Le package learnr permet de créer des tutoriels (voir le site dédié ou le blog de présentation). Les tutoriels incluent du texte, des champs pour taper et exécuter des commandes R (pouvant être pré-formatés) et des questionnaires à choix multiples. Les champs peuvent inclure des indices à afficher pour l’utilisateur ou des solutions. Pour fonctionner, le document créé au format Rmarkdown doit être envoyé sur un serveur shiny. Il est alors nécessaire de créér un compte sur shinyapp.</description>
     </item>
     
