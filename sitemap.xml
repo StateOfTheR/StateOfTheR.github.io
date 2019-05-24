@@ -13,6 +13,14 @@
     <url>
     
       <loc>/post/rstan/</loc>
+      <lastmod>2019-05-22T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/post/rstan/</loc>
       <lastmod>2019-04-19T00:00:00+00:00</lastmod>
     </url>
     
@@ -197,59 +205,6 @@
     
     <url>
     
-      <loc>/bootcamp/</loc>
-      <lastmod>2018-08-31T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/categories/</loc>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/dt/</loc>
-      <lastmod>2018-02-23T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/r-markdown/</loc>
-      <lastmod>2018-02-23T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/</loc>
-      <lastmod>2017-10-15T00:00:00+02:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/</loc>
-      <lastmod>2018-01-13T00:00:00+01:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
       <loc>/tags/bigdata/</loc>
       <lastmod>2018-06-22T00:00:00+00:00</lastmod>
       <priority>0</priority>
@@ -286,6 +241,15 @@
     
     <url>
     
+      <loc>/bootcamp/</loc>
+      <lastmod>2018-08-31T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/tags/broom/</loc>
       <lastmod>2018-11-23T00:00:00+00:00</lastmod>
       <priority>0</priority>
@@ -295,7 +259,24 @@
     
     <url>
     
+      <loc>/categories/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/tags/communication/</loc>
+      <lastmod>2018-02-23T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/dt/</loc>
       <lastmod>2018-02-23T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -367,6 +348,15 @@
     
     <url>
     
+      <loc>/tags/ggplotly/</loc>
+      <lastmod>2019-05-22T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/tags/ggraph/</loc>
       <lastmod>2018-10-19T00:00:00+00:00</lastmod>
       <priority>0</priority>
@@ -414,6 +404,24 @@
     
       <loc>/tags/packages/</loc>
       <lastmod>2019-03-22T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/plotly/</loc>
+      <lastmod>2019-05-22T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/r-markdown/</loc>
+      <lastmod>2018-02-23T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -484,6 +492,24 @@
     
     <url>
     
+      <loc>/</loc>
+      <lastmod>2017-10-15T00:00:00+02:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/</loc>
+      <lastmod>2018-01-13T00:00:00+01:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/tags/teachings/</loc>
       <lastmod>2017-09-25T00:00:00+00:00</lastmod>
       <priority>0</priority>
@@ -530,7 +556,7 @@
     <url>
     
       <loc>/categories/workshop/</loc>
-      <lastmod>2019-04-19T00:00:00+00:00</lastmod>
+      <lastmod>2019-05-22T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     

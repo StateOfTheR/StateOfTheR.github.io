@@ -11,12 +11,28 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Séance autour de Shiny</title>
+      <title>Comment Shiny peut vous aider dans vos simulations, vos collaborations et vos cours</title>
       <link>/talk/2019-05-24-shiny/</link>
       <pubDate>Fri, 24 May 2019 00:00:00 +0200</pubDate>
       
       <guid>/talk/2019-05-24-shiny/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Introduction à plotly</title>
+      <link>/post/rstan/</link>
+      <pubDate>Wed, 22 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/rstan/</guid>
+      <description>&lt;p&gt;Au cours d&amp;rsquo;une séance découverte un peu spécial, donnée lors de l&amp;rsquo;assemblée générale
+du département de mathématique et informatique de l&amp;rsquo;INRA, Mahendra nous a fait découvrir les
+potentialités de {plotly,ggplotly,crosscall}&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;../../post/plotly/index.html&#34;&gt;La présentation en full HTML&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
     <item>
@@ -183,10 +199,7 @@ On peut aussi faire de l&amp;rsquo;inférence fréquentiste par optimisation.&lt
       <pubDate>Fri, 22 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>/post/manipulating-half-big-data-in-r/</guid>
-      <description>
-
-
-&lt;p&gt;&lt;img src=&#34;img/headers/spark-logo-trademark.png&#34; align=&#34;right&#34; width=&#34;200&#34;/&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;img src=&#34;img/headers/spark-logo-trademark.png&#34; align=&#34;right&#34; width=&#34;200&#34;/&gt;&lt;/p&gt;
 &lt;p&gt;Séverine et Tristan nous proposent une introduction à quelques outils permettant de manipuler (en particulier charger) de “grosses” tables de données sous &lt;code&gt;R&lt;/code&gt;.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;bigmemory&lt;/code&gt; for loading large matrices&lt;/li&gt;
@@ -227,27 +240,9 @@ On peut aussi faire de l&amp;rsquo;inférence fréquentiste par optimisation.&lt
       <pubDate>Wed, 02 May 2018 00:00:00 +0000</pubDate>
       
       <guid>/post/une-introduction-au-tidyverse/</guid>
-      <description>
-
-
-&lt;p&gt;Antoine nous propose une introduction dense et déjà avancée en passant en revue l’ensemble du &lt;a href=&#34;http://http://tidyverse.org&#34;&gt;tidyverse&lt;/a&gt;&lt;/p&gt;
+      <description>&lt;p&gt;Antoine nous propose une introduction dense et déjà avancée en passant en revue l’ensemble du &lt;a href=&#34;http://http://tidyverse.org&#34;&gt;tidyverse&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://abichat.github.io/Slides/IntroTidyverseSOTR/IntroTidyverseSOTR.html#1&#34;&gt;Les slides Xaringan de Antoine&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Introduction au Spatial sous R</title>
-      <link>/post/spatial/</link>
-      <pubDate>Fri, 23 Mar 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/post/spatial/</guid>
-      <description>&lt;p&gt;Éric nous présente les suites de l&amp;rsquo;introdution de Jessica aux très nombreux outils disponibles pour les statistiques spatiales sous R, notamment autour des packages &lt;a href=&#34;https://github.com/r-spatial/sf&#34; target=&#34;_blank&#34;&gt;sf&lt;/a&gt; et &lt;a href=&#34;https://github.com/edzer/sp&#34; target=&#34;_blank&#34;&gt;sp&lt;/a&gt;.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;../../post/spatial/happyR-230318_spatial_1.pdf&#34;&gt;slides et exercices, partie 1&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;../../post/spatial/happyR-230318_spatial_2.pdf&#34;&gt;slides et exercices, partie 2&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
