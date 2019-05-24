@@ -1,0 +1,752 @@
+---
+title: "Interactive dataviz on the web with R & plotly <br> (adapted from @cpsievert's book)"
+author: "State of the R - Atelier R de l'AG MIA/NUMM"
+venue: "AG MIA"
+type: "tutorial"
+output:
+  xaringan::moon_reader:
+    css: ["default", "default-fonts", "main.css"]
+    lib_dir: libs
+    chakra: "libs/remark-latest.min.js"
+    mathjax: null
+    nature:
+      # approx the golden ratio
+      ratio: '14.6:9'
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      navigation:
+        scroll: false
+date: "2019-05-22"
+
+---
+background-image: url(figs/workflow.svg)
+background-size: contain
+class: inverse
+
+```{r load-packages, echo = FALSE, message = FALSE, warning=FALSE, results='hide', cache=FALSE}
+library(tidyverse)
+library(plotly)
+library(leaflet)
+library(DT)
+library(crosstalk)
+data("txhousing")
+data("diamonds")
+```
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  eval = FALSE,
+  message = FALSE,
+  warning = FALSE,
+  comment = "#>",
+  collapse = TRUE,
+  fig.width = 12,
+  fig.height = 6
+)
+generate_html <- TRUE
+```
+
+
+<style>
+.principles {
+  font-size: 150%;
+}
+</style>
+
+# Data science workflow
+
+---
+# Typical example 
+
+.pull-left[
+```{r plot-example}
+ggplot(iris, 
+       aes(x = Sepal.Length, 
+           y = Sepal.Width, 
+           color = Species)) + 
+  geom_point() + 
+  geom_smooth(method = "lm", 
+              se = FALSE) +
+  theme_minimal()
+```
+]
+.pull-right[
+```{r ref.label = 'plot-example', echo = FALSE, fig.retina=3, eval=TRUE}
+```
+]
+
+---
+background-image: url(figs/workflow1.svg)
+background-size: contain
+class: inverse
+
+# Web graphics are great for communication!
+
+---
+
+A Typically French Example
+
+[Résultats des élections législatives de 2017](https://abonnes.lemonde.fr/data/france/legislatives-2017/)
+
+---
+background-image: url(figs/workflow2.svg)
+background-size: contain
+class: inverse
+
+# Interactive graphics great for exploration!
+
+---
+class: middle
+
+# Interactive graph example
+
+.pull-left[
+```{r show-diamonds, eval=TRUE}
+diamonds %>% count(cut, clarity) %>% 
+  DT::datatable(list(
+    dom = "tp",
+    pageLength = 6))
+```
+]
+.pull-right[
+```{r plot-diamonds, echo = FALSE, fig.retina=3, fig.width = 7, eval=TRUE}
+plot_ly(diamonds, x = ~cut, color = ~clarity, colors = "Accent") %>% 
+  add_histogram()
+```
+]
+
+---
+class: inverse, middle
+# How to combine both?
+
+.pull-left[
+### Rapid iteration with extensibility & reproducibility
+
+<img src="figs/workflow2.svg" width="100%" >
+
+]
+
+.pull-right[
+### Simple, scalable, and secure hosting
+
+<img src="figs/workflow1.svg" width="100%" >
+]
+
+---
+class: middle, principles, inverse
+
+# A simple solution: **plotly for R**
+
+1. Powered by [plotly.js](https://github.com/plotly/plotly.js), a JavaScript-library for creating interactive graphs. 
+
+2. `plot_ly()`: a direct interface to plotly.js with abstractions to reduce typing (similar to `ggplot2`)
+
+3. `ggplotly()`: translates `ggplot2` to plotly objects. 
+
+---
+
+# Simple example
+
+```{r plotly-start, eval=TRUE}
+plot_ly(diamonds, x = ~cut, color = ~clarity, colors = "Accent") %>% 
+  add_histogram()
+```
+
+---
+
+<img src="figs/printing.svg" width="100%" >
+
+---
+class: inverse, center, middle
+
+# Interactive ggplots
+
+---
+### Replace plot with ggplotly
+
+```{r diamonds_basic}
+library(plotly)
+p <- ggplot(diamonds, aes(x = log(carat), y = log(price))) + 
+  geom_hex(bins = 100)
+ggplotly(p)
+```
+
+```{r save_diamonds_basic, include=FALSE, eval = generate_html}
+p <- ggplot(diamonds, aes(x = log(carat), y = log(price))) + 
+  geom_hex(bins = 100)
+htmlwidgets::saveWidget(ggplotly(p, width = 800, height = 350), 
+                        file = "01_diamonds_basic.html", 
+                        selfcontained = F, libdir = "libs")
+```
+
+<iframe src="01_diamonds_basic.html" width = "100%" height = "500" seamless="seamless" frameBorder="0"> </iframe>
+
+---
+### Works out of the box with ggplot core geom_*
+
+```{r diamonds_density}
+p <- ggplot(diamonds, aes(x = log(price), color = clarity)) + 
+    geom_freqpoly(stat = "density") + 
+    facet_grid(~cut)
+ggplotly(p)
+```
+
+```{r save_diamonds_density, include=FALSE, eval = generate_html}
+p <- ggplot(diamonds, aes(x = log(price), color = clarity)) + 
+    geom_freqpoly(stat = "density") + 
+    facet_grid(~cut)
+htmlwidgets::saveWidget(ggplotly(p, width = 800, height = 350), "02_diamonds_density.html", selfcontained = F, libdir = "libs")
+```
+
+<iframe src="02_diamonds_density.html" width="100%" height="500" scrolling="no" seamless="seamless" frameBorder="0"> </iframe>
+
+---
+class: inverse, center, middle
+
+# A few features of plotly: tooltip and highlight
+
+---
+### Tooltip
+
+```{r diamonds_tooltip}
+p <- ggplot(diamonds, aes(x = log(price), color = clarity)) + 
+    geom_freqpoly(stat = "density") + 
+    facet_grid(~cut)
+*ggplotly(p, tooltip = c("colour", "x")) # color != colour
+```
+
+```{r save_diamonds_tooltip, include=FALSE, eval = generate_html}
+p <- ggplot(diamonds, aes(x = log(price), color = clarity)) + 
+    geom_freqpoly(stat = "density") + 
+    facet_grid(~cut)
+htmlwidgets::saveWidget(ggplotly(p, width = 800, height = 350, tooltip = c("colour", "x")), 
+                        "03_diamonds_tooltip.html", 
+                        selfcontained = F, libdir = "libs")
+```
+
+<iframe src="03_diamonds_tooltip.html" width="100%" height="500" scrolling="no" seamless="seamless" frameBorder="0"> </iframe>
+
+---
+### Highlight
+
+```{r diamonds_hl}
+{{diams <- highlight_key(diamonds, ~clarity)}}
+p <- ggplot(diams, aes(x = log(price), color = clarity)) + 
+    geom_freqpoly(stat = "density") + facet_grid(~cut)
+gg <- ggplotly(p, tooltip = c("colour"))
+{{highlight(gg, on = "plotly_click")}}
+```
+
+```{r save_diamonds_hl, include=FALSE, eval = generate_html}
+diams <- highlight_key(diamonds, ~clarity)
+p <- ggplot(diams, aes(x = log(price), color = clarity)) + 
+    geom_freqpoly(stat = "density") + facet_grid(~cut)
+htmlwidgets::saveWidget(highlight(ggplotly(p, width = 800, height = 350), 
+                                  on = "plotly_click"), 
+                        "04_diamonds_hl.html", selfcontained = F, libdir = "libs")
+```
+
+<iframe src="04_diamonds_hl.html" width="100%" height="500" scrolling="no" seamless="seamless" frameBorder="0"> </iframe>
+
+---
+### A better use of higlight
+
+```{r texas_housing, eval=TRUE}
+DT::datatable(txhousing)
+```
+
+---
+### A better use of higlight
+
+```{r texas_hl}
+tx <- highlight_key(txhousing, ~city)
+p <- ggplot(tx) + geom_line(aes(date, median, group = city, text = city))
+gg <- ggplotly(p, tooltip = "text", width = 800, height = 350)
+highlight(gg, on = "plotly_click")
+```
+
+```{r save_texas_hl, include=FALSE, eval = generate_html}
+tx <- highlight_key(txhousing, ~city)
+p <- ggplot(tx) + geom_line(aes(date, median, group = city, text = city))
+gg <- ggplotly(p, tooltip = "text", width = 800, height = 350)
+htmlwidgets::saveWidget(highlight(gg, on = "plotly_click"), 
+                        "05_texas_hl.html", selfcontained = F, libdir = "libs")
+```
+
+<iframe src="05_texas_hl.html" width="100%" height="500" scrolling="no" seamless="seamless" frameBorder="0"> </iframe>
+
+---
+### Dynamic highlighting 
+
+```{r texas_dynamic_hl}
+gg <- ggplotly(p, tooltip = "text", width = 800, height = 350)
+highlight(gg, on = "plotly_hover", selectize = TRUE, dynamic = TRUE)
+```
+
+```{r save_texas_dynamic_hl, include=FALSE, eval = generate_html}
+tx <- highlight_key(txhousing, ~city)
+p <- ggplot(tx) + geom_line(aes(date, median, group = city, text = city))
+gg <- ggplotly(p, tooltip = "text", width = 800, height = 350)
+htmlwidgets::saveWidget(highlight(gg, on = "plotly_hover", selectize = TRUE, dynamic = TRUE), 
+                        "06_texas_dynamic_hl.html", 
+                        selfcontained = F, libdir = "libs")
+```
+
+<iframe src="06_texas_dynamic_hl.html" width="100%" height="500" scrolling="no" seamless="seamless" frameBorder="0"> </iframe>
+
+---
+### Persistent highlighting 
+
+```{r texas_persistent_hl}
+gg <- ggplotly(p, tooltip = "text", width = 800, height = 350)
+highlight(gg, on = "plotly_hover", selectize = TRUE, dynamic = TRUE,
+          {{persistent = TRUE, defaultValues = "Paris"}}
+          )
+```
+
+```{r save_texas_persistent_hl, include=FALSE, eval = generate_html}
+tx <- highlight_key(txhousing, ~city)
+p <- ggplot(tx) + geom_line(aes(date, median, group = city, text = city))
+gg <- ggplotly(p, tooltip = "text", width = 800, height = 350) %>% 
+  highlight(on = "plotly_hover", selectize = TRUE, 
+            persistent = TRUE, defaultValues = "Paris", 
+            dynamic = TRUE)
+htmlwidgets::saveWidget(gg, "07_texas_persistent_hl.html", selfcontained = F, libdir = "libs")
+```
+
+<iframe src="07_texas_persistent_hl.html" width="100%" height="500" scrolling="no" seamless="seamless" frameBorder="0"> </iframe>
+
+---
+class: inverse, center, middle
+
+# Track data across multiple panels
+
+---
+
+### Highlight a specific year in 4 cities of interest: static version 
+
+.pull-left[
+```{r texas_tracking_static}
+tx <- txhousing %>% filter(
+  city %in% c("Austin", "Dallas", 
+              "Houston", "Paris"))
+p <- ggplot(tx, 
+            aes(x = month, 
+                y = median, 
+                group = year)) + 
+  geom_line(alpha = 0.2) +
+  geom_line(data = filter(tx, year == 2010), #<<
+            color = "red") +                 #<<
+  facet_wrap(~city, ncol = 2) +
+  theme(legend.position = "n")
+plot(p)
+```
+]
+
+.pull-right[
+```{r ref.label="texas_tracking_static", fig.width=7, fig.height=7, fig.retina=3, echo = FALSE, eval=TRUE}
+```
+]
+
+---
+### Highlight a specific year in 4 cities of interest: dynamic version 
+
+```{r texas_tracking_dynamic, echo = -(1:8)}
+tx <- txhousing %>% 
+  filter(city %in% c("Austin", "Dallas", "Houston", "Paris")) %>% 
+  highlight_key(~year)
+p <- ggplot(tx, aes(x = month, 
+                    y = median, 
+                    group = year)) + 
+  geom_line() +
+  facet_wrap(~city, ncol = 2)
+ggplotly(p, tooltip = "year") %>% 
+  highlight(on = "plotly_click", persistent = TRUE, 
+            dynamic = TRUE, selectize = TRUE)
+```
+
+```{r save_texas_tracking_dynamic, include=FALSE, eval = generate_html}
+tx <- txhousing %>% 
+  filter(city %in% c("Austin", "Dallas", "Houston", "Paris")) %>% 
+  highlight_key(~year)
+p <- ggplot(tx, aes(x = month, 
+                    y = median, 
+                    group = year)) + 
+  geom_line() +
+  facet_wrap(~city, ncol = 2)
+gg <- ggplotly(p, tooltip = "year", width = 800, height = 350) %>% 
+  highlight(on = "plotly_click", selectize = TRUE, dynamic = TRUE, persistent = TRUE)
+htmlwidgets::saveWidget(gg, "08_texas_tracking_dynamic.html", selfcontained = F, libdir = "libs")
+```
+
+<iframe src="08_texas_tracking_dynamic.html" width="100%" height="500" scrolling="no" seamless="seamless" frameBorder="0"> </iframe>
+---
+
+### Animation via the `frame` argument/aesthetic
+
+```{r texas_animate}
+p <- ggplot(tx, aes(x = month, y = median)) + 
+  geom_line(aes(group = year)) +
+  geom_line(aes(frame = year), color = "red") + #<<
+  facet_wrap(~city, ncol = 2)
+ggplotly(p)
+```
+
+```{r save_texas_animate, include=FALSE, eval = generate_html}
+p <- ggplot(tx, aes(x = month, y = median)) + 
+  geom_line(aes(group = year)) +
+  geom_line(aes(frame = year), color = "red") + 
+  facet_wrap(~city, ncol = 2) +
+  theme(legend.position = "n")
+gg <- ggplotly(p, width = 800, height = 350)
+htmlwidgets::saveWidget(gg, "09_texas_animate.html", selfcontained = F, libdir = "libs")
+```
+
+<iframe src="09_texas_animate.html" width="100%" height="500" scrolling="no" seamless="seamless" frameBorder="0"> </iframe>
+
+---
+### Gapminder
+
+```{r gapminder_animate}
+data(gapminder, package = "gapminder")
+p <- ggplot(gapminder, aes(gdpPercap, lifeExp, color = continent)) +
+  geom_point(aes(size = pop, frame = year, ids = country)) + #<<
+  scale_x_log10()
+ggplotly(p)
+```
+
+```{r save_gapminder_animate, include=FALSE, eval = generate_html}
+data(gapminder, package = "gapminder")
+p <- ggplot(gapminder, aes(gdpPercap, lifeExp, color = continent)) +
+  geom_point(aes(size = pop, frame = year, ids = country)) +
+  labs(x = "GDP per capita", y = "Life expectancy") +
+  scale_x_log10()
+gg <- ggplotly(p, width = 800, height = 350, tooltip = "ids")
+htmlwidgets::saveWidget(gg, "10_gapminder_animate.html", selfcontained = F, libdir = "libs")
+```
+
+<iframe src="10_gapminder_animate.html" width="100%" height="500" scrolling="no" seamless="seamless" frameBorder="0"> </iframe>
+
+---
+### Gapminder (Hans Rosling's talk)
+
+<div style="float:center ; width:80%">
+<video width="854" height="480" controls>
+  <source src="videos/hans_rosling.webm" type="video/webm">
+</video>
+</div> 
+
+---
+class: inverse, center, middle
+
+# Saving a plotly object 
+
+---
+### Saving your interactive graphic
+
+```{r dummy_plot, eval = TRUE}
+p <- plot_ly(x = 1:10, y = 1:10) %>% add_markers()
+```
+
+
+- With `htmlwidgets::saveWidget`
+```{r save_widget, echo = 1, eval = TRUE}
+htmlwidgets::saveWidget(p, file = "my_widget.html")
+cat("Size = ", round(file.size("my_widget.html")/1e6, 3), "MB")
+unlink('my_widget.html')
+```
+
+The resulting html file is fully self-contained. 
+
+- You can use `partial_bundle` to reduce the file size (by keeping only the parts of plolty.js used in the graphic)
+
+```{r save_widget_partial, echo = 1, eval = TRUE}
+htmlwidgets::saveWidget(partial_bundle(p), file = "my_widget.html")
+cat("Size = ", round(file.size("my_widget.html")/1e6, 3), "MB")
+unlink("my_widget.html")
+```
+
+---
+### Saving multiple graphics
+
+If you create multiple graphics (e.g. for a presentation), don't make every single one *self-contained* but specify a *shared lib directory*
+
+```{r save_widget_not_self_contained, echo = 1:2, eval = TRUE}
+htmlwidgets::saveWidget(p, file = "my_widget.html", 
+                        selfcontained = FALSE, libdir = "my_libdir")
+htmlwidgets::saveWidget(p, file = "my_other_widget.html", 
+                        selfcontained = FALSE, libdir = "my_libdir")
+size <- file.size("my_widget.html") + file.size("my_other_widget.html") + 3808e3
+cat("Total size = ", round(size /1e6, 3), "MB")
+unlink("my_widget.html")
+unlink("my_other_widget.html")
+unlink("my_libdir", recursive = TRUE, force = TRUE)
+```
+
+<i class="fa fa-exclamation-triangle"></i> If you share it with someone, be sure to share the lib folder <i class="fa fa-folder"></i> at the same time. 
+
+---
+class: middle, center, inverse
+
+# Linking multiple views: highlight
+
+---
+### Highlight key 
+
+`highlight_key` creates a *key* used to *link* data
+
+```{r linking_example}
+# declare the key and build a plotly object
+tx <- txhousing %>% 
+  highlight_key(~city) %>% 
+  plot_ly(color = I('black')) %>% 
+  group_by(city)
+
+# initiate a plotly object (a view)
+p1 <- tx %>% group_by(city) %>% add_lines(x = ~date, y = ~median)
+
+# Initiate a second plotly object (a second view)
+p2 <- tx %>% group_by(city) %>% 
+  summarise(miss = sum(is.na(median))) %>%
+  filter(miss > 0) %>% ungroup() %>% 
+  mutate(city = forcats::fct_reorder(city, miss)) %>% 
+  add_markers(x = ~miss, y = ~city)
+```
+
+---
+
+```{r linking_example_left}
+p1 <- tx %>% group_by(city) %>% 
+  add_lines(x = ~date, y = ~median)
+```
+
+```{r save_linking_example_left, eval = generate_html, echo = FALSE}
+tx <- txhousing %>% 
+  highlight_key(~city) %>% 
+  plot_ly(color = I('black')) %>% 
+  group_by(city)
+p1 <- tx %>% group_by(city) %>% 
+  add_lines(x = ~date, y = ~median)
+highlight(p1, width = 800, height = 350, 
+          on = "plotly_click", dynamic = TRUE, selectize = TRUE) %>% 
+  htmlwidgets::saveWidget(file = "11_linking_example_left.html", 
+                          selfcontained = FALSE, libdir = "libs")
+```
+
+<iframe src="11_linking_example_left.html" width="100%" height="500" scrolling="no" seamless="seamless" frameBorder="0"> </iframe>
+
+---
+
+```{r linking_example_right}
+p2 <- tx %>% group_by(city) %>% summarise(miss = sum(is.na(median))) %>%
+  filter(miss > 0) %>% ungroup() %>% 
+  mutate(city = forcats::fct_reorder(city, miss)) %>% 
+  add_markers(x = ~miss, y = ~city)
+```
+
+```{r show_linking_example_right, eval = generate_html, echo = FALSE}
+p2 <- tx %>% group_by(city) %>% summarise(miss = sum(is.na(median))) %>%
+  filter(miss > 0) %>% ungroup() %>% 
+  mutate(city = forcats::fct_reorder(city, miss)) %>% 
+  add_markers(x = ~miss, y = ~city)
+highlight(p2, width = 800, height = 350, 
+          on = "plotly_click", dynamic = TRUE, selectize = TRUE) %>% 
+  htmlwidgets::saveWidget(file = "12_linking_example_right.html", 
+                          selfcontained = FALSE, libdir = "libs")
+```
+
+<iframe src="12_linking_example_right.html" width="100%" height="500" scrolling="no" seamless="seamless" frameBorder="0"> </iframe>
+
+---
+### Combine both plots 
+
+```{r subplot}
+subplot(p2, p1, widths = c(0.2, 0.8), titleX = TRUE) %>%
+  layout(showlegend = FALSE) %>%
+  highlight(on = "plotly_click", dynamic = TRUE, selectize = TRUE)
+```
+
+```{r save_subplot, eval = generate_html, echo = FALSE}
+subplot(p2, p1, widths = c(0.2, 0.8), titleX = TRUE) %>%
+  layout(showlegend = FALSE, width = 800, height = 350) %>% 
+  highlight(on = "plotly_click", dynamic = TRUE, selectize = TRUE) %>% 
+  htmlwidgets::saveWidget(file = "13_subplot.html", selfcontained = FALSE, 
+                          libdir = "libs")
+```
+
+<iframe src="13_subplot.html" width="100%" height="500" scrolling="no" seamless="seamless" frameBorder="0"> </iframe>
+
+---
+class: middle, center, inverse
+
+# Linking multiple views: filters
+
+---
+### Filters
+
+```{r filter_example}
+library(crosstalk)
+# No key specified, data are indexed by row number 
+# Allows for the use of multiple keys
+tx <- highlight_key(txhousing)
+## Build plot
+p <- ggplot(tx) + geom_line(aes(date, median, group = city))
+gg <- ggplotly(p, dynamicTicks = TRUE)                     #<<
+## Build filter
+filter <- filter_select("id", "Select a city", tx, ~city)  #<<
+## Combine filter and plot 
+bscols(filter, gg, widths = c(12, 12))
+```
+
+---
+### Filters
+
+```{r ref.label="filter_example", echo = FALSE, cache = FALSE, eval = TRUE}
+```
+
+---
+### Filters (advanced)
+
+```{r filter_advanced_example}
+tx <- highlight_key(txhousing)
+## Many filters
+widgets <- bscols(
+  widths = c(12, 12, 12),
+  filter_select("city", "Cities", tx, ~city),                #<<
+  filter_slider("sales", "Sales", tx, ~sales),               #<<
+  filter_checkbox("year", "Years", tx, ~year, inline = TRUE) #<<
+)
+## A plot 
+p <- ggplot(tx, aes(x = date, y = median, group = city)) + 
+  geom_line() + theme(legend.position = "none")
+gg <- ggplotly(p)                                              #<<
+
+## Combining both 
+bscols(widgets, gg, widths = c(4, 8))
+```
+
+---
+### Fiters (advanced)
+
+```{r ref.label = "filter_advanced_example", echo = FALSE, cache = FALSE, eval = TRUE}
+```
+
+---
+class: middle, center, inverse
+
+# Plotly and other htmlwidgets
+
+---
+### Leaflet + Plotly
+
+```{r leaflet_plotly}
+library(leaflet)
+## index data 
+eqs <- highlight_key(quakes)
+
+## Filter
+stations <- filter_slider("station", "Number of Stations", eqs, ~stations)
+
+## Plot 
+p <- ggplot(eqs, aes(x = depth, y = mag)) +
+  geom_point(alpha = 0.5)
+gg <- ggplotly(p) %>% highlight(on = "plotly_selected")
+
+## Map 
+map <- leaflet(eqs) %>% 
+  addTiles() %>% 
+  addCircles()
+
+## Combine
+bscols(
+  widths = c(6, 6, 3), 
+  gg, map, stations
+)
+```
+
+---
+### Leaflet + Plotly
+
+```{r show_leaflet_plotly, cache=FALSE, echo = FALSE, eval = TRUE}
+eqs <- highlight_key(quakes)
+stations <- filter_slider("station", "Number of Stations", eqs, ~stations)
+
+p <- plot_ly(eqs, x = ~depth, y = ~mag) %>% 
+  add_markers(alpha = 0.5) %>% 
+  highlight("plotly_selected")
+
+map <- leaflet(eqs) %>% 
+  addTiles() %>% 
+  addCircles()
+
+bscols(
+  widths = c(6, 6, 3), 
+  p, map, stations
+)
+```
+
+---
+### DT + Plotly
+
+```{r dt_plotly, cache = FALSE}
+ir <- highlight_key(iris) 
+bscols(
+  ## Plot
+  plot_ly(ir, x = ~Sepal.Width, y = ~Sepal.Length, color = ~Species) %>% 
+    highlight(on = "plotly_selected", off = "plotly_deselect"), 
+  ## datatable widget
+  DT::datatable(ir)
+)
+```
+
+---
+
+```{r dt_plotly_show, echo = FALSE, eval=TRUE}
+sketch = htmltools::withTags(table(
+  class = 'display',
+  thead(
+    tr(
+      th(rowspan = 2, 'ID'),
+      th(rowspan = 2, 'Species'),
+      th(colspan = 2, 'Sepal'),
+      th(colspan = 2, 'Petal')
+    ),
+    tr(
+      # lapply(rep(c('Length', 'Width'), 2), th) # for Paul/Michel
+      th("Length"),
+      th("Width"),
+      th("Length"),
+      th("Width")
+    )
+  )
+))
+
+ir <- iris %>% select(Species, Sepal.Length, Sepal.Width, Petal.Length, Petal.Width) %>% 
+  rename(sp = Species, spl = Sepal.Length, spw = Sepal.Width, pl = Petal.Length, pw = Petal.Width) %>% 
+  highlight_key() 
+
+p <- ggplot(ir, aes(x = spl, y = spw, color = sp)) + 
+  geom_point() + 
+  scale_color_discrete(name = "Species") + 
+  labs(x = "Sepal Length", y = "Sepal Width") + 
+  theme_minimal() + 
+  theme(legend.position = "bottom")
+
+bscols(
+  ggplotly(p) %>% highlight(on = "plotly_select", off = "plotly_deselect"), 
+  datatable(ir, extensions="Scroller", style="bootstrap", class="compact", width="100%",
+            container = sketch, options=list(deferRender=TRUE, dom = "tp", pageLength = 10)), 
+  widths = c(6, 6)
+)
+```
+
+---
+
+# Thanks!
+
+Resources for more learning:
+
+https://plotly-r.com/ <br />
+https://rstudio.github.io/crosstalk/index.html <br />
+ <br />

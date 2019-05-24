@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ggplot, gganimate, ggraph on State of The R</title>
+    <link>/tags/ggplot-gganimate-ggraph/</link>
+    <description>Recent content in Ggplot, gganimate, ggraph on State of The R</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-fr</language>
+    <copyright>&amp;copy; 2018 State of the R</copyright>
+    <lastBuildDate>Fri, 19 Oct 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/ggplot-gganimate-ggraph/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Fancy plotting with ggraph, gganimate</title>
+      <link>/post/fancy-plotting/</link>
+      <pubDate>Fri, 19 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/fancy-plotting/</guid>
+      <description>Un duo de choc, Raphaëlle et Marie, pour une séance dense sur laquelle était posée l&amp;rsquo;ombre du data imaginist &amp;ndash; et vive Harry Potter.
+ L&amp;rsquo;intégrale des slides  </description>
+    </item>
+    
+  </channel>
+</rss>
