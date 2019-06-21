@@ -4,15 +4,23 @@
     
     <url>
     
-      <loc>http://stateofther.github.io/talk/2019-05-24-shiny/</loc>
-      <lastmod>2019-05-24T00:00:00+02:00</lastmod>
+      <loc>/talk/2019-07-26-holidays/</loc>
+      <lastmod>2019-07-26T00:00:00+02:00</lastmod>
     </url>
     
   
     
     <url>
     
-      <loc>http://stateofther.github.io/post/rstan/</loc>
+      <loc>/post/shiny/</loc>
+      <lastmod>2019-06-11T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/post/rstan/</loc>
       <lastmod>2019-05-22T00:00:00+00:00</lastmod>
     </url>
     
@@ -20,7 +28,7 @@
     
     <url>
     
-      <loc>http://stateofther.github.io/post/rstan/</loc>
+      <loc>/post/rstan/</loc>
       <lastmod>2019-04-19T00:00:00+00:00</lastmod>
     </url>
     
@@ -28,7 +36,7 @@
     
     <url>
     
-      <loc>http://stateofther.github.io/post/packages/</loc>
+      <loc>/post/packages/</loc>
       <lastmod>2019-03-22T00:00:00+00:00</lastmod>
     </url>
     
@@ -36,7 +44,7 @@
     
     <url>
     
-      <loc>http://stateofther.github.io/post/bigstatsr/</loc>
+      <loc>/post/bigstatsr/</loc>
       <lastmod>2019-02-22T00:00:00+00:00</lastmod>
     </url>
     
@@ -44,7 +52,7 @@
     
     <url>
     
-      <loc>http://stateofther.github.io/post/bigstatsr/</loc>
+      <loc>/post/bigstatsr/</loc>
       <lastmod>2019-01-25T00:00:00+00:00</lastmod>
     </url>
     
@@ -52,7 +60,7 @@
     
     <url>
     
-      <loc>http://stateofther.github.io/post/pimp-exam/</loc>
+      <loc>/post/pimp-exam/</loc>
       <lastmod>2018-12-20T00:00:00+00:00</lastmod>
     </url>
     
@@ -60,7 +68,7 @@
     
     <url>
     
-      <loc>http://stateofther.github.io/post/tidymodels/</loc>
+      <loc>/post/tidymodels/</loc>
       <lastmod>2018-11-23T00:00:00+00:00</lastmod>
     </url>
     
@@ -68,7 +76,7 @@
     
     <url>
     
-      <loc>http://stateofther.github.io/post/fancy-plotting/</loc>
+      <loc>/post/fancy-plotting/</loc>
       <lastmod>2018-10-19T00:00:00+00:00</lastmod>
     </url>
     
@@ -76,7 +84,7 @@
     
     <url>
     
-      <loc>http://stateofther.github.io/bootcamp/finistr18/</loc>
+      <loc>/bootcamp/finistr18/</loc>
       <lastmod>2018-08-31T00:00:00+00:00</lastmod>
     </url>
     
@@ -84,7 +92,7 @@
     
     <url>
     
-      <loc>http://stateofther.github.io/post/bases-rcpp/</loc>
+      <loc>/post/bases-rcpp/</loc>
       <lastmod>2018-07-20T00:00:00+00:00</lastmod>
     </url>
     
@@ -92,7 +100,7 @@
     
     <url>
     
-      <loc>http://stateofther.github.io/privacy/</loc>
+      <loc>/privacy/</loc>
       <lastmod>2018-06-28T00:00:00+02:00</lastmod>
     </url>
     
@@ -100,7 +108,7 @@
     
     <url>
     
-      <loc>http://stateofther.github.io/post/manipulating-half-big-data-in-r/</loc>
+      <loc>/post/manipulating-half-big-data-in-r/</loc>
       <lastmod>2018-06-22T00:00:00+00:00</lastmod>
     </url>
     
@@ -108,7 +116,7 @@
     
     <url>
     
-      <loc>http://stateofther.github.io/post/introduction-au-deep-learning-sous-r/</loc>
+      <loc>/post/introduction-au-deep-learning-sous-r/</loc>
       <lastmod>2018-05-25T00:00:00+00:00</lastmod>
     </url>
     
@@ -116,7 +124,7 @@
     
     <url>
     
-      <loc>http://stateofther.github.io/post/une-introduction-au-tidyverse/</loc>
+      <loc>/post/une-introduction-au-tidyverse/</loc>
       <lastmod>2018-05-02T00:00:00+00:00</lastmod>
     </url>
     
@@ -124,7 +132,7 @@
     
     <url>
     
-      <loc>http://stateofther.github.io/post/spatial/</loc>
+      <loc>/post/spatial/</loc>
       <lastmod>2018-03-23T00:00:00+00:00</lastmod>
     </url>
     
@@ -132,7 +140,7 @@
     
     <url>
     
-      <loc>http://stateofther.github.io/post/rmarkdown-tableaux-interactifs-et-retour-d-experience/</loc>
+      <loc>/post/rmarkdown-tableaux-interactifs-et-retour-d-experience/</loc>
       <lastmod>2018-02-23T00:00:00+00:00</lastmod>
     </url>
     
@@ -140,7 +148,7 @@
     
     <url>
     
-      <loc>http://stateofther.github.io/post/science-communication-with-r-style-r-markdown-xaringan/</loc>
+      <loc>/post/science-communication-with-r-style-r-markdown-xaringan/</loc>
       <lastmod>2018-02-23T00:00:00+00:00</lastmod>
     </url>
     
@@ -148,7 +156,7 @@
     
     <url>
     
-      <loc>http://stateofther.github.io/bootcamp/finistr17/</loc>
+      <loc>/bootcamp/finistr17/</loc>
       <lastmod>2018-02-06T00:00:00+00:00</lastmod>
     </url>
     
@@ -156,7 +164,7 @@
     
     <url>
     
-      <loc>http://stateofther.github.io/post/data.table/</loc>
+      <loc>/post/data.table/</loc>
       <lastmod>2017-10-23T00:00:00+00:00</lastmod>
     </url>
     
@@ -164,7 +172,7 @@
     
     <url>
     
-      <loc>http://stateofther.github.io/post/learnr/</loc>
+      <loc>/post/learnr/</loc>
       <lastmod>2017-09-25T00:00:00+00:00</lastmod>
     </url>
     
@@ -172,7 +180,7 @@
     
     <url>
     
-      <loc>http://stateofther.github.io/post/</loc>
+      <loc>/post/</loc>
       <lastmod>2017-01-01T00:00:00+01:00</lastmod>
     </url>
     
@@ -180,7 +188,7 @@
     
     <url>
     
-      <loc>http://stateofther.github.io/talk/</loc>
+      <loc>/talk/</loc>
       <lastmod>2017-01-01T00:00:00+01:00</lastmod>
     </url>
     
@@ -188,7 +196,7 @@
     
     <url>
     
-      <loc>http://stateofther.github.io/post/getting-started/</loc>
+      <loc>/post/getting-started/</loc>
       <lastmod>2018-01-13T00:00:00+01:00</lastmod>
     </url>
     
@@ -196,7 +204,7 @@
     
     <url>
     
-      <loc>http://stateofther.github.io/tags/academic/</loc>
+      <loc>/tags/academic/</loc>
       <lastmod>2018-01-13T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
@@ -205,7 +213,7 @@
     
     <url>
     
-      <loc>http://stateofther.github.io/tags/bigdata/</loc>
+      <loc>/tags/bigdata/</loc>
       <lastmod>2018-06-22T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -214,7 +222,7 @@
     
     <url>
     
-      <loc>http://stateofther.github.io/tags/bigsnpr/</loc>
+      <loc>/tags/bigsnpr/</loc>
       <lastmod>2019-01-25T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -223,7 +231,7 @@
     
     <url>
     
-      <loc>http://stateofther.github.io/tags/bigstatsr/</loc>
+      <loc>/tags/bigstatsr/</loc>
       <lastmod>2019-01-25T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -232,7 +240,7 @@
     
     <url>
     
-      <loc>http://stateofther.github.io/tags/bookdown/</loc>
+      <loc>/tags/bookdown/</loc>
       <lastmod>2018-08-31T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -241,7 +249,7 @@
     
     <url>
     
-      <loc>http://stateofther.github.io/bootcamp/</loc>
+      <loc>/bootcamp/</loc>
       <lastmod>2018-08-31T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -250,7 +258,7 @@
     
     <url>
     
-      <loc>http://stateofther.github.io/tags/broom/</loc>
+      <loc>/tags/broom/</loc>
       <lastmod>2018-11-23T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -259,7 +267,7 @@
     
     <url>
     
-      <loc>http://stateofther.github.io/categories/</loc>
+      <loc>/categories/</loc>
       <priority>0</priority>
     </url>
     
@@ -267,7 +275,7 @@
     
     <url>
     
-      <loc>http://stateofther.github.io/tags/communication/</loc>
+      <loc>/tags/communication/</loc>
       <lastmod>2018-02-23T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -276,7 +284,7 @@
     
     <url>
     
-      <loc>http://stateofther.github.io/tags/dt/</loc>
+      <loc>/tags/dt/</loc>
       <lastmod>2018-02-23T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -285,7 +293,7 @@
     
     <url>
     
-      <loc>http://stateofther.github.io/tags/data.table/</loc>
+      <loc>/tags/data.table/</loc>
       <lastmod>2018-06-22T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -294,7 +302,7 @@
     
     <url>
     
-      <loc>http://stateofther.github.io/tags/datatable/</loc>
+      <loc>/tags/datatable/</loc>
       <lastmod>2018-02-23T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -303,7 +311,7 @@
     
     <url>
     
-      <loc>http://stateofther.github.io/tags/deep-learning/</loc>
+      <loc>/tags/deep-learning/</loc>
       <lastmod>2018-05-25T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -312,7 +320,7 @@
     
     <url>
     
-      <loc>http://stateofther.github.io/tags/dplyr/</loc>
+      <loc>/tags/dplyr/</loc>
       <lastmod>2018-05-02T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -321,7 +329,7 @@
     
     <url>
     
-      <loc>http://stateofther.github.io/tags/exams/</loc>
+      <loc>/tags/exams/</loc>
       <lastmod>2018-12-20T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -330,7 +338,7 @@
     
     <url>
     
-      <loc>http://stateofther.github.io/tags/gganimate/</loc>
+      <loc>/tags/gganimate/</loc>
       <lastmod>2018-10-19T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -339,7 +347,7 @@
     
     <url>
     
-      <loc>http://stateofther.github.io/tags/ggplot/</loc>
+      <loc>/tags/ggplot/</loc>
       <lastmod>2018-10-19T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -348,7 +356,7 @@
     
     <url>
     
-      <loc>http://stateofther.github.io/tags/ggplotly/</loc>
+      <loc>/tags/ggplotly/</loc>
       <lastmod>2019-05-22T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -357,7 +365,7 @@
     
     <url>
     
-      <loc>http://stateofther.github.io/tags/ggraph/</loc>
+      <loc>/tags/ggraph/</loc>
       <lastmod>2018-10-19T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -366,7 +374,7 @@
     
     <url>
     
-      <loc>http://stateofther.github.io/tags/kable/</loc>
+      <loc>/tags/kable/</loc>
       <lastmod>2018-02-23T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -375,7 +383,7 @@
     
     <url>
     
-      <loc>http://stateofther.github.io/tags/learnr/</loc>
+      <loc>/tags/learnr/</loc>
       <lastmod>2017-09-25T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -384,7 +392,7 @@
     
     <url>
     
-      <loc>http://stateofther.github.io/tags/magrittr/</loc>
+      <loc>/tags/magrittr/</loc>
       <lastmod>2018-05-02T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -393,7 +401,7 @@
     
     <url>
     
-      <loc>http://stateofther.github.io/tags/moddle/</loc>
+      <loc>/tags/moddle/</loc>
       <lastmod>2018-12-20T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -402,7 +410,7 @@
     
     <url>
     
-      <loc>http://stateofther.github.io/tags/packages/</loc>
+      <loc>/tags/packages/</loc>
       <lastmod>2019-03-22T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -411,7 +419,7 @@
     
     <url>
     
-      <loc>http://stateofther.github.io/tags/plotly/</loc>
+      <loc>/tags/plotly/</loc>
       <lastmod>2019-05-22T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -420,7 +428,7 @@
     
     <url>
     
-      <loc>http://stateofther.github.io/tags/r-markdown/</loc>
+      <loc>/tags/r-markdown/</loc>
       <lastmod>2018-02-23T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -429,7 +437,7 @@
     
     <url>
     
-      <loc>http://stateofther.github.io/tags/rcpp/</loc>
+      <loc>/tags/rcpp/</loc>
       <lastmod>2018-07-20T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -438,7 +446,7 @@
     
     <url>
     
-      <loc>http://stateofther.github.io/tags/rsample/</loc>
+      <loc>/tags/rsample/</loc>
       <lastmod>2018-11-23T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -447,7 +455,7 @@
     
     <url>
     
-      <loc>http://stateofther.github.io/tags/rstan/</loc>
+      <loc>/tags/rstan/</loc>
       <lastmod>2019-04-19T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -456,7 +464,7 @@
     
     <url>
     
-      <loc>http://stateofther.github.io/tags/satrday/</loc>
+      <loc>/tags/satrday/</loc>
       <lastmod>2019-02-22T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -465,7 +473,16 @@
     
     <url>
     
-      <loc>http://stateofther.github.io/tags/sparlyr/</loc>
+      <loc>/tags/shiny/</loc>
+      <lastmod>2019-06-11T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/sparlyr/</loc>
       <lastmod>2018-06-22T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -474,7 +491,7 @@
     
     <url>
     
-      <loc>http://stateofther.github.io/tags/spatial/</loc>
+      <loc>/tags/spatial/</loc>
       <lastmod>2018-03-23T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -483,7 +500,7 @@
     
     <url>
     
-      <loc>http://stateofther.github.io/tags/stan/</loc>
+      <loc>/tags/stan/</loc>
       <lastmod>2019-04-19T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -492,7 +509,7 @@
     
     <url>
     
-      <loc>http://stateofther.github.io/</loc>
+      <loc>/</loc>
       <lastmod>2017-10-15T00:00:00+02:00</lastmod>
       <priority>0</priority>
     </url>
@@ -501,7 +518,7 @@
     
     <url>
     
-      <loc>http://stateofther.github.io/tags/</loc>
+      <loc>/tags/</loc>
       <lastmod>2018-01-13T00:00:00+01:00</lastmod>
       <priority>0</priority>
     </url>
@@ -510,7 +527,7 @@
     
     <url>
     
-      <loc>http://stateofther.github.io/tags/teachings/</loc>
+      <loc>/tags/teachings/</loc>
       <lastmod>2017-09-25T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -519,7 +536,7 @@
     
     <url>
     
-      <loc>http://stateofther.github.io/tags/tidy/</loc>
+      <loc>/tags/tidy/</loc>
       <lastmod>2018-05-02T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -528,7 +545,7 @@
     
     <url>
     
-      <loc>http://stateofther.github.io/tags/tidymodels/</loc>
+      <loc>/tags/tidymodels/</loc>
       <lastmod>2018-11-23T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -537,7 +554,7 @@
     
     <url>
     
-      <loc>http://stateofther.github.io/tags/tidyverse/</loc>
+      <loc>/tags/tidyverse/</loc>
       <lastmod>2018-11-23T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -546,7 +563,7 @@
     
     <url>
     
-      <loc>http://stateofther.github.io/tags/travis/</loc>
+      <loc>/tags/travis/</loc>
       <lastmod>2019-03-22T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -555,8 +572,8 @@
     
     <url>
     
-      <loc>http://stateofther.github.io/categories/workshop/</loc>
-      <lastmod>2019-05-22T00:00:00+00:00</lastmod>
+      <loc>/categories/workshop/</loc>
+      <lastmod>2019-06-11T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     

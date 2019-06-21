@@ -2,337 +2,346 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on State of The R</title>
-    <link>http://stateofther.github.io/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on State of The R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
     <copyright>&amp;copy; 2018 State of the R</copyright>
     <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0200</lastBuildDate>
     
-	<atom:link href="http://stateofther.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Academic</title>
-      <link>http://stateofther.github.io/tags/academic/</link>
+      <link>/tags/academic/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0200</pubDate>
       
-      <guid>http://stateofther.github.io/tags/academic/</guid>
+      <guid>/tags/academic/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Bigdata</title>
-      <link>http://stateofther.github.io/tags/bigdata/</link>
+      <link>/tags/bigdata/</link>
       <pubDate>Fri, 22 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://stateofther.github.io/tags/bigdata/</guid>
+      <guid>/tags/bigdata/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Bigsnpr</title>
-      <link>http://stateofther.github.io/tags/bigsnpr/</link>
+      <link>/tags/bigsnpr/</link>
       <pubDate>Fri, 25 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://stateofther.github.io/tags/bigsnpr/</guid>
+      <guid>/tags/bigsnpr/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Bigstatsr</title>
-      <link>http://stateofther.github.io/tags/bigstatsr/</link>
+      <link>/tags/bigstatsr/</link>
       <pubDate>Fri, 25 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://stateofther.github.io/tags/bigstatsr/</guid>
+      <guid>/tags/bigstatsr/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Bookdown</title>
-      <link>http://stateofther.github.io/tags/bookdown/</link>
+      <link>/tags/bookdown/</link>
       <pubDate>Fri, 31 Aug 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://stateofther.github.io/tags/bookdown/</guid>
+      <guid>/tags/bookdown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Broom</title>
-      <link>http://stateofther.github.io/tags/broom/</link>
+      <link>/tags/broom/</link>
       <pubDate>Fri, 23 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://stateofther.github.io/tags/broom/</guid>
+      <guid>/tags/broom/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Communication</title>
-      <link>http://stateofther.github.io/tags/communication/</link>
+      <link>/tags/communication/</link>
       <pubDate>Fri, 23 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://stateofther.github.io/tags/communication/</guid>
+      <guid>/tags/communication/</guid>
       <description></description>
     </item>
     
     <item>
       <title>DT</title>
-      <link>http://stateofther.github.io/tags/dt/</link>
+      <link>/tags/dt/</link>
       <pubDate>Fri, 23 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://stateofther.github.io/tags/dt/</guid>
+      <guid>/tags/dt/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Data.table</title>
-      <link>http://stateofther.github.io/tags/data.table/</link>
+      <link>/tags/data.table/</link>
       <pubDate>Fri, 22 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://stateofther.github.io/tags/data.table/</guid>
+      <guid>/tags/data.table/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Datatable</title>
-      <link>http://stateofther.github.io/tags/datatable/</link>
+      <link>/tags/datatable/</link>
       <pubDate>Fri, 23 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://stateofther.github.io/tags/datatable/</guid>
+      <guid>/tags/datatable/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Deep learning</title>
-      <link>http://stateofther.github.io/tags/deep-learning/</link>
+      <link>/tags/deep-learning/</link>
       <pubDate>Fri, 25 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://stateofther.github.io/tags/deep-learning/</guid>
+      <guid>/tags/deep-learning/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Dplyr</title>
-      <link>http://stateofther.github.io/tags/dplyr/</link>
+      <link>/tags/dplyr/</link>
       <pubDate>Wed, 02 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://stateofther.github.io/tags/dplyr/</guid>
+      <guid>/tags/dplyr/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Exams</title>
-      <link>http://stateofther.github.io/tags/exams/</link>
+      <link>/tags/exams/</link>
       <pubDate>Thu, 20 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://stateofther.github.io/tags/exams/</guid>
+      <guid>/tags/exams/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Gganimate</title>
-      <link>http://stateofther.github.io/tags/gganimate/</link>
+      <link>/tags/gganimate/</link>
       <pubDate>Fri, 19 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://stateofther.github.io/tags/gganimate/</guid>
+      <guid>/tags/gganimate/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ggplot</title>
-      <link>http://stateofther.github.io/tags/ggplot/</link>
+      <link>/tags/ggplot/</link>
       <pubDate>Fri, 19 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://stateofther.github.io/tags/ggplot/</guid>
+      <guid>/tags/ggplot/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ggplotly</title>
-      <link>http://stateofther.github.io/tags/ggplotly/</link>
+      <link>/tags/ggplotly/</link>
       <pubDate>Wed, 22 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://stateofther.github.io/tags/ggplotly/</guid>
+      <guid>/tags/ggplotly/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ggraph</title>
-      <link>http://stateofther.github.io/tags/ggraph/</link>
+      <link>/tags/ggraph/</link>
       <pubDate>Fri, 19 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://stateofther.github.io/tags/ggraph/</guid>
+      <guid>/tags/ggraph/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Kable</title>
-      <link>http://stateofther.github.io/tags/kable/</link>
+      <link>/tags/kable/</link>
       <pubDate>Fri, 23 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://stateofther.github.io/tags/kable/</guid>
+      <guid>/tags/kable/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Learnr</title>
-      <link>http://stateofther.github.io/tags/learnr/</link>
+      <link>/tags/learnr/</link>
       <pubDate>Mon, 25 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://stateofther.github.io/tags/learnr/</guid>
+      <guid>/tags/learnr/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Magrittr</title>
-      <link>http://stateofther.github.io/tags/magrittr/</link>
+      <link>/tags/magrittr/</link>
       <pubDate>Wed, 02 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://stateofther.github.io/tags/magrittr/</guid>
+      <guid>/tags/magrittr/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Moddle</title>
-      <link>http://stateofther.github.io/tags/moddle/</link>
+      <link>/tags/moddle/</link>
       <pubDate>Thu, 20 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://stateofther.github.io/tags/moddle/</guid>
+      <guid>/tags/moddle/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Packages</title>
-      <link>http://stateofther.github.io/tags/packages/</link>
+      <link>/tags/packages/</link>
       <pubDate>Fri, 22 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://stateofther.github.io/tags/packages/</guid>
+      <guid>/tags/packages/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Plotly</title>
-      <link>http://stateofther.github.io/tags/plotly/</link>
+      <link>/tags/plotly/</link>
       <pubDate>Wed, 22 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://stateofther.github.io/tags/plotly/</guid>
+      <guid>/tags/plotly/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R Markdown</title>
-      <link>http://stateofther.github.io/tags/r-markdown/</link>
+      <link>/tags/r-markdown/</link>
       <pubDate>Fri, 23 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://stateofther.github.io/tags/r-markdown/</guid>
+      <guid>/tags/r-markdown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Rcpp</title>
-      <link>http://stateofther.github.io/tags/rcpp/</link>
+      <link>/tags/rcpp/</link>
       <pubDate>Fri, 20 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://stateofther.github.io/tags/rcpp/</guid>
+      <guid>/tags/rcpp/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Rsample</title>
-      <link>http://stateofther.github.io/tags/rsample/</link>
+      <link>/tags/rsample/</link>
       <pubDate>Fri, 23 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://stateofther.github.io/tags/rsample/</guid>
+      <guid>/tags/rsample/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Rstan</title>
-      <link>http://stateofther.github.io/tags/rstan/</link>
+      <link>/tags/rstan/</link>
       <pubDate>Fri, 19 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://stateofther.github.io/tags/rstan/</guid>
+      <guid>/tags/rstan/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Satrday</title>
-      <link>http://stateofther.github.io/tags/satrday/</link>
+      <link>/tags/satrday/</link>
       <pubDate>Fri, 22 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://stateofther.github.io/tags/satrday/</guid>
+      <guid>/tags/satrday/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Shiny</title>
+      <link>/tags/shiny/</link>
+      <pubDate>Tue, 11 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/shiny/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Sparlyr</title>
-      <link>http://stateofther.github.io/tags/sparlyr/</link>
+      <link>/tags/sparlyr/</link>
       <pubDate>Fri, 22 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://stateofther.github.io/tags/sparlyr/</guid>
+      <guid>/tags/sparlyr/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Spatial</title>
-      <link>http://stateofther.github.io/tags/spatial/</link>
+      <link>/tags/spatial/</link>
       <pubDate>Fri, 23 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://stateofther.github.io/tags/spatial/</guid>
+      <guid>/tags/spatial/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Stan</title>
-      <link>http://stateofther.github.io/tags/stan/</link>
+      <link>/tags/stan/</link>
       <pubDate>Fri, 19 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://stateofther.github.io/tags/stan/</guid>
+      <guid>/tags/stan/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Teachings</title>
-      <link>http://stateofther.github.io/tags/teachings/</link>
+      <link>/tags/teachings/</link>
       <pubDate>Mon, 25 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://stateofther.github.io/tags/teachings/</guid>
+      <guid>/tags/teachings/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tidy</title>
-      <link>http://stateofther.github.io/tags/tidy/</link>
+      <link>/tags/tidy/</link>
       <pubDate>Wed, 02 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://stateofther.github.io/tags/tidy/</guid>
+      <guid>/tags/tidy/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tidymodels</title>
-      <link>http://stateofther.github.io/tags/tidymodels/</link>
+      <link>/tags/tidymodels/</link>
       <pubDate>Fri, 23 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://stateofther.github.io/tags/tidymodels/</guid>
+      <guid>/tags/tidymodels/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tidyverse</title>
-      <link>http://stateofther.github.io/tags/tidyverse/</link>
+      <link>/tags/tidyverse/</link>
       <pubDate>Fri, 23 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://stateofther.github.io/tags/tidyverse/</guid>
+      <guid>/tags/tidyverse/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Travis</title>
-      <link>http://stateofther.github.io/tags/travis/</link>
+      <link>/tags/travis/</link>
       <pubDate>Fri, 22 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://stateofther.github.io/tags/travis/</guid>
+      <guid>/tags/travis/</guid>
       <description></description>
     </item>
     
