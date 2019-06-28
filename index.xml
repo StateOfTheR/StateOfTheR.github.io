@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>State of The R on State of The R</title>
@@ -7,7 +6,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
     <copyright>&amp;copy; 2018 State of the R</copyright>
-    <lastBuildDate>Sun, 15 Oct 2017 00:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 26 Jul 2019 00:00:00 +0200</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
@@ -20,15 +19,29 @@
     </item>
     
     <item>
-      <title>Comment Shiny peut vous aider dans vos simulations, vos collaborations et vos cours</title>
+      <title>Les principes de base de Shiny</title>
       <link>/post/shiny/</link>
       <pubDate>Tue, 11 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>/post/shiny/</guid>
-      <description>&lt;p&gt;Pierre et Benjamin nous ont préparé &amp;lsquo;quelque chose sur Shiny&amp;rsquo;:&lt;/p&gt;
+      <description>&lt;p&gt;Pierre et Benjamin nous ont présenté les principes de bases de shiny et comment créer une application interactive &lt;em&gt;&amp;lsquo;un petit jeu pour stateux&amp;rsquo;&lt;/em&gt; facilement en écrivant que du code R :&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;../../post/shiny/index.html&#34;&gt;La présentation en full HTML&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../../post/shiny/stateoftheR_shiny.pdf&#34;&gt;L&amp;rsquo;intégrale des slides&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Les principes de base de Shiny</title>
+      <link>/post/shiny/</link>
+      <pubDate>Tue, 11 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/shiny/</guid>
+      <description>&lt;p&gt;Pierre et Benjamin nous ont présenté les principes de bases de shiny et comment créer une application interactive &lt;em&gt;&amp;lsquo;un petit jeu pour stateux&amp;rsquo;&lt;/em&gt; facilement en écrivant que du code R :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;../../post/shiny/stateoftheR_shiny.pdf&#34;&gt;L&amp;rsquo;intégrale des slides&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -215,7 +228,10 @@ On peut aussi faire de l&amp;rsquo;inférence fréquentiste par optimisation.&lt
       <pubDate>Fri, 22 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>/post/manipulating-half-big-data-in-r/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;img/headers/spark-logo-trademark.png&#34; align=&#34;right&#34; width=&#34;200&#34;/&gt;&lt;/p&gt;
+      <description>
+
+
+&lt;p&gt;&lt;img src=&#34;img/headers/spark-logo-trademark.png&#34; align=&#34;right&#34; width=&#34;200&#34;/&gt;&lt;/p&gt;
 &lt;p&gt;Séverine et Tristan nous proposent une introduction à quelques outils permettant de manipuler (en particulier charger) de “grosses” tables de données sous &lt;code&gt;R&lt;/code&gt;.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;bigmemory&lt;/code&gt; for loading large matrices&lt;/li&gt;
@@ -228,24 +244,6 @@ On peut aussi faire de l&amp;rsquo;inférence fréquentiste par optimisation.&lt
 &lt;li&gt;&lt;a href=&#34;../../post/bigdata/tutorial_sparklyr.pdf&#34;&gt;travaux pratiques (PDF)&lt;/a&gt;, &lt;a href=&#34;../../post/bigdata/tutorial_sparklyr.Rmd&#34;&gt;source Markdown&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;../../post/bigdata/1_CompareClassicalAndBigdata.R&#34;&gt;code source: R base vs bigxx&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;../../post/bigdata/2_CompareClassicalAndSpark.R&#34;&gt;code source: R base vs sparklyr&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Introduction au Deep Learning sous R</title>
-      <link>/post/introduction-au-deep-learning-sous-r/</link>
-      <pubDate>Fri, 25 May 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/post/introduction-au-deep-learning-sous-r/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;img/headers/TensorFlowLogo.png&#34; align=&#34;right&#34; width=&#34;200&#34;/&gt;&lt;/p&gt;
-
-&lt;p&gt;Sophie et Christophe nous proposent une séance complète sur le deep-learning et l&amp;rsquo;interfaçage existant sous R:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;../../post/deep_learning/deep-learning-history.html&#34;&gt;Une brève histoire du Deep-Learning&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;../../post/deep_learning/Deep-with-R.pdf&#34;&gt;Une introduction au Deep-Learning sous R&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;../../post/deep_learning/cours_deeplearning_for_dummies.pdf&#34;&gt;travaux pratiques&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

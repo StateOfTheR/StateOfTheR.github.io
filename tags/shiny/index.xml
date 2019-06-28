@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Shiny on State of The R</title>
+    <title>shiny on State of The R</title>
     <link>/tags/shiny/</link>
-    <description>Recent content in Shiny on State of The R</description>
+    <description>Recent content in shiny on State of The R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
     <copyright>&amp;copy; 2018 State of the R</copyright>
@@ -13,13 +13,23 @@
     
     
     <item>
-      <title>Comment Shiny peut vous aider dans vos simulations, vos collaborations et vos cours</title>
+      <title>Les principes de base de Shiny</title>
       <link>/post/shiny/</link>
       <pubDate>Tue, 11 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>/post/shiny/</guid>
-      <description>Pierre et Benjamin nous ont préparé &amp;lsquo;quelque chose sur Shiny&amp;rsquo;:
- La présentation en full HTML  </description>
+      <description>Pierre et Benjamin nous ont présenté les principes de bases de shiny et comment créer une application interactive &amp;lsquo;un petit jeu pour stateux&amp;rsquo; facilement en écrivant que du code R :
+ L&amp;rsquo;intégrale des slides  </description>
+    </item>
+    
+    <item>
+      <title>Les principes de base de Shiny</title>
+      <link>/post/shiny/</link>
+      <pubDate>Tue, 11 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/shiny/</guid>
+      <description>Pierre et Benjamin nous ont présenté les principes de bases de shiny et comment créer une application interactive &amp;lsquo;un petit jeu pour stateux&amp;rsquo; facilement en écrivant que du code R :
+ L&amp;rsquo;intégrale des slides  </description>
     </item>
     
   </channel>

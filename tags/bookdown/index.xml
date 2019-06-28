@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Bookdown on State of The R</title>
+    <title>bookdown on State of The R</title>
     <link>/tags/bookdown/</link>
-    <description>Recent content in Bookdown on State of The R</description>
+    <description>Recent content in bookdown on State of The R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
     <copyright>&amp;copy; 2018 State of the R</copyright>
@@ -18,7 +18,7 @@
       <pubDate>Fri, 31 Aug 2018 00:00:00 +0000</pubDate>
       
       <guid>/bootcamp/finistr18/</guid>
-      <description></description>
+      <description>Page web résumant les activités de la semaine d&amp;rsquo;ateliers à Beg Meil 2018</description>
     </item>
     
     <item>
@@ -27,7 +27,7 @@
       <pubDate>Tue, 06 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>/bootcamp/finistr17/</guid>
-      <description></description>
+      <description>Mini poly bookdown résumant les activités de la semaine d&amp;rsquo;ateliers à Roscoff 2017</description>
     </item>
     
   </channel>

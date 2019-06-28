@@ -13,13 +13,23 @@
     
     
     <item>
-      <title>Comment Shiny peut vous aider dans vos simulations, vos collaborations et vos cours</title>
+      <title>Les principes de base de Shiny</title>
       <link>/post/shiny/</link>
       <pubDate>Tue, 11 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>/post/shiny/</guid>
-      <description>Pierre et Benjamin nous ont préparé &amp;lsquo;quelque chose sur Shiny&amp;rsquo;:
- La présentation en full HTML  </description>
+      <description>Pierre et Benjamin nous ont présenté les principes de bases de shiny et comment créer une application interactive &amp;lsquo;un petit jeu pour stateux&amp;rsquo; facilement en écrivant que du code R :
+ L&amp;rsquo;intégrale des slides  </description>
+    </item>
+    
+    <item>
+      <title>Les principes de base de Shiny</title>
+      <link>/post/shiny/</link>
+      <pubDate>Tue, 11 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/shiny/</guid>
+      <description>Pierre et Benjamin nous ont présenté les principes de bases de shiny et comment créer une application interactive &amp;lsquo;un petit jeu pour stateux&amp;rsquo; facilement en écrivant que du code R :
+ L&amp;rsquo;intégrale des slides  </description>
     </item>
     
     <item>
@@ -118,7 +128,7 @@ Les documents de la séances:
       <pubDate>Fri, 22 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>/post/manipulating-half-big-data-in-r/</guid>
-      <description>Séverine et Tristan nous proposent une introduction à quelques outils permettant de manipuler (en particulier charger) de “grosses” tables de données sous R.
+      <description> Séverine et Tristan nous proposent une introduction à quelques outils permettant de manipuler (en particulier charger) de “grosses” tables de données sous R.
  bigmemory for loading large matrices bigalgebra provides BLAS and LAPACK linear algebra sparklyr for interfacing R with Spark Apache  Les documents de la séances
  Présentation des enjeux, slides travaux pratiques (PDF), source Markdown code source: R base vs bigxx code source: R base vs sparklyr  </description>
     </item>
@@ -139,7 +149,7 @@ Les documents de la séances:
       <pubDate>Wed, 02 May 2018 00:00:00 +0000</pubDate>
       
       <guid>/post/une-introduction-au-tidyverse/</guid>
-      <description>Antoine nous propose une introduction dense et déjà avancée en passant en revue l’ensemble du tidyverse
+      <description> Antoine nous propose une introduction dense et déjà avancée en passant en revue l’ensemble du tidyverse
  Les slides Xaringan de Antoine  </description>
     </item>
     
@@ -159,7 +169,7 @@ Les documents de la séances:
       <pubDate>Fri, 23 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>/post/rmarkdown-tableaux-interactifs-et-retour-d-experience/</guid>
-      <description>Mahendra nous propose un retour d’expérience et quelques exercices sur le package DT pour la manipulation interactive de table.
+      <description> Mahendra nous propose un retour d’expérience et quelques exercices sur le package DT pour la manipulation interactive de table.
  Les slides de Mahendra  </description>
     </item>
     
@@ -169,7 +179,7 @@ Les documents de la séances:
       <pubDate>Fri, 23 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>/post/science-communication-with-r-style-r-markdown-xaringan/</guid>
-      <description>Antoine nous propose une série de slides sur R markdown et Xaringan
+      <description> Antoine nous propose une série de slides sur R markdown et Xaringan
  Les slides Xaringan de Antoine  </description>
     </item>
     
@@ -190,7 +200,7 @@ Pour les animateurs : vous êtes libre de compléter le post de blog.</descripti
       <pubDate>Mon, 25 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>/post/learnr/</guid>
-      <description>Vue d’ensemble Le package learnr permet de créer des tutoriels (voir le site dédié ou le blog de présentation). Les tutoriels incluent du texte, des champs pour taper et exécuter des commandes R (pouvant être pré-formatés) et des questionnaires à choix multiples. Les champs peuvent inclure des indices à afficher pour l’utilisateur ou des solutions. Pour fonctionner, le document créé au format Rmarkdown doit être envoyé sur un serveur shiny. Il est alors nécessaire de créér un compte sur shinyapp.</description>
+      <description>Vue d’ensemble Le package learnr permet de créer des tutoriels (voir le site dédié ou le blog de présentation). Les tutoriels incluent du texte, des champs pour taper et exécuter des commandes R (pouvant être pré-formatés) et des questionnaires à choix multiples. Les champs peuvent inclure des indices à afficher pour l’utilisateur ou des solutions. Pour fonctionner, le document créé au format Rmarkdown doit être envoyé sur un serveur shiny.</description>
     </item>
     
     <item>
@@ -199,10 +209,7 @@ Pour les animateurs : vous êtes libre de compléter le post de blog.</descripti
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0200</pubDate>
       
       <guid>/post/getting-started/</guid>
-      <description>Academic is a framework to help you create a beautiful website quickly. Perfect for personal sites, blogs, or business/project sites. Check out the latest demo of what you&amp;rsquo;ll get in less than 10 minutes. Then head on over to the Quick Start guide or take a look at the Release Notes.
-
-Key features:
- Easily manage various content including homepage, blog posts, publications, talks, and projects Extensible via color themes and widgets/plugins Write in Markdown for easy formatting and code highlighting, with LaTeX for mathematical expressions Social/academic network linking, Google Analytics, and Disqus comments Responsive and mobile friendly Simple and refreshing one page design Multilingual and easy to customize  Color Themes Academic is available in different color themes and font themes.</description>
+      <description>Create a beautifully simple website or blog in under 10 minutes.</description>
     </item>
     
   </channel>

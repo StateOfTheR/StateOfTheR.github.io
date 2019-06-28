@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
     <copyright>&amp;copy; 2018 State of the R</copyright>
-    <lastBuildDate>Sun, 15 Oct 2017 00:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 06 Feb 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/home/index.xml" rel="self" type="application/rss+xml" />
     
@@ -39,8 +39,7 @@ Nous pensons qu&amp;rsquo;il est important que l&amp;rsquo;ensemble des particip
       <pubDate>Tue, 06 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>/home/upcoming_workshops/</guid>
-      <description> La plupart des ateliers ont lieu dans la salle ACTIA à AgroParisTech.
- </description>
+      <description> La plupart des ateliers ont lieu dans la salle ACTIA à AgroParisTech.  </description>
     </item>
     
     <item>
