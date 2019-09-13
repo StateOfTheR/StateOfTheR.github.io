@@ -13,23 +13,13 @@
     
     
     <item>
-      <title>Les principes de base de Shiny</title>
+      <title>Comment Shiny peut vous aider dans vos simulations, vos collaborations et vos cours</title>
       <link>/post/shiny/</link>
       <pubDate>Tue, 11 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>/post/shiny/</guid>
-      <description>Pierre et Benjamin nous ont présenté les principes de bases de shiny et comment créer une application interactive &amp;lsquo;un petit jeu pour stateux&amp;rsquo; facilement en écrivant que du code R :
- L&amp;rsquo;intégrale des slides  </description>
-    </item>
-    
-    <item>
-      <title>Les principes de base de Shiny</title>
-      <link>/post/shiny/</link>
-      <pubDate>Tue, 11 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/post/shiny/</guid>
-      <description>Pierre et Benjamin nous ont présenté les principes de bases de shiny et comment créer une application interactive &amp;lsquo;un petit jeu pour stateux&amp;rsquo; facilement en écrivant que du code R :
- L&amp;rsquo;intégrale des slides  </description>
+      <description>Pierre et Benjamin nous ont préparé &amp;lsquo;quelque chose sur Shiny&amp;rsquo;:
+ La présentation en full HTML  </description>
     </item>
     
   </channel>

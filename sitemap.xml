@@ -3,8 +3,17 @@
     
     <url>
     
-      <loc>/talk/2019-07-26-holidays/</loc>
-      <lastmod>2019-07-26T00:00:00+02:00</lastmod>
+      <loc>/bootcamp/</loc>
+      <lastmod>2019-08-31T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/bootcamp/finistr19/</loc>
+      <lastmod>2019-08-31T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -12,8 +21,34 @@
     <url>
     
       <loc>/</loc>
-      <lastmod>2019-07-26T00:00:00+02:00</lastmod>
+      <lastmod>2019-08-31T00:00:00+00:00</lastmod>
       <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/</loc>
+      <lastmod>2019-08-31T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/bookdown/</loc>
+      <lastmod>2019-08-31T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/talk/2019-07-26-holidays/</loc>
+      <lastmod>2019-07-26T00:00:00+02:00</lastmod>
     </url>
     
   
@@ -31,23 +66,6 @@
     
       <loc>/post/shiny/</loc>
       <lastmod>2019-06-11T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/post/shiny/</loc>
-      <lastmod>2019-06-11T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/</loc>
-      <lastmod>2019-06-11T00:00:00+00:00</lastmod>
-      <priority>0</priority>
     </url>
     
   
@@ -72,7 +90,7 @@
     
     <url>
     
-      <loc>/post/rstan/</loc>
+      <loc>/post/plotly/</loc>
       <lastmod>2019-05-22T00:00:00+00:00</lastmod>
     </url>
     
@@ -298,26 +316,8 @@
     
     <url>
     
-      <loc>/bootcamp/</loc>
-      <lastmod>2018-08-31T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
       <loc>/bootcamp/finistr18/</loc>
       <lastmod>2018-08-31T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/bookdown/</loc>
-      <lastmod>2018-08-31T00:00:00+00:00</lastmod>
-      <priority>0</priority>
     </url>
     
   

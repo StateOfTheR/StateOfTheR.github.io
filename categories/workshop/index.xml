@@ -13,31 +13,21 @@
     
     
     <item>
-      <title>Les principes de base de Shiny</title>
+      <title>Comment Shiny peut vous aider dans vos simulations, vos collaborations et vos cours</title>
       <link>/post/shiny/</link>
       <pubDate>Tue, 11 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>/post/shiny/</guid>
-      <description>Pierre et Benjamin nous ont présenté les principes de bases de shiny et comment créer une application interactive &amp;lsquo;un petit jeu pour stateux&amp;rsquo; facilement en écrivant que du code R :
- L&amp;rsquo;intégrale des slides  </description>
-    </item>
-    
-    <item>
-      <title>Les principes de base de Shiny</title>
-      <link>/post/shiny/</link>
-      <pubDate>Tue, 11 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/post/shiny/</guid>
-      <description>Pierre et Benjamin nous ont présenté les principes de bases de shiny et comment créer une application interactive &amp;lsquo;un petit jeu pour stateux&amp;rsquo; facilement en écrivant que du code R :
- L&amp;rsquo;intégrale des slides  </description>
+      <description>Pierre et Benjamin nous ont préparé &amp;lsquo;quelque chose sur Shiny&amp;rsquo;:
+ La présentation en full HTML  </description>
     </item>
     
     <item>
       <title>Introduction à plotly</title>
-      <link>/post/rstan/</link>
+      <link>/post/plotly/</link>
       <pubDate>Wed, 22 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/rstan/</guid>
+      <guid>/post/plotly/</guid>
       <description>Au cours d&amp;rsquo;une séance découverte un peu spécial, donnée lors de l&amp;rsquo;assemblée générale du département de mathématique et informatique de l&amp;rsquo;INRA, Mahendra nous a fait découvrir les potentialités de {plotly,ggplotly,crosscall}
  La présentation en full HTML  Le chargement peut prendre du temps (googlefonts&amp;hellip;)</description>
     </item>
@@ -50,7 +40,7 @@
       <guid>/post/rstan/</guid>
       <description>Matthieu et Éric nous propose une séance sur {rSTAN}, l&amp;rsquo;interface R à la bibliothèque C++ Stan. Il s&amp;rsquo;agit d&amp;rsquo;algorithme inférence b yésienne utilisant une variante du Monte-Carlo Hamiltonien. On peut aussi faire de l&amp;rsquo;inférence fréquentiste par optimisation.
 Gros travail de Éric et Matthieu, et une base de document introductif très fouillé, merci!
- A bit of theory to understand Hamilton Monte Carlo Modèle Hiérarchique avec Stan Modèlisation Spatiale   </description>
+ A bit of theory to understand Hamilton Monte Carlo Modèle Hiérarchique avec Stan Modèlisation Spatiale  </description>
     </item>
     
     <item>
