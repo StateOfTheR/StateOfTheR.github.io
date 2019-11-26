@@ -3,6 +3,23 @@
     
     <url>
     
+      <loc>/</loc>
+      <lastmod>2019-12-13T00:00:00+01:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/talk/2019-12-13-tidymodels/</loc>
+      <lastmod>2019-12-13T00:00:00+01:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/bootcamp/</loc>
       <lastmod>2019-08-31T00:00:00+00:00</lastmod>
       <priority>0</priority>
@@ -14,15 +31,6 @@
     
       <loc>/bootcamp/finistr19/</loc>
       <lastmod>2019-08-31T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/</loc>
-      <lastmod>2019-08-31T00:00:00+00:00</lastmod>
-      <priority>0</priority>
     </url>
     
   
@@ -41,14 +49,6 @@
       <loc>/tags/bookdown/</loc>
       <lastmod>2019-08-31T00:00:00+00:00</lastmod>
       <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/talk/2019-07-26-holidays/</loc>
-      <lastmod>2019-07-26T00:00:00+02:00</lastmod>
     </url>
     
   
