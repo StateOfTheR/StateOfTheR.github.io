@@ -5,7 +5,6 @@
     
       <loc>/</loc>
       <lastmod>2019-12-13T00:00:00+01:00</lastmod>
-      <priority>0</priority>
     </url>
     
   
@@ -20,17 +19,32 @@
     
     <url>
     
-      <loc>/bootcamp/</loc>
-      <lastmod>2019-08-31T00:00:00+00:00</lastmod>
-      <priority>0</priority>
+      <loc>/talk/2019-12-13-tidyverse3/</loc>
+      <lastmod>2019-12-13T00:00:00+01:00</lastmod>
     </url>
     
   
     
     <url>
     
-      <loc>/bootcamp/finistr19/</loc>
-      <lastmod>2019-08-31T00:00:00+00:00</lastmod>
+      <loc>/categories/</loc>
+      <lastmod>2019-11-15T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/post/rmarkdown/</loc>
+      <lastmod>2019-11-15T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/rmarkdown/</loc>
+      <lastmod>2019-11-15T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -38,8 +52,31 @@
     <url>
     
       <loc>/tags/</loc>
-      <lastmod>2019-08-31T00:00:00+00:00</lastmod>
-      <priority>0</priority>
+      <lastmod>2019-11-15T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/categories/workshop/</loc>
+      <lastmod>2019-11-15T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/post/rmxnet/</loc>
+      <lastmod>2019-10-18T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/rmxnet/</loc>
+      <lastmod>2019-10-18T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -48,16 +85,22 @@
     
       <loc>/tags/bookdown/</loc>
       <lastmod>2019-08-31T00:00:00+00:00</lastmod>
-      <priority>0</priority>
     </url>
     
   
     
     <url>
     
-      <loc>/categories/</loc>
-      <lastmod>2019-06-11T00:00:00+00:00</lastmod>
-      <priority>0</priority>
+      <loc>/bootcamp/</loc>
+      <lastmod>2019-08-31T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/bootcamp/finistr19/</loc>
+      <lastmod>2019-08-31T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -74,16 +117,14 @@
     
       <loc>/tags/shiny/</loc>
       <lastmod>2019-06-11T00:00:00+00:00</lastmod>
-      <priority>0</priority>
     </url>
     
   
     
     <url>
     
-      <loc>/categories/workshop/</loc>
-      <lastmod>2019-06-11T00:00:00+00:00</lastmod>
-      <priority>0</priority>
+      <loc>/tags/ggplotly/</loc>
+      <lastmod>2019-05-22T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -98,18 +139,16 @@
     
     <url>
     
-      <loc>/tags/ggplotly/</loc>
+      <loc>/tags/plotly/</loc>
       <lastmod>2019-05-22T00:00:00+00:00</lastmod>
-      <priority>0</priority>
     </url>
     
   
     
     <url>
     
-      <loc>/tags/plotly/</loc>
-      <lastmod>2019-05-22T00:00:00+00:00</lastmod>
-      <priority>0</priority>
+      <loc>/tags/rstan/</loc>
+      <lastmod>2019-04-19T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -124,18 +163,8 @@
     
     <url>
     
-      <loc>/tags/rstan/</loc>
-      <lastmod>2019-04-19T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
       <loc>/tags/stan/</loc>
       <lastmod>2019-04-19T00:00:00+00:00</lastmod>
-      <priority>0</priority>
     </url>
     
   
@@ -152,7 +181,6 @@
     
       <loc>/tags/packages/</loc>
       <lastmod>2019-03-22T00:00:00+00:00</lastmod>
-      <priority>0</priority>
     </url>
     
   
@@ -161,7 +189,6 @@
     
       <loc>/tags/travis/</loc>
       <lastmod>2019-03-22T00:00:00+00:00</lastmod>
-      <priority>0</priority>
     </url>
     
   
@@ -178,7 +205,22 @@
     
       <loc>/tags/satrday/</loc>
       <lastmod>2019-02-22T00:00:00+00:00</lastmod>
-      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/bigsnpr/</loc>
+      <lastmod>2019-01-25T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/bigstatsr/</loc>
+      <lastmod>2019-01-25T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -193,18 +235,16 @@
     
     <url>
     
-      <loc>/tags/bigsnpr/</loc>
-      <lastmod>2019-01-25T00:00:00+00:00</lastmod>
-      <priority>0</priority>
+      <loc>/tags/exams/</loc>
+      <lastmod>2018-12-20T00:00:00+00:00</lastmod>
     </url>
     
   
     
     <url>
     
-      <loc>/tags/bigstatsr/</loc>
-      <lastmod>2019-01-25T00:00:00+00:00</lastmod>
-      <priority>0</priority>
+      <loc>/tags/moddle/</loc>
+      <lastmod>2018-12-20T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -219,18 +259,8 @@
     
     <url>
     
-      <loc>/tags/exams/</loc>
-      <lastmod>2018-12-20T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/moddle/</loc>
-      <lastmod>2018-12-20T00:00:00+00:00</lastmod>
-      <priority>0</priority>
+      <loc>/tags/broom/</loc>
+      <lastmod>2018-11-23T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -245,18 +275,8 @@
     
     <url>
     
-      <loc>/tags/broom/</loc>
-      <lastmod>2018-11-23T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
       <loc>/tags/rsample/</loc>
       <lastmod>2018-11-23T00:00:00+00:00</lastmod>
-      <priority>0</priority>
     </url>
     
   
@@ -265,7 +285,6 @@
     
       <loc>/tags/tidymodels/</loc>
       <lastmod>2018-11-23T00:00:00+00:00</lastmod>
-      <priority>0</priority>
     </url>
     
   
@@ -274,7 +293,6 @@
     
       <loc>/tags/tidyverse/</loc>
       <lastmod>2018-11-23T00:00:00+00:00</lastmod>
-      <priority>0</priority>
     </url>
     
   
@@ -291,7 +309,6 @@
     
       <loc>/tags/gganimate/</loc>
       <lastmod>2018-10-19T00:00:00+00:00</lastmod>
-      <priority>0</priority>
     </url>
     
   
@@ -300,7 +317,6 @@
     
       <loc>/tags/ggplot/</loc>
       <lastmod>2018-10-19T00:00:00+00:00</lastmod>
-      <priority>0</priority>
     </url>
     
   
@@ -309,7 +325,6 @@
     
       <loc>/tags/ggraph/</loc>
       <lastmod>2018-10-19T00:00:00+00:00</lastmod>
-      <priority>0</priority>
     </url>
     
   
@@ -334,7 +349,6 @@
     
       <loc>/tags/rcpp/</loc>
       <lastmod>2018-07-20T00:00:00+00:00</lastmod>
-      <priority>0</priority>
     </url>
     
   
@@ -349,17 +363,8 @@
     
     <url>
     
-      <loc>/post/manipulating-half-big-data-in-r/</loc>
-      <lastmod>2018-06-22T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
       <loc>/tags/bigdata/</loc>
       <lastmod>2018-06-22T00:00:00+00:00</lastmod>
-      <priority>0</priority>
     </url>
     
   
@@ -368,7 +373,14 @@
     
       <loc>/tags/data.table/</loc>
       <lastmod>2018-06-22T00:00:00+00:00</lastmod>
-      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/post/manipulating-half-big-data-in-r/</loc>
+      <lastmod>2018-06-22T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -377,7 +389,14 @@
     
       <loc>/tags/sparlyr/</loc>
       <lastmod>2018-06-22T00:00:00+00:00</lastmod>
-      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/deep-learning/</loc>
+      <lastmod>2018-05-25T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -392,26 +411,8 @@
     
     <url>
     
-      <loc>/tags/deep-learning/</loc>
-      <lastmod>2018-05-25T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/post/une-introduction-au-tidyverse/</loc>
-      <lastmod>2018-05-02T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
       <loc>/tags/dplyr/</loc>
       <lastmod>2018-05-02T00:00:00+00:00</lastmod>
-      <priority>0</priority>
     </url>
     
   
@@ -420,7 +421,6 @@
     
       <loc>/tags/magrittr/</loc>
       <lastmod>2018-05-02T00:00:00+00:00</lastmod>
-      <priority>0</priority>
     </url>
     
   
@@ -429,7 +429,14 @@
     
       <loc>/tags/tidy/</loc>
       <lastmod>2018-05-02T00:00:00+00:00</lastmod>
-      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/post/une-introduction-au-tidyverse/</loc>
+      <lastmod>2018-05-02T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -446,7 +453,22 @@
     
       <loc>/tags/spatial/</loc>
       <lastmod>2018-03-23T00:00:00+00:00</lastmod>
-      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/communication/</loc>
+      <lastmod>2018-02-23T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/datatable/</loc>
+      <lastmod>2018-02-23T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -455,7 +477,14 @@
     
       <loc>/tags/dt/</loc>
       <lastmod>2018-02-23T00:00:00+00:00</lastmod>
-      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/kable/</loc>
+      <lastmod>2018-02-23T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -464,7 +493,6 @@
     
       <loc>/tags/r-markdown/</loc>
       <lastmod>2018-02-23T00:00:00+00:00</lastmod>
-      <priority>0</priority>
     </url>
     
   
@@ -481,33 +509,6 @@
     
       <loc>/post/science-communication-with-r-style-r-markdown-xaringan/</loc>
       <lastmod>2018-02-23T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/communication/</loc>
-      <lastmod>2018-02-23T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/datatable/</loc>
-      <lastmod>2018-02-23T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/kable/</loc>
-      <lastmod>2018-02-23T00:00:00+00:00</lastmod>
-      <priority>0</priority>
     </url>
     
   
@@ -540,7 +541,6 @@
     
       <loc>/tags/learnr/</loc>
       <lastmod>2017-09-25T00:00:00+00:00</lastmod>
-      <priority>0</priority>
     </url>
     
   
@@ -549,7 +549,6 @@
     
       <loc>/tags/teachings/</loc>
       <lastmod>2017-09-25T00:00:00+00:00</lastmod>
-      <priority>0</priority>
     </url>
     
   
@@ -574,7 +573,6 @@
     
       <loc>/tags/academic/</loc>
       <lastmod>2018-01-13T00:00:00+01:00</lastmod>
-      <priority>0</priority>
     </url>
     
   
@@ -583,6 +581,14 @@
     
       <loc>/post/getting-started/</loc>
       <lastmod>2018-01-13T00:00:00+01:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/talk/2019-12-13-tidyverse3/</loc>
+      <priority>0</priority>
     </url>
     
   

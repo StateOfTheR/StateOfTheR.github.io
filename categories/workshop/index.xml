@@ -7,10 +7,30 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
     <copyright>&amp;copy; 2018 State of the R</copyright>
-    <lastBuildDate>Tue, 11 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 15 Nov 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/workshop/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Développement autour du R-Markdown</title>
+      <link>/post/rmarkdown/</link>
+      <pubDate>Fri, 15 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/rmarkdown/</guid>
+      <description>Le programme de l&amp;rsquo;atelier proposé sur des développements autour de R Markdown - Créer des contenus pour R Markdown et shiny &amp;ndash; Reporting tabulaire avec le package flextable Les fonctionnalités du package Les techniques utilisées pour l’intégration avec knitr Pratiquons : Créer une méthode d’impression tabulaire avec knitr et flextable pour les documents R Markdown &amp;ndash; htmlwidgets : package ggiraph Les fonctionnalités du package Intégration dans le contexte shiny et dans le contexte R Markdown Implémentation du htmlwidget Pratiquons : Créer un simple htmlwidget Personnalisation des documents R Markdown Le triptyque CSS/JavaScript/HTML Exemples de thèmes xaringan, pagedown, blogdown Pratiquons : personnalisation d’un thème pagedown et d’un thème xaringan</description>
+    </item>
+    
+    <item>
+      <title>R-Mxnet pour des applications du deep learning</title>
+      <link>/post/rmxnet/</link>
+      <pubDate>Fri, 18 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/rmxnet/</guid>
+      <description>Christophe Botella nous a preparé un atelier pratique présentant le deep learning et comment le mettre en application avec le package R-Mxnet.
+_ Le code de l&amp;rsquo;atelier
+ Et la présentation  </description>
+    </item>
     
     <item>
       <title>Comment Shiny peut vous aider dans vos simulations, vos collaborations et vos cours</title>
