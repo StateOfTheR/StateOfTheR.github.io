@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>rmxnet on State of The R</title>
+    <link>/tags/rmxnet/</link>
+    <description>Recent content in rmxnet on State of The R</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>fr-fr</language>
+    <copyright>&amp;copy; 2018 State of the R</copyright>
+    <lastBuildDate>Fri, 18 Oct 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/rmxnet/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>R-Mxnet pour des applications du deep learning</title>
+      <link>/post/rmxnet/</link>
+      <pubDate>Fri, 18 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/rmxnet/</guid>
+      <description>Christophe Botella nous a preparé un atelier pratique présentant le deep learning et comment le mettre en application avec le package R-Mxnet.
+_ Le code de l&amp;rsquo;atelier
+ Et la présentation  </description>
+    </item>
+    
+  </channel>
+</rss>
