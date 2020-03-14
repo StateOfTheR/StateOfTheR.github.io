@@ -12,14 +12,5 @@
 	<atom:link href="/talk/index.xml" rel="self" type="application/rss+xml" />
     
     
-    <item>
-      <title>Tidyverse suite (et fin) avec forcats, lubridate et stringr</title>
-      <link>/talk/2019-12-13-tidyverse3/</link>
-      <pubDate>Fri, 13 Dec 2019 00:00:00 +0100</pubDate>
-      
-      <guid>/talk/2019-12-13-tidyverse3/</guid>
-      <description></description>
-    </item>
-    
   </channel>
 </rss>

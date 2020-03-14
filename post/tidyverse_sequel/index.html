@@ -13,10 +13,13 @@
   
   
   
-  <meta name="description" content="Groupe d&#39;utilisateurs de R">
+    
+  
+  <meta name="description" content="Antoine nous parlera de la manipulation des objets un peu particuliers de R que sont les facteurs, les dates et les heures, et les chaines de caractères et expressions régulières. Ceci finira notre tour du tidyverse avec forcats, lubridate et stringr, qui permettent de manipuler très facilement et lisiblement ces objets.
+ lien vers les slides   ">
 
   
-  <link rel="alternate" hreflang="fr-fr" href="/talk/">
+  <link rel="alternate" hreflang="fr-fr" href="/post/tidyverse_sequel/">
 
   
 
@@ -45,6 +48,11 @@
       
     
     
+      
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" crossorigin="anonymous">
+      
+    
 
     
 
@@ -65,15 +73,15 @@
   
 
   
-  <link rel="alternate" href="/talk/index.xml" type="application/rss+xml" title="State of The R">
-  <link rel="feed" href="/talk/index.xml" type="application/rss+xml" title="State of The R">
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="State of The R">
+  <link rel="feed" href="/index.xml" type="application/rss+xml" title="State of The R">
   
 
   <link rel="manifest" href="/site.webmanifest">
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="/talk/">
+  <link rel="canonical" href="/post/tidyverse_sequel/">
 
   <meta property="twitter:card" content="summary_large_image">
   
@@ -81,19 +89,22 @@
   <meta property="twitter:creator" content="@https://twitter.com/RUG_stateofther">
   
   <meta property="og:site_name" content="State of The R">
-  <meta property="og:url" content="/talk/">
-  <meta property="og:title" content="Recent &amp; Upcoming Talks | State of The R">
-  <meta property="og:description" content="Groupe d&#39;utilisateurs de R">
+  <meta property="og:url" content="/post/tidyverse_sequel/">
+  <meta property="og:title" content="Tidyverse suite (et fin??) avec forcats, lubridate et stringr | State of The R">
+  <meta property="og:description" content="Antoine nous parlera de la manipulation des objets un peu particuliers de R que sont les facteurs, les dates et les heures, et les chaines de caractères et expressions régulières. Ceci finira notre tour du tidyverse avec forcats, lubridate et stringr, qui permettent de manipuler très facilement et lisiblement ces objets.
+ lien vers les slides   ">
   <meta property="og:locale" content="fr-fr">
   
-  <meta property="og:updated_time" content="2017-01-01T00:00:00&#43;01:00">
+  <meta property="article:published_time" content="2019-12-13T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2019-12-13T00:00:00&#43;00:00">
   
 
   
 
   
 
-  <title>Recent &amp; Upcoming Talks | State of The R</title>
+  <title>Tidyverse suite (et fin??) avec forcats, lubridate et stringr | State of The R</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
@@ -229,22 +240,137 @@
 </nav>
 
 
+<article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
 
 
+  <div class="article-container">
+    <h1 itemprop="name">Tidyverse suite (et fin??) avec forcats, lubridate et stringr</h1>
 
-<div class="container">
-  <div class="row">
-    <div class="col-md-12">
-      <h1>Recent &amp; Upcoming Talks</h1>
+    
 
-      
+<div class="article-metadata">
 
-      
+  
+  
+  <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="State of the R">
+  </span>
+  
 
-    </div>
-  </div>
+  <span class="article-date">
+    
+    <meta content="2019-12-13 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+    <time datetime="2019-12-13 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+      Dec 13, 2019
+    </time>
+  </span>
+  <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="State of the R">
+  </span>
+
+  
+
+  
+  
+
+  
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fa fa-folder"></i>
+    
+    <a href="/categories/workshop/">workshop</a>
+    
+  </span>
+  
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Tidyverse%20suite%20%28et%20fin%3f%3f%29%20avec%20forcats%2c%20lubridate%20et%20stringr&amp;url=%2fpost%2ftidyverse_sequel%2f"
+         target="_blank" rel="noopener">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=%2fpost%2ftidyverse_sequel%2f"
+         target="_blank" rel="noopener">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2fpost%2ftidyverse_sequel%2f&amp;title=Tidyverse%20suite%20%28et%20fin%3f%3f%29%20avec%20forcats%2c%20lubridate%20et%20stringr"
+         target="_blank" rel="noopener">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=%2fpost%2ftidyverse_sequel%2f&amp;title=Tidyverse%20suite%20%28et%20fin%3f%3f%29%20avec%20forcats%2c%20lubridate%20et%20stringr"
+         target="_blank" rel="noopener">
+        <i class="fa fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=Tidyverse%20suite%20%28et%20fin%3f%3f%29%20avec%20forcats%2c%20lubridate%20et%20stringr&amp;body=%2fpost%2ftidyverse_sequel%2f">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
 
 </div>
+
+
+    <div class="article-style" itemprop="articleBody">
+      <p>Antoine nous parlera de la manipulation des objets un peu particuliers de R que
+sont les facteurs, les dates et les heures, et les chaines de caractères et
+expressions régulières. Ceci finira notre tour du tidyverse avec forcats, lubridate
+et stringr, qui permettent de manipuler très facilement et lisiblement ces objets.</p>
+
+<ul>
+<li><a href="https://abichat.github.io/slides/factors_dates_strings/" target="_blank">lien vers les slides</a>
+<br /></li>
+</ul>
+
+    </div>
+
+    
+
+
+<div class="article-tags">
+  
+  <a class="label label-default" href="/tags/tidyverse_sequel/">tidyverse_sequel</a>
+  
+</div>
+
+
+
+
+    
+    
+
+    
+
+    
+
+
+  </div>
+</article>
+
 <footer class="site-footer">
   <div class="container">
 
@@ -322,6 +448,10 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
 
       
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+        
+      
 
       
       
@@ -340,6 +470,8 @@
     
 
     
+    
+    <script>hljs.initHighlightingOnLoad();</script>
     
 
     

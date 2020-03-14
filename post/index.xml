@@ -13,6 +13,26 @@
     
     
     <item>
+      <title>La plateforme Migale</title>
+      <link>/post/rmarkdown/</link>
+      <pubDate>Fri, 13 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/rmarkdown/</guid>
+      <description>Mahendra nous offre un tour su la plateforme Migale et plus généralement sur la soumission de job sur un serveur de calcul via qsub et les packages purrr, future and furrr.
+ La présentation  </description>
+    </item>
+    
+    <item>
+      <title>Tidyverse suite (et fin??) avec forcats, lubridate et stringr</title>
+      <link>/post/tidyverse_sequel/</link>
+      <pubDate>Fri, 13 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/tidyverse_sequel/</guid>
+      <description>Antoine nous parlera de la manipulation des objets un peu particuliers de R que sont les facteurs, les dates et les heures, et les chaines de caractères et expressions régulières. Ceci finira notre tour du tidyverse avec forcats, lubridate et stringr, qui permettent de manipuler très facilement et lisiblement ces objets.
+ lien vers les slides   </description>
+    </item>
+    
+    <item>
       <title>Développement autour du R-Markdown</title>
       <link>/post/rmarkdown/</link>
       <pubDate>Fri, 15 Nov 2019 00:00:00 +0000</pubDate>
@@ -39,7 +59,7 @@ _ Le code de l&amp;rsquo;atelier
       
       <guid>/post/shiny/</guid>
       <description>Pierre et Benjamin nous ont préparé &amp;lsquo;quelque chose sur Shiny&amp;rsquo;:
- La présentation en full HTML  </description>
+ La présentation  </description>
     </item>
     
     <item>

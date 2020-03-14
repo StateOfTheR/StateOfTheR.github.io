@@ -1,0 +1,432 @@
+---
+title: "Using R on Migale"
+subtitle: "A short trip through purrr, future and furrr"
+author: "Mahendra Mariadassou"
+institute: "INRAE - MaIAGE, Migale Team"
+date: "2020-03-12 (updated: `r Sys.Date()`)"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      ratio: '14.6:9'
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+class: inverse, middle, center
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+# Welcome to the [Migale platform!](https://migale.inra.fr/)
+
+---
+
+background-image: url(img/migale.png)
+background-size: contain
+
+---
+class: middle
+
+# Prerequisites: 
+- ## an account<sup>1</sup>: request one using the [form](https://migale.inra.fr/ask-account) 
+- ## Working knowledge of unix<sup>2</sup>
+
+.footnote[
+[1] Requires an academic e-mail adress
+
+[2] See [here](http://genome.jouy.inra.fr/~orue/tuto-unix.html) for a simple intro
+]
+---
+class: center, middle
+
+# Architecture
+
+## Migale is the **front node**
+
+--
+
+## Which connects you to the [computer farm](https://migale.inra.fr/cluster)
+
+-- 
+
+### Tens of **nodes** (~ machines) representing hundred of **cores** (~ CPU)
+
+---
+
+class: inverse, center, middle
+
+# Level 1: Rstudio server
+
+---
+
+class: middle, center
+
+# Connect to migale [Rstudio server](https://rstudio.migale.inrae.fr/)
+
+### Available at [https://rstudio.migale.inrae.fr/](https://rstudio.migale.inrae.fr/)
+
+-- 
+
+### Super easy `r emo::ji("smiling_face")` but runs on a Virtual Machine `r emo::ji("sad")`
+
+---
+
+class: inverse, center, middle
+
+# Level 2: bash mode
+
+---
+
+# Prepare your R script
+
+```{r eval = FALSE}
+create <- function(mu = 0) { rnorm(100, mean = mu) }
+analyze  <- function(x) { mean(x) }
+results <- numeric(100)
+for (i in 1:100) {
+  results[i] <- analyze(create())
+}
+saveRDS(results, "results.rds")
+```
+
+```{bash}
+cat scripts/my_script_1.R
+```
+
+---
+
+# Running you script
+
+.pull-left[
+1. Transfer scripts and data to migale<sup>1</sup>
+
+2. Connect to migale
+
+3. Run script
+
+4. Work on the results
+]
+
+.pull-right[
+```{bash eval = FALSE}
+scp -r . mmariadasso@migale:SOTR/
+```
+
+```{bash eval = FALSE}
+ssh mmariadasso@migale
+```
+
+```{bash eval = FALSE}
+Rscript my_script_1.R
+```
+]
+
+-- 
+
+To make life easier add 
+```{bash, eval = FALSE}
+Host migale
+User mmariadasso
+HostName migale.jouy.inra.fr
+```
+to your `~/.ssh/config` file. 
+
+--
+
+### Quite easy `r emo::ji("smiling_face")` but uses only the front-node `r emo::ji("sad")`
+
+.footnote[[1] You may need to expand `migale` to `migale.jouy.inra.fr`]
+---
+
+class: inverse, center, middle
+
+# Level 3: Using sge
+
+---
+
+# About SGE
+
+**S**un **G**rid **E**ngine is a *job scheduler*. You submit many jobs on the front-node and sge will dispatch them to the computer farm. 
+
+A long introduction to sge can be found [here](https://migale.inra.fr/sge) but here is a simple example
+
+```{bash eval = FALSE}
+RSCRIPT=/usr/local/public/R/bin/Rscript
+RJOB="my_script_1.R"
+qsub -S $RSCRIPT -q short.q -cwd -V -M me@mail.com -m bae $RJOB
+```
+
+`RSCRIPT` and `RJOB` are *environment variables* and are expanded in the final call. 
+
+Here we need to specify `-S $RSCRIPT` to make sure that the instructions in `my_script_1.R` are executed with R. 
+
+---
+
+# SGE options
+
+Let's unpack the options:
+
+- `-cwd` run in current working directory
+- `-V` will pass all environment variables to the job
+- `-N <jobname>` name of the job. This you will see when you use `qstat`, to check status of your jobs.
+- `-b y` allow command to be a binary file instead of a script.
+
+Other usefull options are:
+
+- `-q <queue>` set the queue. See [here](https://migale.inra.fr/cluster) to choose a queue (short / long / bigmem / etc ) adapted to your needs.
+- `-pe thread <n_slots>` This specifies the parallel environment. thread runs a parallel job using shared-memory and n_processors amount of cores.
+- `-R y` allows to reserve resources as soon as they are free
+- `-o <output_logfile>` name of the output log file
+- `-e <error_logfile>` name of the error log file
+- `-m bea` Will send email when job **b**egins, **e**nds or **a**borts
+- `-M <emailaddress>` Email address to send email to
+
+---
+
+# Leveraging the computer farm (I)
+
+We're still only using one node at the time !!
+
+### Decompose your script and pass arguments
+
+```{bash, eval = FALSE}
+cat scripts/my_script_2.R
+```
+
+```{r, eval = FALSE}
+## Arguments
+args <- commandArgs(trailingOnly = TRUE)
+id <- as.integer(args[1])
+## Computations
+create <- function(mu = 0) { rnorm(100, mean = mu) }
+analyze  <- function(x) { mean(x) }
+result <- analyze(create())
+## Results
+saveRDS(object = result, file = paste0("result_", id, ".rds"))
+```
+
+---
+
+# Leveraging the computer farm (II)
+
+### Use `qsub` repeatedly
+
+```{bash eval = FALSE}
+RSCRIPT="/usr/local/public/R/bin/Rscript"
+RJOB="my_script_2.R"
+QSUB="qsub -S $RSCRIPT -q short.q -cwd -V -M me@mail.com -m bae"
+seq 1 100 | xargs -I {} $QSUB $RJOB {}
+```
+
+This is equivalent to 
+
+```{bash eval = FALSE}
+$QSUB $RJOB 1
+...
+$QSUB $RJOB 100
+```
+
+### Aggregate all the results at the end
+
+```{r eval = FALSE}
+results <- numeric(100)
+for (i in 1:100) results[i] <- readRDS(paste0("result_", i, ".rds"))
+```
+
+---
+
+# Monitoring your jobs
+
+Use `qstat` on migale to monitor the state of your jobs: `qw` (waiting), `Eqw` (error), `t` (transferring), `r` (running)
+
+# Some pros and cons
+
+`r emo::ji("plus")` Quite easy if you want to parallelize loops (simulations)
+
+`r emo::ji("plus")` uses many machines (!= many cores on a machine)
+
+`r emo::ji("minus")` Forth and back between `R` and `bash`
+
+`r emo::ji("minus")` Not perfect for numerical experiments (machines are not perfectly similar)
+
+---
+
+class: inverse, center, middle
+
+# Level 4: Using `future`
+
+---
+
+# Future/Future.batchtools package
+
+1. `future` allows you to call SGE directly from R and suppress the forth and back
+
+1. `future` is quite general and can handle many back-ends
+
+1. You need to specify the back-end with `plan`. Here are some examples:
+
+```{r eval = FALSE}
+library(future)
+library(future.batchtools)
+plan(sequential)    ## R as usual
+plan(multiprocess)  ## Use many cores on the same machines
+plan(batchtools_sge) ## Use sge via the future.batchtools package
+```
+
+But first you need to setup a **configuration file**. 
+
+---
+
+```{bash eval = FALSE}
+cat ~/.batchools.sge.tmpl ## on Migale
+```
+
+.smaller[
+```{bash, eval = FALSE}
+#!/bin/bash
+## The name of the job
+#$ -N <%= job.name %>
+## Combining output/error messages into one file
+#$ -j y
+## Giving the name of the output log file
+#$ -o <%= log.file %>
+## Execute the script in the working directory
+#$ -cwd
+## Use environment variables
+#$ -V
+## Use multithreading
+#$ -pe threads <%= resources$threads %>
+## Use correct queue
+#$ -q <%= resources$queue %>
+
+## Export value of DEBUGME environemnt var to slave
+export DEBUGME=<%= Sys.getenv("DEBUGME") %>
+
+<%= sprintf("export OMP_NUM_THREADS=%i", resources$omp.threads) -%>
+<%= sprintf("export OPENBLAS_NUM_THREADS=%i", resources$blas.threads) -%>
+<%= sprintf("export MKL_NUM_THREADS=%i", resources$blas.threads) -%>
+
+Rscript -e 'batchtools::doJobCollection("<%= uri %>")'
+exit 0
+```
+]
+
+---
+
+# Time to make a plan
+
+```{r eval = FALSE}
+library(future.batchtools)
+plan(batchtools_sge, 
+     workers = 10,                         ## nombre maximum de jobs en //,
+                                           ## non limité par défaut
+     template = "~/.batchtools.sge.tmpl",  ## template sge, inutile ici
+                                           ## car lu par défaut 
+     resources = list(                     ## Paramètres définis à la volée
+       queue   = "short.q",   ## queue à utiliser
+       threads = 1            ## Nombre de cores par nodes
+     )   
+)
+```
+
+---
+
+# Working with future
+
+Simple **drop-in** in most scripts. 
+
+- replace `vector` and/or `list` with `listenv`
+- replace `<-` with `%<-%`
+- transform `listenv` to `list` and/or `vector`
+
+--
+
+```{r, eval = FALSE}
+library(listenv)
+## Setup a listenv (special kind of list)
+results <- listenv()
+create <- function(mu = 0) { rnorm(1000, mean = mu) }
+analyze <- function(x) { mean(x) }
+for (i in 1:10) { 
+  results[[i]] %<-% analyze(create())
+}
+results <- unlist(as.list(results)) ## stalled until the end of
+                                    ## all computations
+```
+
+---
+
+class: inverse, middle, center
+
+# Level 5: Using `furrr`
+
+## `furrr` = `purrr` + `future`
+
+---
+
+## `purrr`: Iteration made easy
+
+- The `map` and `map_*` family of functions superbly replace loops.
+
+Writing our previous example with `purrr` would give
+
+```{r message = FALSE}
+library(purrr); library(dplyr)
+create  <- function(mu = 0) { rnorm(1000, mean = mu) }
+analyze <- function(x) { mean(x) }
+results <- tibble(
+  i      = 1:10,
+  mu     = rep(0, length(i)),
+  result = map_dbl(mu, ~ analyze(create(.x)))
+)
+results
+```
+---
+
+# `Furrr`: when `future` meets `purrr`
+
+1. Furrr provides `future_map_*()` as drop-in alternatives to `map_*()` functions. 
+
+2. You just need to have a `plan` (as with `future`)
+
+```{r message = FALSE}
+library(furrr)
+library(purrr)
+library(dplyr)
+plan(multiprocess) ## Or plan(batchtool_sge)
+create  <- function(mu = 0) { rnorm(1000, mean = mu) }
+analyze <- function(x) { mean(x) }
+results <- tibble(
+  i      = 1:10,
+  mu     = rep(0, length(i)),
+  result = future_map_dbl(mu, ~ analyze(create(.x)))
+)
+results
+```
+
+---
+
+# Going further
+
+You can produce back-ends that spawn multiple jobs, each of which uses multiple cores. 
+
+```{r eval = FALSE}
+plan(list(
+  tweak(batchtools_sge, resources = list(queue = "short.q", threads = 10)), 
+  tweak(multiprocess, workers = 10)
+))
+```
+
+Note the `workers` option for `multiprocess`. 
+
+- This is **good practice**. 
+
+- Manually specify the number of threads to use when going mutliprocess. Otherwise, R will use all available cores and other people will hate you `r emo::ji("rage")`
+
+---
+class: inverse
+
+background-image: url(https://media.giphy.com/media/lD76yTC5zxZPG/giphy.gif)
+background-size: contain

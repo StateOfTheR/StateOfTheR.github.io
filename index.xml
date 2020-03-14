@@ -11,12 +11,37 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Tidyverse suite (et fin) avec forcats, lubridate et stringr</title>
-      <link>/talk/2019-12-13-tidyverse3/</link>
-      <pubDate>Fri, 13 Dec 2019 00:00:00 +0100</pubDate>
+      <title>La plateforme Migale</title>
+      <link>/post/rmarkdown/</link>
+      <pubDate>Fri, 13 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>/talk/2019-12-13-tidyverse3/</guid>
-      <description></description>
+      <guid>/post/rmarkdown/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;img/headers/migale.png&#34; align=&#34;right&#34; width=&#34;200&#34;/&gt;&lt;/p&gt;
+
+&lt;p&gt;Mahendra nous offre un tour su la plateforme &lt;a href=&#34;https://migale.inra.fr/&#34; target=&#34;_blank&#34;&gt;Migale&lt;/a&gt; et plus généralement sur la soumission de job sur un serveur de calcul via &lt;code&gt;qsub&lt;/code&gt;  et les packages purrr, future and furrr.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;../../post/migale/2003-Rmigale.html&#34;&gt;La présentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tidyverse suite (et fin??) avec forcats, lubridate et stringr</title>
+      <link>/post/tidyverse_sequel/</link>
+      <pubDate>Fri, 13 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/tidyverse_sequel/</guid>
+      <description>&lt;p&gt;Antoine nous parlera de la manipulation des objets un peu particuliers de R que
+sont les facteurs, les dates et les heures, et les chaines de caractères et
+expressions régulières. Ceci finira notre tour du tidyverse avec forcats, lubridate
+et stringr, qui permettent de manipuler très facilement et lisiblement ces objets.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://abichat.github.io/slides/factors_dates_strings/&#34; target=&#34;_blank&#34;&gt;lien vers les slides&lt;/a&gt;
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
     <item>
@@ -80,7 +105,7 @@ et comment le mettre en application avec le package &lt;em&gt;R-Mxnet&lt;/em&gt;
       <description>&lt;p&gt;Pierre et Benjamin nous ont préparé &amp;lsquo;quelque chose sur Shiny&amp;rsquo;:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;../../post/shiny/index.html&#34;&gt;La présentation en full HTML&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../../post/shiny/stateoftheR_shiny.pdf&#34;&gt;La présentation&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -222,31 +247,6 @@ On peut aussi faire de l&amp;rsquo;inférence fréquentiste par optimisation.&lt
       
       <guid>/bootcamp/finistr18/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Bases en Rcpp</title>
-      <link>/post/bases-rcpp/</link>
-      <pubDate>Fri, 20 Jul 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/post/bases-rcpp/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;img/headers/seamless.png&#34; align=&#34;right&#34; width=&#34;200&#34;/&gt;&lt;/p&gt;
-
-&lt;p&gt;Les trois mousquetaires Timothée, Mathieu et Félix (a.k.a riri fifi loulou) proposent une séances complète d&amp;rsquo;introduction à &lt;code&gt;Rcpp&lt;/code&gt; accompagné de travaux pratiques.&lt;/p&gt;
-
-&lt;p&gt;Les documents de la séances:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;../../post/bases_rcpp/Introduction.html&#34;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;../../post/bases_rcpp/1-Architecture.html&#34;&gt;Rappel d&amp;rsquo;architecture machine&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;../../post/bases_rcpp/2-SyntaxeCpp.html&#34;&gt;Rappel en C++&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;../../post/bases_rcpp/3-RcppArmadillo.html&#34;&gt;RcppArmadillo&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;../../post/bases_rcpp/4-Rfonctions.html&#34;&gt;Fonctions&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;../../post/bases_rcpp/5-Astuces.html&#34;&gt;Astuces&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Pour compléter, voir &lt;a href=&#34;https://stateofther.github.io/finistR2018/atelier2_rcpp_modules.html&#34; target=&#34;_blank&#34;&gt;la page du bootcamp finistR2018 dédiée aux modules Rcpp&lt;/a&gt;.&lt;/p&gt;
-</description>
     </item>
     
   </channel>

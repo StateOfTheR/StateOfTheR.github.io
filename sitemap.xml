@@ -4,8 +4,16 @@
     
     <url>
     
-      <loc>/talk/2019-12-13-tidyverse3/</loc>
-      <lastmod>2019-12-13T00:00:00+01:00</lastmod>
+      <loc>/post/rmarkdown/</loc>
+      <lastmod>2020-03-13T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/post/tidyverse_sequel/</loc>
+      <lastmod>2019-12-13T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -452,6 +460,15 @@
     
     <url>
     
+      <loc>/tags/migale/</loc>
+      <lastmod>2020-03-13T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/tags/moddle/</loc>
       <lastmod>2018-12-20T00:00:00+00:00</lastmod>
       <priority>0</priority>
@@ -605,6 +622,15 @@
     
     <url>
     
+      <loc>/tags/tidyverse_sequel/</loc>
+      <lastmod>2019-12-13T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/tags/travis/</loc>
       <lastmod>2019-03-22T00:00:00+00:00</lastmod>
       <priority>0</priority>
@@ -615,7 +641,7 @@
     <url>
     
       <loc>/categories/workshop/</loc>
-      <lastmod>2019-11-15T00:00:00+00:00</lastmod>
+      <lastmod>2020-03-13T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
