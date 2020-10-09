@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sparlyr | State of The R</title>
+    <link>/tag/sparlyr/</link>
+      <atom:link href="/tag/sparlyr/index.xml" rel="self" type="application/rss+xml" />
+    <description>sparlyr</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>fr-fr</language><copyright>© 2020 State of the R</copyright><lastBuildDate>Fri, 22 Jun 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/logo_hu53047fbf4f6efa69f0f91be25bd21dde_40228_300x300_fit_lanczos_2.png</url>
+      <title>sparlyr</title>
+      <link>/tag/sparlyr/</link>
+    </image>
+    
+    <item>
+      <title>Manipulation de (quasi) big data en R</title>
+      <link>/post/manipulating-half-big-data-in-r/</link>
+      <pubDate>Fri, 22 Jun 2018 00:00:00 +0000</pubDate>
+      <guid>/post/manipulating-half-big-data-in-r/</guid>
+      <description>
+
+
+&lt;p&gt;&lt;img src=&#34;img/headers/spark-logo-trademark.png&#34; align=&#34;right&#34; width=&#34;200&#34;/&gt;&lt;/p&gt;
+&lt;p&gt;Séverine et Tristan nous proposent une introduction à quelques outils permettant de manipuler (en particulier charger) de “grosses” tables de données sous &lt;code&gt;R&lt;/code&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;bigmemory&lt;/code&gt; for loading large matrices&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;bigalgebra&lt;/code&gt; provides BLAS and LAPACK linear algebra&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sparklyr&lt;/code&gt; for interfacing R with &lt;a href=&#34;http://spark.apache.org/&#34;&gt;Spark Apache&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Les documents de la séances&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;../../post/bigdata/Half_Big_Data_handling_with_R.pdf&#34;&gt;Présentation des enjeux, slides&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../../post/bigdata/tutorial_sparklyr.pdf&#34;&gt;travaux pratiques (PDF)&lt;/a&gt;, &lt;a href=&#34;../../post/bigdata/tutorial_sparklyr.Rmd&#34;&gt;source Markdown&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../../post/bigdata/1_CompareClassicalAndBigdata.R&#34;&gt;code source: R base vs bigxx&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../../post/bigdata/2_CompareClassicalAndSpark.R&#34;&gt;code source: R base vs sparklyr&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

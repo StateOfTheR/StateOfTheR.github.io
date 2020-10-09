@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Homes on State of The R</title>
@@ -7,20 +7,14 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-fr</language>
     <copyright>&amp;copy; 2018 State of the R</copyright>
-    <lastBuildDate>Sun, 15 Oct 2017 00:00:00 +0200</lastBuildDate>
-    
-	<atom:link href="/home/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 06 Feb 2018 00:00:00 +0000</lastBuildDate><atom:link href="/home/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>State of The R</title>
       <link>/home/hero/</link>
       <pubDate>Sun, 15 Oct 2017 00:00:00 +0200</pubDate>
       
       <guid>/home/hero/</guid>
-      <description>Groupe de chercheurs et d&amp;rsquo;ingénieurs se réunissant pour approfondir leur savoir-faire, perfectionner la diffusion de leurs méthodes statistiques et échanger autour des dernières innovations de R et Rstudio. en savoir plus
- groupe github  slack
- liste de diffusion-- </description>
+      <description>groupe githubslack</description>
     </item>
     
     <item>
@@ -39,8 +33,7 @@ Nous pensons qu&amp;rsquo;il est important que l&amp;rsquo;ensemble des particip
       <pubDate>Tue, 06 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>/home/upcoming_workshops/</guid>
-      <description> La plupart des ateliers ont lieu dans la salle ACTIA à AgroParisTech.
- </description>
+      <description>La plupart des ateliers ont lieu dans la salle ACTIA à AgroParisTech.</description>
     </item>
     
     <item>
@@ -58,7 +51,7 @@ Nous pensons qu&amp;rsquo;il est important que l&amp;rsquo;ensemble des particip
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>/home/bootcamp/</guid>
-      <description>Dans le même esprit que les ateliers mensuels, les bootcamp Finist&amp;rsquo;R &amp;copy; sont des ateliers d&amp;rsquo;une semaine que nous avons organisés en 2017 et 2018 à Roscoff et à Beg-Meil.</description>
+      <description>Dans le même esprit que les ateliers mensuels, les bootcamp Finist&amp;rsquo;R (c) sont des ateliers d&amp;rsquo;une semaine que nous avons organisés en 2017 et 2018 à Roscoff et à Beg-Meil.</description>
     </item>
     
     <item>

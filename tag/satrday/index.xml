@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>satrday | State of The R</title>
+    <link>/tag/satrday/</link>
+      <atom:link href="/tag/satrday/index.xml" rel="self" type="application/rss+xml" />
+    <description>satrday</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>fr-fr</language><copyright>© 2020 State of the R</copyright><lastBuildDate>Fri, 22 Feb 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/logo_hu53047fbf4f6efa69f0f91be25bd21dde_40228_300x300_fit_lanczos_2.png</url>
+      <title>satrday</title>
+      <link>/tag/satrday/</link>
+    </image>
+    
+    <item>
+      <title>Organisation des premières satRday française à Paris du 23 février</title>
+      <link>/post/bigstatsr/</link>
+      <pubDate>Fri, 22 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>/post/bigstatsr/</guid>
+      <description>&lt;img src=&#34;https://paris2019.satrdays.org/images/satRdayLogo-square.png&#34; align=&#34;right&#34; width=&#34;100&#34; style=&#34;vertical-align: top;&#34;/&gt;
+&lt;p&gt;Séance dédiée à la préparation des satRday du lendemain:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://paris2019.satrdays.org&#34;&gt;https://paris2019.satrdays.org&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Avec tous les bénévoles du groupe !&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

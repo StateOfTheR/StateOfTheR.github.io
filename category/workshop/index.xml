@@ -1,0 +1,992 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>workshop | State of The R</title>
+    <link>/category/workshop/</link>
+      <atom:link href="/category/workshop/index.xml" rel="self" type="application/rss+xml" />
+    <description>workshop</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>fr-fr</language><copyright>© 2020 State of the R</copyright><lastBuildDate>Fri, 13 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/logo_hu53047fbf4f6efa69f0f91be25bd21dde_40228_300x300_fit_lanczos_2.png</url>
+      <title>workshop</title>
+      <link>/category/workshop/</link>
+    </image>
+    
+    <item>
+      <title>La plateforme Migale</title>
+      <link>/post/rmarkdown/</link>
+      <pubDate>Fri, 13 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>/post/rmarkdown/</guid>
+      <description>&lt;img src=&#34;img/headers/migale.png&#34; align=&#34;right&#34; width=&#34;200&#34;/&gt;
+&lt;p&gt;Mahendra nous offre un tour su la plateforme &lt;a href=&#34;https://migale.inra.fr/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Migale&lt;/a&gt; et plus généralement sur la soumission de job sur un serveur de calcul via &lt;code&gt;qsub&lt;/code&gt;  et les packages purrr, future and furrr.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;../../post/migale/2003-Rmigale.html&#34;&gt;La présentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tidyverse suite (et fin??) avec forcats, lubridate et stringr</title>
+      <link>/post/tidyverse_sequel/</link>
+      <pubDate>Fri, 13 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>/post/tidyverse_sequel/</guid>
+      <description>&lt;p&gt;Antoine nous parlera de la manipulation des objets un peu particuliers de R que
+sont les facteurs, les dates et les heures, et les chaines de caractères et
+expressions régulières. Ceci finira notre tour du tidyverse avec forcats, lubridate
+et stringr, qui permettent de manipuler très facilement et lisiblement ces objets.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://abichat.github.io/slides/factors_dates_strings/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;lien vers les slides&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Développement autour du R-Markdown</title>
+      <link>/post/rmarkdown/</link>
+      <pubDate>Fri, 15 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>/post/rmarkdown/</guid>
+      <description>&lt;p&gt;Le programme de l&amp;rsquo;atelier proposé sur des développements autour de R Markdown&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Créer des contenus pour R Markdown et shiny
+&amp;ndash; Reporting tabulaire avec le package flextable
+Les fonctionnalités du package
+Les techniques utilisées pour l’intégration avec knitr
+Pratiquons : Créer une méthode d’impression tabulaire avec knitr et flextable pour les documents R Markdown
+&amp;ndash; htmlwidgets : package ggiraph
+Les fonctionnalités du package
+Intégration dans le contexte shiny et dans le contexte R Markdown
+Implémentation du htmlwidget
+Pratiquons : Créer un simple htmlwidget
+Personnalisation des documents R Markdown
+Le triptyque CSS/JavaScript/HTML
+Exemples de thèmes xaringan, pagedown, blogdown
+Pratiquons : personnalisation d’un thème pagedown et d’un thème xaringan&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;(&lt;a href=&#34;https://github.com/davidgohel&#34;&gt;https://github.com/davidgohel&lt;/a&gt;)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>R-Mxnet pour des applications du deep learning</title>
+      <link>/post/rmxnet/</link>
+      <pubDate>Fri, 18 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>/post/rmxnet/</guid>
+      <description>&lt;p&gt;Christophe Botella nous a preparé un atelier pratique présentant le deep learning
+et comment le mettre en application avec le package &lt;em&gt;R-Mxnet&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;_ &lt;a href=&#34;https://github.com/ChrisBotella/MXNet-R&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Le code de l&amp;rsquo;atelier&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;../../post/rmxnet/index.html&#34;&gt;Et la présentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Comment Shiny peut vous aider dans vos simulations, vos collaborations et vos cours</title>
+      <link>/post/shiny/</link>
+      <pubDate>Tue, 11 Jun 2019 00:00:00 +0000</pubDate>
+      <guid>/post/shiny/</guid>
+      <description>&lt;p&gt;Pierre et Benjamin nous ont préparé &amp;lsquo;quelque chose sur Shiny&amp;rsquo;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;../../post/shiny/stateoftheR_shiny.pdf&#34;&gt;La présentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Introduction à plotly</title>
+      <link>/post/plotly/</link>
+      <pubDate>Wed, 22 May 2019 00:00:00 +0000</pubDate>
+      <guid>/post/plotly/</guid>
+      <description>&lt;p&gt;Au cours d&amp;rsquo;une séance découverte un peu spécial, donnée lors de l&amp;rsquo;assemblée générale
+du département de mathématique et informatique de l&amp;rsquo;INRA, Mahendra nous a fait découvrir les
+potentialités de {plotly,ggplotly,crosscall}&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;../../post/plotly/index.html&#34;&gt;La présentation en full HTML&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Le chargement peut prendre du temps (googlefonts&amp;hellip;)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>rSTAN, un outil d&#39;inférence bayésienne</title>
+      <link>/post/rstan/</link>
+      <pubDate>Fri, 19 Apr 2019 00:00:00 +0000</pubDate>
+      <guid>/post/rstan/</guid>
+      <description>&lt;p&gt;Matthieu et Éric nous propose une séance sur {rSTAN}, l&amp;rsquo;interface R à la bibliothèque
+C++ Stan. Il s&amp;rsquo;agit d&amp;rsquo;algorithme inférence b  yésienne utilisant une variante du Monte-Carlo Hamiltonien.
+On peut aussi faire de l&amp;rsquo;inférence fréquentiste par optimisation.&lt;/p&gt;
+&lt;p&gt;Gros travail de Éric et Matthieu, et une base de document introductif très fouillé, merci!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;../../post/rstan/WorkingWithStan_part1.html&#34;&gt;A bit of theory to understand Hamilton Monte Carlo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../../post/rstan/WorkingWithStan_part2.html&#34;&gt;Modèle Hiérarchique avec Stan&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../../post/rstan/WorkingWithStan_part3.html&#34;&gt;Modèlisation Spatiale&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Développement de package</title>
+      <link>/post/packages/</link>
+      <pubDate>Fri, 22 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>/post/packages/</guid>
+      <description>&lt;p&gt;Dans la continuité de ce qui a été fait à Beg-meil](&lt;a href=&#34;https://stateofther.github.io/finistR2018/atelier3_package_creation.html),&#34;&gt;https://stateofther.github.io/finistR2018/atelier3_package_creation.html),&lt;/a&gt; je vous propose un tour d&amp;rsquo;horizon des bonnes pratiques et de l&amp;rsquo;ensemble des outils disponibles pour réaliser le développement d&amp;rsquo;un package R. On parlera github, travis, {pkgdown], roxygen2, déploiement, {testthat], appveor, configure, Makevars, {usethis}, {devtools}, yaml, etc. Venez avec en tête de mettre les main dans le cambouis pour votre propre package.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Organisation des premières satRday française à Paris du 23 février</title>
+      <link>/post/bigstatsr/</link>
+      <pubDate>Fri, 22 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>/post/bigstatsr/</guid>
+      <description>&lt;img src=&#34;https://paris2019.satrdays.org/images/satRdayLogo-square.png&#34; align=&#34;right&#34; width=&#34;100&#34; style=&#34;vertical-align: top;&#34;/&gt;
+&lt;p&gt;Séance dédiée à la préparation des satRday du lendemain:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://paris2019.satrdays.org&#34;&gt;https://paris2019.satrdays.org&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Avec tous les bénévoles du groupe !&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Efficient analysis of large-scale matrices with two R packages: bigstatsr and bigsnpr</title>
+      <link>/post/bigstatsr/</link>
+      <pubDate>Fri, 25 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/post/bigstatsr/</guid>
+      <description>&lt;img src=&#34;https://raw.githubusercontent.com/privefl/bigstatsr/master/bigstatsr.png&#34; align=&#34;right&#34; width=&#34;100&#34;/&gt;
+&lt;p&gt;R package {bigstatsr} provides a special class of matrix whose data is stored on the disk instead of the RAM, but you can still access the data almost as if it were in memory. It is particularly useful is you have a large matrix to analyze but not enough RAM on your computer. It can still be useful for matrices that fit in your RAM because package {bigstatsr} provides very efficient and parallelized algorithms (have you ever found &lt;code&gt;cor&lt;/code&gt; or &lt;code&gt;svd&lt;/code&gt; too slow?).&lt;/p&gt;
+&lt;p&gt;I will present the statistical and helper functions that are provided by package {bigstatsr} for this kind of matrices. R package {bigsnpr}, on top of {bigstatsr}, provides some tools that are specific to the analysis of genetic data. We&amp;rsquo;ll see what I can predict from your DNA using these two packages.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://privefl.github.io/bigstatsr/&#34;&gt;https://privefl.github.io/bigstatsr/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Pimp my exam</title>
+      <link>/post/pimp-exam/</link>
+      <pubDate>Thu, 20 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>/post/pimp-exam/</guid>
+      <description>&lt;p&gt;Marco et Vincent vous proposent de prendre un peu de temps pour apprendre à se servir du &lt;a href=&#34;http://www.r-exams.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;package exams&lt;/a&gt; (disponible sur le CRAN) pour générer automatiquement des examens (QCM ou autres), corriger automatiquement ces examens, gérer un ensemble d&amp;rsquo;exercices collectivement, mettre en place une plateforme de e-learning. Gros programme mais un joli cadeau de Noël, puisque tout se fait en quelques lignes de code R !&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;../../post/pimp-exam/exams.html&#34;&gt;L&amp;rsquo;intégrale des slides&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Modeling in the Tidyverse and applications to metagenomics data</title>
+      <link>/post/tidymodels/</link>
+      <pubDate>Fri, 23 Nov 2018 00:00:00 +0000</pubDate>
+      <guid>/post/tidymodels/</guid>
+      <description>&lt;img src=&#34;https://raw.githubusercontent.com/tidymodels/tidymodels/master/tidymodels_hex.png&#34; align=&#34;right&#34; width=&#34;200&#34;/&gt;
+&lt;p&gt;Antoine, notre fanatique du &lt;code&gt;tidyverse&lt;/code&gt;, nous propose de jeter un coup d’oeil à &lt;code&gt;broom&lt;/code&gt; et &lt;code&gt;rsample&lt;/code&gt;, des packages de &lt;code&gt;tidymodels&lt;/code&gt;, pour travailler proprement (aka en format &lt;code&gt;tibble&lt;/code&gt;) avec les sorties S3 des méthodes statistiques comme &lt;code&gt;lm&lt;/code&gt; ou &lt;code&gt;kmeans&lt;/code&gt; et faciliter l’utilisation des méthodes de rééchantillonage.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://abichat.github.io/Slides/Modeling/Modeling.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;L&amp;rsquo;intégrale des slides&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fancy plotting with ggraph, gganimate</title>
+      <link>/post/fancy-plotting/</link>
+      <pubDate>Fri, 19 Oct 2018 00:00:00 +0000</pubDate>
+      <guid>/post/fancy-plotting/</guid>
+      <description>&lt;img src=&#34;https://www.data-imaginist.com/post/2016-10-07-Data-driven-logo_files/figure-html/unnamed-chunk-11-1.png&#34; align=&#34;right&#34; width=&#34;200&#34;/&gt;
+&lt;p&gt;Un duo de choc, Raphaëlle et Marie, pour une séance dense sur laquelle était posée l&amp;rsquo;ombre du &lt;a href=&#34;https://www.data-imaginist.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;data imaginist&lt;/a&gt; &amp;ndash; et vive Harry Potter.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;../../post/fancy-plotting/GG.html&#34;&gt;L&amp;rsquo;intégrale des slides&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Bases en Rcpp</title>
+      <link>/post/bases-rcpp/</link>
+      <pubDate>Fri, 20 Jul 2018 00:00:00 +0000</pubDate>
+      <guid>/post/bases-rcpp/</guid>
+      <description>&lt;img src=&#34;img/headers/seamless.png&#34; align=&#34;right&#34; width=&#34;200&#34;/&gt;
+&lt;p&gt;Les trois mousquetaires Timothée, Mathieu et Félix (a.k.a riri fifi loulou) proposent une séances complète d&amp;rsquo;introduction à &lt;code&gt;Rcpp&lt;/code&gt; accompagné de travaux pratiques.&lt;/p&gt;
+&lt;p&gt;Les documents de la séances:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;../../post/bases_rcpp/Introduction.html&#34;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../../post/bases_rcpp/1-Architecture.html&#34;&gt;Rappel d&amp;rsquo;architecture machine&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../../post/bases_rcpp/2-SyntaxeCpp.html&#34;&gt;Rappel en C++&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../../post/bases_rcpp/3-RcppArmadillo.html&#34;&gt;RcppArmadillo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../../post/bases_rcpp/4-Rfonctions.html&#34;&gt;Fonctions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../../post/bases_rcpp/5-Astuces.html&#34;&gt;Astuces&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Pour compléter, voir &lt;a href=&#34;https://stateofther.github.io/finistR2018/atelier2_rcpp_modules.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;la page du bootcamp finistR2018 dédiée aux modules Rcpp&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Manipulation de (quasi) big data en R</title>
+      <link>/post/manipulating-half-big-data-in-r/</link>
+      <pubDate>Fri, 22 Jun 2018 00:00:00 +0000</pubDate>
+      <guid>/post/manipulating-half-big-data-in-r/</guid>
+      <description>
+
+
+&lt;p&gt;&lt;img src=&#34;img/headers/spark-logo-trademark.png&#34; align=&#34;right&#34; width=&#34;200&#34;/&gt;&lt;/p&gt;
+&lt;p&gt;Séverine et Tristan nous proposent une introduction à quelques outils permettant de manipuler (en particulier charger) de “grosses” tables de données sous &lt;code&gt;R&lt;/code&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;bigmemory&lt;/code&gt; for loading large matrices&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;bigalgebra&lt;/code&gt; provides BLAS and LAPACK linear algebra&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sparklyr&lt;/code&gt; for interfacing R with &lt;a href=&#34;http://spark.apache.org/&#34;&gt;Spark Apache&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Les documents de la séances&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;../../post/bigdata/Half_Big_Data_handling_with_R.pdf&#34;&gt;Présentation des enjeux, slides&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../../post/bigdata/tutorial_sparklyr.pdf&#34;&gt;travaux pratiques (PDF)&lt;/a&gt;, &lt;a href=&#34;../../post/bigdata/tutorial_sparklyr.Rmd&#34;&gt;source Markdown&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../../post/bigdata/1_CompareClassicalAndBigdata.R&#34;&gt;code source: R base vs bigxx&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../../post/bigdata/2_CompareClassicalAndSpark.R&#34;&gt;code source: R base vs sparklyr&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Introduction au Deep Learning sous R</title>
+      <link>/post/introduction-au-deep-learning-sous-r/</link>
+      <pubDate>Fri, 25 May 2018 00:00:00 +0000</pubDate>
+      <guid>/post/introduction-au-deep-learning-sous-r/</guid>
+      <description>&lt;img src=&#34;img/headers/TensorFlowLogo.png&#34; align=&#34;right&#34; width=&#34;200&#34;/&gt;
+&lt;p&gt;Sophie et Christophe nous proposent une séance complète sur le deep-learning et l&amp;rsquo;interfaçage existant sous R:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;../../post/deep_learning/deep-learning-history.html&#34;&gt;Une brève histoire du Deep-Learning&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../../post/deep_learning/Deep-with-R.pdf&#34;&gt;Une introduction au Deep-Learning sous R&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../../post/deep_learning/cours_deeplearning_for_dummies.pdf&#34;&gt;travaux pratiques&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Une introduction au tidyverse</title>
+      <link>/post/une-introduction-au-tidyverse/</link>
+      <pubDate>Wed, 02 May 2018 00:00:00 +0000</pubDate>
+      <guid>/post/une-introduction-au-tidyverse/</guid>
+      <description>
+
+
+&lt;p&gt;Antoine nous propose une introduction dense et déjà avancée en passant en revue l’ensemble du &lt;a href=&#34;http://http://tidyverse.org&#34;&gt;tidyverse&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://abichat.github.io/Slides/IntroTidyverseSOTR/IntroTidyverseSOTR.html#1&#34;&gt;Les slides Xaringan de Antoine&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Introduction au Spatial sous R</title>
+      <link>/post/spatial/</link>
+      <pubDate>Fri, 23 Mar 2018 00:00:00 +0000</pubDate>
+      <guid>/post/spatial/</guid>
+      <description>&lt;p&gt;Éric nous présente les suites de l&amp;rsquo;introdution de Jessica aux très nombreux outils disponibles pour les statistiques spatiales sous R, notamment autour des packages &lt;a href=&#34;https://github.com/r-spatial/sf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;sf&lt;/a&gt; et &lt;a href=&#34;https://github.com/edzer/sp&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;sp&lt;/a&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;../../post/spatial/happyR-230318_spatial_1.pdf&#34;&gt;slides et exercices, partie 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../../post/spatial/happyR-230318_spatial_2.pdf&#34;&gt;slides et exercices, partie 2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Rmarkdown: tableaux interactifs et retour d&#39;expérience</title>
+      <link>/post/rmarkdown-tableaux-interactifs-et-retour-d-experience/</link>
+      <pubDate>Fri, 23 Feb 2018 00:00:00 +0000</pubDate>
+      <guid>/post/rmarkdown-tableaux-interactifs-et-retour-d-experience/</guid>
+      <description>
+
+
+&lt;p&gt;Mahendra nous propose un retour d’expérience et quelques exercices sur le &lt;a href=&#34;https://rstudio.github.io/DT/&#34;&gt;package DT&lt;/a&gt; pour la manipulation interactive de table.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://genome.jouy.inra.fr/~mmariadasso/HappyR/DT_tutorial.html&#34;&gt;Les slides de Mahendra&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Science Communication with R: Style, R Markdown &amp; Xaringan</title>
+      <link>/post/science-communication-with-r-style-r-markdown-xaringan/</link>
+      <pubDate>Fri, 23 Feb 2018 00:00:00 +0000</pubDate>
+      <guid>/post/science-communication-with-r-style-r-markdown-xaringan/</guid>
+      <description>
+
+
+&lt;p&gt;Antoine nous propose une série de slides sur &lt;a href=&#34;https://rmarkdown.rstudio.com/&#34;&gt;R markdown&lt;/a&gt; et &lt;a href=&#34;https://slides.yihui.name/xaringan/#1&#34;&gt;Xaringan&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://abichat.github.io/Slides/ScienceCommunicationSOTR/ScienceCommunicationSOTR.html&#34;&gt;Les slides Xaringan de Antoine&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Exercices autour de data.table</title>
+      <link>/post/data.table/</link>
+      <pubDate>Mon, 23 Oct 2017 00:00:00 +0000</pubDate>
+      <guid>/post/data.table/</guid>
+      <description>
+
+
+&lt;p&gt;L’atelier du jour avait pour objectif la découvert du package &lt;a href=&#34;https://cran.r-project.org/web/packages/data.table/index.html&#34;&gt;data.table&lt;/a&gt; au travers d’&lt;a href=&#34;https://user2017.sched.com/event/Aw0L/datatable-for-beginners&#34;&gt;exercises proposés lors de la dernière édition de UseR&lt;/a&gt;. Les slides avec les énoncés sont &lt;a href=&#34;https://www.google.fr/url?sa=t&amp;amp;rct=j&amp;amp;q=&amp;amp;esrc=s&amp;amp;source=web&amp;amp;cd=1&amp;amp;cad=rja&amp;amp;uact=8&amp;amp;ved=0ahUKEwiZv7DE6I3XAhWCuBoKHcN5CREQFggrMAA&amp;amp;url=https%3A%2F%2Fchannel9.msdn.com%2FEvents%2FuseR-international-R-User-conferences%2FuseR-International-R-User-2017-Conference%2Fdatatable-for-beginners&amp;amp;usg=AOvVaw3N-q_5oW0-yMm8uz9hVisu&#34;&gt;disponibles ici&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;L’apport de notre atelier est d’avoir systématiquement essayé de traiter les questions avec
+- les fonctionalités &lt;code&gt;R&lt;/code&gt; de &lt;em&gt;base&lt;/em&gt;
+- les fonctionalités offertes par le &lt;em&gt;tidyverse&lt;/em&gt; (principalement &lt;em&gt;dplyr&lt;/em&gt;)
+- les fonctionnalités du package &lt;em&gt;data.table&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Pour les animateurs : vous êtes libre de compléter le post de blog. Nous ajouteroins des comparatifs en terme de temps de calcul plus tard (peut-être).&lt;/p&gt;
+&lt;div id=&#34;préliminaires&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Préliminaires&lt;/h3&gt;
+&lt;p&gt;C’est parti, on charge les packages requis&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(data.table)
+library(tidyverse)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Les exercices seront traités à l’aide de deux tables jouets, dont on propose des contreparties en
+- object &lt;code&gt;data.frame&lt;/code&gt;
+- object &lt;code&gt;tibble&lt;/code&gt;
+- object &lt;code&gt;data.table&lt;/code&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;set.seed(20170703L)
+DF1 = data.frame(id = sample(1:2, 9L, TRUE), 
+                 code = sample(letters[1:3], 9, TRUE), 
+                 valA = 1:9, valB = 10:18, 
+                 stringsAsFactors = FALSE)
+DF2 = data.frame(id = c(3L, 1L, 1L, 2L, 3L), 
+                 code = c(&amp;quot;b&amp;quot;, &amp;quot;a&amp;quot;, &amp;quot;c&amp;quot;, &amp;quot;c&amp;quot;, &amp;quot;d&amp;quot;), 
+                 mul = 5:1, stringsAsFactors = FALSE)
+## corresponding data tibble
+TB1 &amp;lt;- as.tibble(DF1)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Warning: `as.tibble()` is deprecated as of tibble 2.0.0.
+## Please use `as_tibble()` instead.
+## The signature and semantics have changed, see `?as_tibble`.
+## This warning is displayed once every 8 hours.
+## Call `lifecycle::last_warnings()` to see where this warning was generated.&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;TB2 &amp;lt;- as.tibble(DF2)
+## corresponding data tables
+DT1 &amp;lt;- as.data.table(DF1)
+DT2 &amp;lt;- as.data.table(DF2)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;question-1&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Question 1&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Subset all rows where id column equals 1 &amp;amp; code column is not equal to “c”&lt;/em&gt;&lt;/p&gt;
+&lt;div id=&#34;base&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;base&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;base::subset(DF1, id == 1 &amp;amp; code != &amp;quot;c&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##   id code valA valB
+## 1  1    a    1   10
+## 2  1    a    2   11
+## 4  1    a    4   13&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;with(DF1, DF1[id == 1 &amp;amp; code != &amp;quot;c&amp;quot;,])&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##   id code valA valB
+## 1  1    a    1   10
+## 2  1    a    2   11
+## 4  1    a    4   13&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;dplyr&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;dplyr&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;filter(TB1, id == 1 &amp;amp; code != &amp;quot;c&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 3 x 4
+##      id code   valA  valB
+##   &amp;lt;int&amp;gt; &amp;lt;chr&amp;gt; &amp;lt;int&amp;gt; &amp;lt;int&amp;gt;
+## 1     1 a         1    10
+## 2     1 a         2    11
+## 3     1 a         4    13&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;data.table&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;data.table&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;DT1[id == 1 &amp;amp; code != &amp;quot;c&amp;quot;] &lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##    id code valA valB
+## 1:  1    a    1   10
+## 2:  1    a    2   11
+## 3:  1    a    4   13&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;question-2&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Question 2&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Select valA and valB columns from DF1&lt;/em&gt;&lt;/p&gt;
+&lt;div id=&#34;base-r&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;base R&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;DF1[, c(&amp;quot;valA&amp;quot;, &amp;quot;valB&amp;quot;)]&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##   valA valB
+## 1    1   10
+## 2    2   11
+## 3    3   12
+## 4    4   13
+## 5    5   14
+## 6    6   15
+## 7    7   16
+## 8    8   17
+## 9    9   18&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;dplyr-1&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;dplyr&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;select(TB1, valA, valB)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 9 x 2
+##    valA  valB
+##   &amp;lt;int&amp;gt; &amp;lt;int&amp;gt;
+## 1     1    10
+## 2     2    11
+## 3     3    12
+## 4     4    13
+## 5     5    14
+## 6     6    15
+## 7     7    16
+## 8     8    17
+## 9     9    18&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;data.table-1&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;data.table&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;DT1[ , .(valA,valB)]&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##    valA valB
+## 1:    1   10
+## 2:    2   11
+## 3:    3   12
+## 4:    4   13
+## 5:    5   14
+## 6:    6   15
+## 7:    7   16
+## 8:    8   17
+## 9:    9   18&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;question-3&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Question 3&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Get sum(valA) and sum(valB) for id &amp;gt; 1 as a 1-row, 2-col data.frame&lt;/em&gt;&lt;/p&gt;
+&lt;div id=&#34;base-r-1&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;base R&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;colSums(DF1[ DF1$id &amp;gt; 1, c(&amp;quot;valA&amp;quot;, &amp;quot;valB&amp;quot;)])&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## valA valB 
+##   30   66&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;dplyr-2&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;dplyr&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;TB1 %&amp;gt;% filter(id &amp;gt; 1) %&amp;gt;% select(valA, valB) %&amp;gt;% summarise_all(sum)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 1 x 2
+##    valA  valB
+##   &amp;lt;int&amp;gt; &amp;lt;int&amp;gt;
+## 1    30    66&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;data.table-2&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;data.table&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;DT1[id &amp;gt; 1, .(sum(valA), sum(valB))]&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##    V1 V2
+## 1: 30 66&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;question-4&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Question 4&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Replace valB with valB+1 for all rows where code == “c”&lt;/em&gt;&lt;/p&gt;
+&lt;div id=&#34;base-r-2&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;base R&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;DF1$valB[DF1$code==&amp;quot;c&amp;quot;] = DF1$valB[DF1$code==&amp;quot;c&amp;quot;] + 1
+DF1&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##   id code valA valB
+## 1  1    a    1   10
+## 2  1    a    2   11
+## 3  1    c    3   13
+## 4  1    a    4   13
+## 5  1    c    5   15
+## 6  2    a    6   15
+## 7  2    a    7   16
+## 8  2    c    8   18
+## 9  2    b    9   18&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;dplyr-3&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;dplyr&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;TB1 &amp;lt;- TB1 %&amp;gt;% mutate(valB = ifelse(code == &amp;quot;c&amp;quot;, valB + 1,valB))
+## TB1[TB1$code==&amp;quot;c&amp;quot;, ] &amp;lt;- filter(TB1, code==&amp;quot;c&amp;quot;) %&amp;gt;% mutate(valB= valB+1) # alternative solution
+TB1&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 9 x 4
+##      id code   valA  valB
+##   &amp;lt;int&amp;gt; &amp;lt;chr&amp;gt; &amp;lt;int&amp;gt; &amp;lt;dbl&amp;gt;
+## 1     1 a         1    10
+## 2     1 a         2    11
+## 3     1 c         3    13
+## 4     1 a         4    13
+## 5     1 c         5    15
+## 6     2 a         6    15
+## 7     2 a         7    16
+## 8     2 c         8    18
+## 9     2 b         9    18&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;data.table-3&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;data.table&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;DT1[code == &amp;quot;c&amp;quot;, valB := valB + 1L]
+DT1&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##    id code valA valB
+## 1:  1    a    1   10
+## 2:  1    a    2   11
+## 3:  1    c    3   13
+## 4:  1    a    4   13
+## 5:  1    c    5   15
+## 6:  2    a    6   15
+## 7:  2    a    7   16
+## 8:  2    c    8   18
+## 9:  2    b    9   18&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;question-5&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Question 5&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Add a new column valC column with values equal to valB^2 - valA^2&lt;/em&gt;&lt;/p&gt;
+&lt;div id=&#34;base-r-3&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;base R&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;DF1 &amp;lt;- transform(DF1, valC = valB^2 - valA^2)
+## DF1$valC &amp;lt;- DF1$valB^2 - DF1$valA^2 # alternate solution
+DF1&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##   id code valA valB valC
+## 1  1    a    1   10   99
+## 2  1    a    2   11  117
+## 3  1    c    3   13  160
+## 4  1    a    4   13  153
+## 5  1    c    5   15  200
+## 6  2    a    6   15  189
+## 7  2    a    7   16  207
+## 8  2    c    8   18  260
+## 9  2    b    9   18  243&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;dplyr-4&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;dplyr&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;TB1 &amp;lt;- mutate(TB1, valC = valB^2 - valA^2)
+TB1&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 9 x 5
+##      id code   valA  valB  valC
+##   &amp;lt;int&amp;gt; &amp;lt;chr&amp;gt; &amp;lt;int&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt;
+## 1     1 a         1    10    99
+## 2     1 a         2    11   117
+## 3     1 c         3    13   160
+## 4     1 a         4    13   153
+## 5     1 c         5    15   200
+## 6     2 a         6    15   189
+## 7     2 a         7    16   207
+## 8     2 c         8    18   260
+## 9     2 b         9    18   243&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;data.table-4&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;data.table&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;DT1[, valC := valB^2 - valA^2]
+DT1&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##    id code valA valB valC
+## 1:  1    a    1   10   99
+## 2:  1    a    2   11  117
+## 3:  1    c    3   13  160
+## 4:  1    a    4   13  153
+## 5:  1    c    5   15  200
+## 6:  2    a    6   15  189
+## 7:  2    a    7   16  207
+## 8:  2    c    8   18  260
+## 9:  2    b    9   18  243&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;question-6&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Question 6&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Get sum(valA) and sum(valB) grouped by id and code (i.e., for each unique combination of id,code)&lt;/em&gt;&lt;/p&gt;
+&lt;div id=&#34;base-1&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;base&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;aggregate(.~ id + code, DF1, sum)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##   id code valA valB valC
+## 1  1    a    7   34  369
+## 2  2    a   13   31  396
+## 3  2    b    9   18  243
+## 4  1    c    8   28  360
+## 5  2    c    8   18  260&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;aggregate(DF1[, c(&amp;quot;valA&amp;quot;, &amp;quot;valB&amp;quot;)], list(DF1$id, DF1$code), sum)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##   Group.1 Group.2 valA valB
+## 1       1       a    7   34
+## 2       2       a   13   31
+## 3       2       b    9   18
+## 4       1       c    8   28
+## 5       2       c    8   18&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;dplyr-5&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;dplyr&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;TB1 %&amp;gt;% group_by(id, code) %&amp;gt;% summarise_all(sum)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 5 x 5
+## # Groups:   id [2]
+##      id code   valA  valB  valC
+##   &amp;lt;int&amp;gt; &amp;lt;chr&amp;gt; &amp;lt;int&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt;
+## 1     1 a         7    34   369
+## 2     1 c         8    28   360
+## 3     2 a        13    31   396
+## 4     2 b         9    18   243
+## 5     2 c         8    18   260&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;data.table-5&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;data.table&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;DT1[, .(SumA=sum(valA), SumB = sum(valB)), by=list(id,code) ] &lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##    id code SumA SumB
+## 1:  1    a    7   34
+## 2:  1    c    8   28
+## 3:  2    a   13   31
+## 4:  2    c    8   18
+## 5:  2    b    9   18&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;question-7&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Question 7&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Get sum(valA) and sum(valB) grouped by id for id &amp;gt;= 2 &amp;amp; code %in% c(“a”, “c”)&lt;/em&gt;&lt;/p&gt;
+&lt;div id=&#34;base-2&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;base&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;aggregate(.~ id , subset(DF1, id &amp;gt;=2 &amp;amp; code %in% c(&amp;quot;a&amp;quot;,&amp;quot;c&amp;quot;), -code), sum)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##   id valA valB valC
+## 1  2   21   49  656&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;dplyr-6&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;dplyr&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;TB1 %&amp;gt;% 
+  group_by(id) %&amp;gt;% 
+  filter(id &amp;gt;=2, code %in% c(&amp;quot;a&amp;quot;, &amp;quot;c&amp;quot;)) %&amp;gt;% 
+  select(-code, -valC) %&amp;gt;% 
+  summarise_all(sum)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 1 x 3
+##      id  valA  valB
+##   &amp;lt;int&amp;gt; &amp;lt;int&amp;gt; &amp;lt;dbl&amp;gt;
+## 1     2    21    49&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;data.table-6&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;data.table&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;DT1[ (id&amp;gt;=2) &amp;amp; code %in% c(&amp;quot;a&amp;quot;, &amp;quot;c&amp;quot;) , .(SumA=sum(valA), SumB = sum(valB)), by=id ] &lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##    id SumA SumB
+## 1:  2   21   49&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;question-8&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Question 8&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Replace valA with max(valA)-min(valA) grouped by code&lt;/em&gt;&lt;/p&gt;
+&lt;div id=&#34;base-3&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;base&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;DF1 &amp;lt;- transform(DF1, valA = rep(tapply(valA, code, function(x) diff(range(x)))[code]))
+DF1&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##   id code valA valB valC
+## 1  1    a    6   10   99
+## 2  1    a    6   11  117
+## 3  1    c    5   13  160
+## 4  1    a    6   13  153
+## 5  1    c    5   15  200
+## 6  2    a    6   15  189
+## 7  2    a    6   16  207
+## 8  2    c    5   18  260
+## 9  2    b    0   18  243&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;dplyr-7&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;dplyr&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;TB1 &amp;lt;- TB1 %&amp;gt;% group_by(code) %&amp;gt;% mutate(valA= max(valA)-min(valA))
+TB1&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 9 x 5
+## # Groups:   code [3]
+##      id code   valA  valB  valC
+##   &amp;lt;int&amp;gt; &amp;lt;chr&amp;gt; &amp;lt;int&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt;
+## 1     1 a         6    10    99
+## 2     1 a         6    11   117
+## 3     1 c         5    13   160
+## 4     1 a         6    13   153
+## 5     1 c         5    15   200
+## 6     2 a         6    15   189
+## 7     2 a         6    16   207
+## 8     2 c         5    18   260
+## 9     2 b         0    18   243&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;data.table-7&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;data.table&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;DT1[, &amp;quot;valA&amp;quot; := max(valA)-min(valA), by=code] 
+DT1&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##    id code valA valB valC
+## 1:  1    a    6   10   99
+## 2:  1    a    6   11  117
+## 3:  1    c    5   13  160
+## 4:  1    a    6   13  153
+## 5:  1    c    5   15  200
+## 6:  2    a    6   15  189
+## 7:  2    a    6   16  207
+## 8:  2    c    5   18  260
+## 9:  2    b    0   18  243&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;question-9&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Question 9&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Create a new col named valD with max(valB)-min(valA) grouped by code&lt;/em&gt;&lt;/p&gt;
+&lt;div id=&#34;base-4&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;base&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;DF1 &amp;lt;- transform(DF1, valD = by(DF1, code, function(x) max(x$valB) - min(x$valA))[code])
+DF1&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##   id code valA valB valC valD
+## 1  1    a    6   10   99   10
+## 2  1    a    6   11  117   10
+## 3  1    c    5   13  160   13
+## 4  1    a    6   13  153   10
+## 5  1    c    5   15  200   13
+## 6  2    a    6   15  189   10
+## 7  2    a    6   16  207   10
+## 8  2    c    5   18  260   13
+## 9  2    b    0   18  243   18&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;dplyr-8&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;dplyr&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;TB1 &amp;lt;- TB1 %&amp;gt;% group_by(code) %&amp;gt;% mutate(valD= max(valB)-min(valA))
+TB1&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 9 x 6
+## # Groups:   code [3]
+##      id code   valA  valB  valC  valD
+##   &amp;lt;int&amp;gt; &amp;lt;chr&amp;gt; &amp;lt;int&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt;
+## 1     1 a         6    10    99    10
+## 2     1 a         6    11   117    10
+## 3     1 c         5    13   160    13
+## 4     1 a         6    13   153    10
+## 5     1 c         5    15   200    13
+## 6     2 a         6    15   189    10
+## 7     2 a         6    16   207    10
+## 8     2 c         5    18   260    13
+## 9     2 b         0    18   243    18&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;data.table-8&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;data.table&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;DT1[, &amp;quot;valD&amp;quot; := max(valB)-min(valA), by=code] 
+DT1&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##    id code valA valB valC valD
+## 1:  1    a    6   10   99   10
+## 2:  1    a    6   11  117   10
+## 3:  1    c    5   13  160   13
+## 4:  1    a    6   13  153   10
+## 5:  1    c    5   15  200   13
+## 6:  2    a    6   15  189   10
+## 7:  2    a    6   16  207   10
+## 8:  2    c    5   18  260   13
+## 9:  2    b    0   18  243   18&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;question-10&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Question 10&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Subset DF1 by DF2 on id,code column. That is, for each row of DF2$id, DF2$code, get valA and valB cols from DF1. Include rows that have no matches as well.&lt;/em&gt;&lt;/p&gt;
+&lt;div id=&#34;base-5&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;base&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;merge(DF1, DF2[, c(&amp;quot;id&amp;quot;, &amp;quot;code&amp;quot;)], by = c(&amp;quot;id&amp;quot;, &amp;quot;code&amp;quot;), all.y=TRUE)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##   id code valA valB valC valD
+## 1  1    a    6   13  153   10
+## 2  1    a    6   10   99   10
+## 3  1    a    6   11  117   10
+## 4  1    c    5   13  160   13
+## 5  1    c    5   15  200   13
+## 6  2    c    5   18  260   13
+## 7  3    b   NA   NA   NA   NA
+## 8  3    d   NA   NA   NA   NA&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;dplyr-9&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;dplyr&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;right_join(TB1, TB2 %&amp;gt;% select(id, code), by = c(&amp;quot;id&amp;quot;, &amp;quot;code&amp;quot;)) &lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 8 x 6
+## # Groups:   code [4]
+##      id code   valA  valB  valC  valD
+##   &amp;lt;int&amp;gt; &amp;lt;chr&amp;gt; &amp;lt;int&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt;
+## 1     1 a         6    10    99    10
+## 2     1 a         6    11   117    10
+## 3     1 c         5    13   160    13
+## 4     1 a         6    13   153    10
+## 5     1 c         5    15   200    13
+## 6     2 c         5    18   260    13
+## 7     3 b        NA    NA    NA    NA
+## 8     3 d        NA    NA    NA    NA&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;## inner_join to keep only rows present in tibbles, left_join to keep all rows from TB1
+## anti_join to keep only rows from TB1 with no matching rows in TB2&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;data.table-9&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;data.table&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;merge(DT1, DT2[ , .(id, code)], all.y = TRUE)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##    id code valA valB valC valD
+## 1:  1    a    6   10   99   10
+## 2:  1    a    6   11  117   10
+## 3:  1    a    6   13  153   10
+## 4:  1    c    5   13  160   13
+## 5:  1    c    5   15  200   13
+## 6:  2    c    5   18  260   13
+## 7:  3    b   NA   NA   NA   NA
+## 8:  3    d   NA   NA   NA   NA&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;question-11&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Question 11&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Same as (10), but fetch just the first matching row of DF1 for each row of DF2$id, DF2$code. Exclude non-matching rows.&lt;/em&gt;&lt;/p&gt;
+&lt;div id=&#34;base-6&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;base&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;merge(DF1[!duplicated(DF1[, c(&amp;quot;id&amp;quot;, &amp;quot;code&amp;quot;)]), ],
+      DF2[, c(&amp;quot;id&amp;quot;, &amp;quot;code&amp;quot;)], by = c(&amp;quot;id&amp;quot;, &amp;quot;code&amp;quot;))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##   id code valA valB valC valD
+## 1  1    a    6   10   99   10
+## 2  1    c    5   13  160   13
+## 3  2    c    5   18  260   13&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;dplyr-10&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;dplyr&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;TB1 %&amp;gt;% group_by(id, code) %&amp;gt;% slice(1) %&amp;gt;% ## first entry in each (id, code) group
+  inner_join(select(TB2, id, code), by = c(&amp;quot;id&amp;quot;, &amp;quot;code&amp;quot;))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 3 x 6
+## # Groups:   id, code [3]
+##      id code   valA  valB  valC  valD
+##   &amp;lt;int&amp;gt; &amp;lt;chr&amp;gt; &amp;lt;int&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt;
+## 1     1 a         6    10    99    10
+## 2     1 c         5    13   160    13
+## 3     2 c         5    18   260    13&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;data.table-10&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;data.table&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;merge(DT1[, .SD[1], by = list(id, code)], ## first entry in each (id, code) group
+      DT2[ , .(id, code)])&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##    id code valA valB valC valD
+## 1:  1    a    6   10   99   10
+## 2:  1    c    5   13  160   13
+## 3:  2    c    5   18  260   13&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;question-12&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Question 12&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;For every row of DF2$id, DF2$code that matches with DF1’s, update valA with valA*mul.&lt;/em&gt;&lt;/p&gt;
+&lt;div id=&#34;base-7&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;base&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;transform(merge(DF1, DF2, by = c(&amp;quot;id&amp;quot;, &amp;quot;code&amp;quot;), all.y=TRUE), valA = valA * mul)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##   id code valA valB valC valD mul
+## 1  1    a   24   13  153   10   4
+## 2  1    a   24   10   99   10   4
+## 3  1    a   24   11  117   10   4
+## 4  1    c   15   13  160   13   3
+## 5  1    c   15   15  200   13   3
+## 6  2    c   10   18  260   13   2
+## 7  3    b   NA   NA   NA   NA   5
+## 8  3    d   NA   NA   NA   NA   1&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;dplyr-11&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;dplyr&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;right_join(TB1, TB2, by = c(&amp;quot;id&amp;quot;, &amp;quot;code&amp;quot;)) %&amp;gt;% mutate(valA = valA * mul)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 8 x 7
+## # Groups:   code [4]
+##      id code   valA  valB  valC  valD   mul
+##   &amp;lt;int&amp;gt; &amp;lt;chr&amp;gt; &amp;lt;int&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;int&amp;gt;
+## 1     1 a        24    10    99    10     4
+## 2     1 a        24    11   117    10     4
+## 3     1 c        15    13   160    13     3
+## 4     1 a        24    13   153    10     4
+## 5     1 c        15    15   200    13     3
+## 6     2 c        10    18   260    13     2
+## 7     3 b        NA    NA    NA    NA     5
+## 8     3 d        NA    NA    NA    NA     1&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;data.table-11&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;data.table&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;DT3 &amp;lt;- merge(DT1, DT2, all.y = TRUE)[ , &amp;quot;valA&amp;quot; := valA * mul]
+show(DT3) ## je ne comprends pas pourquoi il faut utiliser show pour l&amp;#39;affichage&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##    id code valA valB valC valD mul
+## 1:  1    a   24   10   99   10   4
+## 2:  1    a   24   11  117   10   4
+## 3:  1    a   24   13  153   10   4
+## 4:  1    c   15   13  160   13   3
+## 5:  1    c   15   15  200   13   3
+## 6:  2    c   10   18  260   13   2
+## 7:  3    b   NA   NA   NA   NA   5
+## 8:  3    d   NA   NA   NA   NA   1&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;question-13&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Question 13&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Add a new column val to DF1 with values from DF2$mul where DF2$id, DF2$code matches with DF1’s. Rows that don’t match should have NA.&lt;/em&gt;&lt;/p&gt;
+&lt;div id=&#34;base-8&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;base&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;transform(merge(DF1, DF2, by = c(&amp;quot;id&amp;quot;, &amp;quot;code&amp;quot;), all.x = TRUE, sort = FALSE), mul = mul)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##   id code valA valB valC valD mul
+## 1  1    a    6   13  153   10   4
+## 2  1    a    6   10   99   10   4
+## 3  1    a    6   11  117   10   4
+## 4  1    c    5   13  160   13   3
+## 5  1    c    5   15  200   13   3
+## 6  2    c    5   18  260   13   2
+## 7  2    b    0   18  243   18  NA
+## 8  2    a    6   15  189   10  NA
+## 9  2    a    6   16  207   10  NA&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;dplyr-12&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;dplyr&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;left_join(TB1, TB2, by = c(&amp;quot;id&amp;quot;, &amp;quot;code&amp;quot;))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 9 x 7
+## # Groups:   code [3]
+##      id code   valA  valB  valC  valD   mul
+##   &amp;lt;int&amp;gt; &amp;lt;chr&amp;gt; &amp;lt;int&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;int&amp;gt;
+## 1     1 a         6    10    99    10     4
+## 2     1 a         6    11   117    10     4
+## 3     1 c         5    13   160    13     3
+## 4     1 a         6    13   153    10     4
+## 5     1 c         5    15   200    13     3
+## 6     2 a         6    15   189    10    NA
+## 7     2 a         6    16   207    10    NA
+## 8     2 c         5    18   260    13     2
+## 9     2 b         0    18   243    18    NA&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;data.table-12&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;data.table&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;merge(DT1, DT2, all.x = TRUE)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##    id code valA valB valC valD mul
+## 1:  1    a    6   10   99   10   4
+## 2:  1    a    6   11  117   10   4
+## 3:  1    a    6   13  153   10   4
+## 4:  1    c    5   13  160   13   3
+## 5:  1    c    5   15  200   13   3
+## 6:  2    a    6   15  189   10  NA
+## 7:  2    a    6   16  207   10  NA
+## 8:  2    b    0   18  243   18  NA
+## 9:  2    c    5   18  260   13   2&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Atelier découverte LearnR</title>
+      <link>/post/learnr/</link>
+      <pubDate>Mon, 25 Sep 2017 00:00:00 +0000</pubDate>
+      <guid>/post/learnr/</guid>
+      <description>
+
+
+&lt;!-- ## courriel --&gt;
+&lt;!-- Pour learnR je dirai que c’est un outil intéressant pour réaliser des TP structurés selon une trame précise et pour lesquels on souhaite modifier les données. --&gt;
+&lt;!-- Par contre, il me faudrait plus de temps pour voir comment exporter/sauvegarder les codes et sorties R dans un fichier (.R par exemple). --&gt;
+&lt;!-- ### Jessica --&gt;
+&lt;!-- avec Marie qui était sansordi, nous avons regardé le tuto de learnR et en particulier les différentes fonctionnalités qui pourraient permettre de récupérer les réponses des étudiants... On a conclu que c&#39;était plus du Shiny que du learnR. --&gt;
+&lt;!-- On a vu les options --&gt;
+&lt;!-- 3- sur la fonction `quiz( )`, on a cherché à ne pas faire apparaître de réponse et on a été surprises de voir qu&#39;en recompilant on voit encore ce qu&#39;on a répondu avant... --&gt;
+&lt;!-- Bref, ça n&#39;a pas été très productif selon moi (même si ma machine a bien voulu faire ce que je demandais !) et ça a donné l&#39;impression qu&#39;on faisait tous un peu la même chose, il faudrait peut être décider en début d&#39;HappyR qui regarde quoi et se mettre en petits groupes pour traiter chacun une question spécifique, disons en 1h et préparer sur place une courte restitution aux autres (ce qui éviterait aussi la compilation de nos différents retours). C&#39;est peut être un peu utopique de se dire que c&#39;est faisable sans que personne n&#39;est déjà regardé plus en détails avant qu&#39;on se retrouve...  --&gt;
+&lt;!-- De mon côté, j&#39;avais regardé rapidement quelles étaient les possibilités de générer des sujets différents et j&#39;ai trouvé un exemple de publipostage &#34;Mail merge&#34; qui peut permettre  de faire cela (au moins si &#39;l&#39;on souhaite juste générer N sujets au format PDF par exemple - ensuite il faut combiner avec du learnR et du Shiny si on veut aller jusqu&#39;à récupérer les réponses pour une notation d&#39;évaluation automatisée), cf pour ceux qui ça intéresse https://www.r-bloggers.com/mail-merge-with-rmarkdown/. --&gt;
+&lt;!-- bonne compil&#39; et merci de t&#39;en charger --&gt;
+&lt;!-- Jessica TRESSOU --&gt;
+&lt;!-- ### Isabelle --&gt;
+&lt;!-- Impressions sur learnR : outil sympathique quand on veut poser des questions via une interface WEB à des personnes. Mais se pose crucialement la question comment récupérer les réponses. --&gt;
+&lt;!-- Merci pour cette initiative de StateoftheR qui va peut-être me permettre de pas trop perdre la main ou plutôt de raccrocher. Par contre, je ne pourrais pas être là le 20/10. Désolée. Réunion experts Anses oblige. --&gt;
+&lt;!-- ### Maud --&gt;
+&lt;!-- - le package produit des supports plus adaptés à des interventions de type tutoriel ou des auto-évaluations --&gt;
+&lt;!-- - inconvénients liés à l&#39;indépendance des chunks; nécessite d&#39;ajouter des lignes de code dans le setup ou de faire des liens entre chunks (mais comment?) --&gt;
+&lt;div id=&#34;vue-densemble&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Vue d’ensemble&lt;/h3&gt;
+&lt;p&gt;Le package &lt;code&gt;learnr&lt;/code&gt; permet de créer des tutoriels (voir le &lt;a href=&#34;https://rstudio.github.io/learnr/&#34;&gt;site dédié&lt;/a&gt; ou &lt;a href=&#34;https://blog.rstudio.com/2017/07/11/introducing-learnr/&#34;&gt;le blog de présentation&lt;/a&gt;). Les tutoriels incluent du texte, des champs pour taper et exécuter des commandes &lt;code&gt;R&lt;/code&gt; (pouvant être pré-formatés) et des questionnaires à choix multiples.
+Les champs peuvent inclure des indices à afficher pour l’utilisateur ou des solutions.
+Pour fonctionner, le document créé au format Rmarkdown doit être envoyé sur un serveur shiny. Il est alors
+nécessaire de créér un compte sur &lt;a href=&#34;https://www.shinyapps.io/&#34;&gt;shinyapp&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Avec uniquement le package &lt;code&gt;learnr&lt;/code&gt;, il est uniquement possible de vérifier que les réponses données aux questions à choix multiples sont les bonnes. Par contre, il n’est pas possible de vérifier les commandes &lt;code&gt;R&lt;/code&gt; tapées ni leur résultat.
+Un package &lt;a href=&#34;https://github.com/dtkaplan/checkr&#34;&gt;checkr&lt;/a&gt; disponible sur github doit permettre de faire ces vérifications.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;limitations&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Limitations&lt;/h3&gt;
+&lt;p&gt;Des essais menés, il a été conclu que &lt;code&gt;learnr&lt;/code&gt; est un package intéressant mais qui ne permettra pas forcément de faire un TP complet de statistique sous R.
+Toutefois, il peut être employé pour :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;présenter certaines fonctions centrales en R en détaillant les différentes options et fournir des exemples à des étudiants en TP,&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;faire une vignette d’un package développé sous R,&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;proposer des auto-évaluations pour les étudiants.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Nous nous sommes heurtés à certaines limites :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;il n’est pas possible de récupérer les commandes tapées dans les champs &lt;code&gt;R&lt;/code&gt; par l’utilisateur ni les résultats correspondants. Ainsi un étudiant n’aura aucune trace de son travail si cet outil est employé pour le faire travailler en TP.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;il n’est pas possible de récupérer les commandes tapées dans les champs &lt;code&gt;R&lt;/code&gt; ni les réponses aux questions à choix multiples afin de les centraliser et de s’en servir à des fins d’évaluations.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;les “chunks” (environnement permettant de créer des champs &lt;code&gt;R&lt;/code&gt;) sont indépendants les uns des autres donc il est difficile de construire une progressivité dans un travail avec &lt;code&gt;learnr&lt;/code&gt;. On peut définir au début dans un chunk &lt;code&gt;setup&lt;/code&gt;,
+un environnement général qui sera commun à tous les champs &lt;code&gt;R&lt;/code&gt;. On peut également pour chaque chunk ajouter un chunk du même nom auquel on ajoute &lt;code&gt;-setup&lt;/code&gt; pour définir un environnement propre au champ correspondant.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;le document &lt;code&gt;learnr&lt;/code&gt; étant hébergé sur un serveur, l’importation des données ne peut pas être présentée de manière classique en local. Les données doivent être chargées à partir d’une adresse web.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;quelques-astuces-utiles&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Quelques astuces utiles :&lt;/h3&gt;
+&lt;p&gt;1- &lt;code&gt;exercise.timelimit = 10&lt;/code&gt; permet de limiter le temps de réponses, &lt;code&gt;exercise.lines = 5&lt;/code&gt; pour définir le nombre de lignes de console permettant de répondre.&lt;/p&gt;
+&lt;p&gt;2- il n’est pas possible de mettre à la fois &lt;code&gt;solution&lt;/code&gt; et &lt;code&gt;hint&lt;/code&gt;(en créant un nouveau chunk portant le même nom suivi de &lt;code&gt;-hint&lt;/code&gt; ou &lt;code&gt;-solution&lt;/code&gt; selon le cas ). Si on le fait, la solution devient le &lt;code&gt;next hint&lt;/code&gt;. On peut aussi mettre plusieurs &lt;code&gt;hint&lt;/code&gt; en ajoutant &lt;code&gt;-1&lt;/code&gt;, &lt;code&gt;-2&lt;/code&gt; pour les ordonner.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

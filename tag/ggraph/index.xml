@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ggraph | State of The R</title>
+    <link>/tag/ggraph/</link>
+      <atom:link href="/tag/ggraph/index.xml" rel="self" type="application/rss+xml" />
+    <description>ggraph</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>fr-fr</language><copyright>© 2020 State of the R</copyright><lastBuildDate>Fri, 19 Oct 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/logo_hu53047fbf4f6efa69f0f91be25bd21dde_40228_300x300_fit_lanczos_2.png</url>
+      <title>ggraph</title>
+      <link>/tag/ggraph/</link>
+    </image>
+    
+    <item>
+      <title>Fancy plotting with ggraph, gganimate</title>
+      <link>/post/fancy-plotting/</link>
+      <pubDate>Fri, 19 Oct 2018 00:00:00 +0000</pubDate>
+      <guid>/post/fancy-plotting/</guid>
+      <description>&lt;img src=&#34;https://www.data-imaginist.com/post/2016-10-07-Data-driven-logo_files/figure-html/unnamed-chunk-11-1.png&#34; align=&#34;right&#34; width=&#34;200&#34;/&gt;
+&lt;p&gt;Un duo de choc, Raphaëlle et Marie, pour une séance dense sur laquelle était posée l&amp;rsquo;ombre du &lt;a href=&#34;https://www.data-imaginist.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;data imaginist&lt;/a&gt; &amp;ndash; et vive Harry Potter.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;../../post/fancy-plotting/GG.html&#34;&gt;L&amp;rsquo;intégrale des slides&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

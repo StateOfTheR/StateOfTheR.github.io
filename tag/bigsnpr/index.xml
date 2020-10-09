@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bigsnpr | State of The R</title>
+    <link>/tag/bigsnpr/</link>
+      <atom:link href="/tag/bigsnpr/index.xml" rel="self" type="application/rss+xml" />
+    <description>bigsnpr</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>fr-fr</language><copyright>© 2020 State of the R</copyright><lastBuildDate>Fri, 25 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/logo_hu53047fbf4f6efa69f0f91be25bd21dde_40228_300x300_fit_lanczos_2.png</url>
+      <title>bigsnpr</title>
+      <link>/tag/bigsnpr/</link>
+    </image>
+    
+    <item>
+      <title>Efficient analysis of large-scale matrices with two R packages: bigstatsr and bigsnpr</title>
+      <link>/post/bigstatsr/</link>
+      <pubDate>Fri, 25 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/post/bigstatsr/</guid>
+      <description>&lt;img src=&#34;https://raw.githubusercontent.com/privefl/bigstatsr/master/bigstatsr.png&#34; align=&#34;right&#34; width=&#34;100&#34;/&gt;
+&lt;p&gt;R package {bigstatsr} provides a special class of matrix whose data is stored on the disk instead of the RAM, but you can still access the data almost as if it were in memory. It is particularly useful is you have a large matrix to analyze but not enough RAM on your computer. It can still be useful for matrices that fit in your RAM because package {bigstatsr} provides very efficient and parallelized algorithms (have you ever found &lt;code&gt;cor&lt;/code&gt; or &lt;code&gt;svd&lt;/code&gt; too slow?).&lt;/p&gt;
+&lt;p&gt;I will present the statistical and helper functions that are provided by package {bigstatsr} for this kind of matrices. R package {bigsnpr}, on top of {bigstatsr}, provides some tools that are specific to the analysis of genetic data. We&amp;rsquo;ll see what I can predict from your DNA using these two packages.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://privefl.github.io/bigstatsr/&#34;&gt;https://privefl.github.io/bigstatsr/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>rmarkdown | State of The R</title>
+    <link>/tag/rmarkdown/</link>
+      <atom:link href="/tag/rmarkdown/index.xml" rel="self" type="application/rss+xml" />
+    <description>rmarkdown</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>fr-fr</language><copyright>© 2020 State of the R</copyright><lastBuildDate>Fri, 15 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/logo_hu53047fbf4f6efa69f0f91be25bd21dde_40228_300x300_fit_lanczos_2.png</url>
+      <title>rmarkdown</title>
+      <link>/tag/rmarkdown/</link>
+    </image>
+    
+    <item>
+      <title>Développement autour du R-Markdown</title>
+      <link>/post/rmarkdown/</link>
+      <pubDate>Fri, 15 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>/post/rmarkdown/</guid>
+      <description>&lt;p&gt;Le programme de l&amp;rsquo;atelier proposé sur des développements autour de R Markdown&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Créer des contenus pour R Markdown et shiny
+&amp;ndash; Reporting tabulaire avec le package flextable
+Les fonctionnalités du package
+Les techniques utilisées pour l’intégration avec knitr
+Pratiquons : Créer une méthode d’impression tabulaire avec knitr et flextable pour les documents R Markdown
+&amp;ndash; htmlwidgets : package ggiraph
+Les fonctionnalités du package
+Intégration dans le contexte shiny et dans le contexte R Markdown
+Implémentation du htmlwidget
+Pratiquons : Créer un simple htmlwidget
+Personnalisation des documents R Markdown
+Le triptyque CSS/JavaScript/HTML
+Exemples de thèmes xaringan, pagedown, blogdown
+Pratiquons : personnalisation d’un thème pagedown et d’un thème xaringan&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;(&lt;a href=&#34;https://github.com/davidgohel&#34;&gt;https://github.com/davidgohel&lt;/a&gt;)&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

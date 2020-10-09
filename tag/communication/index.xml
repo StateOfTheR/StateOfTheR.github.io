@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>communication | State of The R</title>
+    <link>/tag/communication/</link>
+      <atom:link href="/tag/communication/index.xml" rel="self" type="application/rss+xml" />
+    <description>communication</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>fr-fr</language><copyright>© 2020 State of the R</copyright><lastBuildDate>Fri, 23 Feb 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/logo_hu53047fbf4f6efa69f0f91be25bd21dde_40228_300x300_fit_lanczos_2.png</url>
+      <title>communication</title>
+      <link>/tag/communication/</link>
+    </image>
+    
+    <item>
+      <title>Rmarkdown: tableaux interactifs et retour d&#39;expérience</title>
+      <link>/post/rmarkdown-tableaux-interactifs-et-retour-d-experience/</link>
+      <pubDate>Fri, 23 Feb 2018 00:00:00 +0000</pubDate>
+      <guid>/post/rmarkdown-tableaux-interactifs-et-retour-d-experience/</guid>
+      <description>
+
+
+&lt;p&gt;Mahendra nous propose un retour d’expérience et quelques exercices sur le &lt;a href=&#34;https://rstudio.github.io/DT/&#34;&gt;package DT&lt;/a&gt; pour la manipulation interactive de table.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://genome.jouy.inra.fr/~mmariadasso/HappyR/DT_tutorial.html&#34;&gt;Les slides de Mahendra&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Science Communication with R: Style, R Markdown &amp; Xaringan</title>
+      <link>/post/science-communication-with-r-style-r-markdown-xaringan/</link>
+      <pubDate>Fri, 23 Feb 2018 00:00:00 +0000</pubDate>
+      <guid>/post/science-communication-with-r-style-r-markdown-xaringan/</guid>
+      <description>
+
+
+&lt;p&gt;Antoine nous propose une série de slides sur &lt;a href=&#34;https://rmarkdown.rstudio.com/&#34;&gt;R markdown&lt;/a&gt; et &lt;a href=&#34;https://slides.yihui.name/xaringan/#1&#34;&gt;Xaringan&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://abichat.github.io/Slides/ScienceCommunicationSOTR/ScienceCommunicationSOTR.html&#34;&gt;Les slides Xaringan de Antoine&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

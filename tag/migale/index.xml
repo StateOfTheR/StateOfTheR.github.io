@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>migale | State of The R</title>
+    <link>/tag/migale/</link>
+      <atom:link href="/tag/migale/index.xml" rel="self" type="application/rss+xml" />
+    <description>migale</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>fr-fr</language><copyright>© 2020 State of the R</copyright><lastBuildDate>Fri, 13 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/logo_hu53047fbf4f6efa69f0f91be25bd21dde_40228_300x300_fit_lanczos_2.png</url>
+      <title>migale</title>
+      <link>/tag/migale/</link>
+    </image>
+    
+    <item>
+      <title>La plateforme Migale</title>
+      <link>/post/rmarkdown/</link>
+      <pubDate>Fri, 13 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>/post/rmarkdown/</guid>
+      <description>&lt;img src=&#34;img/headers/migale.png&#34; align=&#34;right&#34; width=&#34;200&#34;/&gt;
+&lt;p&gt;Mahendra nous offre un tour su la plateforme &lt;a href=&#34;https://migale.inra.fr/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Migale&lt;/a&gt; et plus généralement sur la soumission de job sur un serveur de calcul via &lt;code&gt;qsub&lt;/code&gt;  et les packages purrr, future and furrr.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;../../post/migale/2003-Rmigale.html&#34;&gt;La présentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

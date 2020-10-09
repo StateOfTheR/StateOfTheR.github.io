@@ -1,649 +1,381 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
-    
-    <url>
-    
-      <loc>/post/rmarkdown/</loc>
-      <lastmod>2020-03-13T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/post/tidyverse_sequel/</loc>
-      <lastmod>2019-12-13T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/post/rmarkdown/</loc>
-      <lastmod>2019-11-15T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/post/rmxnet/</loc>
-      <lastmod>2019-10-18T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/bootcamp/finistr19/</loc>
-      <lastmod>2019-08-31T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/post/shiny/</loc>
-      <lastmod>2019-06-11T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/post/plotly/</loc>
-      <lastmod>2019-05-22T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/post/rstan/</loc>
-      <lastmod>2019-04-19T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/post/packages/</loc>
-      <lastmod>2019-03-22T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/post/bigstatsr/</loc>
-      <lastmod>2019-02-22T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/post/bigstatsr/</loc>
-      <lastmod>2019-01-25T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/post/pimp-exam/</loc>
-      <lastmod>2018-12-20T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/post/tidymodels/</loc>
-      <lastmod>2018-11-23T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/post/fancy-plotting/</loc>
-      <lastmod>2018-10-19T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/bootcamp/finistr18/</loc>
-      <lastmod>2018-08-31T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/post/bases-rcpp/</loc>
-      <lastmod>2018-07-20T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/privacy/</loc>
-      <lastmod>2018-06-28T00:00:00+02:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/post/manipulating-half-big-data-in-r/</loc>
-      <lastmod>2018-06-22T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/post/introduction-au-deep-learning-sous-r/</loc>
-      <lastmod>2018-05-25T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/post/une-introduction-au-tidyverse/</loc>
-      <lastmod>2018-05-02T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/post/spatial/</loc>
-      <lastmod>2018-03-23T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/post/rmarkdown-tableaux-interactifs-et-retour-d-experience/</loc>
-      <lastmod>2018-02-23T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/post/science-communication-with-r-style-r-markdown-xaringan/</loc>
-      <lastmod>2018-02-23T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/bootcamp/finistr17/</loc>
-      <lastmod>2018-02-06T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/post/data.table/</loc>
-      <lastmod>2017-10-23T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/post/learnr/</loc>
-      <lastmod>2017-09-25T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/post/</loc>
-      <lastmod>2017-01-01T00:00:00+01:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/talk/</loc>
-      <lastmod>2017-01-01T00:00:00+01:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/post/getting-started/</loc>
-      <lastmod>2018-01-13T00:00:00+01:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/academic/</loc>
-      <lastmod>2018-01-13T00:00:00+01:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/bootcamp/</loc>
-      <lastmod>2019-08-31T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/categories/</loc>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/dt/</loc>
-      <lastmod>2018-02-23T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/r-markdown/</loc>
-      <lastmod>2018-02-23T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/</loc>
-      <lastmod>2017-10-15T00:00:00+02:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/</loc>
-      <lastmod>2018-01-13T00:00:00+01:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/bigdata/</loc>
-      <lastmod>2018-06-22T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/bigsnpr/</loc>
-      <lastmod>2019-01-25T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/bigstatsr/</loc>
-      <lastmod>2019-01-25T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/bookdown/</loc>
-      <lastmod>2019-08-31T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/broom/</loc>
-      <lastmod>2018-11-23T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/communication/</loc>
-      <lastmod>2018-02-23T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/data.table/</loc>
-      <lastmod>2018-06-22T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/datatable/</loc>
-      <lastmod>2018-02-23T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/deep-learning/</loc>
-      <lastmod>2018-05-25T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/dplyr/</loc>
-      <lastmod>2018-05-02T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/exams/</loc>
-      <lastmod>2018-12-20T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/gganimate/</loc>
-      <lastmod>2018-10-19T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/ggplot/</loc>
-      <lastmod>2018-10-19T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/ggplotly/</loc>
-      <lastmod>2019-05-22T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/ggraph/</loc>
-      <lastmod>2018-10-19T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/kable/</loc>
-      <lastmod>2018-02-23T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/learnr/</loc>
-      <lastmod>2017-09-25T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/magrittr/</loc>
-      <lastmod>2018-05-02T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/migale/</loc>
-      <lastmod>2020-03-13T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/moddle/</loc>
-      <lastmod>2018-12-20T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/packages/</loc>
-      <lastmod>2019-03-22T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/plotly/</loc>
-      <lastmod>2019-05-22T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/rcpp/</loc>
-      <lastmod>2018-07-20T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/rmarkdown/</loc>
-      <lastmod>2019-11-15T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/rmxnet/</loc>
-      <lastmod>2019-10-18T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/rsample/</loc>
-      <lastmod>2018-11-23T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/rstan/</loc>
-      <lastmod>2019-04-19T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/satrday/</loc>
-      <lastmod>2019-02-22T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/shiny/</loc>
-      <lastmod>2019-06-11T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/sparlyr/</loc>
-      <lastmod>2018-06-22T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/spatial/</loc>
-      <lastmod>2018-03-23T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/stan/</loc>
-      <lastmod>2019-04-19T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/teachings/</loc>
-      <lastmod>2017-09-25T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/tidy/</loc>
-      <lastmod>2018-05-02T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/tidymodels/</loc>
-      <lastmod>2018-11-23T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/tidyverse/</loc>
-      <lastmod>2018-11-23T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/tidyverse_sequel/</loc>
-      <lastmod>2019-12-13T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/travis/</loc>
-      <lastmod>2019-03-22T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/categories/workshop/</loc>
-      <lastmod>2020-03-13T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/tag/bootcamp/</loc>
+    <lastmod>2020-08-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/finistr20/</loc>
+    <lastmod>2020-08-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/</loc>
+    <lastmod>2020-08-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2020-08-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-08-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <lastmod>2020-03-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/rmarkdown/</loc>
+    <lastmod>2020-03-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/migale/</loc>
+    <lastmod>2020-03-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2020-03-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/category/workshop/</loc>
+    <lastmod>2020-03-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/tidyverse_sequel/</loc>
+    <lastmod>2019-12-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/tidyverse_sequel/</loc>
+    <lastmod>2019-12-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/rmarkdown/</loc>
+    <lastmod>2019-11-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/rmarkdown/</loc>
+    <lastmod>2019-11-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/rmxnet/</loc>
+    <lastmod>2019-10-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/rmxnet/</loc>
+    <lastmod>2019-10-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/finistr19/</loc>
+    <lastmod>2019-08-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/shiny/</loc>
+    <lastmod>2019-06-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/shiny/</loc>
+    <lastmod>2019-06-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/ggplotly/</loc>
+    <lastmod>2019-05-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/plotly/</loc>
+    <lastmod>2019-05-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/plotly/</loc>
+    <lastmod>2019-05-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/rstan/</loc>
+    <lastmod>2019-04-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/rstan/</loc>
+    <lastmod>2019-04-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/stan/</loc>
+    <lastmod>2019-04-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/packages/</loc>
+    <lastmod>2019-03-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/packages/</loc>
+    <lastmod>2019-03-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/travis/</loc>
+    <lastmod>2019-03-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/bigstatsr/</loc>
+    <lastmod>2019-02-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/satrday/</loc>
+    <lastmod>2019-02-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/bigsnpr/</loc>
+    <lastmod>2019-01-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/bigstatsr/</loc>
+    <lastmod>2019-01-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/bigstatsr/</loc>
+    <lastmod>2019-01-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/exams/</loc>
+    <lastmod>2018-12-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/moddle/</loc>
+    <lastmod>2018-12-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/pimp-exam/</loc>
+    <lastmod>2018-12-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/broom/</loc>
+    <lastmod>2018-11-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/tidymodels/</loc>
+    <lastmod>2018-11-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/rsample/</loc>
+    <lastmod>2018-11-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/tidymodels/</loc>
+    <lastmod>2018-11-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/tidyverse/</loc>
+    <lastmod>2018-11-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/fancy-plotting/</loc>
+    <lastmod>2018-10-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/gganimate/</loc>
+    <lastmod>2018-10-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/ggplot/</loc>
+    <lastmod>2018-10-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/ggraph/</loc>
+    <lastmod>2018-10-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/finistr18/</loc>
+    <lastmod>2018-08-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/bases-rcpp/</loc>
+    <lastmod>2018-07-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/rcpp/</loc>
+    <lastmod>2018-07-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/bigdata/</loc>
+    <lastmod>2018-06-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/data.table/</loc>
+    <lastmod>2018-06-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/manipulating-half-big-data-in-r/</loc>
+    <lastmod>2018-06-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/sparlyr/</loc>
+    <lastmod>2018-06-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/deep-learning/</loc>
+    <lastmod>2018-05-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/introduction-au-deep-learning-sous-r/</loc>
+    <lastmod>2018-05-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/dplyr/</loc>
+    <lastmod>2018-05-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/magrittr/</loc>
+    <lastmod>2018-05-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/tidy/</loc>
+    <lastmod>2018-05-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/une-introduction-au-tidyverse/</loc>
+    <lastmod>2018-05-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/spatial/</loc>
+    <lastmod>2018-03-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/spatial/</loc>
+    <lastmod>2018-03-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/communication/</loc>
+    <lastmod>2018-02-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/datatable/</loc>
+    <lastmod>2018-02-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/dt/</loc>
+    <lastmod>2018-02-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/kable/</loc>
+    <lastmod>2018-02-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/r-markdown/</loc>
+    <lastmod>2018-02-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/rmarkdown-tableaux-interactifs-et-retour-d-experience/</loc>
+    <lastmod>2018-02-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/science-communication-with-r-style-r-markdown-xaringan/</loc>
+    <lastmod>2018-02-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/data.table/</loc>
+    <lastmod>2017-10-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/learnr/</loc>
+    <lastmod>2017-09-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/learnr/</loc>
+    <lastmod>2017-09-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tag/teachings/</loc>
+    <lastmod>2017-09-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/finistr17/</loc>
+    <lastmod>2017-09-11T00:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/author/</loc>
+  </url>
+  
+  <url>
+    <loc>/authors/</loc>
+  </url>
+  
+  <url>
+    <loc>/publication_types/</loc>
+  </url>
+  
+  <url>
+    <loc>/talk/</loc>
+  </url>
   
 </urlset>

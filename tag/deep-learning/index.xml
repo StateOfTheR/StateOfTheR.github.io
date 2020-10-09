@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>deep learning | State of The R</title>
+    <link>/tag/deep-learning/</link>
+      <atom:link href="/tag/deep-learning/index.xml" rel="self" type="application/rss+xml" />
+    <description>deep learning</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>fr-fr</language><copyright>© 2020 State of the R</copyright><lastBuildDate>Fri, 25 May 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/logo_hu53047fbf4f6efa69f0f91be25bd21dde_40228_300x300_fit_lanczos_2.png</url>
+      <title>deep learning</title>
+      <link>/tag/deep-learning/</link>
+    </image>
+    
+    <item>
+      <title>Introduction au Deep Learning sous R</title>
+      <link>/post/introduction-au-deep-learning-sous-r/</link>
+      <pubDate>Fri, 25 May 2018 00:00:00 +0000</pubDate>
+      <guid>/post/introduction-au-deep-learning-sous-r/</guid>
+      <description>&lt;img src=&#34;img/headers/TensorFlowLogo.png&#34; align=&#34;right&#34; width=&#34;200&#34;/&gt;
+&lt;p&gt;Sophie et Christophe nous proposent une séance complète sur le deep-learning et l&amp;rsquo;interfaçage existant sous R:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;../../post/deep_learning/deep-learning-history.html&#34;&gt;Une brève histoire du Deep-Learning&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../../post/deep_learning/Deep-with-R.pdf&#34;&gt;Une introduction au Deep-Learning sous R&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../../post/deep_learning/cours_deeplearning_for_dummies.pdf&#34;&gt;travaux pratiques&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
