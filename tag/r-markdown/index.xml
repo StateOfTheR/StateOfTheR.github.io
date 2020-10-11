@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>R Markdown | State of The R</title>
-    <link>/tag/r-markdown/</link>
-      <atom:link href="/tag/r-markdown/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://stateofther.github.io/tag/r-markdown/</link>
+      <atom:link href="http://stateofther.github.io/tag/r-markdown/index.xml" rel="self" type="application/rss+xml" />
     <description>R Markdown</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>fr-fr</language><copyright>© 2020 State of the R</copyright><lastBuildDate>Fri, 23 Feb 2018 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/logo_hu53047fbf4f6efa69f0f91be25bd21dde_40228_300x300_fit_lanczos_2.png</url>
+      <url>http://stateofther.github.io/images/logo_hu53047fbf4f6efa69f0f91be25bd21dde_40228_300x300_fit_lanczos_2.png</url>
       <title>R Markdown</title>
-      <link>/tag/r-markdown/</link>
+      <link>http://stateofther.github.io/tag/r-markdown/</link>
     </image>
     
     <item>
       <title>Rmarkdown: tableaux interactifs et retour d&#39;expérience</title>
-      <link>/post/rmarkdown-tableaux-interactifs-et-retour-d-experience/</link>
+      <link>http://stateofther.github.io/post/rmarkdown-tableaux-interactifs-et-retour-d-experience/</link>
       <pubDate>Fri, 23 Feb 2018 00:00:00 +0000</pubDate>
-      <guid>/post/rmarkdown-tableaux-interactifs-et-retour-d-experience/</guid>
+      <guid>http://stateofther.github.io/post/rmarkdown-tableaux-interactifs-et-retour-d-experience/</guid>
       <description>
 
 
@@ -29,9 +29,9 @@
     
     <item>
       <title>Science Communication with R: Style, R Markdown &amp; Xaringan</title>
-      <link>/post/science-communication-with-r-style-r-markdown-xaringan/</link>
+      <link>http://stateofther.github.io/post/science-communication-with-r-style-r-markdown-xaringan/</link>
       <pubDate>Fri, 23 Feb 2018 00:00:00 +0000</pubDate>
-      <guid>/post/science-communication-with-r-style-r-markdown-xaringan/</guid>
+      <guid>http://stateofther.github.io/post/science-communication-with-r-style-r-markdown-xaringan/</guid>
       <description>
 
 

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>data.table | State of The R</title>
-    <link>/tag/data.table/</link>
-      <atom:link href="/tag/data.table/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://stateofther.github.io/tag/data.table/</link>
+      <atom:link href="http://stateofther.github.io/tag/data.table/index.xml" rel="self" type="application/rss+xml" />
     <description>data.table</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>fr-fr</language><copyright>© 2020 State of the R</copyright><lastBuildDate>Fri, 22 Jun 2018 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/logo_hu53047fbf4f6efa69f0f91be25bd21dde_40228_300x300_fit_lanczos_2.png</url>
+      <url>http://stateofther.github.io/images/logo_hu53047fbf4f6efa69f0f91be25bd21dde_40228_300x300_fit_lanczos_2.png</url>
       <title>data.table</title>
-      <link>/tag/data.table/</link>
+      <link>http://stateofther.github.io/tag/data.table/</link>
     </image>
     
     <item>
       <title>Manipulation de (quasi) big data en R</title>
-      <link>/post/manipulating-half-big-data-in-r/</link>
+      <link>http://stateofther.github.io/post/manipulating-half-big-data-in-r/</link>
       <pubDate>Fri, 22 Jun 2018 00:00:00 +0000</pubDate>
-      <guid>/post/manipulating-half-big-data-in-r/</guid>
+      <guid>http://stateofther.github.io/post/manipulating-half-big-data-in-r/</guid>
       <description>
 
 
@@ -39,9 +39,9 @@
     
     <item>
       <title>Exercices autour de data.table</title>
-      <link>/post/data.table/</link>
+      <link>http://stateofther.github.io/post/data.table/</link>
       <pubDate>Mon, 23 Oct 2017 00:00:00 +0000</pubDate>
-      <guid>/post/data.table/</guid>
+      <guid>http://stateofther.github.io/post/data.table/</guid>
       <description>
 
 

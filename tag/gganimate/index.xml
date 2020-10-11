@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>gganimate | State of The R</title>
-    <link>/tag/gganimate/</link>
-      <atom:link href="/tag/gganimate/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://stateofther.github.io/tag/gganimate/</link>
+      <atom:link href="http://stateofther.github.io/tag/gganimate/index.xml" rel="self" type="application/rss+xml" />
     <description>gganimate</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>fr-fr</language><copyright>© 2020 State of the R</copyright><lastBuildDate>Fri, 19 Oct 2018 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/logo_hu53047fbf4f6efa69f0f91be25bd21dde_40228_300x300_fit_lanczos_2.png</url>
+      <url>http://stateofther.github.io/images/logo_hu53047fbf4f6efa69f0f91be25bd21dde_40228_300x300_fit_lanczos_2.png</url>
       <title>gganimate</title>
-      <link>/tag/gganimate/</link>
+      <link>http://stateofther.github.io/tag/gganimate/</link>
     </image>
     
     <item>
       <title>Fancy plotting with ggraph, gganimate</title>
-      <link>/post/fancy-plotting/</link>
+      <link>http://stateofther.github.io/post/fancy-plotting/</link>
       <pubDate>Fri, 19 Oct 2018 00:00:00 +0000</pubDate>
-      <guid>/post/fancy-plotting/</guid>
+      <guid>http://stateofther.github.io/post/fancy-plotting/</guid>
       <description>&lt;img src=&#34;https://www.data-imaginist.com/post/2016-10-07-Data-driven-logo_files/figure-html/unnamed-chunk-11-1.png&#34; align=&#34;right&#34; width=&#34;200&#34;/&gt;
 &lt;p&gt;Un duo de choc, Raphaëlle et Marie, pour une séance dense sur laquelle était posée l&amp;rsquo;ombre du &lt;a href=&#34;https://www.data-imaginist.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;data imaginist&lt;/a&gt; &amp;ndash; et vive Harry Potter.&lt;/p&gt;
 &lt;ul&gt;

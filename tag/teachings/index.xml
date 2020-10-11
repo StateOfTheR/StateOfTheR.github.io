@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>teachings | State of The R</title>
-    <link>/tag/teachings/</link>
-      <atom:link href="/tag/teachings/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://stateofther.github.io/tag/teachings/</link>
+      <atom:link href="http://stateofther.github.io/tag/teachings/index.xml" rel="self" type="application/rss+xml" />
     <description>teachings</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>fr-fr</language><copyright>© 2020 State of the R</copyright><lastBuildDate>Mon, 25 Sep 2017 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/logo_hu53047fbf4f6efa69f0f91be25bd21dde_40228_300x300_fit_lanczos_2.png</url>
+      <url>http://stateofther.github.io/images/logo_hu53047fbf4f6efa69f0f91be25bd21dde_40228_300x300_fit_lanczos_2.png</url>
       <title>teachings</title>
-      <link>/tag/teachings/</link>
+      <link>http://stateofther.github.io/tag/teachings/</link>
     </image>
     
     <item>
       <title>Atelier découverte LearnR</title>
-      <link>/post/learnr/</link>
+      <link>http://stateofther.github.io/post/learnr/</link>
       <pubDate>Mon, 25 Sep 2017 00:00:00 +0000</pubDate>
-      <guid>/post/learnr/</guid>
+      <guid>http://stateofther.github.io/post/learnr/</guid>
       <description>
 
 

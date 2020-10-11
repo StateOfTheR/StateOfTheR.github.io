@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>travis | State of The R</title>
-    <link>/tag/travis/</link>
-      <atom:link href="/tag/travis/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://stateofther.github.io/tag/travis/</link>
+      <atom:link href="http://stateofther.github.io/tag/travis/index.xml" rel="self" type="application/rss+xml" />
     <description>travis</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>fr-fr</language><copyright>© 2020 State of the R</copyright><lastBuildDate>Fri, 22 Mar 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/logo_hu53047fbf4f6efa69f0f91be25bd21dde_40228_300x300_fit_lanczos_2.png</url>
+      <url>http://stateofther.github.io/images/logo_hu53047fbf4f6efa69f0f91be25bd21dde_40228_300x300_fit_lanczos_2.png</url>
       <title>travis</title>
-      <link>/tag/travis/</link>
+      <link>http://stateofther.github.io/tag/travis/</link>
     </image>
     
     <item>
       <title>Développement de package</title>
-      <link>/post/packages/</link>
+      <link>http://stateofther.github.io/post/packages/</link>
       <pubDate>Fri, 22 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>/post/packages/</guid>
+      <guid>http://stateofther.github.io/post/packages/</guid>
       <description>&lt;p&gt;Dans la continuité de ce qui a été fait à Beg-meil](&lt;a href=&#34;https://stateofther.github.io/finistR2018/atelier3_package_creation.html),&#34;&gt;https://stateofther.github.io/finistR2018/atelier3_package_creation.html),&lt;/a&gt; je vous propose un tour d&amp;rsquo;horizon des bonnes pratiques et de l&amp;rsquo;ensemble des outils disponibles pour réaliser le développement d&amp;rsquo;un package R. On parlera github, travis, {pkgdown], roxygen2, déploiement, {testthat], appveor, configure, Makevars, {usethis}, {devtools}, yaml, etc. Venez avec en tête de mettre les main dans le cambouis pour votre propre package.&lt;/p&gt;
 </description>
     </item>
