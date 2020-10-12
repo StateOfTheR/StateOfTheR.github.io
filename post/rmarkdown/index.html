@@ -34,7 +34,8 @@
   
     
   
-  <meta name="description" content="Mahendra nous offre un tour su la plateforme Migale et plus généralement sur la soumission de job sur un serveur de calcul via qsub et les packages purrr, future and furrr.">
+  <meta name="description" content="Le programme de l&rsquo;atelier proposé sur des développements autour de R Markdown
+ Créer des contenus pour R Markdown et shiny &ndash; Reporting tabulaire avec le package flextable Les fonctionnalités du package Les techniques utilisées pour l’intégration avec knitr Pratiquons : Créer une méthode d’impression tabulaire avec knitr et flextable pour les documents R Markdown &ndash; htmlwidgets : package ggiraph Les fonctionnalités du package Intégration dans le contexte shiny et dans le contexte R Markdown Implémentation du htmlwidget Pratiquons : Créer un simple htmlwidget Personnalisation des documents R Markdown Le triptyque CSS/JavaScript/HTML Exemples de thèmes xaringan, pagedown, blogdown Pratiquons : personnalisation d’un thème pagedown et d’un thème xaringan  (https://github.">
 
   
   <link rel="alternate" hreflang="fr-fr" href="/post/rmarkdown/">
@@ -280,14 +281,15 @@
   
   <meta property="og:site_name" content="State of The R">
   <meta property="og:url" content="/post/rmarkdown/">
-  <meta property="og:title" content="La plateforme Migale | State of The R">
-  <meta property="og:description" content="Mahendra nous offre un tour su la plateforme Migale et plus généralement sur la soumission de job sur un serveur de calcul via qsub et les packages purrr, future and furrr."><meta property="og:image" content="/images/logo_hu53047fbf4f6efa69f0f91be25bd21dde_40228_300x300_fit_lanczos_2.png">
+  <meta property="og:title" content="Développement autour du R-Markdown | State of The R">
+  <meta property="og:description" content="Le programme de l&rsquo;atelier proposé sur des développements autour de R Markdown
+ Créer des contenus pour R Markdown et shiny &ndash; Reporting tabulaire avec le package flextable Les fonctionnalités du package Les techniques utilisées pour l’intégration avec knitr Pratiquons : Créer une méthode d’impression tabulaire avec knitr et flextable pour les documents R Markdown &ndash; htmlwidgets : package ggiraph Les fonctionnalités du package Intégration dans le contexte shiny et dans le contexte R Markdown Implémentation du htmlwidget Pratiquons : Créer un simple htmlwidget Personnalisation des documents R Markdown Le triptyque CSS/JavaScript/HTML Exemples de thèmes xaringan, pagedown, blogdown Pratiquons : personnalisation d’un thème pagedown et d’un thème xaringan  (https://github."><meta property="og:image" content="/images/logo_hu53047fbf4f6efa69f0f91be25bd21dde_40228_300x300_fit_lanczos_2.png">
   <meta property="twitter:image" content="/images/logo_hu53047fbf4f6efa69f0f91be25bd21dde_40228_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr-fr">
   
     
-      <meta property="article:published_time" content="2020-03-13T00:00:00&#43;00:00">
+      <meta property="article:published_time" content="2019-11-15T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2020-03-13T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2019-11-15T00:00:00&#43;00:00">
   
 
   
@@ -313,10 +315,10 @@
     "@type": "WebPage",
     "@id": "/post/rmarkdown/"
   },
-  "headline": "La plateforme Migale",
+  "headline": "Développement autour du R-Markdown",
   
-  "datePublished": "2020-03-13T00:00:00Z",
-  "dateModified": "2020-03-13T00:00:00Z",
+  "datePublished": "2019-11-15T00:00:00Z",
+  "dateModified": "2019-11-15T00:00:00Z",
   
   "publisher": {
     "@type": "Organization",
@@ -326,7 +328,7 @@
       "url": "/images/logo_hu53047fbf4f6efa69f0f91be25bd21dde_40228_192x192_fit_lanczos_2.png"
     }
   },
-  "description": "Mahendra nous offre un tour su la plateforme Migale et plus généralement sur la soumission de job sur un serveur de calcul via qsub et les packages purrr, future and furrr."
+  "description": "Le programme de l\u0026rsquo;atelier proposé sur des développements autour de R Markdown\n Créer des contenus pour R Markdown et shiny \u0026ndash; Reporting tabulaire avec le package flextable Les fonctionnalités du package Les techniques utilisées pour l’intégration avec knitr Pratiquons : Créer une méthode d’impression tabulaire avec knitr et flextable pour les documents R Markdown \u0026ndash; htmlwidgets : package ggiraph Les fonctionnalités du package Intégration dans le contexte shiny et dans le contexte R Markdown Implémentation du htmlwidget Pratiquons : Créer un simple htmlwidget Personnalisation des documents R Markdown Le triptyque CSS/JavaScript/HTML Exemples de thèmes xaringan, pagedown, blogdown Pratiquons : personnalisation d’un thème pagedown et d’un thème xaringan  (https://github."
 }
 </script>
 
@@ -344,7 +346,7 @@
 
 
 
-  <title>La plateforme Migale | State of The R</title>
+  <title>Développement autour du R-Markdown | State of The R</title>
 
 </head>
 
@@ -632,7 +634,7 @@
   
   
 <div class="article-container pt-3">
-  <h1>La plateforme Migale</h1>
+  <h1>Développement autour du R-Markdown</h1>
 
   
 
@@ -651,7 +653,7 @@
     
       
     
-    Mar 13, 2020
+    Nov 15, 2019
   </span>
   
 
@@ -700,11 +702,24 @@
   <div class="article-container">
 
     <div class="article-style">
-      <img src="img/headers/migale.png" align="right" width="200"/>
-<p>Mahendra nous offre un tour su la plateforme <a href="https://migale.inra.fr/" target="_blank" rel="noopener">Migale</a> et plus généralement sur la soumission de job sur un serveur de calcul via <code>qsub</code>  et les packages purrr, future and furrr.</p>
+      <p>Le programme de l&rsquo;atelier proposé sur des développements autour de R Markdown</p>
 <ul>
-<li><a href="../../post/migale/2003-Rmigale.html">La présentation</a></li>
+<li>Créer des contenus pour R Markdown et shiny
+&ndash; Reporting tabulaire avec le package flextable
+Les fonctionnalités du package
+Les techniques utilisées pour l’intégration avec knitr
+Pratiquons : Créer une méthode d’impression tabulaire avec knitr et flextable pour les documents R Markdown
+&ndash; htmlwidgets : package ggiraph
+Les fonctionnalités du package
+Intégration dans le contexte shiny et dans le contexte R Markdown
+Implémentation du htmlwidget
+Pratiquons : Créer un simple htmlwidget
+Personnalisation des documents R Markdown
+Le triptyque CSS/JavaScript/HTML
+Exemples de thèmes xaringan, pagedown, blogdown
+Pratiquons : personnalisation d’un thème pagedown et d’un thème xaringan</li>
 </ul>
+<p>(<a href="https://github.com/davidgohel">https://github.com/davidgohel</a>)</p>
 
     </div>
 
@@ -717,7 +732,7 @@
 
 <div class="article-tags">
   
-  <a class="badge badge-light" href="/tag/migale/">migale</a>
+  <a class="badge badge-light" href="/tag/rmarkdown/">rmarkdown</a>
   
 </div>
 
@@ -734,7 +749,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=/post/rmarkdown/&amp;text=La%20plateforme%20Migale" target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=/post/rmarkdown/&amp;text=D%c3%a9veloppement%20autour%20du%20R-Markdown" target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -747,7 +762,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=/post/rmarkdown/&amp;t=La%20plateforme%20Migale" target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=/post/rmarkdown/&amp;t=D%c3%a9veloppement%20autour%20du%20R-Markdown" target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -760,7 +775,7 @@
       
       
       <li>
-        <a href="mailto:?subject=La%20plateforme%20Migale&amp;body=/post/rmarkdown/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=D%c3%a9veloppement%20autour%20du%20R-Markdown&amp;body=/post/rmarkdown/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -773,7 +788,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=/post/rmarkdown/&amp;title=La%20plateforme%20Migale" target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=/post/rmarkdown/&amp;title=D%c3%a9veloppement%20autour%20du%20R-Markdown" target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -786,7 +801,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=La%20plateforme%20Migale%20/post/rmarkdown/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=D%c3%a9veloppement%20autour%20du%20R-Markdown%20/post/rmarkdown/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -799,7 +814,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=/post/rmarkdown/&amp;title=La%20plateforme%20Migale" target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=/post/rmarkdown/&amp;title=D%c3%a9veloppement%20autour%20du%20R-Markdown" target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -912,9 +927,9 @@
     <h3>Related</h3>
     <ul>
       
-      <li><a href="/post/tidyverse_sequel/">Tidyverse suite (et fin??) avec forcats, lubridate et stringr</a></li>
+      <li><a href="/post/migale/">La plateforme Migale</a></li>
       
-      <li><a href="/post/rmarkdown/">Développement autour du R-Markdown</a></li>
+      <li><a href="/post/tidyverse_sequel/">Tidyverse suite (et fin??) avec forcats, lubridate et stringr</a></li>
       
       <li><a href="/post/rmxnet/">R-Mxnet pour des applications du deep learning</a></li>
       

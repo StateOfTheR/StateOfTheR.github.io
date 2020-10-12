@@ -34,8 +34,7 @@
   
     
   
-  <meta name="description" content="Séance dédiée à la préparation des satRday du lendemain:
- https://paris2019.satrdays.org  Avec tous les bénévoles du groupe !">
+  <meta name="description" content="R package {bigstatsr} provides a special class of matrix whose data is stored on the disk instead of the RAM, but you can still access the data almost as if it were in memory.">
 
   
   <link rel="alternate" hreflang="fr-fr" href="/post/bigstatsr/">
@@ -281,15 +280,14 @@
   
   <meta property="og:site_name" content="State of The R">
   <meta property="og:url" content="/post/bigstatsr/">
-  <meta property="og:title" content="Organisation des premières satRday française à Paris du 23 février | State of The R">
-  <meta property="og:description" content="Séance dédiée à la préparation des satRday du lendemain:
- https://paris2019.satrdays.org  Avec tous les bénévoles du groupe !"><meta property="og:image" content="/images/logo_hu53047fbf4f6efa69f0f91be25bd21dde_40228_300x300_fit_lanczos_2.png">
+  <meta property="og:title" content="Efficient analysis of large-scale matrices with two R packages: bigstatsr and bigsnpr | State of The R">
+  <meta property="og:description" content="R package {bigstatsr} provides a special class of matrix whose data is stored on the disk instead of the RAM, but you can still access the data almost as if it were in memory."><meta property="og:image" content="/images/logo_hu53047fbf4f6efa69f0f91be25bd21dde_40228_300x300_fit_lanczos_2.png">
   <meta property="twitter:image" content="/images/logo_hu53047fbf4f6efa69f0f91be25bd21dde_40228_300x300_fit_lanczos_2.png"><meta property="og:locale" content="fr-fr">
   
     
-      <meta property="article:published_time" content="2019-02-22T00:00:00&#43;00:00">
+      <meta property="article:published_time" content="2019-01-25T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2019-02-22T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2019-01-25T00:00:00&#43;00:00">
   
 
   
@@ -315,10 +313,10 @@
     "@type": "WebPage",
     "@id": "/post/bigstatsr/"
   },
-  "headline": "Organisation des premières satRday française à Paris du 23 février",
+  "headline": "Efficient analysis of large-scale matrices with two R packages: bigstatsr and bigsnpr",
   
-  "datePublished": "2019-02-22T00:00:00Z",
-  "dateModified": "2019-02-22T00:00:00Z",
+  "datePublished": "2019-01-25T00:00:00Z",
+  "dateModified": "2019-01-25T00:00:00Z",
   
   "publisher": {
     "@type": "Organization",
@@ -328,7 +326,7 @@
       "url": "/images/logo_hu53047fbf4f6efa69f0f91be25bd21dde_40228_192x192_fit_lanczos_2.png"
     }
   },
-  "description": "Séance dédiée à la préparation des satRday du lendemain:\n https://paris2019.satrdays.org  Avec tous les bénévoles du groupe !"
+  "description": "R package {bigstatsr} provides a special class of matrix whose data is stored on the disk instead of the RAM, but you can still access the data almost as if it were in memory."
 }
 </script>
 
@@ -346,7 +344,7 @@
 
 
 
-  <title>Organisation des premières satRday française à Paris du 23 février | State of The R</title>
+  <title>Efficient analysis of large-scale matrices with two R packages: bigstatsr and bigsnpr | State of The R</title>
 
 </head>
 
@@ -634,7 +632,7 @@
   
   
 <div class="article-container pt-3">
-  <h1>Organisation des premières satRday française à Paris du 23 février</h1>
+  <h1>Efficient analysis of large-scale matrices with two R packages: bigstatsr and bigsnpr</h1>
 
   
 
@@ -653,7 +651,7 @@
     
       
     
-    Feb 22, 2019
+    Jan 25, 2019
   </span>
   
 
@@ -702,12 +700,12 @@
   <div class="article-container">
 
     <div class="article-style">
-      <img src="https://paris2019.satrdays.org/images/satRdayLogo-square.png" align="right" width="100" style="vertical-align: top;"/>
-<p>Séance dédiée à la préparation des satRday du lendemain:</p>
+      <img src="https://raw.githubusercontent.com/privefl/bigstatsr/master/bigstatsr.png" align="right" width="100"/>
+<p>R package {bigstatsr} provides a special class of matrix whose data is stored on the disk instead of the RAM, but you can still access the data almost as if it were in memory. It is particularly useful is you have a large matrix to analyze but not enough RAM on your computer. It can still be useful for matrices that fit in your RAM because package {bigstatsr} provides very efficient and parallelized algorithms (have you ever found <code>cor</code> or <code>svd</code> too slow?).</p>
+<p>I will present the statistical and helper functions that are provided by package {bigstatsr} for this kind of matrices. R package {bigsnpr}, on top of {bigstatsr}, provides some tools that are specific to the analysis of genetic data. We&rsquo;ll see what I can predict from your DNA using these two packages.</p>
 <ul>
-<li><a href="https://paris2019.satrdays.org">https://paris2019.satrdays.org</a></li>
+<li><a href="https://privefl.github.io/bigstatsr/">https://privefl.github.io/bigstatsr/</a></li>
 </ul>
-<p>Avec tous les bénévoles du groupe !</p>
 
     </div>
 
@@ -720,7 +718,9 @@
 
 <div class="article-tags">
   
-  <a class="badge badge-light" href="/tag/satrday/">satrday</a>
+  <a class="badge badge-light" href="/tag/bigstatsr/">bigstatsr</a>
+  
+  <a class="badge badge-light" href="/tag/bigsnpr/">bigsnpr</a>
   
 </div>
 
@@ -737,7 +737,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=/post/bigstatsr/&amp;text=Organisation%20des%20premi%c3%a8res%20satRday%20fran%c3%a7aise%20%c3%a0%20Paris%20du%2023%20f%c3%a9vrier" target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=/post/bigstatsr/&amp;text=Efficient%20analysis%20of%20large-scale%20matrices%20with%20two%20R%20packages:%20bigstatsr%20and%20bigsnpr" target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -750,7 +750,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=/post/bigstatsr/&amp;t=Organisation%20des%20premi%c3%a8res%20satRday%20fran%c3%a7aise%20%c3%a0%20Paris%20du%2023%20f%c3%a9vrier" target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=/post/bigstatsr/&amp;t=Efficient%20analysis%20of%20large-scale%20matrices%20with%20two%20R%20packages:%20bigstatsr%20and%20bigsnpr" target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -763,7 +763,7 @@
       
       
       <li>
-        <a href="mailto:?subject=Organisation%20des%20premi%c3%a8res%20satRday%20fran%c3%a7aise%20%c3%a0%20Paris%20du%2023%20f%c3%a9vrier&amp;body=/post/bigstatsr/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=Efficient%20analysis%20of%20large-scale%20matrices%20with%20two%20R%20packages:%20bigstatsr%20and%20bigsnpr&amp;body=/post/bigstatsr/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -776,7 +776,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=/post/bigstatsr/&amp;title=Organisation%20des%20premi%c3%a8res%20satRday%20fran%c3%a7aise%20%c3%a0%20Paris%20du%2023%20f%c3%a9vrier" target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=/post/bigstatsr/&amp;title=Efficient%20analysis%20of%20large-scale%20matrices%20with%20two%20R%20packages:%20bigstatsr%20and%20bigsnpr" target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -789,7 +789,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=Organisation%20des%20premi%c3%a8res%20satRday%20fran%c3%a7aise%20%c3%a0%20Paris%20du%2023%20f%c3%a9vrier%20/post/bigstatsr/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=Efficient%20analysis%20of%20large-scale%20matrices%20with%20two%20R%20packages:%20bigstatsr%20and%20bigsnpr%20/post/bigstatsr/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -802,7 +802,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=/post/bigstatsr/&amp;title=Organisation%20des%20premi%c3%a8res%20satRday%20fran%c3%a7aise%20%c3%a0%20Paris%20du%2023%20f%c3%a9vrier" target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=/post/bigstatsr/&amp;title=Efficient%20analysis%20of%20large-scale%20matrices%20with%20two%20R%20packages:%20bigstatsr%20and%20bigsnpr" target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -915,7 +915,7 @@
     <h3>Related</h3>
     <ul>
       
-      <li><a href="/post/rmarkdown/">La plateforme Migale</a></li>
+      <li><a href="/post/migale/">La plateforme Migale</a></li>
       
       <li><a href="/post/tidyverse_sequel/">Tidyverse suite (et fin??) avec forcats, lubridate et stringr</a></li>
       

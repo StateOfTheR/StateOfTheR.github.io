@@ -22,11 +22,10 @@
     
     <item>
       <title>La plateforme Migale</title>
-      <link>/post/rmarkdown/</link>
+      <link>/post/migale/</link>
       <pubDate>Fri, 13 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>/post/rmarkdown/</guid>
-      <description>&lt;img src=&#34;img/headers/migale.png&#34; align=&#34;right&#34; width=&#34;200&#34;/&gt;
-&lt;p&gt;Mahendra nous offre un tour su la plateforme &lt;a href=&#34;https://migale.inra.fr/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Migale&lt;/a&gt; et plus généralement sur la soumission de job sur un serveur de calcul via &lt;code&gt;qsub&lt;/code&gt;  et les packages purrr, future and furrr.&lt;/p&gt;
+      <guid>/post/migale/</guid>
+      <description>&lt;p&gt;Mahendra nous offre un tour su la plateforme &lt;a href=&#34;https://migale.inra.fr/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Migale&lt;/a&gt; et plus généralement sur la soumission de job sur un serveur de calcul via &lt;code&gt;qsub&lt;/code&gt;  et les packages purrr, future and furrr.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;../../post/migale/2003-Rmigale.html&#34;&gt;La présentation&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -151,9 +150,9 @@ On peut aussi faire de l&amp;rsquo;inférence fréquentiste par optimisation.&lt
     
     <item>
       <title>Organisation des premières satRday française à Paris du 23 février</title>
-      <link>/post/bigstatsr/</link>
+      <link>/post/satrday/</link>
       <pubDate>Fri, 22 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>/post/bigstatsr/</guid>
+      <guid>/post/satrday/</guid>
       <description>&lt;img src=&#34;https://paris2019.satrdays.org/images/satRdayLogo-square.png&#34; align=&#34;right&#34; width=&#34;100&#34; style=&#34;vertical-align: top;&#34;/&gt;
 &lt;p&gt;Séance dédiée à la préparation des satRday du lendemain:&lt;/p&gt;
 &lt;ul&gt;
