@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>shiny | State of The R</title>
-    <link>/tag/shiny/</link>
-      <atom:link href="/tag/shiny/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://stateofther.github.io/tag/shiny/</link>
+      <atom:link href="http://stateofther.github.io/tag/shiny/index.xml" rel="self" type="application/rss+xml" />
     <description>shiny</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>fr-fr</language><copyright>© 2020 State of the R</copyright><lastBuildDate>Tue, 11 Jun 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/logo_hu53047fbf4f6efa69f0f91be25bd21dde_40228_300x300_fit_lanczos_2.png</url>
+      <url>http://stateofther.github.io/images/logo_hu53047fbf4f6efa69f0f91be25bd21dde_40228_300x300_fit_lanczos_2.png</url>
       <title>shiny</title>
-      <link>/tag/shiny/</link>
+      <link>http://stateofther.github.io/tag/shiny/</link>
     </image>
     
     <item>
       <title>Comment Shiny peut vous aider dans vos simulations, vos collaborations et vos cours</title>
-      <link>/post/shiny/</link>
+      <link>http://stateofther.github.io/post/shiny/</link>
       <pubDate>Tue, 11 Jun 2019 00:00:00 +0000</pubDate>
-      <guid>/post/shiny/</guid>
+      <guid>http://stateofther.github.io/post/shiny/</guid>
       <description>&lt;p&gt;Pierre et Benjamin nous ont préparé &amp;lsquo;quelque chose sur Shiny&amp;rsquo;:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;../../post/shiny/stateoftheR_shiny.pdf&#34;&gt;La présentation&lt;/a&gt;&lt;/li&gt;

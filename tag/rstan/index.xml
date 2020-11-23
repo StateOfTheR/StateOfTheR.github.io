@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>rstan | State of The R</title>
-    <link>/tag/rstan/</link>
-      <atom:link href="/tag/rstan/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://stateofther.github.io/tag/rstan/</link>
+      <atom:link href="http://stateofther.github.io/tag/rstan/index.xml" rel="self" type="application/rss+xml" />
     <description>rstan</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>fr-fr</language><copyright>© 2020 State of the R</copyright><lastBuildDate>Fri, 19 Apr 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/logo_hu53047fbf4f6efa69f0f91be25bd21dde_40228_300x300_fit_lanczos_2.png</url>
+      <url>http://stateofther.github.io/images/logo_hu53047fbf4f6efa69f0f91be25bd21dde_40228_300x300_fit_lanczos_2.png</url>
       <title>rstan</title>
-      <link>/tag/rstan/</link>
+      <link>http://stateofther.github.io/tag/rstan/</link>
     </image>
     
     <item>
       <title>rSTAN, un outil d&#39;inférence bayésienne</title>
-      <link>/post/rstan/</link>
+      <link>http://stateofther.github.io/post/rstan/</link>
       <pubDate>Fri, 19 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>/post/rstan/</guid>
+      <guid>http://stateofther.github.io/post/rstan/</guid>
       <description>&lt;p&gt;Matthieu et Éric nous propose une séance sur {rSTAN}, l&amp;rsquo;interface R à la bibliothèque
 C++ Stan. Il s&amp;rsquo;agit d&amp;rsquo;algorithme inférence b  yésienne utilisant une variante du Monte-Carlo Hamiltonien.
 On peut aussi faire de l&amp;rsquo;inférence fréquentiste par optimisation.&lt;/p&gt;

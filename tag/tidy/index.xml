@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>tidy | State of The R</title>
-    <link>/tag/tidy/</link>
-      <atom:link href="/tag/tidy/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://stateofther.github.io/tag/tidy/</link>
+      <atom:link href="http://stateofther.github.io/tag/tidy/index.xml" rel="self" type="application/rss+xml" />
     <description>tidy</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>fr-fr</language><copyright>© 2020 State of the R</copyright><lastBuildDate>Wed, 02 May 2018 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/logo_hu53047fbf4f6efa69f0f91be25bd21dde_40228_300x300_fit_lanczos_2.png</url>
+      <url>http://stateofther.github.io/images/logo_hu53047fbf4f6efa69f0f91be25bd21dde_40228_300x300_fit_lanczos_2.png</url>
       <title>tidy</title>
-      <link>/tag/tidy/</link>
+      <link>http://stateofther.github.io/tag/tidy/</link>
     </image>
     
     <item>
       <title>Une introduction au tidyverse</title>
-      <link>/post/une-introduction-au-tidyverse/</link>
+      <link>http://stateofther.github.io/post/une-introduction-au-tidyverse/</link>
       <pubDate>Wed, 02 May 2018 00:00:00 +0000</pubDate>
-      <guid>/post/une-introduction-au-tidyverse/</guid>
+      <guid>http://stateofther.github.io/post/une-introduction-au-tidyverse/</guid>
       <description>
 
 
@@ -29,9 +29,9 @@
     
     <item>
       <title>Exercices autour de data.table</title>
-      <link>/post/data.table/</link>
+      <link>http://stateofther.github.io/post/data.table/</link>
       <pubDate>Mon, 23 Oct 2017 00:00:00 +0000</pubDate>
-      <guid>/post/data.table/</guid>
+      <guid>http://stateofther.github.io/post/data.table/</guid>
       <description>
 
 

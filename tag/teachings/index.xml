@@ -2,41 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>teachings | State of The R</title>
-    <link>/tag/teachings/</link>
-      <atom:link href="/tag/teachings/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://stateofther.github.io/tag/teachings/</link>
+      <atom:link href="http://stateofther.github.io/tag/teachings/index.xml" rel="self" type="application/rss+xml" />
     <description>teachings</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>fr-fr</language><copyright>© 2020 State of the R</copyright><lastBuildDate>Mon, 25 Sep 2017 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/logo_hu53047fbf4f6efa69f0f91be25bd21dde_40228_300x300_fit_lanczos_2.png</url>
+      <url>http://stateofther.github.io/images/logo_hu53047fbf4f6efa69f0f91be25bd21dde_40228_300x300_fit_lanczos_2.png</url>
       <title>teachings</title>
-      <link>/tag/teachings/</link>
+      <link>http://stateofther.github.io/tag/teachings/</link>
     </image>
     
     <item>
       <title>Atelier découverte LearnR</title>
-      <link>/post/learnr/</link>
+      <link>http://stateofther.github.io/post/learnr/</link>
       <pubDate>Mon, 25 Sep 2017 00:00:00 +0000</pubDate>
-      <guid>/post/learnr/</guid>
+      <guid>http://stateofther.github.io/post/learnr/</guid>
       <description>
+&lt;link href=&#34;http://stateofther.github.io/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;http://stateofther.github.io/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
 
 
-&lt;!-- ## courriel --&gt;
-&lt;!-- Pour learnR je dirai que c’est un outil intéressant pour réaliser des TP structurés selon une trame précise et pour lesquels on souhaite modifier les données. --&gt;
-&lt;!-- Par contre, il me faudrait plus de temps pour voir comment exporter/sauvegarder les codes et sorties R dans un fichier (.R par exemple). --&gt;
-&lt;!-- ### Jessica --&gt;
-&lt;!-- avec Marie qui était sansordi, nous avons regardé le tuto de learnR et en particulier les différentes fonctionnalités qui pourraient permettre de récupérer les réponses des étudiants... On a conclu que c&#39;était plus du Shiny que du learnR. --&gt;
-&lt;!-- On a vu les options --&gt;
-&lt;!-- 3- sur la fonction `quiz( )`, on a cherché à ne pas faire apparaître de réponse et on a été surprises de voir qu&#39;en recompilant on voit encore ce qu&#39;on a répondu avant... --&gt;
-&lt;!-- Bref, ça n&#39;a pas été très productif selon moi (même si ma machine a bien voulu faire ce que je demandais !) et ça a donné l&#39;impression qu&#39;on faisait tous un peu la même chose, il faudrait peut être décider en début d&#39;HappyR qui regarde quoi et se mettre en petits groupes pour traiter chacun une question spécifique, disons en 1h et préparer sur place une courte restitution aux autres (ce qui éviterait aussi la compilation de nos différents retours). C&#39;est peut être un peu utopique de se dire que c&#39;est faisable sans que personne n&#39;est déjà regardé plus en détails avant qu&#39;on se retrouve...  --&gt;
-&lt;!-- De mon côté, j&#39;avais regardé rapidement quelles étaient les possibilités de générer des sujets différents et j&#39;ai trouvé un exemple de publipostage &#34;Mail merge&#34; qui peut permettre  de faire cela (au moins si &#39;l&#39;on souhaite juste générer N sujets au format PDF par exemple - ensuite il faut combiner avec du learnR et du Shiny si on veut aller jusqu&#39;à récupérer les réponses pour une notation d&#39;évaluation automatisée), cf pour ceux qui ça intéresse https://www.r-bloggers.com/mail-merge-with-rmarkdown/. --&gt;
-&lt;!-- bonne compil&#39; et merci de t&#39;en charger --&gt;
-&lt;!-- Jessica TRESSOU --&gt;
-&lt;!-- ### Isabelle --&gt;
-&lt;!-- Impressions sur learnR : outil sympathique quand on veut poser des questions via une interface WEB à des personnes. Mais se pose crucialement la question comment récupérer les réponses. --&gt;
-&lt;!-- Merci pour cette initiative de StateoftheR qui va peut-être me permettre de pas trop perdre la main ou plutôt de raccrocher. Par contre, je ne pourrais pas être là le 20/10. Désolée. Réunion experts Anses oblige. --&gt;
-&lt;!-- ### Maud --&gt;
-&lt;!-- - le package produit des supports plus adaptés à des interventions de type tutoriel ou des auto-évaluations --&gt;
-&lt;!-- - inconvénients liés à l&#39;indépendance des chunks; nécessite d&#39;ajouter des lignes de code dans le setup ou de faire des liens entre chunks (mais comment?) --&gt;
 &lt;div id=&#34;vue-densemble&#34; class=&#34;section level3&#34;&gt;
 &lt;h3&gt;Vue d’ensemble&lt;/h3&gt;
 &lt;p&gt;Le package &lt;code&gt;learnr&lt;/code&gt; permet de créer des tutoriels (voir le &lt;a href=&#34;https://rstudio.github.io/learnr/&#34;&gt;site dédié&lt;/a&gt; ou &lt;a href=&#34;https://blog.rstudio.com/2017/07/11/introducing-learnr/&#34;&gt;le blog de présentation&lt;/a&gt;). Les tutoriels incluent du texte, des champs pour taper et exécuter des commandes &lt;code&gt;R&lt;/code&gt; (pouvant être pré-formatés) et des questionnaires à choix multiples.

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>rcpp | State of The R</title>
-    <link>/tag/rcpp/</link>
-      <atom:link href="/tag/rcpp/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://stateofther.github.io/tag/rcpp/</link>
+      <atom:link href="http://stateofther.github.io/tag/rcpp/index.xml" rel="self" type="application/rss+xml" />
     <description>rcpp</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>fr-fr</language><copyright>© 2020 State of the R</copyright><lastBuildDate>Fri, 20 Jul 2018 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/logo_hu53047fbf4f6efa69f0f91be25bd21dde_40228_300x300_fit_lanczos_2.png</url>
+      <url>http://stateofther.github.io/images/logo_hu53047fbf4f6efa69f0f91be25bd21dde_40228_300x300_fit_lanczos_2.png</url>
       <title>rcpp</title>
-      <link>/tag/rcpp/</link>
+      <link>http://stateofther.github.io/tag/rcpp/</link>
     </image>
     
     <item>
       <title>Bases en Rcpp</title>
-      <link>/post/bases-rcpp/</link>
+      <link>http://stateofther.github.io/post/bases-rcpp/</link>
       <pubDate>Fri, 20 Jul 2018 00:00:00 +0000</pubDate>
-      <guid>/post/bases-rcpp/</guid>
+      <guid>http://stateofther.github.io/post/bases-rcpp/</guid>
       <description>&lt;img src=&#34;img/headers/seamless.png&#34; align=&#34;right&#34; width=&#34;200&#34;/&gt;
 &lt;p&gt;Les trois mousquetaires Timothée, Mathieu et Félix (a.k.a riri fifi loulou) proposent une séances complète d&amp;rsquo;introduction à &lt;code&gt;Rcpp&lt;/code&gt; accompagné de travaux pratiques.&lt;/p&gt;
 &lt;p&gt;Les documents de la séances:&lt;/p&gt;

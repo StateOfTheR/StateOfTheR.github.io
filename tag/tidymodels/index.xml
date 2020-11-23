@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>tidymodels | State of The R</title>
-    <link>/tag/tidymodels/</link>
-      <atom:link href="/tag/tidymodels/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://stateofther.github.io/tag/tidymodels/</link>
+      <atom:link href="http://stateofther.github.io/tag/tidymodels/index.xml" rel="self" type="application/rss+xml" />
     <description>tidymodels</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>fr-fr</language><copyright>© 2020 State of the R</copyright><lastBuildDate>Fri, 23 Nov 2018 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/images/logo_hu53047fbf4f6efa69f0f91be25bd21dde_40228_300x300_fit_lanczos_2.png</url>
+      <url>http://stateofther.github.io/images/logo_hu53047fbf4f6efa69f0f91be25bd21dde_40228_300x300_fit_lanczos_2.png</url>
       <title>tidymodels</title>
-      <link>/tag/tidymodels/</link>
+      <link>http://stateofther.github.io/tag/tidymodels/</link>
     </image>
     
     <item>
       <title>Modeling in the Tidyverse and applications to metagenomics data</title>
-      <link>/post/tidymodels/</link>
+      <link>http://stateofther.github.io/post/tidymodels/</link>
       <pubDate>Fri, 23 Nov 2018 00:00:00 +0000</pubDate>
-      <guid>/post/tidymodels/</guid>
+      <guid>http://stateofther.github.io/post/tidymodels/</guid>
       <description>&lt;img src=&#34;https://raw.githubusercontent.com/tidymodels/tidymodels/master/tidymodels_hex.png&#34; align=&#34;right&#34; width=&#34;200&#34;/&gt;
 &lt;p&gt;Antoine, notre fanatique du &lt;code&gt;tidyverse&lt;/code&gt;, nous propose de jeter un coup d’oeil à &lt;code&gt;broom&lt;/code&gt; et &lt;code&gt;rsample&lt;/code&gt;, des packages de &lt;code&gt;tidymodels&lt;/code&gt;, pour travailler proprement (aka en format &lt;code&gt;tibble&lt;/code&gt;) avec les sorties S3 des méthodes statistiques comme &lt;code&gt;lm&lt;/code&gt; ou &lt;code&gt;kmeans&lt;/code&gt; et faciliter l’utilisation des méthodes de rééchantillonage.&lt;/p&gt;
 &lt;ul&gt;

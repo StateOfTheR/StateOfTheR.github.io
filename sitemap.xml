@@ -3,379 +3,364 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/tag/bootcamp/</loc>
+    <loc>http://stateofther.github.io/tag/bootcamp/</loc>
     <lastmod>2020-08-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/project/finistr20/</loc>
+    <loc>http://stateofther.github.io/project/finistr20/</loc>
     <lastmod>2020-08-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/project/</loc>
+    <loc>http://stateofther.github.io/project/</loc>
     <lastmod>2020-08-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/</loc>
+    <loc>http://stateofther.github.io/</loc>
     <lastmod>2020-08-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/</loc>
+    <loc>http://stateofther.github.io/tags/</loc>
     <lastmod>2020-08-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/</loc>
+    <loc>http://stateofther.github.io/categories/</loc>
     <lastmod>2020-03-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/migale/</loc>
+    <loc>http://stateofther.github.io/post/migale/</loc>
     <lastmod>2020-03-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tag/migale/</loc>
+    <loc>http://stateofther.github.io/tag/migale/</loc>
     <lastmod>2020-03-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/</loc>
+    <loc>http://stateofther.github.io/post/</loc>
     <lastmod>2020-03-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/category/workshop/</loc>
+    <loc>http://stateofther.github.io/category/workshop/</loc>
     <lastmod>2020-03-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/tidyverse_sequel/</loc>
+    <loc>http://stateofther.github.io/post/tidyverse_sequel/</loc>
     <lastmod>2019-12-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tag/tidyverse_sequel/</loc>
+    <loc>http://stateofther.github.io/tag/tidyverse_sequel/</loc>
     <lastmod>2019-12-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/rmarkdown/</loc>
+    <loc>http://stateofther.github.io/post/rmarkdown/</loc>
     <lastmod>2019-11-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tag/rmarkdown/</loc>
+    <loc>http://stateofther.github.io/tag/rmarkdown/</loc>
     <lastmod>2019-11-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/rmxnet/</loc>
+    <loc>http://stateofther.github.io/post/rmxnet/</loc>
     <lastmod>2019-10-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tag/rmxnet/</loc>
+    <loc>http://stateofther.github.io/tag/rmxnet/</loc>
     <lastmod>2019-10-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/project/finistr19/</loc>
+    <loc>http://stateofther.github.io/project/finistr19/</loc>
     <lastmod>2019-08-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/shiny/</loc>
+    <loc>http://stateofther.github.io/post/shiny/</loc>
     <lastmod>2019-06-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tag/shiny/</loc>
+    <loc>http://stateofther.github.io/tag/shiny/</loc>
     <lastmod>2019-06-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tag/ggplotly/</loc>
+    <loc>http://stateofther.github.io/tag/ggplotly/</loc>
     <lastmod>2019-05-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/plotly/</loc>
+    <loc>http://stateofther.github.io/post/plotly/</loc>
     <lastmod>2019-05-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tag/plotly/</loc>
+    <loc>http://stateofther.github.io/tag/plotly/</loc>
     <lastmod>2019-05-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tag/rstan/</loc>
+    <loc>http://stateofther.github.io/tag/rstan/</loc>
     <lastmod>2019-04-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/rstan/</loc>
+    <loc>http://stateofther.github.io/post/rstan/</loc>
     <lastmod>2019-04-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tag/stan/</loc>
+    <loc>http://stateofther.github.io/tag/stan/</loc>
     <lastmod>2019-04-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/packages/</loc>
+    <loc>http://stateofther.github.io/post/packages/</loc>
     <lastmod>2019-03-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tag/packages/</loc>
+    <loc>http://stateofther.github.io/tag/packages/</loc>
     <lastmod>2019-03-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tag/travis/</loc>
+    <loc>http://stateofther.github.io/tag/travis/</loc>
     <lastmod>2019-03-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/satrday/</loc>
+    <loc>http://stateofther.github.io/post/satrday/</loc>
     <lastmod>2019-02-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tag/satrday/</loc>
+    <loc>http://stateofther.github.io/tag/satrday/</loc>
     <lastmod>2019-02-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tag/bigsnpr/</loc>
+    <loc>http://stateofther.github.io/tag/bigsnpr/</loc>
     <lastmod>2019-01-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tag/bigstatsr/</loc>
+    <loc>http://stateofther.github.io/tag/bigstatsr/</loc>
     <lastmod>2019-01-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/bigstatsr/</loc>
+    <loc>http://stateofther.github.io/post/bigstatsr/</loc>
     <lastmod>2019-01-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tag/exams/</loc>
+    <loc>http://stateofther.github.io/tag/exams/</loc>
     <lastmod>2018-12-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tag/moodle/</loc>
+    <loc>http://stateofther.github.io/tag/moodle/</loc>
     <lastmod>2018-12-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/pimp-exam/</loc>
+    <loc>http://stateofther.github.io/post/pimp-exam/</loc>
     <lastmod>2018-12-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tag/broom/</loc>
+    <loc>http://stateofther.github.io/tag/broom/</loc>
     <lastmod>2018-11-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/tidymodels/</loc>
+    <loc>http://stateofther.github.io/post/tidymodels/</loc>
     <lastmod>2018-11-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tag/rsample/</loc>
+    <loc>http://stateofther.github.io/tag/rsample/</loc>
     <lastmod>2018-11-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tag/tidymodels/</loc>
+    <loc>http://stateofther.github.io/tag/tidymodels/</loc>
     <lastmod>2018-11-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tag/tidyverse/</loc>
+    <loc>http://stateofther.github.io/tag/tidyverse/</loc>
     <lastmod>2018-11-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/fancy-plotting/</loc>
+    <loc>http://stateofther.github.io/post/fancy-plotting/</loc>
     <lastmod>2018-10-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tag/gganimate/</loc>
+    <loc>http://stateofther.github.io/tag/gganimate/</loc>
     <lastmod>2018-10-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tag/ggplot/</loc>
+    <loc>http://stateofther.github.io/tag/ggplot/</loc>
     <lastmod>2018-10-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tag/ggraph/</loc>
+    <loc>http://stateofther.github.io/tag/ggraph/</loc>
     <lastmod>2018-10-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/project/finistr18/</loc>
+    <loc>http://stateofther.github.io/project/finistr18/</loc>
     <lastmod>2018-08-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/bases-rcpp/</loc>
+    <loc>http://stateofther.github.io/post/bases-rcpp/</loc>
     <lastmod>2018-07-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tag/rcpp/</loc>
+    <loc>http://stateofther.github.io/tag/rcpp/</loc>
     <lastmod>2018-07-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tag/bigdata/</loc>
+    <loc>http://stateofther.github.io/tag/bigdata/</loc>
     <lastmod>2018-06-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tag/data.table/</loc>
+    <loc>http://stateofther.github.io/tag/data.table/</loc>
     <lastmod>2018-06-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/manipulating-half-big-data-in-r/</loc>
+    <loc>http://stateofther.github.io/post/manipulating-half-big-data-in-r/</loc>
     <lastmod>2018-06-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tag/sparlyr/</loc>
+    <loc>http://stateofther.github.io/tag/sparlyr/</loc>
     <lastmod>2018-06-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tag/deep-learning/</loc>
+    <loc>http://stateofther.github.io/tag/deep-learning/</loc>
     <lastmod>2018-05-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/introduction-au-deep-learning-sous-r/</loc>
+    <loc>http://stateofther.github.io/post/introduction-au-deep-learning-sous-r/</loc>
     <lastmod>2018-05-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tag/dplyr/</loc>
+    <loc>http://stateofther.github.io/tag/dplyr/</loc>
     <lastmod>2018-05-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tag/magrittr/</loc>
+    <loc>http://stateofther.github.io/tag/magrittr/</loc>
     <lastmod>2018-05-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tag/tidy/</loc>
+    <loc>http://stateofther.github.io/tag/tidy/</loc>
     <lastmod>2018-05-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/une-introduction-au-tidyverse/</loc>
+    <loc>http://stateofther.github.io/post/une-introduction-au-tidyverse/</loc>
     <lastmod>2018-05-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/spatial/</loc>
+    <loc>http://stateofther.github.io/post/spatial/</loc>
     <lastmod>2018-03-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tag/spatial/</loc>
+    <loc>http://stateofther.github.io/tag/spatial/</loc>
     <lastmod>2018-03-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tag/communication/</loc>
+    <loc>http://stateofther.github.io/tag/communication/</loc>
     <lastmod>2018-02-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tag/datatable/</loc>
+    <loc>http://stateofther.github.io/tag/datatable/</loc>
     <lastmod>2018-02-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tag/dt/</loc>
+    <loc>http://stateofther.github.io/tag/dt/</loc>
     <lastmod>2018-02-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tag/kable/</loc>
+    <loc>http://stateofther.github.io/tag/kable/</loc>
     <lastmod>2018-02-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tag/r-markdown/</loc>
+    <loc>http://stateofther.github.io/tag/r-markdown/</loc>
     <lastmod>2018-02-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/rmarkdown-tableaux-interactifs-et-retour-d-experience/</loc>
+    <loc>http://stateofther.github.io/post/rmarkdown-tableaux-interactifs-et-retour-d-experience/</loc>
     <lastmod>2018-02-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/science-communication-with-r-style-r-markdown-xaringan/</loc>
+    <loc>http://stateofther.github.io/post/science-communication-with-r-style-r-markdown-xaringan/</loc>
     <lastmod>2018-02-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/data.table/</loc>
+    <loc>http://stateofther.github.io/post/data.table/</loc>
     <lastmod>2017-10-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/learnr/</loc>
-    <lastmod>2017-09-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tag/learnr/</loc>
-    <lastmod>2017-09-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tag/teachings/</loc>
-    <lastmod>2017-09-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/project/finistr17/</loc>
+    <loc>http://stateofther.github.io/project/finistr17/</loc>
     <lastmod>2017-09-11T00:00:00+02:00</lastmod>
   </url>
   
   <url>
-    <loc>/author/</loc>
+    <loc>http://stateofther.github.io/author/</loc>
   </url>
   
   <url>
-    <loc>/authors/</loc>
+    <loc>http://stateofther.github.io/authors/</loc>
   </url>
   
   <url>
-    <loc>/publication_types/</loc>
+    <loc>http://stateofther.github.io/publication_types/</loc>
   </url>
   
   <url>
-    <loc>/talk/</loc>
+    <loc>http://stateofther.github.io/talk/</loc>
   </url>
   
 </urlset>
