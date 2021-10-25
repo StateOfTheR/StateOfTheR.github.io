@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>spatial | State of The R</title>
+    <link>http://stateofther.github.io/tag/spatial/</link>
+      <atom:link href="http://stateofther.github.io/tag/spatial/index.xml" rel="self" type="application/rss+xml" />
+    <description>spatial</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>fr-fr</language><copyright>© 2020 State of the R</copyright><lastBuildDate>Fri, 23 Mar 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://stateofther.github.io/images/logo_hu53047fbf4f6efa69f0f91be25bd21dde_40228_300x300_fit_lanczos_3.png</url>
+      <title>spatial</title>
+      <link>http://stateofther.github.io/tag/spatial/</link>
+    </image>
+    
+    <item>
+      <title>Introduction au Spatial sous R</title>
+      <link>http://stateofther.github.io/post/spatial/</link>
+      <pubDate>Fri, 23 Mar 2018 00:00:00 +0000</pubDate>
+      <guid>http://stateofther.github.io/post/spatial/</guid>
+      <description>&lt;p&gt;Éric nous présente les suites de l&amp;rsquo;introdution de Jessica aux très nombreux outils disponibles pour les statistiques spatiales sous R, notamment autour des packages &lt;a href=&#34;https://github.com/r-spatial/sf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;sf&lt;/a&gt; et &lt;a href=&#34;https://github.com/edzer/sp&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;sp&lt;/a&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;../../post/spatial/happyR-230318_spatial_1.pdf&#34;&gt;slides et exercices, partie 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../../post/spatial/happyR-230318_spatial_2.pdf&#34;&gt;slides et exercices, partie 2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

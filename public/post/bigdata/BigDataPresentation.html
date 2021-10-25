@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>(Half) Big Data handling with R</title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="generator" content="pandoc" />
+
+
+
+  <meta name="date" content="2018-06-29" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <base target="_blank">
+
+  <script type="text/javascript">
+    var SLIDE_CONFIG = {
+      // Slide settings
+      settings: {
+                title: '(Half) Big Data handling with R',
+                        useBuilds: true,
+        usePrettify: true,
+        enableSlideAreas: true,
+        enableTouch: true,
+                      },
+
+      // Author information
+      presenters: [
+            {
+        name:  'Severine Bord, Tristan Mary-Huard' ,
+        company: '',
+        gplus: '',
+        twitter: '',
+        www: '',
+        github: ''
+      },
+            ]
+    };
+  </script>
+
+  <link href="BigDataPresentation_files/ioslides-13.5.1/fonts/fonts.css" rel="stylesheet" />
+  <link href="BigDataPresentation_files/ioslides-13.5.1/theme/css/default.css" rel="stylesheet" />
+  <link href="BigDataPresentation_files/ioslides-13.5.1/theme/css/phone.css" rel="stylesheet" />
+  <script src="BigDataPresentation_files/ioslides-13.5.1/js/modernizr.custom.45394.js"></script>
+  <script src="BigDataPresentation_files/ioslides-13.5.1/js/prettify/prettify.js"></script>
+  <script src="BigDataPresentation_files/ioslides-13.5.1/js/prettify/lang-r.js"></script>
+  <script src="BigDataPresentation_files/ioslides-13.5.1/js/prettify/lang-yaml.js"></script>
+  <script src="BigDataPresentation_files/ioslides-13.5.1/js/hammer.js"></script>
+  <script src="BigDataPresentation_files/ioslides-13.5.1/js/slide-controller.js"></script>
+  <script src="BigDataPresentation_files/ioslides-13.5.1/js/slide-deck.js"></script>
+
+  <style type="text/css">
+
+    b, strong {
+      font-weight: bold;
+    }
+
+    em {
+      font-style: italic;
+    }
+
+    slides > slide {
+      -webkit-transition: all 0.4s ease-in-out;
+      -moz-transition: all 0.4s ease-in-out;
+      -o-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .auto-fadein {
+      -webkit-transition: opacity 0.6s ease-in;
+      -webkit-transition-delay: 0.4s;
+      -moz-transition: opacity 0.6s ease-in 0.4s;
+      -o-transition: opacity 0.6s ease-in 0.4s;
+      transition: opacity 0.6s ease-in 0.4s;
+      opacity: 0;
+    }
+
+  </style>
+
+
+</head>
+
+<body style="opacity: 0">
+
+<slides>
+
+  <slide class="title-slide segue nobackground">
+        <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
+    <hgroup class="auto-fadein">
+      <h1 data-config-title><!-- populated from slide_config.json --></h1>
+      <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
+      <p data-config-presenter><!-- populated from slide_config.json --></p>
+            <p style="margin-top: 6px; margin-left: -2px;">2018-06-29</p>
+          </hgroup>
+  </slide>
+
+<slide class=""><hgroup><h2>Dataset 1: Arabidopsis</h2></hgroup><article  id="dataset-1-arabidopsis">
+
+<p>1,307 Arabidopsis lines<br/>Sequenced at 214,051 biallelic markers</p>
+
+<pre class = 'prettyprint lang-r'>Arabidopsis[1:5,1:10]</pre>
+
+<pre >##    L1 L2 L3 L4 L5 L6 L7 L8 L9 L10
+## M1  1  0  1  1  0  1  0  1  1   1
+## M2  1  0  1  1  0  1  1  1  1   1
+## M3  1  0  1  1  0  1  1  1  1   1
+## M4  0  0  0  0  1  0  0  0  0   0
+## M5  0  0  0  0  0  0  0  0  0   0</pre>
+
+<p><strong>Goal:</strong> perform basic descriptive analysis<br/>- Allelic frequency per marker,<br/>- Filtering markers with low polymorphism,<br/>- Compute a kinship matrix (ie a genetic similarity matrix).</p>
+
+</article></slide><slide class=""><hgroup><h2>Dataset 2: Orange</h2></hgroup><article  id="dataset-2-orange">
+
+<p>Hour per hour activity of 22,772 relay antennas:<br/>Id variables: <em>Date_Time, Id_RelAnt</em><br/>Measurement variables: <em>NbSim_Fr, NbSim_Other, NbCom_Fr,</em><br/>\(\qquad\qquad\qquad\qquad\quad\) <em>NbCom_Other</em></p>
+
+<pre class = 'prettyprint lang-r'>Orange[1:5,]</pre>
+
+<pre >##       Date_Time  Id_RelAnt NbSim_Fr NbSim_Other NbCom_Fr NbCom_Other
+## 1 2017-04-15 00 00000001A1       37           0      141           0
+## 2 2017-04-15 00 00000001B1      134           0      503           0
+## 3 2017-04-15 00 00000001B2      170           2      752           2
+## 4 2017-04-15 00 00000001B3       93           0      550           0
+## 5 2017-04-15 00 00000001C1      122           2     1149          13</pre>
+
+<p><strong>Goal:</strong> perform basic descriptive analysis<br/>- compute mean activity per hour.</p>
+
+</article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>By default analysis</h2></hgroup><article  id="by-default-analysis">
+
+</article></slide><slide class=""><hgroup><h2>Arabidopsis</h2></hgroup><article  id="arabidopsis">
+
+<p><strong>Load data</strong></p>
+
+<pre class = 'prettyprint lang-r'>read.table(&#39;./Data/Arabidopsis/Arabidopsis.txt&#39;,header=F,sep=&#39;;&#39;) %&gt;%
+  as.matrix() -&gt; Arabidopsis </pre>
+
+<p><span style="float:right">
+57s</span><br/> <strong>Compute frequencies</strong></p>
+
+<pre class = 'prettyprint lang-r'>Freq &lt;- apply(Arabidopsis,2,mean)</pre>
+
+<p><span style="float:right">
+4s</span><br/> <strong>Filter frequencies</strong></p>
+
+<pre class = 'prettyprint lang-r'>MinMaf &lt;- 0.05
+MafFilter &lt;- Freq &gt; MinMaf | Freq &lt; 1-MinMaf
+Filtered &lt;- Arabidopsis[MafFilter,]</pre>
+
+<p><span style="float:right">
+6s</span></p>
+
+</article></slide><slide class=""><hgroup><h2>Arabidopsis</h2></hgroup><article  id="arabidopsis-1">
+
+<p><strong>Compute kinship</strong></p>
+
+<pre class = 'prettyprint lang-r'>Kinship &lt;- (crossprod(Filtered) + crossprod(1-Filtered))/nrow(Filtered)</pre>
+
+<p><span style="float:right">
+9.5s</span><br/></p>
+
+<p><strong>Invert matrix</strong></p>
+
+<pre class = 'prettyprint lang-r'>solve(Kinship)</pre>
+
+<p><span style="float:right">
+0.2s</span><br/></p>
+
+<p>\(\color{blue}{\text{Total (default) computational time:}}\quad\) <strong>76.8s</strong></p>
+
+</article></slide><slide class=""><hgroup><h2>Arabidopsis</h2></hgroup><article  id="arabidopsis-2">
+
+<p><strong>Load data</strong></p>
+
+<pre class = 'prettyprint lang-r'>fread(&#39;./Data/Arabidopsis/Arabidopsis.txt&#39;,header=F,sep=&#39;;&#39;) %&gt;%
+  as.matrix() -&gt; Arabidopsis </pre>
+
+<p><span style="float:right">
+9.4s (\(\color{red}{\times 6}\))</span><br/> <strong>Compute frequencies</strong></p>
+
+<pre class = 'prettyprint lang-r'>Freq &lt;- rowMeans(Arabidopsis)</pre>
+
+<p><span style="float:right">
+0.7s (\(\color{red}{\times 6}\))</span><br/> <strong>Invert matrix</strong></p>
+
+<pre class = 'prettyprint lang-r'>InvKinship &lt;- chol2inv(chol(Kinship))</pre>
+
+<p><span style="float:right">
+0.2s (\(\color{red}{\times 6}\))</span></p>
+
+</article></slide><slide class=""><hgroup><h2>Arabidopsis </h2><h3> Summary</h3></hgroup><article  id="arabidopsis-summary" class="build">
+
+<p>Greatly improves performance:<br/>\(\color{blue}{\text{Total (default) computational time:}}\quad\) <strong>76.8s</strong><br/>\(\color{blue}{\text{Total (improved) computational time:}}\quad\) <strong>25.7s</strong><br/> <br/> <br/><strong>But&#8230;</strong><br/> <br/> <br/>Arabidopsis from read.table: <strong>1067.4 Mb</strong><br/>Arabidopsis from fread: <strong>1067.4 Mb</strong><br/><em>More on this latter&#8230;</em><br/> <br/>Does not solve the <strong>memory</strong> problem&#8230;</p>
+
+</article></slide><slide class=""><hgroup><h2>Orange</h2></hgroup><article  id="orange">
+
+<pre class = 'prettyprint lang-r'>MeanPerHour &lt;- Orange %&gt;%
+  mutate(Time = substr(Date_Time,start=12,stop=13)) %&gt;%
+  group_by(Time) %&gt;%
+  summarise(M_NbSim_Fr=mean(NbSim_Fr),M_NbSim_Other=mean(NbSim_Other),
+            M_NbCom_Fr=mean(NbCom_Fr),M_NbCom_Other=mean(NbCom_Other))  
+head(MeanPerHour)</pre>
+
+<pre >## # A tibble: 6 x 5
+##   Time  M_NbSim_Fr M_NbSim_Other M_NbCom_Fr M_NbCom_Other
+##   &lt;chr&gt;      &lt;dbl&gt;         &lt;dbl&gt;      &lt;dbl&gt;         &lt;dbl&gt;
+## 1 00          77.3         1.71       428.           5.64
+## 2 01          40.5         1.16       208.           3.75
+## 3 02          23.7         1.00       107.           3.17
+## 4 03          16.1         0.861       63.6          2.69
+## 5 04          13.9         0.794       47.6          2.43
+## 6 05          15.4         0.782       46.6          2.44</pre>
+
+<p>Again, <strong>limitation comes from loading the data</strong>&#8230;</p>
+
+</article></slide><slide class=""><hgroup><h2>Today&#39;s topic</h2></hgroup><article  id="todays-topic">
+
+<p>Handle &quot;half big&quot; data, i.e. datasets whose size<br/>- is too large to be loaded in R memory,<br/>- is small enough to be loaded in RAM.<br/>(\(\approx\) 5-15 Go)</p>
+
+<p>\(\color{blue}{\text{Different strategies and packages}}\)</p>
+
+<ol>
+<li><strong>Chunk the data yourself</strong><br/>* no package required&#8230;<br/>* &#8230; but requires to adapt your code<br/>* can be efficient <strong>IF</strong> calculations can be chunked.<br/></li>
+<li><strong>Use RAM rather that R memory</strong><br/>* to perform matrix algebra: package <code>bigmemory</code><br/>* to perform data curation: package <code>sparklyr</code></li>
+</ol>
+
+</article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Chunking</h2></hgroup><article  id="chunking">
+
+</article></slide><slide class=""><hgroup><h2>Arabidopsis revisited</h2></hgroup><article  id="arabidopsis-revisited">
+
+<p><strong>Strategy</strong> Split the data into \(K\) chunks, compute on each chunk the required quantities, then collect all results.<br/> </p>
+
+<p><strong>Are the tasks chunk friendly ?</strong><br/>- Allelic frequency per marker,<br/>- Filtering markers with low polymorphism,<br/>- Compute a kinship matrix (ie a genetic similarity matrix).  <br/> <br/><strong>Any idea ?</strong></p>
+
+<pre class = 'prettyprint lang-r'>Freq &lt;- (mc)lapply(1:K, function(k){
+  fread(Chunk_k)
+  rowMeans(Chunk_k)
+})</pre>
+
+</article></slide><slide class=""><hgroup><h2>Arabidopsis revisited</h2></hgroup><article  id="arabidopsis-revisited-1">
+
+<pre class = 'prettyprint lang-r'>trial &lt;- file(&#39;./Data/Arabidopsis/Arabidopsis.txt&#39;)
+Kinship &lt;- matrix(0,NbInd,NbInd)
+open(trial)
+Freq &lt;- (mc)lapply(NbSnpPerRound, function(nblines){
+  Don &lt;- matrix(scan(trial,skip=0,nlines=nblines,quiet=T,sep=&#39;;&#39;),
+                nrow=nblines,byrow = TRUE)
+  FreqLoc &lt;- rowMeans(Don)
+  Kinship &lt;&lt;- Kinship + crossprod(Don) + crossprod(1-Don)
+  return(FreqLoc)
+})
+close(trial)</pre>
+
+<p> \(\color{blue}{\text{Total  computational time:}}\quad\) <strong>94s</strong></p>
+
+</article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>The &quot;big&quot; packages</h2></hgroup><article  id="the-big-packages">
+
+</article></slide><slide class=""><hgroup><h2>Main idea</h2></hgroup><article  id="main-idea">
+
+<p><img src="MemoryRepresentation.png" width="100%" /></p>
+
+</article></slide><slide class=""><hgroup><h2>Main idea</h2></hgroup><article  id="main-idea-1">
+
+<p><img src="ConnectedMemoryRepresentation.png" width="100%" /></p>
+
+</article></slide><slide class=""><hgroup><h2>The &#39;big&#39; package family</h2></hgroup><article  id="the-big-package-family">
+
+<p>The big family consists of several packages for performing tasks on large datasets:</p>
+
+<ol>
+<li><code>bigmemory</code> for loading of large matrices in RAM.<br/></li>
+<li><code>bigalgebra</code> provides BLAS and LAPACK linear algebra routines for native R matrices and big.matrix.<br/></li>
+<li><code>biganalytics</code> provides analysis routines on big.matrix such as GLM and bigkmeans.</li>
+</ol>
+
+<p> </p>
+
+<p><strong>Limitations</strong><br/>Matrices can contain only one type of data.<br/>Since the matrix will be stored as a C++ object in RAM, data types for elements are dictated by C++: <code>double</code>, <code>integer</code>, <code>short</code>, <code>char</code>.</p>
+
+</article></slide><slide class=""><hgroup><h2>Getting prices right!</h2></hgroup><article  id="getting-prices-right">
+
+<p><img src="Ecran0.png" width="100%" /></p>
+
+</article></slide><slide class=""><hgroup><h2>Arabidopsis, the &#39;big&#39; way</h2></hgroup><article  id="arabidopsis-the-big-way">
+
+<p><img src="Ecran1.png" width="100%" /></p>
+
+</article></slide><slide class=""><hgroup><h2>Arabidopsis, the &#39;big&#39; way</h2></hgroup><article  id="arabidopsis-the-big-way-1">
+
+<p><img src="Performance1.png" width="100%" /> Physical memory: 6.05 Go</p>
+
+</article></slide><slide class=""><hgroup><h2>Arabidopsis, the &#39;big&#39; way</h2></hgroup><article  id="arabidopsis-the-big-way-2">
+
+<pre class = 'prettyprint lang-r'>Arabidopsis &lt;- read.big.matrix(&quot;./Data/Arabidopsis/Arabidopsis.txt&quot;, 
+                               type =&quot;double&quot;, header = F,sep=&#39;;&#39;)</pre>
+
+<p><img src="Ecran2.png" width="100%" /></p>
+
+</article></slide><slide class=""><hgroup><h2>Arabidopsis, the &#39;big&#39; way</h2></hgroup><article  id="arabidopsis-the-big-way-3">
+
+<pre class = 'prettyprint lang-r'>Arabidopsis &lt;- read.big.matrix(&quot;./Data/Arabidopsis/Arabidopsis.txt&quot;, 
+                               type =&quot;double&quot;, header = F,sep=&#39;;&#39;)</pre>
+
+<p><img src="Performance2.png" width="80%" />  <br/>Physical memory: 7.1 Go</p>
+
+</article></slide><slide class=""><hgroup><h2>Matrix algebra</h2></hgroup><article  id="matrix-algebra">
+
+<p>Available from <code>bigmemory</code>:<br/>    <code>dim</code>,<code>ncol</code>,<code>nrow</code><br/> <br/>Available from <code>bigalgebra</code>:<br/>    <code>crossprod</code>,<code>tcrossprod</code>,<code>t</code>,<code>%*%</code>, <code>eigen</code>,<code>chol</code><br/> <br/>Available from <code>biganalytics</code>:<br/>    <code>col{mean,min,max,var,sd,sum,prod}</code><br/> <br/> <br/>Not available:<br/>    <code>svd</code>,<code>solve</code>,</p>
+
+</article></slide><slide class=""><hgroup><h2>Frequencies</h2></hgroup><article  id="frequencies">
+
+<p>Several ways to compute frequencies:</p>
+
+<pre class = 'prettyprint lang-r'>##Compute frequencies using apply
+Freq &lt;- biganalytics::apply(Arabidopsis,1,mean)
+
+##Compute frequencies using rowMeans
+Freq &lt;- rowMeans(Arabidopsis[,])
+
+##Compute frequencies using algebra
+Freq &lt;- Arabidopsis[,]%*%rep(1/NbLines,NbLines)
+
+##Compute frequencies using big algebra
+Freq &lt;- Arabidopsis%*%as.big.matrix(rep(1/NbLines,NbLines))
+
+##Compute frequencies using big algebra
+Freq &lt;- Arabidopsis %&gt;% t %&gt;% colmean %&gt;% as.big.matrix</pre>
+
+<p>What about memory ?</p>
+
+</article></slide><slide class=""><hgroup><h2>Kinship and inverse</h2></hgroup><article  id="kinship-and-inverse">
+
+<pre class = 'prettyprint lang-r'>##Local version
+Kinship &lt;- ( crossprod(Arabidopsis[,]) + crossprod(1-Arabidopsis[,])
+            )/nrow(Arabidopsis)
+InvKin &lt;- chol2inv(chol(Kinship))
+
+##RAM version (wherever feasible)
+Kinship &lt;- ( crossprod(Arabidopsis) + crossprod(1-Arabidopsis)
+            )/nrow(Arabidopsis)
+InvKin &lt;- chol2inv(chol(Kinship)[,])</pre>
+
+<p>\(\color{blue}{\text{Loading time:}}\quad\) <strong>64s</strong><br/>\(\color{blue}{\text{Filtering time:}}\quad\) <strong>15.5s</strong><br/> <br/>\(\color{blue}{\text{Processing time (local):}}\quad\) <strong>13s</strong><br/>\(\color{blue}{\text{Processing time (RAM):}}\quad\) <strong>18.2s</strong><br/>Compared to 10.3 with the default analysis.</p>
+
+</article></slide><slide class=""><hgroup><h2>Summary</h2></hgroup><article  id="summary">
+
+<p><strong>Lesson 1</strong><br/>The <code>big</code> packages make your analyses <strong>feasible, not faster</strong>.<br/>No need (or gain) to perform all computations in RAM.<br/>Store your big objects there, keep the rest as usual&#8230;</p>
+
+<p><strong>Lesson 2</strong><br/>Check memory storage in every ways&#8230;<br/>&#8230; including tmp files !</p>
+
+<pre class = 'prettyprint lang-r'>##Compare some basic functions to compute frequencies
+res &lt;- microbenchmark(rowMeans(Arabidopsis[,]),
+                      Arabidopsis %&gt;% t %&gt;% colmean %&gt;% as.big.matrix,
+                      Arabidopsis%*%as.big.matrix(rep(1/NbLines,NbLines)),
+                      times = 50)</pre>
+
+<p><strong>Uncovered topics</strong><br/>Some really efficient functions, eg <code>mwich</code>.<br/>Possible to load the matrix in shared memory.</p>
+
+</article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Spark for R</h2></hgroup><article  id="spark-for-r">
+
+</article></slide><slide class=""><hgroup><h2>Local use of Spark</h2></hgroup><article  id="local-use-of-spark">
+
+<p><img src="ConnectedMemoryRepresentation.png" width="100%" /> Same philosophy about using RAM outside R memory.<br/><strong>BUT</strong> spark may be used on clusters for <strong>distributed memory</strong>.</p>
+
+</article></slide><slide class=""><hgroup><h2>What is Hadoop?</h2></hgroup><article  id="what-is-hadoop">
+
+<p>Hadoop is an <strong>open-source software framework</strong> for <strong>storing data and running applications on clusters</strong>.</p>
+
+<ul>
+<li>good for simple information requests and problems that can be divided into independent units,<br/></li>
+<li>not efficient for iterative and interactive analytic tasks.</li>
+</ul>
+
+<p>Based on two concepts:</p>
+
+<ul>
+<li>the &#39;HDFS&#39; file system: chunks and distributes the data on the different nodes of the cluster,</li>
+<li>the &#39;MapReduce&#39; algorithm: translates the task into small distributed operations, summarizes results obtained from the nodes.</li>
+</ul>
+
+<p>Nodes do not communicate except through sorts/shuffles.</p>
+
+</article></slide><slide class=""><hgroup><h2>What is (Apache) Spark?</h2></hgroup><article  id="what-is-apache-spark">
+
+<p>\(\color{blue}{\text{Apache Spark:}}\)</p>
+
+<ul>
+<li>is <strong>more accessible</strong> and <strong>more powerful</strong> than Hadoop.<br/></li>
+<li>began life in 2009 as a project within the AMPLab at the University of California, Berkeley.<br/></li>
+<li>became an incubated project of the Apache Software Foundation in 2013.<br/></li>
+<li>Simplicity, Speed, Support</li>
+</ul>
+
+<p>\(\color{blue}{\text{Tasks most frequently associated with Spark include }}\)</p>
+
+<ul>
+<li><strong>interactive queries</strong> across large data sets,<br/></li>
+<li><strong>processing of streaming data</strong> from sensors or financial systems, and<br/></li>
+<li><strong>machine learning</strong> tasks.</li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>What Does Spark Do?</h2></hgroup><article  id="what-does-spark-do">
+
+<p>Handles <strong>several petabytes</strong> of data at a time, <strong>distributed</strong> across a cluster of thousands of cooperating physical or virtual servers.</p>
+
+<p>Supports different <strong>languages</strong> such as Java, Python, R, and Scala, benefits from many classical libraries.</p>
+
+<p>\(\color{blue}{\text{Performance:  }}\)</p>
+
+<ul>
+<li><p>From the beginning, Spark was optimized to run in memory.</p></li>
+<li><p>process data far more quickly than Hadoop MapReduce (write data to and from computer hard drives between each stage of processing, 100 times faster than Hadoop MapReduce).</p></li>
+</ul>
+
+<p>In this presentation: 0.01% of Spark capacities are explored !</p>
+
+</article></slide><slide class=""><hgroup><h2>Requirements</h2></hgroup><article  id="requirements">
+
+<p>\(\color{blue}{\text{Install Java 8  }}\)<br/>* To create a virtual machine on your computer (for local use),<br/>* To interact/communicate with Spark</p>
+
+<p>\(\color{blue}{\text{Install sparklyr  }}\)<br/>From CRAN or gitHub. Once install, you can<br/>* install spark (and hadoop) on your machine using command <code>spark_install</code>,<br/>* open a spark session using command &#39;spark_connect&#39;<br/> </p>
+
+<p>Start playing with your new toy !</p>
+
+</article></slide><slide class=""><hgroup><h2>Orange, the Spark way</h2></hgroup><article  id="orange-the-spark-way">
+
+<p></p>
+
+<pre class = 'prettyprint lang-r'>setwd(&#39;D:/R/StateOfTheR/BigData&#39;)
+Orange_tbl &lt;- 
+  spark_read_csv(sc = sc, name = &#39;Orange&#39;,
+                 path = &#39;./Data/Orange/NIDT_D4C_2G3G4G_2017105.CSV.gz&#39;,
+                 header = FALSE, delimiter = &#39;;&#39;)</pre>
+
+<pre >## # Source:   lazy query [?? x 6]
+## # Database: spark_connection
+##   Date_Time     Id_RelAnt  NbSim_Fr NbSim_Other NbCom_Fr NbCom_Other
+##   &lt;chr&gt;         &lt;chr&gt;         &lt;int&gt;       &lt;int&gt;    &lt;int&gt;       &lt;int&gt;
+## 1 2017-04-15 00 00000001A1       37           0      141           0
+## 2 2017-04-15 00 00000001B1      134           0      503           0
+## 3 2017-04-15 00 00000001B2      170           2      752           2
+## 4 2017-04-15 00 00000001B3       93           0      550           0
+## 5 2017-04-15 00 00000001C1      122           2     1149          13
+## 6 2017-04-15 00 00000001D1       19           0       79           0</pre>
+
+<p></p>
+
+</article></slide><slide class=""><hgroup><h2>Lazy evaluation: what does it mean ?</h2></hgroup><article  id="lazy-evaluation-what-does-it-mean">
+
+<pre class = 'prettyprint lang-r'>MeanPerHour &lt;- Orange_tbl %&gt;%
+  mutate(Time = substr(Date_Time,start=12,stop=13)) %&gt;%
+  group_by(Time) %&gt;%
+  summarise(M_NbSim_Fr=mean(NbSim_Fr),...)  </pre>
+
+<p><span style="float:right">
+\(\scriptstyle{ 0.01s \ (\text{Local: } \color{red}{0.07}) }\)</span><br/></p>
+
+<pre class = 'prettyprint lang-r'>GlobalMean_NbSimFr &lt;- MeanPerHour %&gt;% summarise(Mean=mean(M_NbSim_Fr))</pre>
+
+<p><span style="float:right">
+\(\scriptstyle{ 0.0s \ (\text{Local: } \color{red}{0.0}) }\)</span><br/></p>
+
+<pre class = 'prettyprint lang-r'>GlobalMean_NbSimFr</pre>
+
+<p><span style="float:right">
+\(\scriptstyle{ 0.34s \ (\text{Local: } \color{red}{0.01}) }\)</span><br/>  <br/>Pay attention to the way computational times are evaluated !</p>
+
+</article></slide><slide class=""><hgroup><h2>Transfering data</h2></hgroup><article  id="transfering-data">
+
+<pre class = 'prettyprint lang-r'>## From Spark to R memory
+MeanPerHour_R &lt;- collect(MeanPerHour)
+
+## From Spark to Disk
+spark_write_csv(x=MeanPerHour, path = &#39;./Results/MeanPerHour.csv&#39;,
+                header = T, delimiter = &#39;;&#39;)
+
+## From R to Spark
+MeanPerHour_2 &lt;- copy_to(sc, MeanPerHour_R, 
+                         name= &quot;MeanPerHour_Sp&quot;,overwrite = T)
+
+## Have a look at the different environments:
+ls()
+src_tbls(sc)</pre>
+
+</article></slide><slide class=""><hgroup><h2>Check where the objects are</h2></hgroup><article  id="check-where-the-objects-are">
+
+<p><img src="EcranLsSrcTbls.png" width="100%" /></p>
+
+</article></slide><slide class=""><hgroup><h2>Pay attention to object classes</h2></hgroup><article  id="pay-attention-to-object-classes">
+
+<pre class = 'prettyprint lang-r'>ListRelAnt &lt;- Orange_tbl %&gt;% distinct(Id_RelAnt)
+ListRelAnt$Id_RelAnt[1:10]</pre>
+
+<pre >## NULL</pre>
+
+<pre class = 'prettyprint lang-r'>collect(ListRelAnt)$Id_RelAnt[1:10]</pre>
+
+<pre >##  [1] &quot;00000001B2&quot; &quot;00000001D1&quot; &quot;00000001F5&quot; &quot;00000001J4&quot; &quot;00000001Q1&quot;
+##  [6] &quot;00000001T2&quot; &quot;00000001V1&quot; &quot;00000001W4&quot; &quot;00000002C1&quot; &quot;00000002M2&quot;</pre>
+
+</article></slide><slide class=""><hgroup><h2>Use of R functions to create tables in the spark environment</h2></hgroup><article  id="use-of-r-functions-to-create-tables-in-the-spark-environment">
+
+<p>What are the difference between the 3 following expressions ?</p>
+
+<pre class = 'prettyprint lang-r'>AddDensity_trial1 &lt;- MeanPerHour %&gt;% 
+  mutate(Density = dnorm(M_NbSim_Fr,mean = 100,sd=50)) 
+
+AddDensity_trial2 &lt;- MeanPerHour %&gt;%  
+  collect() %&gt;% 
+  mutate(Density = dnorm(M_NbSim_Fr,mean = 100,sd=50)) 
+
+AddDensity_trial3 &lt;- MeanPerHour %&gt;% 
+  spark_apply(function(d){dnorm(d$M_NbSim_Fr,mean = 100,sd=50)})</pre>
+
+</article></slide><slide class=""><hgroup><h2>An example of &quot;fancy&quot; application</h2></hgroup><article  id="an-example-of-fancy-application">
+
+<pre class = 'prettyprint lang-r'>MeanPerHour %&gt;% 
+  mutate(TimeNum = Time + 0) %&gt;%
+  mutate(TimeSlice = ifelse(TimeNum %in% c(0:5,18:23), &#39;Evening&#39;,
+                            ifelse(TimeNum %in% 6:11, &#39;Morning&#39;, 
+                                   &#39;Afternoon&#39;))) %&gt;%
+  mutate(TimeRecoded = ifelse((TimeSlice == &#39;Evening&#39;)&amp;(TimeNum %in% 18:23), 
+                              TimeNum-24, TimeNum)) %&gt;%
+  group_by(TimeSlice) %&gt;%
+  spark_apply(
+    function(d) broom::tidy(lm(M_NbCom_Fr ~ TimeRecoded, d)),
+    names = c(&quot;term&quot;, &quot;estimate&quot;, &quot;std.error&quot;, &quot;statistic&quot;, &quot;p.value&quot;,&quot;sigma&quot;),
+    group_by = &quot;TimeSlice&quot;
+  ) </pre>
+
+<p>\(\scriptstyle{ \text{About the tidy function}}\)<br/><a href='https://cran.r-project.org/web/packages/broom/vignettes/broom.html' title=''>Broom_vignette</a></p>
+
+</article></slide><slide class=""><hgroup><h2>An example of &quot;fancy&quot; application</h2></hgroup><article  id="an-example-of-fancy-application-1">
+
+<pre >## # Source:   table&lt;sparklyr_tmp_211826b15bcf&gt; [?? x 6]
+## # Database: spark_connection
+##   TimeSlice term        estimate std.error statistic      p.value
+##   &lt;chr&gt;     &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;        &lt;dbl&gt;
+## 1 Evening   (Intercept)    604.       44.0    13.7   0.0000000828
+## 2 Evening   TimeRecoded   -160.       12.6   -12.7   0.000000176 
+## 3 Morning   (Intercept)  -1805.      189.     -9.57  0.000667    
+## 4 Morning   TimeRecoded    297.       21.8    13.6   0.000167    
+## 5 Afternoon (Intercept)   1573.      263.      5.97  0.00394     
+## 6 Afternoon TimeRecoded    -17.7      18.0    -0.982 0.382</pre>
+
+</article></slide><slide class=""><hgroup><h2>An example of &quot;fancy&quot; application</h2></hgroup><article  id="an-example-of-fancy-application-2">
+
+<p><img src="BigDataPresentation_files/figure-html/unnamed-chunk-29-1.png" width="720" /></p>
+
+</article></slide><slide class=""><hgroup><h2>Machine learning with spark</h2></hgroup><article  id="machine-learning-with-spark">
+
+<p>Many classical/ML algorithms available:</p>
+
+<p>\(\color{blue}{\text{Supervised methods}}\)<br/><code>ml_linear_regression, ml_logistic_regression,  ml_survival_regression, ml_generalized_linear_regression,</code><br/><code>ml_decision_tree, ml_random_forest, ml_gradient_boosted_trees,...</code></p>
+
+<p>\(\color{blue}{\text{Unsupervised methods}}\)<br/><code>ml_kmeans</code></p>
+
+<p>\(\color{blue}{\text{Exploratory methods}}\)<br/><code>ml_pca</code></p>
+
+</article></slide><slide class=""><hgroup><h2>Beyond local use of Spark</h2></hgroup><article  id="beyond-local-use-of-spark">
+
+<p> <br/> <br/><strong>Working on a cluster</strong>, one can<br/>- distribute the data: each node of the cluster will get a (random) chunk of the data,<br/>- distribute computation: each node can process only the data at hand.</p>
+
+<p><strong>Consequences:</strong><br/>- real parallel computation,<br/>- exact results for many reshaping treatments,<br/>- non-exact results for many ML tasks ?</p>
+
+</article></slide><slide class=""><hgroup><h2>Summary</h2></hgroup><article  id="summary-1">
+
+<p>Both <code>bigmemory</code> and <code>sparklyr</code> allows one to circumvent the memory limitation of R.<br/> <br/> <br/>The two packages are <strong>still in development</strong>&#8230;<br/>- latest versions not always on CRAN,<br/>- inconsistent/obsolete tutorials,<br/>- many compatibility troubles.</p>
+
+<!--
+
+
+
+
+
+## Lazy evaluation
+
+From "Efficient R Programming"  
+When working with databases, dplyr uses lazy evaluation: the data is only fetched at the last moment when it's needed.
+
+--></article></slide>
+
+
+  <slide class="backdrop"></slide>
+
+</slides>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "BigDataPresentation_files/mathjax-local/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+<!-- map slide visiblity events into shiny -->
+<script>
+  (function() {
+    if (window.jQuery) {
+       window.jQuery(document).on('slideleave', function(e) {
+         window.jQuery(e.target).trigger('hidden');
+      });
+       window.jQuery(document).on('slideenter', function(e) {
+         window.jQuery(e.target).trigger('shown');
+      });
+    }
+  })();
+</script>
+
+</body>
+</html>

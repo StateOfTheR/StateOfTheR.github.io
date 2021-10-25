@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Using R on Migale</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Mahendra Mariadassou" />
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/remark-css/default-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Using R on Migale
+## A short trip through purrr, future and furrr
+### Mahendra Mariadassou
+### INRAE - MaIAGE, Migale Team
+### 2020-03-12 (updated: 2020-03-14)
+
+---
+
+class: inverse, middle, center
+
+
+
+# Welcome to the [Migale platform!](https://migale.inra.fr/)
+
+---
+
+background-image: url(img/migale.png)
+background-size: contain
+
+---
+class: middle
+
+# Prerequisites: 
+- ## an account&lt;sup&gt;1&lt;/sup&gt;: request one using the [form](https://migale.inra.fr/ask-account) 
+- ## Working knowledge of unix&lt;sup&gt;2&lt;/sup&gt;
+
+.footnote[
+[1] Requires an academic e-mail adress
+
+[2] See [here](http://genome.jouy.inra.fr/~orue/tuto-unix.html) for a simple intro
+]
+---
+class: center, middle
+
+# Architecture
+
+## Migale is the **front node**
+
+--
+
+## Which connects you to the [computer farm](https://migale.inra.fr/cluster)
+
+-- 
+
+### Tens of **nodes** (~ machines) representing hundred of **cores** (~ CPU)
+
+---
+
+class: inverse, center, middle
+
+# Level 1: Rstudio server
+
+---
+
+class: middle, center
+
+# Connect to migale [Rstudio server](https://rstudio.migale.inrae.fr/)
+
+### Available at [https://rstudio.migale.inrae.fr/](https://rstudio.migale.inrae.fr/)
+
+-- 
+
+### Super easy ☺️ but runs on a Virtual Machine 😞
+
+---
+
+class: inverse, center, middle
+
+# Level 2: bash mode
+
+---
+
+# Prepare your R script
+
+
+```r
+create &lt;- function(mu = 0) { rnorm(100, mean = mu) }
+analyze  &lt;- function(x) { mean(x) }
+results &lt;- numeric(100)
+for (i in 1:100) {
+  results[i] &lt;- analyze(create())
+}
+saveRDS(results, "results.rds")
+```
+
+
+```bash
+cat scripts/my_script_1.R
+```
+
+```
+## create &lt;- function(mu = 0) { rnorm(100, mean = mu) }
+## analyze  &lt;- function(x) { mean(x) }
+## results &lt;- numeric(100)
+## for (i in 1:100) {
+##   results[i] &lt;- analyze(create())
+## }
+## saveRDS(results, "results.rds")
+```
+
+---
+
+# Running you script
+
+.pull-left[
+1. Transfer scripts and data to migale&lt;sup&gt;1&lt;/sup&gt;
+
+2. Connect to migale
+
+3. Run script
+
+4. Work on the results
+]
+
+.pull-right[
+
+```bash
+scp -r . mmariadasso@migale:SOTR/
+```
+
+
+```bash
+ssh mmariadasso@migale
+```
+
+
+```bash
+Rscript my_script_1.R
+```
+]
+
+-- 
+
+To make life easier add 
+
+```bash
+Host migale
+User mmariadasso
+HostName migale.jouy.inra.fr
+```
+to your `~/.ssh/config` file. 
+
+--
+
+### Quite easy ☺️ but uses only the front-node 😞
+
+.footnote[[1] You may need to expand `migale` to `migale.jouy.inra.fr`]
+---
+
+class: inverse, center, middle
+
+# Level 3: Using sge
+
+---
+
+# About SGE
+
+**S**un **G**rid **E**ngine is a *job scheduler*. You submit many jobs on the front-node and sge will dispatch them to the computer farm. 
+
+A long introduction to sge can be found [here](https://migale.inra.fr/sge) but here is a simple example
+
+
+```bash
+RSCRIPT=/usr/local/public/R/bin/Rscript
+RJOB="my_script_1.R"
+qsub -S $RSCRIPT -q short.q -cwd -V -M me@mail.com -m bae $RJOB
+```
+
+`RSCRIPT` and `RJOB` are *environment variables* and are expanded in the final call. 
+
+Here we need to specify `-S $RSCRIPT` to make sure that the instructions in `my_script_1.R` are executed with R. 
+
+---
+
+# SGE options
+
+Let's unpack the options:
+
+- `-cwd` run in current working directory
+- `-V` will pass all environment variables to the job
+- `-N &lt;jobname&gt;` name of the job. This you will see when you use `qstat`, to check status of your jobs.
+- `-b y` allow command to be a binary file instead of a script.
+
+Other usefull options are:
+
+- `-q &lt;queue&gt;` set the queue. See [here](https://migale.inra.fr/cluster) to choose a queue (short / long / bigmem / etc ) adapted to your needs.
+- `-pe thread &lt;n_slots&gt;` This specifies the parallel environment. thread runs a parallel job using shared-memory and n_processors amount of cores.
+- `-R y` allows to reserve resources as soon as they are free
+- `-o &lt;output_logfile&gt;` name of the output log file
+- `-e &lt;error_logfile&gt;` name of the error log file
+- `-m bea` Will send email when job **b**egins, **e**nds or **a**borts
+- `-M &lt;emailaddress&gt;` Email address to send email to
+
+---
+
+# Leveraging the computer farm (I)
+
+We're still only using one node at the time !!
+
+### Decompose your script and pass arguments
+
+
+```bash
+cat scripts/my_script_2.R
+```
+
+
+```r
+## Arguments
+args &lt;- commandArgs(trailingOnly = TRUE)
+id &lt;- as.integer(args[1])
+## Computations
+create &lt;- function(mu = 0) { rnorm(100, mean = mu) }
+analyze  &lt;- function(x) { mean(x) }
+result &lt;- analyze(create())
+## Results
+saveRDS(object = result, file = paste0("result_", id, ".rds"))
+```
+
+---
+
+# Leveraging the computer farm (II)
+
+### Use `qsub` repeatedly
+
+
+```bash
+RSCRIPT="/usr/local/public/R/bin/Rscript"
+RJOB="my_script_2.R"
+QSUB="qsub -S $RSCRIPT -q short.q -cwd -V -M me@mail.com -m bae"
+seq 1 100 | xargs -I {} $QSUB $RJOB {}
+```
+
+This is equivalent to 
+
+
+```bash
+$QSUB $RJOB 1
+...
+$QSUB $RJOB 100
+```
+
+### Aggregate all the results at the end
+
+
+```r
+results &lt;- numeric(100)
+for (i in 1:100) results[i] &lt;- readRDS(paste0("result_", i, ".rds"))
+```
+
+---
+
+# Monitoring your jobs
+
+Use `qstat` on migale to monitor the state of your jobs: `qw` (waiting), `Eqw` (error), `t` (transferring), `r` (running)
+
+# Some pros and cons
+
+➕ Quite easy if you want to parallelize loops (simulations)
+
+➕ uses many machines (!= many cores on a machine)
+
+➖ Forth and back between `R` and `bash`
+
+➖ Not perfect for numerical experiments (machines are not perfectly similar)
+
+---
+
+class: inverse, center, middle
+
+# Level 4: Using `future`
+
+---
+
+# Future/Future.batchtools package
+
+1. `future` allows you to call SGE directly from R and suppress the forth and back
+
+1. `future` is quite general and can handle many back-ends
+
+1. You need to specify the back-end with `plan`. Here are some examples:
+
+
+```r
+library(future)
+library(future.batchtools)
+plan(sequential)    ## R as usual
+plan(multiprocess)  ## Use many cores on the same machines
+plan(batchtools_sge) ## Use sge via the future.batchtools package
+```
+
+But first you need to setup a **configuration file**. 
+
+---
+
+
+```bash
+cat ~/.batchools.sge.tmpl ## on Migale
+```
+
+.smaller[
+
+```bash
+#!/bin/bash
+## The name of the job
+#$ -N &lt;%= job.name %&gt;
+## Combining output/error messages into one file
+#$ -j y
+## Giving the name of the output log file
+#$ -o &lt;%= log.file %&gt;
+## Execute the script in the working directory
+#$ -cwd
+## Use environment variables
+#$ -V
+## Use multithreading
+#$ -pe threads &lt;%= resources$threads %&gt;
+## Use correct queue
+#$ -q &lt;%= resources$queue %&gt;
+
+## Export value of DEBUGME environemnt var to slave
+export DEBUGME=&lt;%= Sys.getenv("DEBUGME") %&gt;
+
+&lt;%= sprintf("export OMP_NUM_THREADS=%i", resources$omp.threads) -%&gt;
+&lt;%= sprintf("export OPENBLAS_NUM_THREADS=%i", resources$blas.threads) -%&gt;
+&lt;%= sprintf("export MKL_NUM_THREADS=%i", resources$blas.threads) -%&gt;
+
+Rscript -e 'batchtools::doJobCollection("&lt;%= uri %&gt;")'
+exit 0
+```
+]
+
+---
+
+# Time to make a plan
+
+
+```r
+library(future.batchtools)
+plan(batchtools_sge, 
+     workers = 10,                         ## nombre maximum de jobs en //,
+                                           ## non limité par défaut
+     template = "~/.batchtools.sge.tmpl",  ## template sge, inutile ici
+                                           ## car lu par défaut 
+     resources = list(                     ## Paramètres définis à la volée
+       queue   = "short.q",   ## queue à utiliser
+       threads = 1            ## Nombre de cores par nodes
+     )   
+)
+```
+
+---
+
+# Working with future
+
+Simple **drop-in** in most scripts. 
+
+- replace `vector` and/or `list` with `listenv`
+- replace `&lt;-` with `%&lt;-%`
+- transform `listenv` to `list` and/or `vector`
+
+--
+
+
+```r
+library(listenv)
+## Setup a listenv (special kind of list)
+results &lt;- listenv()
+create &lt;- function(mu = 0) { rnorm(1000, mean = mu) }
+analyze &lt;- function(x) { mean(x) }
+for (i in 1:10) { 
+  results[[i]] %&lt;-% analyze(create())
+}
+results &lt;- unlist(as.list(results)) ## stalled until the end of
+                                    ## all computations
+```
+
+---
+
+class: inverse, middle, center
+
+# Level 5: Using `furrr`
+
+## `furrr` = `purrr` + `future`
+
+---
+
+## `purrr`: Iteration made easy
+
+- The `map` and `map_*` family of functions superbly replace loops.
+
+Writing our previous example with `purrr` would give
+
+
+```r
+library(purrr); library(dplyr)
+create  &lt;- function(mu = 0) { rnorm(1000, mean = mu) }
+analyze &lt;- function(x) { mean(x) }
+results &lt;- tibble(
+  i      = 1:10,
+  mu     = rep(0, length(i)),
+  result = map_dbl(mu, ~ analyze(create(.x)))
+)
+results
+```
+
+```
+## # A tibble: 10 x 3
+##        i    mu   result
+##    &lt;int&gt; &lt;dbl&gt;    &lt;dbl&gt;
+##  1     1     0 -0.0247 
+##  2     2     0  0.0197 
+##  3     3     0  0.0222 
+##  4     4     0 -0.0295 
+##  5     5     0 -0.0391 
+##  6     6     0 -0.0323 
+##  7     7     0  0.0139 
+##  8     8     0 -0.0327 
+##  9     9     0  0.0485 
+## 10    10     0 -0.00247
+```
+---
+
+# `Furrr`: when `future` meets `purrr`
+
+1. Furrr provides `future_map_*()` as drop-in alternatives to `map_*()` functions. 
+
+2. You just need to have a `plan` (as with `future`)
+
+
+```r
+library(furrr)
+library(purrr)
+library(dplyr)
+plan(multiprocess) ## Or plan(batchtool_sge)
+```
+
+```
+## Warning: [ONE-TIME WARNING] Forked processing ('multicore') is disabled
+## in future (&gt;= 1.13.0) when running R from RStudio, because it is
+## considered unstable. Because of this, plan("multicore") will fall
+## back to plan("sequential"), and plan("multiprocess") will fall back to
+## plan("multisession") - not plan("multicore") as in the past. For more details,
+## how to control forked processing or not, and how to silence this warning in
+## future R sessions, see ?future::supportsMulticore
+```
+
+```r
+create  &lt;- function(mu = 0) { rnorm(1000, mean = mu) }
+analyze &lt;- function(x) { mean(x) }
+results &lt;- tibble(
+  i      = 1:10,
+  mu     = rep(0, length(i)),
+  result = future_map_dbl(mu, ~ analyze(create(.x)))
+)
+results
+```
+
+```
+## # A tibble: 10 x 3
+##        i    mu   result
+##    &lt;int&gt; &lt;dbl&gt;    &lt;dbl&gt;
+##  1     1     0  0.0234 
+##  2     2     0 -0.0120 
+##  3     3     0 -0.0287 
+##  4     4     0 -0.00791
+##  5     5     0  0.0134 
+##  6     6     0  0.0167 
+##  7     7     0  0.0132 
+##  8     8     0  0.00816
+##  9     9     0  0.0147 
+## 10    10     0 -0.0165
+```
+
+---
+
+# Going further
+
+You can produce back-ends that spawn multiple jobs, each of which uses multiple cores. 
+
+
+```r
+plan(list(
+  tweak(batchtools_sge, resources = list(queue = "short.q", threads = 10)), 
+  tweak(multiprocess, workers = 10)
+))
+```
+
+Note the `workers` option for `multiprocess`. 
+
+- This is **good practice**. 
+
+- Manually specify the number of threads to use when going mutliprocess. Otherwise, R will use all available cores and other people will hate you 😡
+
+---
+class: inverse
+
+background-image: url(https://media.giphy.com/media/lD76yTC5zxZPG/giphy.gif)
+background-size: contain
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"ratio": "14.6:9",
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  /* Replace <script> tags in slides area to make them executable
+   *
+   * Runs after post-processing of markdown source into slides and replaces only
+   * <script>s on the last slide of continued slides using the .has-continuation
+   * class added by xaringan. Finally, any <script>s in the slides area that
+   * aren't executed are commented out.
+   */
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container:not(.has-continuation) script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+  var scriptsNotExecuted = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container.has-continuation script'
+  );
+  if (!scriptsNotExecuted.length) return;
+  for (var i = 0; i < scriptsNotExecuted.length; i++) {
+    var comment = document.createComment(scriptsNotExecuted[i].outerHTML)
+    scriptsNotExecuted[i].parentElement.replaceChild(comment, scriptsNotExecuted[i])
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

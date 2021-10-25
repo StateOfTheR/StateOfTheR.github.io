@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects | State of The R</title>
+    <link>http://stateofther.github.io/project/</link>
+      <atom:link href="http://stateofther.github.io/project/index.xml" rel="self" type="application/rss+xml" />
+    <description>Projects</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>fr-fr</language><copyright>© 2020 State of the R</copyright><lastBuildDate>Tue, 14 Sep 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://stateofther.github.io/images/logo_hu53047fbf4f6efa69f0f91be25bd21dde_40228_300x300_fit_lanczos_3.png</url>
+      <title>Projects</title>
+      <link>http://stateofther.github.io/project/</link>
+    </image>
+    
+    <item>
+      <title>FinistR&#39;21</title>
+      <link>http://stateofther.github.io/project/finistr21/</link>
+      <pubDate>Tue, 14 Sep 2021 00:00:00 +0000</pubDate>
+      <guid>http://stateofther.github.io/project/finistr21/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>FinistR&#39;20</title>
+      <link>http://stateofther.github.io/project/finistr20/</link>
+      <pubDate>Mon, 31 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>http://stateofther.github.io/project/finistr20/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>FinistR&#39;19</title>
+      <link>http://stateofther.github.io/project/finistr19/</link>
+      <pubDate>Sat, 31 Aug 2019 00:00:00 +0000</pubDate>
+      <guid>http://stateofther.github.io/project/finistr19/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>FinistR&#39;18</title>
+      <link>http://stateofther.github.io/project/finistr18/</link>
+      <pubDate>Fri, 31 Aug 2018 00:00:00 +0000</pubDate>
+      <guid>http://stateofther.github.io/project/finistr18/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>FinistR&#39;17</title>
+      <link>http://stateofther.github.io/project/finistr17/</link>
+      <pubDate>Mon, 11 Sep 2017 00:00:00 +0000</pubDate>
+      <guid>http://stateofther.github.io/project/finistr17/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>rmxnet | State of The R</title>
+    <link>http://stateofther.github.io/tag/rmxnet/</link>
+      <atom:link href="http://stateofther.github.io/tag/rmxnet/index.xml" rel="self" type="application/rss+xml" />
+    <description>rmxnet</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>fr-fr</language><copyright>© 2020 State of the R</copyright><lastBuildDate>Fri, 18 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://stateofther.github.io/images/logo_hu53047fbf4f6efa69f0f91be25bd21dde_40228_300x300_fit_lanczos_3.png</url>
+      <title>rmxnet</title>
+      <link>http://stateofther.github.io/tag/rmxnet/</link>
+    </image>
+    
+    <item>
+      <title>R-Mxnet pour des applications du deep learning</title>
+      <link>http://stateofther.github.io/post/rmxnet/</link>
+      <pubDate>Fri, 18 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>http://stateofther.github.io/post/rmxnet/</guid>
+      <description>&lt;p&gt;Christophe Botella nous a preparé un atelier pratique présentant le deep learning
+et comment le mettre en application avec le package &lt;em&gt;R-Mxnet&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;_ &lt;a href=&#34;https://github.com/ChrisBotella/MXNet-R&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Le code de l&amp;rsquo;atelier&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;../../post/rmxnet/index.html&#34;&gt;Et la présentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

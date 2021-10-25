@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>moodle | State of The R</title>
+    <link>http://stateofther.github.io/tag/moodle/</link>
+      <atom:link href="http://stateofther.github.io/tag/moodle/index.xml" rel="self" type="application/rss+xml" />
+    <description>moodle</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>fr-fr</language><copyright>© 2020 State of the R</copyright><lastBuildDate>Thu, 20 Dec 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://stateofther.github.io/images/logo_hu53047fbf4f6efa69f0f91be25bd21dde_40228_300x300_fit_lanczos_3.png</url>
+      <title>moodle</title>
+      <link>http://stateofther.github.io/tag/moodle/</link>
+    </image>
+    
+    <item>
+      <title>Pimp my exam</title>
+      <link>http://stateofther.github.io/post/pimp-exam/</link>
+      <pubDate>Thu, 20 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>http://stateofther.github.io/post/pimp-exam/</guid>
+      <description>&lt;p&gt;Marco et Vincent vous proposent de prendre un peu de temps pour apprendre à se servir du &lt;a href=&#34;http://www.r-exams.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;package exams&lt;/a&gt; (disponible sur le CRAN) pour générer automatiquement des examens (QCM ou autres), corriger automatiquement ces examens, gérer un ensemble d&amp;rsquo;exercices collectivement, mettre en place une plateforme de e-learning. Gros programme mais un joli cadeau de Noël, puisque tout se fait en quelques lignes de code R !&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;../../post/pimp-exam/exams.html&#34;&gt;L&amp;rsquo;intégrale des slides&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

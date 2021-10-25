@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>rcpp | State of The R</title>
+    <link>http://stateofther.github.io/tag/rcpp/</link>
+      <atom:link href="http://stateofther.github.io/tag/rcpp/index.xml" rel="self" type="application/rss+xml" />
+    <description>rcpp</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>fr-fr</language><copyright>© 2020 State of the R</copyright><lastBuildDate>Fri, 20 Jul 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://stateofther.github.io/images/logo_hu53047fbf4f6efa69f0f91be25bd21dde_40228_300x300_fit_lanczos_3.png</url>
+      <title>rcpp</title>
+      <link>http://stateofther.github.io/tag/rcpp/</link>
+    </image>
+    
+    <item>
+      <title>Bases en Rcpp</title>
+      <link>http://stateofther.github.io/post/bases-rcpp/</link>
+      <pubDate>Fri, 20 Jul 2018 00:00:00 +0000</pubDate>
+      <guid>http://stateofther.github.io/post/bases-rcpp/</guid>
+      <description>&lt;img src=&#34;img/headers/seamless.png&#34; align=&#34;right&#34; width=&#34;200&#34;/&gt;
+&lt;p&gt;Les trois mousquetaires Timothée, Mathieu et Félix (a.k.a riri fifi loulou) proposent une séances complète d&amp;rsquo;introduction à &lt;code&gt;Rcpp&lt;/code&gt; accompagné de travaux pratiques.&lt;/p&gt;
+&lt;p&gt;Les documents de la séances:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;../../post/bases_rcpp/Introduction.html&#34;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../../post/bases_rcpp/1-Architecture.html&#34;&gt;Rappel d&amp;rsquo;architecture machine&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../../post/bases_rcpp/2-SyntaxeCpp.html&#34;&gt;Rappel en C++&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../../post/bases_rcpp/3-RcppArmadillo.html&#34;&gt;RcppArmadillo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../../post/bases_rcpp/4-Rfonctions.html&#34;&gt;Fonctions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../../post/bases_rcpp/5-Astuces.html&#34;&gt;Astuces&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Pour compléter, voir &lt;a href=&#34;https://stateofther.github.io/finistR2018/atelier2_rcpp_modules.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;la page du bootcamp finistR2018 dédiée aux modules Rcpp&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

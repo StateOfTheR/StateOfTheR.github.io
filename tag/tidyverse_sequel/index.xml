@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tidyverse_sequel | State of The R</title>
+    <link>http://stateofther.github.io/tag/tidyverse_sequel/</link>
+      <atom:link href="http://stateofther.github.io/tag/tidyverse_sequel/index.xml" rel="self" type="application/rss+xml" />
+    <description>tidyverse_sequel</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>fr-fr</language><copyright>© 2020 State of the R</copyright><lastBuildDate>Fri, 13 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://stateofther.github.io/images/logo_hu53047fbf4f6efa69f0f91be25bd21dde_40228_300x300_fit_lanczos_3.png</url>
+      <title>tidyverse_sequel</title>
+      <link>http://stateofther.github.io/tag/tidyverse_sequel/</link>
+    </image>
+    
+    <item>
+      <title>Tidyverse suite (et fin??) avec forcats, lubridate et stringr</title>
+      <link>http://stateofther.github.io/post/tidyverse_sequel/</link>
+      <pubDate>Fri, 13 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>http://stateofther.github.io/post/tidyverse_sequel/</guid>
+      <description>&lt;p&gt;Antoine nous parlera de la manipulation des objets un peu particuliers de R que
+sont les facteurs, les dates et les heures, et les chaines de caractères et
+expressions régulières. Ceci finira notre tour du tidyverse avec forcats, lubridate
+et stringr, qui permettent de manipuler très facilement et lisiblement ces objets.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://abichat.github.io/slides/factors_dates_strings/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;lien vers les slides&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

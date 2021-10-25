@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>magrittr | State of The R</title>
+    <link>http://stateofther.github.io/tag/magrittr/</link>
+      <atom:link href="http://stateofther.github.io/tag/magrittr/index.xml" rel="self" type="application/rss+xml" />
+    <description>magrittr</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>fr-fr</language><copyright>© 2020 State of the R</copyright><lastBuildDate>Wed, 02 May 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://stateofther.github.io/images/logo_hu53047fbf4f6efa69f0f91be25bd21dde_40228_300x300_fit_lanczos_3.png</url>
+      <title>magrittr</title>
+      <link>http://stateofther.github.io/tag/magrittr/</link>
+    </image>
+    
+    <item>
+      <title>Une introduction au tidyverse</title>
+      <link>http://stateofther.github.io/post/une-introduction-au-tidyverse/</link>
+      <pubDate>Wed, 02 May 2018 00:00:00 +0000</pubDate>
+      <guid>http://stateofther.github.io/post/une-introduction-au-tidyverse/</guid>
+      <description>
+
+
+&lt;p&gt;Antoine nous propose une introduction dense et déjà avancée en passant en revue l’ensemble du &lt;a href=&#34;http://http://tidyverse.org&#34;&gt;tidyverse&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://abichat.github.io/Slides/IntroTidyverseSOTR/IntroTidyverseSOTR.html#1&#34;&gt;Les slides Xaringan de Antoine&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
